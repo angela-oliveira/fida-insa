@@ -9,8 +9,8 @@ import {
     Card
 } from 'antd';
 import 'antd/dist/antd.css';
-import '../styles/utils.module.css'
-import Colors from '../Utils/Colors'
+import '../../public/styles/utils.module.css'
+import Colors from '../../public/Utils/Colors'
 
 // import background from '../public/images/bg_main.png';
 
@@ -143,11 +143,11 @@ function HomePage() {
                         paddingLeft: 150,
                         marginBottom: -10
                     }}>EQUIPE</h1>
-                <p style={{
-                    color: Colors.BLACK_TEXT,
-                    paddingLeft: 150,
-                    // textAlign: "center"
-                }}>Conheça quem está à frente desse projeto</p>
+                    <p style={{
+                        color: Colors.BLACK_TEXT,
+                        paddingLeft: 150,
+                        // textAlign: "center"
+                    }}>Conheça quem está à frente desse projeto</p>
                 </Card>
                 <br></br>
                 <Row style={{
@@ -156,38 +156,38 @@ function HomePage() {
                     textAlign: "center"
                 }}>
 
-                <Card
-                    hoverable
-                    style={{ height: 240, width: 240, margin: 10 }}
+                    <Card
+                        hoverable
+                        style={{ height: 240, width: 240, margin: 10 }}
                     // cover={<img alt="example" src="/images/perfil_test.jpg" />}
-                >
-                    <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
-                    <Meta title="Nome" description="Função" />
-                </Card>
-                <Card
-                    hoverable
-                    style={{height: 240, width: 240, margin: 10 }}
+                    >
+                        <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
+                        <Meta title="Nome" description="Função" />
+                    </Card>
+                    <Card
+                        hoverable
+                        style={{ height: 240, width: 240, margin: 10 }}
                     // cover={<img alt="example" src="/images/perfil_test.jpg" />}
-                >
-                    <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
-                    <Meta title="Nome" description="Função" />
-                </Card>
-                <Card
-                    hoverable
-                    style={{ height: 240, width: 240, margin: 10 }}
+                    >
+                        <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
+                        <Meta title="Nome" description="Função" />
+                    </Card>
+                    <Card
+                        hoverable
+                        style={{ height: 240, width: 240, margin: 10 }}
                     // cover={<img alt="example" src="/images/perfil_test.jpg" />}
-                >
-                    <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
-                    <Meta title="Nome" description="Função" />
-                </Card>
-                <Card
-                    hoverable
-                    style={{ height: 240, width: 240, margin: 10 }}
+                    >
+                        <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
+                        <Meta title="Nome" description="Função" />
+                    </Card>
+                    <Card
+                        hoverable
+                        style={{ height: 240, width: 240, margin: 10 }}
                     // cover={<img alt="example" src="/images/perfil_test.jpg" />}
-                >
-                    <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
-                    <Meta title="Nome" description="Função" />
-                </Card>
+                    >
+                        <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
+                        <Meta title="Nome" description="Função" />
+                    </Card>
                 </Row>
             </div>
             <div className="parceiros"></div>
