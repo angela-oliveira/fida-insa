@@ -190,8 +190,125 @@ function HomePage() {
                     </Card>
                 </Row>
             </div>
-            <div className="parceiros"></div>
-            <div className="footer"></div>
+            <div className="parceiros">
+                <Card style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    textAlign: "center"
+                }}>
+                    <h2>Realização</h2>
+
+                    <Row style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        textAlign: "center"
+                    }}>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+                    </Row>
+                {/* </Card>
+                <Card style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    textAlign: "center"
+                }}> */}
+                    <h2>Parceiros</h2>
+
+                    <Row style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        textAlign: "center"
+                    }}>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+                    </Row>
+                {/* </Card>
+                <Card style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    textAlign: "center"
+                }}> */}
+                    <h2>Patrocinador</h2>
+
+                    <Row style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        textAlign: "center"
+                    }}>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+
+                        <Card
+                            hoverable
+                            style={{ height: 50, width: 100, margin: 10 }}
+                        >
+                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <Meta title="" description="" />
+                        </Card>
+                    </Row>
+                </Card>
+            </div>
+            <div className="footer">
+            <img style={{ width: "100%"}} src="/images/Group 137.png"></img>
+            </div>
         </div>
     );
 }
