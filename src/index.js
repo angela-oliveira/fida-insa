@@ -10,7 +10,7 @@ import {
 } from 'antd';
 import 'antd/dist/antd.css';
 import '../../public/styles/utils.module.css'
-import Colors from '../../public/Utils/Colors'
+import Colors from '../../public/styles/Colors'
 
 // import background from '../public/images/bg_main.png';
 
