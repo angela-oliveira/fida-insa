@@ -6,6 +6,6 @@
 .h1 {
     font: normal normal 800 100px/564px Raleway;
     letter-spacing: 13.3px;
-    color: #141414;
+    color: var(--color-black); 
     opacity: 1;
-    }
+    } 
