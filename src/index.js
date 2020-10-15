@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import HeaderHome from '../components/HeaderHome';
+import HeaderHome from './components/HeaderHome';
 import {
     Row,
     Col,
