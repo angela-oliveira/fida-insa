@@ -10,7 +10,8 @@ import {
     Card
 } from 'antd';
 import 'antd/dist/antd.css';
-import '../../public/styles/utils.module.css'
+import '../../utils/styles/utils.module.css'
+import './index.css'
 
 // import background from '../public/images/bg_main.png';
 
@@ -22,7 +23,7 @@ const { Meta } = Card;
 function HomePage() {
     return (
         <div>
-            <div className="site-page-header-ghost-wrapper" style={{ paddingLeft: 150, paddingTop: 10 }}>
+            <div className="site-page-header-ghost-wrapper">
                 <PageHeader
                     ghost={false}
                     title={<img src="/images/logo_fida.png"></img>}
@@ -41,46 +42,23 @@ function HomePage() {
                 {/* <img style={{width: 450, paddingLeft: 100, marginBottom: -50, marginTop: 50}} src="/images/blue.png"></img> */}
                 <Row className="main" style={{ paddingLeft: 150 }}>
 
-                    <Col style={{ marginTop: 100 }}>
+                    <Col>
 
                         <img style={{ width: 450, paddingLeft: -200, marginBottom: -50 }} src="/images/blue.png"></img>
-                        <div>
-                            <h1 style={{
-                                // fontFamily: Raleway,
-                                fontSize: 80,
-                                fontWeight: 700,
-                                letterSpacing: 13.3,
-                                marginBottom: -50,
-                                color: Colors.BLACK, //var(--color-black);
-                                opacity: 1
-                            }}>RENOVA</h1>
+                        <div className='banner-page'>
+                            <h1>RENOVA</h1>
                             <Row>
 
-                                <h1 style={{
-                                    fontSize: 80,
-                                    marginBottom: -30,
-                                    fontWeight: 700,
-                                    color: Colors.GREEN_LIGHT, //var(--color-green-light);
-                                    letterSpacing: 13.3,
-                                }}>FIDA</h1>
+                                <h1>FIDA</h1>
+                                
                                 <div>
                                     {/* <img style={{width: 350, marginTop: 50 }} src="/images/yellow.png"></img> */}
                                 </div>
                             </Row>
-                            <p style={{
-                                color: Colors.BLACK_TEXT,// var(--color-black-text);
-                                fontWeight: 300,
-                                fontSize: 30
-                            }}>Energias renováveis para<br /> o semiárido</p>
-                            <Button style={{
-                                border: 'solid',
-                                borderRadius: '0px 16px',
-                                color: Colors.GREEN_DARK, //var(--color-green-dark);
-                                height: 72,
-                                width: 250,
-                                fontSize: 17,
-                                borderColor: Colors.GREEN_BORDER //var(--color-green-border);
-                            }}>Conheça o Projeto +</Button>
+
+                            <p >Energias renováveis para<br /> o semiárido</p>
+                            
+                            <Button>Conheça o Projeto +</Button>
                         </div>
                     </Col>
 
@@ -92,30 +70,15 @@ function HomePage() {
                 </Row>
             </div>
             <div className="techs">
-                <Card style={{
-                    display: "flex",
-                    // paddingBottom: '0px', 
-                    // flexDirection: "column",
-                    justifyContent: "center",
-                    textAlign: "center"
-                }}>
-                    <div style={{
-                        backgroundColor: Colors.YELLOW, //var(--color-yellow);
-                        width: '210px',
-                        height: '20px'
-                    }}></div>
-                    <h1 style={{
-                        color: Colors.GREEN_DARK,//var(--color-green-dark);
-                        fontWeight: 700,
-                        marginTop: -20,
-                        marginBottom: -20
-                    }}>TECNOLOGIAS</h1>
+                <Card>
+                    <div ></div>
+                    <h1 >TECNOLOGIAS</h1>
                 </Card>
-                <p style={{
-                    color: Colors.BLACK_TEXT, //var(--color-green-dark);
-                    textAlign: "center"
-                }}>Conheca as tecnologias desenvolvidas</p>
+
+                <p>Conheca as tecnologias desenvolvidas</p>
+                
                 <br></br>
+
                 <Card style={{
                     display: "flex",
                     justifyContent: "center",
@@ -129,25 +92,10 @@ function HomePage() {
             </div>
             <div className="cases"></div>
             <div className="team">
-                <Card style={{
-                }}>
-                    <div style={{
-                        backgroundColor: Colors.YELLOW, //var(--color-yellow);
-                        width: '210px',
-                        height: '20px'
-                    }}></div>
-                    <h1 style={{
-                        color: Colors.GREEN_DARK, //var(--color-green-dark);
-                        fontWeight: 700,
-                        marginTop: -20,
-                        paddingLeft: 150,
-                        marginBottom: -10
-                    }}>EQUIPE</h1>
-                    <p style={{
-                        color: Colors.BLACK_TEXT, //var(--color-black-text);
-                        paddingLeft: 150,
-                        // textAlign: "center"
-                    }}>Conheça quem está à frente desse projeto</p>
+                <Card>
+                    <div></div>
+                    <h1>EQUIPE</h1>
+                    <p>Conheça quem está à frente desse projeto</p>
                 </Card>
                 <br></br>
                 <Row style={{
@@ -311,11 +259,11 @@ function HomePage() {
             </div>
         </div>
     );
-}
+    }
 
 
-// function HomePage(){
-//     return(<h1>HomePage</h1>)
-// }
+    // function HomePage(){
+    //     return(<h1>HomePage</h1>)
+    // }
 
-export default HomePage;
+    export default HomePage;
