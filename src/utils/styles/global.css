@@ -5,6 +5,7 @@ body {
   font-family: Raleway;
   line-height: 1.6;
   font-size: 18px;
+  width: 100vw;
 }
 
 :root{
