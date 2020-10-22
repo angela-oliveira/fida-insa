@@ -24,7 +24,7 @@ h1{
 .ant-row .banner-page h1 {
     font-Family: Raleway;
     font-Size: 80px;
-    font-Weight: 700px;
+    font-Weight: 700;
     letter-Spacing: 13.3px;
     margin-Bottom: -50px;
     color: var(--color-black);
@@ -65,7 +65,7 @@ h1{
 }
 
 /* TECHS */
-.techs .ant-cards{
+.techs .ant-card{
     display: "flex";
     /* padding-bottom: '0px',  */
     /* flex-direction: "column", */
@@ -73,13 +73,13 @@ h1{
     text-align: "center";
 }
 
-.techs .ant-cards div{
+.techs .ant-card div{
     background-color: var(--color-yellow);
     width: 210px;
     height: 20px;
 }
 
-.techs .ant-cards h1{
+.techs .ant-card h1{
     color: var(--color-green-dark);
     font-weight: 700px;
     margin-top: -20px;
@@ -91,13 +91,13 @@ h1{
     text-align: center;
 }
 
-.techs .ant-cards{
+.techs .ant-card{
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.techs .ant-cards img{
+.techs .ant-card img{
     width: 500px;
 }
 
@@ -125,11 +125,52 @@ h1{
     /* textAlign: "center"; */
 }
 
-.team .ant-card{
+.team .ant-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.team .ant-row .ant-card{
+    height: 240px;
+    width: 240px;
+    margin: 10px;
+}
+
+.team .ant-row .ant-card img{
+    width: 100px;
+}
+
+/* PARCEIROS */
+
+.parceiros .ant-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.parceiros .ant-card .ant-row{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
 }
 
+.parceiros .ant-card .ant-row .ant-card {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
 
+}
+
+.parceiros .ant-card .ant-row .ant-card img{
+    width: 20px;
+}
 
 
 /* FOOTER */
+
+.footer img{
+    width: 100%;
+}

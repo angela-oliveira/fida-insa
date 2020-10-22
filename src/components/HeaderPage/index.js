@@ -16,7 +16,7 @@ function HeaderPage() {
                 <img src={iconEmail}></img>
             </button>
 
-            <button key="2"> PT </button>
+            <button key="2"> PT </button> 
 
             <button key="1"> EN </button>
         </div>

@@ -80,15 +80,8 @@ function HomePage() {
 
                 <br></br>
 
-                <Card style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    textAlign: "center"
-                }}>
-
-                    <img style={{
-                        width: 500
-                    }} src={bgTechnology}></img>
+                <Card>
+                    <img src={bgTechnology}></img>
                 </Card>
             </div>
             <div className="cases"></div>
@@ -99,165 +92,80 @@ function HomePage() {
                     <p>Conheça quem está à frente desse projeto</p>
                 </Card>
                 <br></br>
-                <Row style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    textAlign: "center"
-                }}>
-
-                    <Card
-                        hoverable
-                        style={{ height: 240, width: 240, margin: 10 }}
-                    // cover={<img alt="example" src="/images/perfil_test.jpg" />}
-                    >
-                        <img style={{ width: 100 }} alt="example" src={perfilTest} />
+                <Row>
+                    <Card hoverable >
+                        <img alt="example" src={perfilTest} />
                         <Meta title="Nome" description="Função" />
                     </Card>
 
-                    <Card
-                        hoverable
-                        style={{ height: 240, width: 240, margin: 10 }}
-                    // cover={<img alt="example" src="/images/perfil_test.jpg" />}
-                    >
-                        <img style={{ width: 100 }} alt="example" src={perfilTest} />
-                        <Meta title="Nome" description="Função" />
-                    </Card>
-                    <Card
-                        hoverable
-                        style={{ height: 240, width: 240, margin: 10 }}
-                    // cover={<img alt="example" src="/images/perfil_test.jpg" />}
-                    >
-                        <img style={{ width: 100 }} alt="example" src={perfilTest} />
-                        <Meta title="Nome" description="Função" />
-                    </Card>
-                    <Card
-                        hoverable
-                        style={{ height: 240, width: 240, margin: 10 }}
-                    // cover={<img alt="example" src="/images/perfil_test.jpg" />}
-                    >
-                        <img style={{ width: 100 }} alt="example" src={perfilTest} />
-                        <Meta title="Nome" description="Função" />
-                    </Card>
+                    
                 </Row>
             </div>
             <div className="parceiros">
-                <Card style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    textAlign: "center"
-                }}>
+                <Card >
                     <h2>Realização</h2>
 
-                    <Row style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        textAlign: "center"
-                    }}>
+                    <Row>
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
                     </Row>
-                    {/* </Card>
-                <Card style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    textAlign: "center"
-                }}> */}
+                    
                     <h2>Parceiros</h2>
 
-                    <Row style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        textAlign: "center"
-                    }}>
+                    <Row >
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
                     </Row>
-                    {/* </Card>
-                <Card style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    textAlign: "center"
-                }}> */}
+                    
                     <h2>Patrocinador</h2>
 
-                    <Row style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        textAlign: "center"
-                    }}>
+                    <Row>
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card
-                            hoverable
-                            style={{ height: 50, width: 100, margin: 10 }}
-                        >
-                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
+                        <Card hoverable >
+                            <img alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
                     </Row>
                 </Card>
             </div>
             <div className="footer">
-                <img style={{ width: "100%" }} src={footer}></img>
+                <img src={footer}></img>
             </div>
         </div>
     );
