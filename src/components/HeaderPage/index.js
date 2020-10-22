@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import './index.css';
 import { PageHeader, Button } from 'antd';
 
-import logoFida from "../../utils/images/logo_fida.png"
-// import logoFida from "../../utils/images/logo_fida.png";
+import logoFida from "../../utils/images/logo_fida.png";
 import iconEmail from "../../utils/images/Icon ionic-md-mail.svg";
 
 function HeaderPage() {
