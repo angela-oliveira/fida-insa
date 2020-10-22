@@ -18,8 +18,8 @@ import HeaderPage from '../../components/HeaderPage';
 import blue from "../../utils/images/blue.png";
 import imgMain from "../../utils/images/main.png";
 import bgTechnology from "../../utils/images/bg_technology.svg";
-
 import perfilTest from "../../utils/images/perfil_test.jpg";
+import footer from "../../utils/images/Group 137.png";
 
 
 
@@ -28,7 +28,7 @@ import perfilTest from "../../utils/images/perfil_test.jpg";
 // const bgMain = {
 //     backgroundImage: `url(${Background})`
 // };
-const { Meta } = Card;
+const { Meta } = Card; 
 
 function HomePage() {
     return (
@@ -41,7 +41,7 @@ function HomePage() {
             <div>
 
                 {/* <img style={{width: 450, paddingLeft: 100, marginBottom: -50, marginTop: 50}} src="/images/blue.png"></img> */}
-                <Row className="main">
+                <Row>
 
                     <Col>
 
@@ -127,7 +127,7 @@ function HomePage() {
                         style={{ height: 240, width: 240, margin: 10 }}
                     // cover={<img alt="example" src="/images/perfil_test.jpg" />}
                     >
-                        <img style={{ width: 100 }} alt="example" src="../../utils/images/perfil_test.jpg" />
+                        <img style={{ width: 100 }} alt="example" src={perfilTest} />
                         <Meta title="Nome" description="Função" />
                     </Card>
                     <Card
@@ -135,7 +135,7 @@ function HomePage() {
                         style={{ height: 240, width: 240, margin: 10 }}
                     // cover={<img alt="example" src="/images/perfil_test.jpg" />}
                     >
-                        <img style={{ width: 100 }} alt="example" src="/images/perfil_test.jpg" />
+                        <img style={{ width: 100 }} alt="example" src={perfilTest} />
                         <Meta title="Nome" description="Função" />
                     </Card>
                 </Row>
@@ -158,7 +158,7 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
@@ -166,7 +166,7 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
@@ -174,7 +174,7 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
                     </Row>
@@ -196,7 +196,7 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
@@ -204,7 +204,7 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
@@ -212,7 +212,7 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
                     </Row>
@@ -234,7 +234,7 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
@@ -242,7 +242,7 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
 
@@ -250,14 +250,14 @@ function HomePage() {
                             hoverable
                             style={{ height: 50, width: 100, margin: 10 }}
                         >
-                            <img style={{ width: 20 }} alt="example" src="/images/perfil_test.jpg" />
+                            <img style={{ width: 20 }} alt="example" src={perfilTest} />
                             <Meta title="" description="" />
                         </Card>
                     </Row>
                 </Card>
             </div>
             <div className="footer">
-                <img style={{ width: "100%" }} src="/images/Group 137.png"></img>
+                <img style={{ width: "100%" }} src={footer}></img>
             </div>
         </div>
     );

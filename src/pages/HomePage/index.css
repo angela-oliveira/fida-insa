@@ -1,10 +1,10 @@
 
 
-.main Row{
+.ant-row{
     padding-left: 150px;
 }
 
-.main Col{
+.ant-row .ant-col{
     margin-top: 100px;
 }
 
@@ -15,13 +15,13 @@ h1{
     opacity: 1;
 }
 
-.main Col img{
+.ant-row .ant-col img{
     width: 450px;
     padding-left: -200px;
     margin-bottom: -50;
 }
 
-.main .banner-page h1 {
+.ant-row .banner-page h1 {
     font-Family: Raleway;
     font-Size: 80px;
     font-Weight: 700px;
@@ -31,7 +31,7 @@ h1{
     opacity: 1;
 }
 
-.main .banner-page Row h1{
+.ant-row .banner-page .ant-row h1{
     font-size: 80px;
     margin-bottom: -30px;
     font-weight: 700px;
@@ -39,13 +39,13 @@ h1{
     letter-spacing: 13.3px;
 }
 
-.main .banner-page p {
+.ant-row .banner-page p {
     color: var(--color-black-text);
     font-weight: 300px;
     font-size: 30px;
 }
 
-.main .banner-page Button{
+.ant-row .banner-page .ant-bnt{
     border: solid;
     border-radius: 0px 16px;
     color: var(--color-green-dark);
@@ -55,17 +55,17 @@ h1{
     border-color: var(--color-green-berder);
 }
 
-.main .bg-main{
+.ant-row .bg-main{
     position: "relative"; 
     /* background-image: url("../../utils/images/bg_main.png"); */
 }
 
-.main .bg-main img{
+.ant-row .bg-main img{
     width: 600px;
 }
 
 /* TECHS */
-.techs Card{
+.techs .ant-cards{
     display: "flex";
     /* padding-bottom: '0px',  */
     /* flex-direction: "column", */
@@ -73,13 +73,13 @@ h1{
     text-align: "center";
 }
 
-.techs Card div{
+.techs .ant-cards div{
     background-color: var(--color-yellow);
     width: 210px;
     height: 20px;
 }
 
-.techs Card h1{
+.techs .ant-cards h1{
     color: var(--color-green-dark);
     font-weight: 700px;
     margin-top: -20px;
@@ -91,13 +91,13 @@ h1{
     text-align: center;
 }
 
-.techs Card{
+.techs .ant-cards{
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.techs Card img{
+.techs .ant-cards img{
     width: 500px;
 }
 
@@ -124,3 +124,12 @@ h1{
     padding-left: 150px;
     /* textAlign: "center"; */
 }
+
+.team .ant-card{
+
+}
+
+
+
+
+/* FOOTER */
