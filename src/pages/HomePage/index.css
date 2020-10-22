@@ -1,0 +1,126 @@
+
+
+.main Row{
+    padding-left: 150px;
+}
+
+.main Col{
+    margin-top: 100px;
+}
+
+h1{
+    font: normal normal 800 100px/564px Raleway;
+    letter-spacing: 13.3px;
+    color: #141414;
+    opacity: 1;
+}
+
+.main Col img{
+    width: 450px;
+    padding-left: -200px;
+    margin-bottom: -50;
+}
+
+.main .banner-page h1 {
+    font-Family: Raleway;
+    font-Size: 80px;
+    font-Weight: 700px;
+    letter-Spacing: 13.3px;
+    margin-Bottom: -50px;
+    color: var(--color-black);
+    opacity: 1;
+}
+
+.main .banner-page Row h1{
+    font-size: 80px;
+    margin-bottom: -30px;
+    font-weight: 700px;
+    color: var(--color-green-light);
+    letter-spacing: 13.3px;
+}
+
+.main .banner-page p {
+    color: var(--color-black-text);
+    font-weight: 300px;
+    font-size: 30px;
+}
+
+.main .banner-page Button{
+    border: solid;
+    border-radius: 0px 16px;
+    color: var(--color-green-dark);
+    height: 72px;
+    width: 250px;
+    font-size: 17px;
+    border-color: var(--color-green-berder);
+}
+
+.main .bg-main{
+    position: "relative"; 
+    /* background-image: url("../../utils/images/bg_main.png"); */
+}
+
+.main .bg-main img{
+    width: 600px;
+}
+
+/* TECHS */
+.techs Card{
+    display: "flex";
+    /* padding-bottom: '0px',  */
+    /* flex-direction: "column", */
+    justify-content: "center";
+    text-align: "center";
+}
+
+.techs Card div{
+    background-color: var(--color-yellow);
+    width: 210px;
+    height: 20px;
+}
+
+.techs Card h1{
+    color: var(--color-green-dark);
+    font-weight: 700px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.techs p{
+    color: var(--color-black-text);
+    text-align: center;
+}
+
+.techs Card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.techs Card img{
+    width: 500px;
+}
+
+/* CASES */
+
+/* TEAM */
+
+.team div{
+    background-color: var(--color-yellow);
+    width: 210px;
+    height: 20px;
+}
+
+.team h1{
+    color: var(--color-green-dark);
+    font-weight: 700px;
+    margin-top: -20px;
+    padding-left: 150px;
+    margin-bottom: -10px;
+}
+
+.team p{
+    color: var(--color-black-text);
+    padding-left: 150px;
+    /* textAlign: "center"; */
+}

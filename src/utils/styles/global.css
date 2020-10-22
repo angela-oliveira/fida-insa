@@ -1,0 +1,25 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Raleway;
+  line-height: 1.6;
+  font-size: 18px;
+  width: 100vw;
+}
+
+:root{
+  --color-black:#141414;
+  --color-green-light:#329BA3;
+  --color-black-text:#393939;
+  --color-green-dark:#11523B;
+  --color-green-border:#329BA3;
+  --color-yellow:#FAF238;
+}
+
+h1 {
+font: normal 800 100px Raleway;
+letter-spacing: 13.3px;
+color: #141414;
+opacity: 1;
+} 
