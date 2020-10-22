@@ -20,6 +20,7 @@ import imgMain from "../../utils/images/main.png";
 import bgTechnology from "../../utils/images/bg_technology.svg";
 import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
+import Carrossel from '../../components/Carrossel';
 
 
 
@@ -105,23 +106,7 @@ function HomePage() {
                 <Card >
                     <h2>Realização</h2>
 
-                    <Row>
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-                    </Row>
+                    <Carrossel/>
                     
                     <h2>Parceiros</h2>
 
