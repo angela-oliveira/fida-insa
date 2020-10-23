@@ -110,43 +110,11 @@ function HomePage() {
                     
                     <h2>Parceiros</h2>
 
-                    <Row >
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-                    </Row>
+                    <Carrossel/>
                     
                     <h2>Patrocinador</h2>
 
-                    <Row>
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={perfilTest} />
-                            <Meta title="" description="" />
-                        </Card>
-                    </Row>
+                    <Carrossel/>
                 </Card>
             </div>
             <div className="footer">
