@@ -5,20 +5,16 @@ import perfilTest from '../../utils/images/perfil_test.jpg';
 
 
 
-function Carrossel() {
+function Carousel() {
 
-
-  function next(event) {
-    if(event.type == 'click'){
-      event.target.scrollBy(200, 0)
-    }
+  function back(){
+    let a
   }
-
-  function back(event){
-    console.log(event)
-    event.target.scrollBy(-200, 0)
+  function next(){
+    let b
+    
   }
-
+  
   return (
     <div id='items-wrapper'>
       <button id='back' onClick={back}> ◂ </button>
@@ -76,4 +72,4 @@ function Carrossel() {
   )
 }
 
-export default Carrossel;
+export default Carousel;

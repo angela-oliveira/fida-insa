@@ -12,6 +12,7 @@ import 'antd/dist/antd.css';
 import '../../utils/styles/utils.module.css'
 import './index.css'
 import HeaderPage from '../../components/HeaderPage';
+import Cases from '../../components/Cases';
 
 
 
@@ -20,7 +21,7 @@ import imgMain from "../../utils/images/main.png";
 import bgTechnology from "../../utils/images/bg_technology.svg";
 import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
-import Carrossel from '../../components/Carrossel';
+import Carousel from '../../components/carousel';
 
 
 
@@ -71,7 +72,7 @@ function HomePage() {
                     </div>
                 </Row>
             </div>
-            <div className="techs">
+            {/* <div className="techs">
                 <Card>
                     <div ></div>
                     <h1 >TECNOLOGIAS</h1>
@@ -84,8 +85,12 @@ function HomePage() {
                 <Card>
                     <img src={bgTechnology}></img>
                 </Card>
+            </div> */}
+            <div className="cases">
+
+                <Cases/>
+
             </div>
-            <div className="cases"></div>
             <div className="team">
                 <Card>
                     <div></div>
@@ -106,15 +111,15 @@ function HomePage() {
                 <Card >
                     <h2>Realização</h2>
 
-                    <Carrossel/>
+                    <Carousel/>
                     
                     <h2>Parceiros</h2>
 
-                    <Carrossel/>
+                    <Carousel/>
                     
                     <h2>Patrocinador</h2>
 
-                    <Carrossel/>
+                    <Carousel/>
                 </Card>
             </div>
             <div className="footer">

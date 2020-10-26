@@ -1,0 +1,56 @@
+.container-cases{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-cases .cases-body{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.carousel .case{
+    border: 1px solid rgba(121, 116, 116, 0.507);
+    
+    width: 700px;
+    height: 500px;
+    margin: 30px;
+    margin-right: 20px;
+}
+
+
+
+/* botoes */
+.levels div{
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+}
+
+.levels .point-level{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(40, 177, 13);
+    
+}
+
+.levels .point-level + .point-level{
+    margin-top: 12px;
+}
+
+
+
+.levels button{
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+
+}

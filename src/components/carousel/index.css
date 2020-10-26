@@ -15,7 +15,7 @@
     border-radius: 50%;
     background-color: var(--color-yellow);
     border: none;
-    /* outline: none; */
+    outline: none;
 }
 
 #items{
@@ -37,7 +37,7 @@
     border-radius: 5px;
     width: 150px;
     height: 150px;
-    box-shadow:0px 0px 4px 1px rgba(0, 0, 0, 0.274);
+    /* box-shadow:0px 0px 4px 1px rgba(0, 0, 0, 0.274); */
     flex: none;
     scroll-snap-align:center;
     pointer-events: none;
