@@ -91,35 +91,30 @@ function HomePage() {
                 <Cases/>
 
             </div>
-            <div className="team">
+            {/* <div className="team">
                 <Card>
                     <div></div>
                     <h1>EQUIPE</h1>
                     <p>Conheça quem está à frente desse projeto</p>
                 </Card>
                 <br></br>
-                <Row>
-                    <Card hoverable >
-                        <img alt="example" src={perfilTest} />
-                        <Meta title="Nome" description="Função" />
-                    </Card>
 
                     
-                </Row>
-            </div>
+                
+            </div> */}
             <div className="parceiros">
                 <Card >
                     <h2>Realização</h2>
 
-                    <Carousel/>
+                    <h2>...</h2>
                     
                     <h2>Parceiros</h2>
 
-                    <Carousel/>
+                    <h2>...</h2>
                     
                     <h2>Patrocinador</h2>
 
-                    <Carousel/>
+                    <h2>...</h2>
                 </Card>
             </div>
             <div className="footer">
