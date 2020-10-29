@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="840" viewBox="0 0 840 840"><defs><style>.a,.b,.d{fill:none;}.a{stroke:#8e8e8e;}.a,.b{stroke-linecap:round;stroke-width:2px;}.b{stroke:#11523b;stroke-dasharray:10 10;}.c{stroke:none;}</style></defs><g transform="translate(-529 -1681)"><g class="a" transform="translate(529 1681)"><circle class="c" cx="420" cy="420" r="420"/><circle class="d" cx="420" cy="420" r="419"/></g><g class="b" transform="translate(644 1796)"><circle class="c" cx="305" cy="305" r="305"/><circle class="d" cx="305" cy="305" r="304"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 840 863.5" style="enable-background:new 0 0 840 863.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#8E8E8E;stroke-width:2;stroke-linecap:round;}
+	.st2{fill:none;stroke:#11523B;stroke-width:2;stroke-linecap:round;stroke-dasharray:10,10;}
+	.st3{fill:#FAF238;}
+	.st4{fill:#329BA3;}
+	.st5{fill:#393939;}
+</style>
+<g transform="translate(-529 -1681)">
+	<g transform="translate(529 1681)">
+		<circle class="st0" cx="420" cy="420" r="420"/>
+		<circle class="st1" cx="420" cy="420" r="419"/>
+	</g>
+	<g transform="translate(644 1796)">
+		<circle class="st0" cx="305" cy="305" r="305"/>
+		<circle class="st2" cx="305" cy="305" r="304"/>
+	</g>
+</g>
+<circle class="st3" cx="97.2" cy="157.7" r="28.8"/>
+<circle class="st3" cx="747.2" cy="157.7" r="28.8"/>
+<circle class="st3" cx="410.7" cy="835.2" r="28.8"/>
+<circle class="st4" cx="686.4" cy="555.6" r="28.8"/>
+<circle class="st4" cx="184" cy="224.9" r="28.8"/>
+<circle class="st5" cx="649.1" cy="218.8" r="14.9"/>
+<circle class="st5" cx="785.9" cy="618" r="14.9"/>
+<circle class="st5" cx="148.5" cy="553.4" r="14.9"/>
+<circle class="st5" cx="47.3" cy="607.4" r="14.9"/>
+</svg>
