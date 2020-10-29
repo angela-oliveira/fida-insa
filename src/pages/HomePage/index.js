@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ReactDOM from 'react-dom'
 
 import {
     Row,
@@ -12,8 +13,8 @@ import 'antd/dist/antd.css';
 import '../../utils/styles/utils.module.css'
 import './index.css'
 import HeaderPage from '../../components/HeaderPage';
-import Cases from '../../components/Cases';
-
+import Case from '../../components/Case';
+import Carousel from 'react-elastic-carousel';
 
 
 import blue from "../../utils/images/blue.png";
@@ -21,7 +22,7 @@ import imgMain from "../../utils/images/main.png";
 import bgTechnology from "../../utils/images/bg_technology.svg";
 import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
-import Carousel from '../../components/carousel';
+// import Carousel from '../../components/carousel';
 
 
 
@@ -30,7 +31,19 @@ import Carousel from '../../components/carousel';
 // const bgMain = {
 //     backgroundImage: `url(${Background})`
 // };
-const { Meta } = Card; 
+
+let listCase = document.getElementsByClassName('.list-cases')
+
+function back(){
+    console.log("Back")
+    listCase.style.backgroundColor = "#000000";
+}
+
+function next(){
+
+    
+    console.log("Next")
+}
 
 function HomePage() {
     return (
@@ -87,10 +100,29 @@ function HomePage() {
                 </Card>
             </div> */}
             <div className="cases">
-
-                <Cases/>
-
+                <div className='container-cases'>
+                    <div className='cases-body'>
+                        <div className='carousel'>
+                            <div className='list-cases'>
+                                <Case />
+                                <Case />
+                                <Case />
+                            </div>
+                        </div>
+                        <div className='levels'>
+                            <button className='button' onClick={back}> ▴ </button>
+                            <div>
+                                <div className='point-level'></div>
+                                <div className='point-level'></div>
+                                <div className='point-level'></div>
+                            </div>
+                            <button className='button' onClick={next}> ▾ </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
             {/* <div className="team">
                 <Card>
                     <div></div>
@@ -107,11 +139,11 @@ function HomePage() {
                     <h2>Realização</h2>
 
                     <h2>...</h2>
-                    
+
                     <h2>Parceiros</h2>
 
                     <h2>...</h2>
-                    
+
                     <h2>Patrocinador</h2>
 
                     <h2>...</h2>

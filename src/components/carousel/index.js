@@ -12,7 +12,7 @@ function Carousel() {
   }
   function next(){
     let b
-    
+     
   }
   
   return (
