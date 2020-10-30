@@ -1,71 +1,74 @@
 
 
-.main Row{
+.main-banner-page{
     padding-left: 150px;
 }
 
-.main Col{
+.ant-row .ant-col{
     margin-top: 100px;
 }
+body{
+    font-family: 'Raleway', sans-serif;
 
+}
 h1{
-    font: normal normal 800 100px/564px Raleway;
+    font: normal normal 800 100px/564px;
     letter-spacing: 13.3px;
     color: #141414;
     opacity: 1;
 }
 
-.main Col img{
+.ant-row .ant-col img{
     width: 450px;
     padding-left: -200px;
     margin-bottom: -50;
 }
 
-.main .banner-page h1 {
-    font-Family: Raleway;
+.ant-row .banner-page .renova {
     font-Size: 80px;
-    font-Weight: 700px;
+    font-Weight: 800;
     letter-Spacing: 13.3px;
-    margin-Bottom: -50px;
+    margin-Bottom: -30px;
     color: var(--color-black);
     opacity: 1;
 }
 
-.main .banner-page Row h1{
+.ant-row .banner-page .fida {
     font-size: 80px;
-    margin-bottom: -30px;
-    font-weight: 700px;
+    margin-bottom: -10px;
+    font-weight: 800;
     color: var(--color-green-light);
     letter-spacing: 13.3px;
 }
 
-.main .banner-page p {
+.ant-row .banner-page p {
     color: var(--color-black-text);
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 30px;
 }
 
-.main .banner-page Button{
+.ant-row .banner-page button{
     border: solid;
     border-radius: 0px 16px;
     color: var(--color-green-dark);
     height: 72px;
     width: 250px;
-    font-size: 17px;
-    border-color: var(--color-green-berder);
+    /* font-size: 17px; */
+    font: normal normal bold 16px Raleway;
+    border-color: var(--color-green-border);
 }
 
-.main .bg-main{
+.ant-row .bg-main{
     position: "relative"; 
     /* background-image: url("../../utils/images/bg_main.png"); */
 }
 
-.main .bg-main img{
+.ant-row .bg-main img{
     width: 600px;
 }
 
 /* TECHS */
-.techs Card{
+.techs .ant-card{
     display: "flex";
     /* padding-bottom: '0px',  */
     /* flex-direction: "column", */
@@ -73,54 +76,118 @@ h1{
     text-align: "center";
 }
 
-.techs Card div{
+.techs .ant-card .div-yellow{
     background-color: var(--color-yellow);
-    width: 210px;
-    height: 20px;
+    width: 495px;
+    height: 34px;
 }
 
-.techs Card h1{
+.techs .ant-card h1{
     color: var(--color-green-dark);
-    font-weight: 700px;
-    margin-top: -20px;
+    /* font-weight: 700; */
+    font: normal normal 800 56px/136px Raleway;
+    letter-spacing: 7.45px;
+    margin-top: -65px;
     margin-bottom: -20px;
 }
 
 .techs p{
     color: var(--color-black-text);
     text-align: center;
+    font: normal normal 300 24px/136px Raleway;
+    margin-top: -55px;
 }
 
-.techs Card{
+.techs .ant-card{
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.techs Card img{
+.techs .ant-card img{
     width: 500px;
 }
-
 /* CASES */
 
 /* TEAM */
 
-.team div{
+/* .team div{
     background-color: var(--color-yellow);
     width: 210px;
     height: 20px;
-}
+} */
 
-.team h1{
+.team .ant-card h1{
     color: var(--color-green-dark);
-    font-weight: 700px;
-    margin-top: -20px;
-    padding-left: 150px;
-    margin-bottom: -10px;
+    font: normal normal 800 56px/136px Raleway;
+    /* font-weight: 700; */
+    margin-top: -70px;
+    padding-left: 200px;
+    margin-bottom: -75px;
 }
 
-.team p{
+.team .ant-card  p{
     color: var(--color-black-text);
-    padding-left: 150px;
+    font: normal normal 300 24px/136px Raleway;
+    letter-spacing: 3.19px;
+    padding-left: 200px;
     /* textAlign: "center"; */
+}
+.team .ant-card .div-yellow{
+    background-color: var(--color-yellow);
+    width: 495px;
+    height: 34px;
+}
+.team .ant-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.team .ant-row .ant-card{
+    height: 240px;
+    width: 240px;
+    margin: 10px;
+}
+
+.team .ant-row .ant-card img{
+    width: 100px;
+}
+
+/* PARCEIROS */
+
+.parceiros .ant-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.parceiros .ant-card .ant-row{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.parceiros .ant-card .ant-row .ant-card {
+    /* height: 100px;
+    width: 150px; */
+    margin: 10px;
+
+}
+
+.parceiros .ant-card .ant-row .ant-card img{
+    height: 3rem;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+}
+.footer img {
+    width: 100%;
 }
