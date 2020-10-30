@@ -12,6 +12,8 @@ import '../../utils/styles/utils.module.css'
 import './index.css'
 import HeaderPage from '../../components/HeaderPage';
 import MenuTechnologies from '../../components/MenuTechnolgies'
+import Case from '../../components/Case'
+import Carousel from '../../components/Carousel'
 
 
 import blue from "../../utils/images/blue.png";
@@ -32,9 +34,20 @@ import fidalogo from "../../utils/images/P_g_web.jpg"
 // const bgMain = {
 //     backgroundImage: `url(${Background})`
 // };
-const { Meta } = Card; 
+const { Meta } = Card;
 
 function HomePage() {
+
+    let listCase = document.getElementsByClassName('.list-cases')
+
+    function back() {
+        console.log("Back")
+    }
+
+    function next() {
+        console.log("Next")
+    }
+
     return (
         <div>
             {/* COMPONENTE DE CABEÇALHO */}
@@ -86,37 +99,44 @@ function HomePage() {
 
                 <br></br>
                 <MenuTechnologies></MenuTechnologies>
-               
+
             </div>
             <br></br>
-            <div className="cases"></div>
+            <div className="cases">
+                    <div className='container-cases'>
+                        <div className='cases-body'>
+                            <div className='carousel'>
+                                <div className='list-cases'>
+                                    <Case />
+                                    <Case />
+                                    <Case />
+                                </div>
+                            </div>
+                            <div className='levels'>
+                                <button className='button' onClick={back}> ▴ </button>
+                                <div>
+                                    <div className='point-level'></div>
+                                    <div className='point-level'></div>
+                                    <div className='point-level'></div>
+                                </div>
+                                <button className='button' onClick={next}> ▾ </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div className="team">
                 <Card>
                     <div className="div-yellow"></div>
                     <h1>EQUIPE</h1>
                     <p>Conheça quem está à frente desse projeto</p>
                 </Card>
-                <br></br>
-                <Row>
-                    <Card hoverable >
-                        <img alt="example" src={perfilTest} />
-                        <Meta title="Nome" description="Função" />
-                    </Card>
+                
+                <Carousel/>
 
-                    <Card hoverable >
-                        <img alt="example" src={perfilTest} />
-                        <Meta title="Nome" description="Função" />
-                    </Card>
-                    <Card hoverable >
-                        <img alt="example" src={perfilTest} />
-                        <Meta title="Nome" description="Função" />
-                    </Card>
-                    <Card hoverable >
-                        <img alt="example" src={perfilTest} />
-                        <Meta title="Nome" description="Função" />
-                    </Card>
-                    
-                </Row>
+                <br></br>
+                
+                
+
             </div>
             <div className="parceiros">
                 <Card >
@@ -134,7 +154,7 @@ function HomePage() {
                             <Meta title="" description="" />
                         </Card>
                     </Row>
-                    
+
                     <h2>Parceiros</h2>
 
                     <Row >
@@ -159,7 +179,7 @@ function HomePage() {
                             <Meta title="" description="" />
                         </Card>
                     </Row>
-                    
+
                     <h2>Patrocinador</h2>
 
                     <Row>
