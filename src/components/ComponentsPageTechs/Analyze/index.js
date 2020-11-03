@@ -3,8 +3,8 @@ import './index.css';
 
 function Analyze() {
     return(
-        <div> </div>
+        <div className='Analyze'> Analise</div>
         )
 }
-
+ 
 export default Analyze;

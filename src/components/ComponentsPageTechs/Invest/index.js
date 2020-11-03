@@ -3,7 +3,7 @@ import './index.css';
 
 function Invest() {
     return (
-        <div className='Invest'> Descrição</div>
+        <div className='Invest'> Investimento</div>
     )
 }
 

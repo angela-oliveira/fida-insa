@@ -3,7 +3,7 @@ import './index.css';
 
 function description() {
     return (
-        <div className='description'> Descrição</div>
+        <div className='Description'> Descrição</div>
     )
 }
 

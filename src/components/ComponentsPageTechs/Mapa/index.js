@@ -3,7 +3,7 @@ import './index.css';
 
 function Mapa() {
     return (
-        <div className='Mapa'> Descrição</div>
+        <div className='Mapa'> Mapa</div>
     )
 }
 
