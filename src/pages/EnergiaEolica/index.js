@@ -1,31 +1,30 @@
-// import HeaderTechs from '../../components/HeaderTechs'
-
-// function Eolica() {
-//     return (
-//         <div>
-//             <HeaderTechs />
-//         </div>
-//     );
-// }
-
-// export default Eolica
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Estado from '../../components/Estado'
+import './index.css'
+import HeaderTechs from '../../components/HeaderTechs';
+import Description from '../../components/ComponentsPageTechs/Description';
+import Mapa from '../../components/ComponentsPageTechs/Mapa';
+import Analyze from '../../components/ComponentsPageTechs/Analyze';
+import Invest from '../../components/ComponentsPageTechs/Invest';
+import Experience from '../../components/ComponentsPageTechs/Experience';
+import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
-function EnergiaEolica() {
+function Eolica() {
     return (
+        <div id='body'>
+            <HeaderTechs></HeaderTechs>
+            <Description />
+            <Mapa />
+            <Analyze />
+            <Invest />
+            <Experience />
+            <Curiosities />
 
-        <div>
-
-            <Estado/>
-
-            {/* <h1>Energia Eolica</h1> */}
+            {/* <Parceiros/> */}
+            {/* <Footer/> */}
         </div>
-
     )
 }
 
-export default EnergiaEolica;
+export default Eolica;
