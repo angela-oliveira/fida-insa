@@ -1,7 +1,78 @@
+
+/* CASES */
+
+.container-cases{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.container-cases .cases-body{
+    display: flex;
+    align-items: center;
+}
+
+.container-cases .cases-body .carousel{
+    overflow: hidden;
+    height: 550px;
+    position: relative;
+}
+
+
+
+.carousel .list-cases{
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+
+/* botoes */
+
+.levels{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.levels div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    
+}
+
+.levels .point-level{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(104, 124, 100);
+    
+}
+
+.levels .point-level + .point-level{
+    margin-top: 0px;
+}
+
+.levels button{
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+    color: rgb(95, 95, 95);
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+
+}
+
 .carousel .case{
     position: relative;
     /* border: 1px solid rgba(121, 116, 116, 0.507); */
-    width: 720px;
+    width: 850px;
     height: auto;
     margin: 30px;
     margin-right: 20px;
@@ -12,7 +83,7 @@
     /* background: url('../../utils/images/solar_test1.jpg');
     background: no-repeat; */
     position: relative;
-    height: 480px;
+    height: 520px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 30%;
@@ -36,7 +107,7 @@
     position: relative;
     /* border: 1px solid #000; */
     grid-area: title;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     padding-left: 1rem;
 }
 
@@ -52,8 +123,15 @@
 
 .carousel .case .case-content .title h2{
     /* font-family: 'Raleway'; */
-    font-weight: 900;
-    font-size: 1.6rem;
+    color: var(--color-green-dark);
+    
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.case-content .title h2 + h2{
+    color:var(--color-green-light);
+    line-height: 45px;
 }
 
 .carousel .case .case-content .img {
@@ -69,7 +147,7 @@
     position: absolute;
     content: '';
     top: 0%;
-    height: 18.5rem;
+    height: 20.5rem;
     right: 0%;
     border-left: 12rem solid var(--color-green-light);
     z-index: -1;
@@ -87,7 +165,12 @@
     font-size: 12px;
     display: flex;
     margin-left:1rem ;
-    padding: 1rem;
+    padding: 2rem 1.5rem 1rem ;
+    /* padding-top: 1.5rem; */
+}
+
+.text p + p {
+    margin-left: 10px;
 }
 
 

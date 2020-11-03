@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import {
     Row,
@@ -102,40 +101,21 @@ function HomePage() {
 
             </div>
             <br></br>
-            <div className="cases">
-                    <div className='container-cases'>
-                        <div className='cases-body'>
-                            <div className='carousel'>
-                                <div className='list-cases'>
-                                    <Case />
-                                    <Case />
-                                    <Case />
-                                </div>
-                            </div>
-                            <div className='levels'>
-                                <button className='button' onClick={back}> ▴ </button>
-                                <div>
-                                    <div className='point-level'></div>
-                                    <div className='point-level'></div>
-                                    <div className='point-level'></div>
-                                </div>
-                                <button className='button' onClick={next}> ▾ </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            <Case/>
+
             <div className="team">
                 <Card>
                     <div className="div-yellow"></div>
                     <h1>EQUIPE</h1>
                     <p>Conheça quem está à frente desse projeto</p>
                 </Card>
-                
-                <Carousel/>
+
+                <Carousel />
 
                 <br></br>
-                
-                
+
+
 
             </div>
             <div className="parceiros">

@@ -10,10 +10,7 @@ import bgPath from "../../utils/images/Path 8.svg"
 function HeaderPage() {
 
     return (
-        <div styles={{ backgroundImage: `url(${bgPath})`}} className="site-page-header-ghost-wrapper">
-            {/* <div className="path"></div> */}
-            
-            {/* <img src={bgPath}></img>  */}
+        <div className="site-page-header-ghost-wrapper">
             <PageHeader
                     ghost={false}
                     title={<Link to="/" className="fida"><img src={logoFida}></img></Link>}

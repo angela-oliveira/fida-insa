@@ -13,8 +13,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function EnergiaEolica(){
-    return(<h1>Energia Eolica</h1>)
+import Estado from '../../components/Estado'
+
+function EnergiaEolica() {
+    return (
+
+        <div>
+
+            <Estado/>
+
+            {/* <h1>Energia Eolica</h1> */}
+        </div>
+
+    )
 }
 
 export default EnergiaEolica;

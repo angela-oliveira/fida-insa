@@ -5,6 +5,7 @@ import {
 } from 'antd';
 import 'antd/dist/antd.css';
 import '../../utils/styles/utils.module.css'
+import { Link } from 'react-router-dom'
 import './index.css'
 
 import bgTechnology from "../../utils/images/bg_technology.svg";
@@ -19,13 +20,13 @@ import path from "../../utils/images/Path 34.svg"
 var angleStart = -360;
 
 // jquery rotate animation
-function rotate(li,d) {
-  $({d:angleStart}).animate({d:d}, {
-    step: function(now) {
-    $(li)
-      .css({ transform: 'rotate('+now+'deg)' })
-      .find('label')
-      .css({ transform: 'rotate('+(-now)+'deg)' });
+function rotate(li, d) {
+  $({ d: angleStart }).animate({ d: d }, {
+    step: function (now) {
+      $(li)
+        .css({ transform: 'rotate(' + now + 'deg)' })
+        .find('label')
+        .css({ transform: 'rotate(' + (-now) + 'deg)' });
     }, duration: 0
   });
 }
@@ -35,15 +36,15 @@ function toggleOptions(s) {
   $(s).addClass('open');
   var li = $(s).find('li');
   // var deg = 360/li.length
-  var deg = $(s).hasClass('half') ? 180/(li.length-1) : 360/li.length;
-  for(var i=0; i<li.length; i++) {
-    var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
-    $(s).hasClass('open') ? rotate(li[i],d) : rotate(li[i],angleStart);
+  var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 360 / li.length;
+  for (var i = 0; i < li.length; i++) {
+    var d = $(s).hasClass('half') ? (i * deg) - 90 : i * deg;
+    $(s).hasClass('open') ? rotate(li[i], d) : rotate(li[i], angleStart);
   }
 }
 
-window.addEventListener('scroll', function(){
-  setTimeout(function() { toggleOptions('.selector'); }, 300);
+window.addEventListener('scroll', function () {
+  setTimeout(function () { toggleOptions('.selector'); }, 300);
 })
 
 // const c1 = document.querySelectorAll('.label-c1')
@@ -81,29 +82,39 @@ function MenuTechnologies() {
       <div className='selector'>
         <ul>
           <li className="c1">
-            <input id='c1' type='checkbox'></input>
-            <label className="label-c1" for='c1'><img style={{ width: "35px"}} src={iconEolica}></img></label>
+            <Link to='/energia-eolica'>
+              <input id='c1' type='checkbox'></input>
+              <label className="label-c1" for='c1'><img style={{ width: "35px" }} src={iconEolica}></img></label>
+            </Link>
           </li>
           <li className="c2">
+          <Link to='/bio-agua'>
             <input id='c2' type='checkbox'></input>
-            <label for='c2'><img style={{ width: "45px"}} src={iconBioAgua}></img></label>
+            <label for='c2'><img style={{ width: "45px" }} src={iconBioAgua}></img></label>
+          </Link>
           </li>
           <li className="c3">
+          <Link to='/eco-fogao'>
             <input id='c3' type='checkbox'></input>
-            <label for='c3'><img style={{ width: "40px"}} src={iconEcoFogao}></img></label>
+            <label for='c3'><img style={{ width: "40px" }} src={iconEcoFogao}></img></label>
+          </Link>
           </li>
           <li className="c4">
+            <Link to='/bio-digestor'>
             <input id='c4' type='checkbox'></input>
-            <label for='c4'><img style={{ width: "50px"}} src={iconBioDigestor}></img></label>
+            <label for='c4'><img style={{ width: "50px" }} src={iconBioDigestor}></img></label>
+            </Link>
           </li>
           <li className="c5">
+            <Link to='/energia-solar'>
             <input id='c5' type='checkbox'></input>
-            <label for='c5'><img style={{ width: "40px"}} src={iconSolar}></img></label>
+            <label for='c5'><img style={{ width: "40px" }} src={iconSolar}></img></label>
+            </Link>
           </li>
-        
-        <button className="button">ENERGIA<br></br> EÓLICA
+
+          <button className="button">ENERGIA<br></br> EÓLICA
         <div></div>
-        </button>
+          </button>
         </ul>
       </div>
     </Card>
