@@ -3,8 +3,15 @@ import './index.css';
 
 function Mapa() {
     return (
-        <div className='mapa'> Mapa</div>
+        <div className='mapa-container'>
+            <div className='casca-mapa'>
+                <div className='info'>
+                
+                </div>
+                <div className='mapa'> Mapa em breve</div>
+            </div>
+        </div>
     )
 }
 
-export default Mapa;
+export default Mapa; 

@@ -5,7 +5,8 @@ import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
 import Description from '../../components/ComponentsPageTechs/Description';
 import Mapa from '../../components/ComponentsPageTechs/Mapa';
-import Analyze from '../../components/ComponentsPageTechs/Analyze';
+import AnalyzeCB from '../../components/ComponentsPageTechs/AnalyzeCB';
+import AnalyzeCO from '../../components/ComponentsPageTechs/AnalyzeCO';
 import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
@@ -16,7 +17,8 @@ function Solar() {
             <HeaderTechs></HeaderTechs>
             <Description />
             <Mapa />
-            <Analyze />
+            <AnalyzeCB />
+            <AnalyzeCO/>
             <Invest />
             <Experience />
             <Curiosities />

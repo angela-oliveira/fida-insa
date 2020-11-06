@@ -1,15 +1,16 @@
 .site-page-header-ghost-wrapper {
-    
+    grid-column: 1/13;
     padding: 100px;
-    padding-left: 150px;
+    padding-left: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
  
 }
-/* img {
-    width: 500px;
-    margin: -50px;
-} */
+
+.fida img {
+    width: 200px;
+    /* margin: -50px; */
+}
 
 .path {
     top: -722.1895751953125px;
