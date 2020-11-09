@@ -22,7 +22,7 @@ import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
 import paqtcpblogo from "../../utils/images/paqtcpblogo.png"
 import insalogo from "../../utils/images/insalogo.png"
-import ifpblogo from "../../utils/images/ifpblogo.png"
+import ifpblogo from "../../utils/images/logo_ifpb.png"
 import ufcglogo from "../../utils/images/ufcglogo.jpg"
 import procaselogo from "../../utils/images/procaselogo.png"
 import fidalogo from "../../utils/images/P_g_web.jpg"
