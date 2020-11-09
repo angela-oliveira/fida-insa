@@ -12,13 +12,37 @@ body {
 
 :root{
   --color-black:#141414;
-  --color-green-dark:#11523B;
-  --color-green-light:#3cb9c2;
-  --color-green-medium:#0b99a3;
-  --color-black-text:#393939;
   --color-green-border:#329BA3;
-
   --color-yellow:#FAF238;
+  --color-black-text:#393939;
+
+  /* EOLICA GREEN */
+  --color-green-light:#30d1c5;
+  --color-green-medium:#329ba3;
+  --color-green-dark:#11523b;
+
+  /* BIO-AGUA BLUE */
+  --color-blue-light: #1ac3e2;
+  --color-blue-medium:#1593aa;
+  --color-blue-dark:#0d5f6e;
+
+  /* ECO-FOGÃO BROWN */
+  --color-brown-light:#aea58a;
+  --color-brown-medium:#89773c;
+  --color-brown-dark:#5f4e18;
+
+  /* BIO-DIGESTOR ORANGE*/
+  --color-orange-light:#e5ae89;
+  --color-orange-medium:#ff791e;
+  --color-orange-dark:#cc6016;
+
+  /* SOLAR YELLOW */
+
+  --color-yellow-light:#faf238;
+  --color-yellow-medium:#e3ca2e;
+  --color-yellow-dark:#e2af28;
+
+
 }
 
 h1 {
