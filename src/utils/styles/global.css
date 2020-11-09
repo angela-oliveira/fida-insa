@@ -12,10 +12,12 @@ body {
 
 :root{
   --color-black:#141414;
-  --color-green-light:#329BA3;
-  --color-black-text:#393939;
   --color-green-dark:#11523B;
+  --color-green-light:#3cb9c2;
+  --color-green-medium:#0b99a3;
+  --color-black-text:#393939;
   --color-green-border:#329BA3;
+
   --color-yellow:#FAF238;
 }
 
