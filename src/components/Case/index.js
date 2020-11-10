@@ -36,7 +36,7 @@ class Case extends React.Component {
                                 <div className='case'>
                                     <div className='case-content'>
                                         <div className='title' style={{ background: solartest }}>
-                                            <h2>CASES</h2>
+                                            <h2 className='top' >CASES</h2> 
                                             <h2>
                                                 Energia Solar na comunidade Uruçu <br></br>em
                                                 São joão do Cariri

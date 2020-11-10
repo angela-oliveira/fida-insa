@@ -12,7 +12,7 @@ import './index.css'
 import HeaderPage from '../../components/HeaderPage';
 import MenuTechnologies from '../../components/MenuTechnolgies'
 import Case from '../../components/Case'
-import Carousel from '../../components/Carousel'
+import Equipe from '../../components/Equipe'
 
 
 import blue from "../../utils/images/blue.png";
@@ -111,7 +111,7 @@ function HomePage() {
                     <p>Conheça quem está à frente desse projeto</p>
                 </Card>
 
-                <Carousel />
+                <Equipe />
 
                 <br></br>
 

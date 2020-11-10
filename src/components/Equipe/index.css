@@ -16,7 +16,7 @@
     outline: none;
 }
 
-#items{
+.items{
     width: 600px;
     display: flex;
     overflow-x: auto  ;
@@ -60,7 +60,14 @@
     justify-content: center;
 }
 
-.item .space div{
+.item .space .name{
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.item .space .func{
     display: flex;
     justify-content: center;
+    font-weight: normal;
 }
