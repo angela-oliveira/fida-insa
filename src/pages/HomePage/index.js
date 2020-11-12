@@ -13,6 +13,7 @@ import HeaderPage from '../../components/HeaderPage';
 import MenuTechnologies from '../../components/MenuTechnolgies'
 import Case from '../../components/Case'
 import Carousel from '../../components/Carousel'
+import Parceiros from '../../components/Parceiros'
 
 
 import blue from "../../utils/images/blue.png";
@@ -20,12 +21,12 @@ import imgMain from "../../utils/images/main.png";
 import bgTechnology from "../../utils/images/bg_technology.svg";
 import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
-import paqtcpblogo from "../../utils/images/paqtcpblogo.png"
-import insalogo from "../../utils/images/insalogo.png"
-import ifpblogo from "../../utils/images/logo_ifpb.png"
-import ufcglogo from "../../utils/images/ufcglogo.jpg"
-import procaselogo from "../../utils/images/procaselogo.png"
-import fidalogo from "../../utils/images/P_g_web.jpg"
+// import paqtcpblogo from "../../utils/images/paqtcpblogo.png"
+// import insalogo from "../../utils/images/insalogo.png"
+// import ifpblogo from "../../utils/images/logo_ifpb.png"
+// import ufcglogo from "../../utils/images/ufcglogo.jpg"
+// import procaselogo from "../../utils/images/procaselogo.png"
+// import fidalogo from "../../utils/images/P_g_web.jpg"
 
 
 // import background from '../public/images/bg_main.png';
@@ -119,7 +120,8 @@ function HomePage() {
 
             </div>
             <div className="parceiros">
-                <Card >
+                <Parceiros />
+                {/* <Card >
                     <h2>Realização</h2>
 
                     <Row>
@@ -170,7 +172,7 @@ function HomePage() {
                         </Card>
 
                     </Row>
-                </Card>
+                </Card> */}
             </div>
             <div className="footer">
                 <img src={footer}></img>

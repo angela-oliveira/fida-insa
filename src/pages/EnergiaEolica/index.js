@@ -10,6 +10,8 @@ import AnalyzeCO from '../../components/ComponentsPageTechs/AnalyzeCO';
 import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
+import footer from "../../utils/images/Group 137.png";
+import Parceiros from "../../components/Parceiros"
 
 function Eolica() {
     return (
@@ -22,9 +24,11 @@ function Eolica() {
             <Invest />
             <Experience />
             <Curiosities />
-
-            {/* <Parceiros/> */}
+            {/* <Parceiros/>  */}
             {/* <Footer/> */}
+            {/* <div className="footer">
+                <img src={footer}></img>
+            </div> */}
         </div>
     )
 }
