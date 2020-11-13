@@ -28,8 +28,8 @@
 }
 
 .equipe .slider-control-centerleft{
-    grid-row: 2/3;
     left: 35% !important;
+    grid-row: 2/3;
     bottom: 0%;
     
 }

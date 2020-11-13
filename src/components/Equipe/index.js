@@ -24,7 +24,7 @@ class Equipe extends React.Component {
                             display:'flex',
                             justifyContent:'center',
                             alignItems:'center',
-                            
+
                             background: '#FAF238',
                             color:'#575757',
                             fontSize:'30px',

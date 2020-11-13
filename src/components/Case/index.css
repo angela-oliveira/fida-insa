@@ -1,14 +1,18 @@
 
 /* CASES */
 
-.container-cases{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+ .container-cases{
+    padding-right: 16%;
+    padding-left: 16%;
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 50px; */
     
 }
+
+/*
 
 .container-cases .cases-body{
     display: flex;
@@ -27,12 +31,12 @@
     position: relative;
     top: 0%;
     left: 0%;
-}
+}*/
 
 
 /* botoes */
 
-.levels{
+/*.levels{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -67,19 +71,50 @@
     border: none;
     outline: none;
 
+} */
+
+.container-cases .slider{
+    display: grid !important;
+    grid-template-columns: 1fr 5%;
+    grid-template-rows: 1fr;
 }
 
-.carousel .case{
-    position: relative;
+
+.container-cases .slider-control-centerleft{
+
+    grid-column: 2/3;
+    bottom:-15%;
+}
+
+.container-cases .slider-control-centerright{
+
+    grid-column: 2/3;
+    bottom:69%;
+}
+
+.container-cases .slider-control-bottomcenter{
+    grid-column: 2/3;
+    
+}
+
+.container-cases .slider-control-bottomcenter{
+    transform: rotate(90deg)!important;
+    bottom: 308px !important;
+    left: -32px !important;
+}
+
+ .case{
+    position: relative;  
     /* border: 1px solid rgba(121, 116, 116, 0.507); */
     width: 850px;
-    height: auto;
-    margin: 30px;
-    margin-right: 20px;
+    /* height: auto; */
+    /* margin: 30px;
+    margin-right: 20px; */
     overflow: hidden;
 }
 
-.carousel .case .case-content{
+
+ .case .case-content{
     /* background: url('../../utils/images/solar_test1.jpg');
     background: no-repeat; */
     position: relative;
@@ -103,7 +138,7 @@
     z-index: -2;
     }
 
-.carousel .case .case-content .title{
+ .case .case-content .title{
     position: relative;
     /* border: 1px solid #000; */
     grid-area: title;
@@ -111,7 +146,7 @@
     padding-left: 1rem;
 }
 
-.carousel .case .case-content .title::before{
+ .case .case-content .title::before{
     position: absolute;
     content: '';
     top: 0%;
@@ -121,14 +156,14 @@
     z-index: -1;
 }
 
-.carousel .case .case-content .title h2{
+ .case .case-content .title h2{
     /* font-family: 'Raleway'; */
     color: var(--color-green-dark);
     font-weight: 700;
     font-size: 1.9rem;
 }
 
-.carousel .case .case-content .title .top{
+ .case .case-content .title .top{
     color: var(--color-green-medium);
 }
 
@@ -136,7 +171,7 @@
     line-height: 45px;
 }
 
-.carousel .case .case-content .img {
+ .case .case-content .img {
     position: relative;
     /* border: 1px solid #000; */
     display: flex;
@@ -161,7 +196,7 @@
     
 } 
 
-.carousel .case .case-content .text{
+ .case .case-content .text{
     /* border: 1px solid #000; */
     grid-area: text;
     font-size: 12px;
