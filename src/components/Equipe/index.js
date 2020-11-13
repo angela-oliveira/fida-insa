@@ -1,114 +1,114 @@
 // REACT
-import React from 'react';
+import React, { Component } from 'react';
 import './index.css';
 import perfilTest from '../../utils/images/perfil_test.jpg';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel, { NextButton } from 'nuka-carousel';
+// import '@brainhubeu/react-carousel/lib/style.css';
 
 
 
-function Equipe() {
 
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5,
-            slidesToSlide: 4
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3,
-            slidesToSlide: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2,
-            slidesToSlide: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-            slidesToSlide: 1
-        }
-    };
+class Equipe extends React.Component {
 
-    return (
-        <div id='items-wrapper'>
-            <button id='back' onClick={''}> ◂ </button>
+    render() {
 
-            <Carousel
-                // className='items' 
-                swipeable={false}
-                draggable={false}
-                showDots={true}
-                responsive={responsive}
-                ssr={false}
-                keyBoardControl={true}
-                customTransition="all .5"
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-            >
-
-                <div className="item">
-                    <div className="space">
-                        <img alt='' src={perfilTest}></img>
-                        <div className="name">nome</div>
-                        <div className="func">coordenador</div>
+        return (
+            <div className='equipe'>
+                <Carousel
+                    slidesToShow={4}
+                    cellSpacing={63}
+                    defaultControlsConfig={{
+                        nextButtonText: '>',
+                        prevButtonText: '<',
+                        prevButtonStyle: {
+                            display:'flex',
+                            justifyContent:'center',
+                            alignItems:'center',
+                            
+                            background: '#FAF238',
+                            color:'#575757',
+                            fontSize:'30px',
+                                                        
+                        },
+                        nextButtonStyle: {
+                            display:'flex',
+                            justifyContent:'center',
+                            alignItems:'center',
+                            background: '#FAF238',
+                            color:'#575757',
+                            fontSize:'30px',
+                            
+                        },
+                        pagingDotsStyle: {
+                            fill: '#11523b',
+                            width: '30px',
+                        }
+                    }}
+                    autoGenerateStyleTag={true}
+                >
+                    <div className="item">
+                        <div className='img'>
+                            <img src={perfilTest} alt=''></img>
+                        </div>
+                        <div className='label'>
+                            <div className='name'>Nome</div>
+                            <div className='function'>função</div>
+                        </div>
                     </div>
-                </div>
-
-                <div className="item">
-                    <div className="space">
-                        <img alt='' src={perfilTest}></img>
-                        <div className="name">nome</div>
-                        <div className="func">coordenador</div>
+                    <div className="item">
+                    <div className='img'>
+                            <img src={perfilTest} alt=''></img>
+                        </div>
+                        <div className='label'>
+                            <div className='name'>Nome</div>
+                            <div className='function'>função</div>
+                        </div>
                     </div>
-                </div>
-
-                <div className="item">
-                    <div className="space">
-                        <img alt='' src={perfilTest}></img>
-                        <div className="name">nome</div>
-                        <div className="func">coordenador</div>
+                    <div className="item">
+                    <div className='img'>
+                            <img src={perfilTest} alt=''></img>
+                        </div>
+                        <div className='label'>
+                            <div className='name'>Nome</div>
+                            <div className='function'>função</div>
+                        </div>
                     </div>
-                </div>
-
-                <div className="item">
-                    <div className="space">
-                        <img alt='' src={perfilTest}></img>
-                        <div className="name">nome</div>
-                        <div className="func">coordenador</div>
+                    <div className="item">
+                    <div className='img'>
+                            <img src={perfilTest} alt=''></img>
+                        </div>
+                        <div className='label'>
+                            <div className='name'>Nome</div>
+                            <div className='function'>função</div>
+                        </div>
                     </div>
-                </div>
-
-                <div className="item">
-                    <div className="space">
-                        <img alt='' src={perfilTest}></img>
-                        <div className="name">nome</div>
-                        <div className="func">coordenador</div>
+                    <div className="item">
+                    <div className='img'>
+                            <img src={perfilTest} alt=''></img>
+                        </div>
+                        <div className='label'>
+                            <div className='name'>Nome</div>
+                            <div className='function'>função</div>
+                        </div>
                     </div>
-                </div>
-
-                <div className="item">
-                    <div className="space">
-                        <img alt='' src={perfilTest}></img>
-                        <div className="name">nome</div>
-                        <div className="func">coordenador</div>
+                    <div className="item">
+                    <div className='img'>
+                            <img src={perfilTest} alt=''></img>
+                        </div>
+                        <div className='label'>
+                            <div className='name'>Nome</div>
+                            <div className='function'>função</div>
+                        </div>
                     </div>
-                </div>
+
+                </Carousel>
+            </div>
+        );
+    }
 
 
-            </Carousel>
-            <button id='next' onClick={''}> ▸ </button>
 
-
-        </div>
-
-
-    )
+    // <button id='next' onClick={''}> ▸ </button>
 }
 
 export default Equipe;
