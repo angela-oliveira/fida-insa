@@ -22,9 +22,6 @@ function Solar() {
             <Invest />
             <Experience />
             <Curiosities />
-
-            {/* <Parceiros/> */}
-            {/* <Footer/> */}
         </div>
     )
 }

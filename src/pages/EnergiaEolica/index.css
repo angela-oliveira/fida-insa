@@ -10,3 +10,10 @@ boby,html{
  grid-template-columns: repeat(12,1fr);
 
 }
+
+.footer {
+    width: 100%;
+}
+.footer img {
+    width: 100%;
+}

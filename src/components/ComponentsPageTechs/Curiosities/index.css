@@ -1,5 +1,25 @@
 .Curiosities{
-    border: 1px solid #000;
-    grid-column: 1/13;
+    margin: 2rem 0rem 2rem 0rem;
+    grid-column: 3/11;
     height: 500px;
+    border: none;
+}
+.casca-curiosities{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.curiosities-label{
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--color-green-dark);
+    line-height: 1.5rem;
+    margin: 3rem 0 2rem 0;
+}
+.subtitle{
+    text-align: center;
 }
