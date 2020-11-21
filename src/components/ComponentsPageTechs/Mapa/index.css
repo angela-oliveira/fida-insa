@@ -9,35 +9,74 @@
 
 .casca-map{
     /* grid-row: 1/2; */
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     grid-column: 3/11;
     display: flex;
 
 }
 
 .casca-map .info{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 100%;
     margin-top: 4rem;
 }
 
 .info .title-map{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     color: #ffffff;
     font-weight: 600;
     font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
 
 .info .info-text{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    margin-bottom: 1rem;
+    
+}
+
+.info-text .txt-title{
+    color: #ffffff;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.info-text .txt-sub{
+    color: var(--color-black);
+    padding-bottom: 0.5rem;
+}
+
+.info-text .txt{
+    color: var(--color-black-text);
 }
 
 .info .info-media{
     border: 1px solid #000;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
 }
 
 
 .map{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.map svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: var(--color-green-light);
+    stroke-width: 1px;
+    stroke: var(--color-green-medium);
+}
+
+.estado:hover{
+    fill: #2ec2b8;
 }
