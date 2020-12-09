@@ -26,7 +26,7 @@
     color: #ffffff;
     font-weight: 600;
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .info .info-text{
@@ -42,11 +42,15 @@
 }
 
 .info-text .txt-sub{
-    color: var(--color-black);
+    color: #ffffff;
+    font-weight: 600;
     padding-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
+
 .info-text .txt{
+    padding-top: 0.5rem;
     color: var(--color-black-text);
 }
 
@@ -72,11 +76,54 @@
     display: block;
     width: 100%;
     height: 100%;
-    fill: var(--color-green-light);
     stroke-width: 1px;
     stroke: var(--color-green-medium);
+}
+
+.map .estado{
+    fill: var(--color-green-light);
+    
 }
 
 .estado:hover{
     fill: #2ec2b8;
 }
+
+.map .city{
+    fill: var(--color-green-medium);
+    stroke: var(--color-green-dark);
+    width: 10px;
+    height: 10px;
+}
+
+.map .city:hover{
+    fill: var(--color-yellow)
+}
+
+.map .city path{
+    width: 10px;
+}
+
+.point{
+    /* border: 1px solid #000; */
+    width: 5px;
+    height: 5px;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+} 
+
+.agulha{
+    height: auto;
+    width: 10px;
+    top:6px;    
+    left: 3px;
+    /* background: #000; */
+    /* color: aliceblue; */
+    position: relative;
+} 
+
+/* arrow-bottom */
