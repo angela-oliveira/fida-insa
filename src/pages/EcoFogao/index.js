@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
 
 import './index.css'
@@ -11,12 +12,16 @@ import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
+import dataMap from '../../utils/filesJSON/ecofogao.json'
+
+console.log(dataMap)
+
 function EcoFogao() {
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>
             <Description />
-            <Mapa />
+            <Mapa data={dataMap}/>
             <AnalyzeCB/>
             <AnalyzeCO/>
             <Invest />

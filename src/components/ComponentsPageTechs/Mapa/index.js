@@ -1,65 +1,68 @@
-import React, { useEffect, useImperativeHandle, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { select, geoPath, geoMercator } from "d3";
 import useResizeObserver from 'use-resize-observer';
 import drawMap from '../../../utils/filesJSON/semiarido.geo.json';
-// import dataMap from '../../../utils/filesJSON/bioagua.json';
-import dataMap from '../../../utils/filesJSON/ecofogao.json';
+
 import icoPoint from '../../../utils/images/place_01.svg';
 
 import './index.css';
-import { Select } from 'antd';
 
 
 
-function Mapa() {
+
+function Mapa(props) {
 
     // referencia os elementos
-    const pointRef = useRef(null);
+    // const pointRef = useRef(null);
     const svgRef = useRef(null);
     const wrapperRef = useRef(null);
-    const infoCityRef = useRef(null);
+    // const infoCityRef = useRef(null);
     const midiaRef = useRef(null);
 
     // adquirindo a proporção dada pelo css
     const { widthRef, heightRef } = useResizeObserver({ wrapperRef });
-    console.log("wrapperRef: " + wrapperRef
-        + "\n\nwidthRef: " + widthRef
-        + "\n\nheightRef: " + heightRef)
+    // console.log("wrapperRef: " + wrapperRef
+    //     + "\n\nwidthRef: " + widthRef
+    //     + "\n\nheightRef: " + heightRef)
 
-    console.log("A: " + svgRef,
-        "B: " + wrapperRef)
+    // console.log("A: " + svgRef,
+    //     "B: " + wrapperRef)
 
 
     // ESTADOS
 
+    console.log(props)
+
     const [selectedEstados, setSelectedEstados] = useState();
-    const [selectedCity, setSelectedCity] = useState(dataMap.features[0]);
+    const [selectedCity, setSelectedCity] = useState(props.data.features[0]);
 
 
-    const [estado, setEstado] = useState(dataMap.features[0].properties.Estado);
-    const [cidade, setCidade] = useState(dataMap.features[0].properties.municipio);
-    const [text, setText] = useState(dataMap.features[0].properties.text);
-    const [beneficio, setBeneficio] = useState(dataMap.features[0].properties.NumBenef)
-    const [instalacao, setInstalacao] = useState(dataMap.features[0].properties.QtInstal)
-    const [tecnologia,setTecnologia] = useState(dataMap.features[0].properties.Tecnologia)
-    const [projeto,setProjeto] = useState(dataMap.features[0].properties.Projeto)
+    const [estado, setEstado] = useState(props.data.features[0].properties.Estado);
+    const [cidade, setCidade] = useState(props.data.features[0].properties.municipio);
+    const [text, setText] = useState(props.data.features[0].properties.text);
+    const [beneficio, setBeneficio] = useState(props.data.features[0].properties.NumBenef)
+    const [instalacao, setInstalacao] = useState(props.data.features[0].properties.QtInstal)
+    const [tecnologia,setTecnologia] = useState(props.data.features[0].properties.Tecnologia)
+    const [projeto,setProjeto] = useState(props.data.features[0].properties.Projeto)
 
 
     useEffect(() => {
 
+        console.log(props)
+
         const svg = select(svgRef.current);
         const svgPoint = select(svgRef.current);
-        const infoCity = select(infoCityRef.current);
+        // const infoCity = select(infoCityRef.current);
 
         const { width, height } = wrapperRef.current.getBoundingClientRect();
-        console.log('>>: ' + width, height)
+        // console.log('>>: ' + width, height)
 
 
         const projection = geoMercator().fitSize([width, height], selectedEstados || drawMap);
-        console.log('projeção: ' + projection)
+        // console.log('projeção: ' + projection)
 
         let pathGenerator = geoPath().projection(projection);
-        console.log("path: " + pathGenerator)
+        // console.log("path: " + pathGenerator)
 
     
         svg
@@ -76,7 +79,7 @@ function Mapa() {
         svgPoint
 
             .selectAll(".city")
-            .data(dataMap.features)
+            .data(props.data.features)
             .join("g")
             .attr("class", "city")
             .attr("transform", function (d) {
@@ -97,11 +100,15 @@ function Mapa() {
             .attr("class","agulha")
             .attr("src",icoPoint)
             .on("click", (d, i) => {
-                console.log("test d i :" + d, i)
                 setSelectedCity(selectedCity === i ? i : i)
             });
-            
 
+    }, [wrapperRef, widthRef, heightRef])
+
+    useEffect(()=>{
+
+        const svgPoint = select(svgRef.current);
+        
         svgPoint
             .selectAll(".labelCity")
             .data([selectedCity])
@@ -118,10 +125,9 @@ function Mapa() {
                     setProjeto(d.properties.Projeto)
                 }
             )
+    },[selectedCity])
 
-
-    }, [drawMap, dataMap, wrapperRef, widthRef, heightRef, infoCityRef, selectedCity])
-
+    
 
     return (
         <div className='map-container'>
@@ -129,7 +135,7 @@ function Mapa() {
                 <div className='info'>
 
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>
-                    <div className='info-text' ref={infoCityRef}>
+                    <div className='info-text' >
                         {/* <div className='txt-title'>COMUNIDADE DE RIBEIRINHA</div> */}
                         <div className='txt-sub'>{cidade} - {estado} </div>
                         <div>Beneficiados: {beneficio} pessoas</div>

@@ -13,12 +13,14 @@ import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 import footer from "../../utils/images/Group 137.png";
 import Parceiros from "../../components/Parceiros"
 
+import dataMap from "../../utils/filesJSON/eolica.json";
+
 function Eolica() {
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>
             <Description />
-            <Mapa />
+            <Mapa data={dataMap}/>
             <AnalyzeCB />
             <AnalyzeCO/>
             <Invest />
