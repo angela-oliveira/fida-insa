@@ -1,5 +1,9 @@
 .Invest{
     border: 1px solid #000;
-    grid-column: 1/13;
+    grid-column: 3/11;
     height: 500px;
+    border: none;
+}
+.casca-ana-cb{
+    text-align: center;
 }

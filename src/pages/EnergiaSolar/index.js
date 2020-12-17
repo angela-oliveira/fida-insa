@@ -11,20 +11,19 @@ import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
+import dataMap from '../../utils/filesJSON/solar.json'
+
 function Solar() {
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>
             <Description />
-            <Mapa />
+            <Mapa data={dataMap}/>
             <AnalyzeCB />
             <AnalyzeCO/>
             <Invest />
             <Experience />
             <Curiosities />
-
-            {/* <Parceiros/> */}
-            {/* <Footer/> */}
         </div>
     )
 }

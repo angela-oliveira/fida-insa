@@ -10,21 +10,27 @@ import AnalyzeCO from '../../components/ComponentsPageTechs/AnalyzeCO';
 import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
+import footer from "../../utils/images/Group 137.png";
+import Parceiros from "../../components/Parceiros"
+
+import dataMap from "../../utils/filesJSON/eolica.json";
 
 function Eolica() {
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>
             <Description />
-            <Mapa />
+            <Mapa data={dataMap}/>
             <AnalyzeCB />
             <AnalyzeCO/>
             <Invest />
             <Experience />
             <Curiosities />
-
-            {/* <Parceiros/> */}
+            {/* <Parceiros/>  */}
             {/* <Footer/> */}
+            {/* <div className="footer">
+                <img src={footer}></img>
+            </div> */}
         </div>
     )
 }

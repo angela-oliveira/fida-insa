@@ -1,0 +1,25 @@
+.parceiros .ant-card{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.parceiros .ant-card .ant-row{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.parceiros .ant-card .ant-row .ant-card {
+  /* height: 100px;
+  width: 150px; */
+  margin: 10px;
+
+}
+
+.parceiros .ant-card .ant-row .ant-card img{
+  height: 3rem;
+}

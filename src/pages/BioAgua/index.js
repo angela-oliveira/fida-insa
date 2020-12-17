@@ -11,12 +11,14 @@ import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
+import dataMap from '../../utils/filesJSON/bioagua.json';
+
 function BioAgua() {
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>
             <Description />
-            <Mapa />
+            <Mapa data={dataMap}/>
             <AnalyzeCB />
             <AnalyzeCO />
             <Invest />
