@@ -89,8 +89,8 @@ button{
 }
 
 .info-media .slider-control-centerright,
-            .slider-control-centerleft,
-            .slider-control-bottomcenter{
+.info-media.slider-control-centerleft,
+            .info-media .slider-control-bottomcenter{
                 /* position: initial !important; */
                 grid-column: 1/2;
                 transform: translateY(0%) !important;
@@ -105,7 +105,7 @@ button{
 }
 
 .info-media .slider-control-centerright button,
-            .slider-control-centerleft button{
+.info-media .slider-control-centerleft button{
                 transform: translateY(70%) !important;
                 background-color: var(--color-yellow) !important;
                 border-radius: 50%;
