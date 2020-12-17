@@ -14,7 +14,7 @@ import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
 import dataMap from '../../utils/filesJSON/ecofogao.json'
 
-console.log(dataMap)
+// console.log(dataMap)
 
 function EcoFogao() {
     return (

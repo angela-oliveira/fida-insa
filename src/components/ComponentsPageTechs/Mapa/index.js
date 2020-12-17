@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { select, geoPath, geoMercator } from "d3";
+import { select, geoPath, geoMercator, svg } from "d3";
 import useResizeObserver from 'use-resize-observer';
 import drawMap from '../../../utils/filesJSON/semiarido.geo.json';
 
 import icoPoint from '../../../utils/images/place_01.svg';
+import ecoTest from '../../../utils/images/photos/ecotest.jpg';
 
 import './index.css';
+import Carousel from 'nuka-carousel';
+
 
 
 
@@ -21,19 +24,12 @@ function Mapa(props) {
 
     // adquirindo a proporção dada pelo css
     const { widthRef, heightRef } = useResizeObserver({ wrapperRef });
-    // console.log("wrapperRef: " + wrapperRef
-    //     + "\n\nwidthRef: " + widthRef
-    //     + "\n\nheightRef: " + heightRef)
-
-    // console.log("A: " + svgRef,
-    //     "B: " + wrapperRef)
-
 
     // ESTADOS
 
-    console.log(props)
+    // console.log(props)
 
-    const [selectedEstados, setSelectedEstados] = useState();
+    const [selectedEstados, setSelectedEstados] = useState(drawMap);
     const [selectedCity, setSelectedCity] = useState(props.data.features[0]);
 
 
@@ -42,39 +38,41 @@ function Mapa(props) {
     const [text, setText] = useState(props.data.features[0].properties.text);
     const [beneficio, setBeneficio] = useState(props.data.features[0].properties.NumBenef)
     const [instalacao, setInstalacao] = useState(props.data.features[0].properties.QtInstal)
-    const [tecnologia,setTecnologia] = useState(props.data.features[0].properties.Tecnologia)
-    const [projeto,setProjeto] = useState(props.data.features[0].properties.Projeto)
+    const [tecnologia, setTecnologia] = useState(props.data.features[0].properties.Tecnologia)
+    const [projeto, setProjeto] = useState(props.data.features[0].properties.Projeto)
 
 
     useEffect(() => {
 
-        console.log(props)
-
+        // REFERENCIAS
         const svg = select(svgRef.current);
         const svgPoint = select(svgRef.current);
+
+
+
         // const infoCity = select(infoCityRef.current);
 
         const { width, height } = wrapperRef.current.getBoundingClientRect();
         // console.log('>>: ' + width, height)
 
-
-        const projection = geoMercator().fitSize([width, height], selectedEstados || drawMap);
+        const projection = geoMercator().fitSize([width, height], selectedEstados);
         // console.log('projeção: ' + projection)
 
         let pathGenerator = geoPath().projection(projection);
         // console.log("path: " + pathGenerator)
 
-    
         svg
             .selectAll(".estado")
             .data(drawMap.features)
             .join("path")
-            .on("click", features => {
-                setSelectedEstados(features);
+            .on("click", (d, features) => {
+                setSelectedEstados(selectedEstados === features ? drawMap : features);
             })
             .attr("class", "estado")
-            .transition()
+            
+            // .transition(700)
             .attr("d", features => pathGenerator(features));
+
 
         svgPoint
 
@@ -97,18 +95,48 @@ function Mapa(props) {
             .attr("width", 15)
             .attr("height", 17)
             .append("xhtml:img")
-            .attr("class","agulha")
-            .attr("src",icoPoint)
+            .attr("class", "agulha")
+            .attr("src", icoPoint)
             .on("click", (d, i) => {
                 setSelectedCity(selectedCity === i ? i : i)
             });
 
     }, [wrapperRef, widthRef, heightRef])
 
-    useEffect(()=>{
+    useEffect(() => {
+
+        const { width, height } = wrapperRef.current.getBoundingClientRect();
+        const projection = geoMercator().fitSize([width, height], selectedEstados);
+        let pathGenerator = geoPath().projection(projection);
+        const svg = select(svgRef.current);
+        const svgPoint = select(svgRef.current);
+
+        svg
+            .selectAll(".estado")
+            .data(drawMap.features)
+            .join("path")
+            .on("click", (d, features) => {
+                setSelectedEstados(selectedEstados === features ? drawMap : features);
+            })
+            .attr("class", "estado")
+
+            .transition()
+            .attr("d", features => pathGenerator(features));
+
+        svgPoint
+            .selectAll(".city")
+            .data(props.data.features)
+            .transition()
+            .attr("transform", function (d) {
+                return "translate(" + projection(d.geometry.coordinates) + ")"
+            })
+
+    })
+
+    useEffect(() => {
 
         const svgPoint = select(svgRef.current);
-        
+
         svgPoint
             .selectAll(".labelCity")
             .data([selectedCity])
@@ -125,9 +153,11 @@ function Mapa(props) {
                     setProjeto(d.properties.Projeto)
                 }
             )
-    },[selectedCity])
 
-    
+
+    }, [selectedCity])
+
+
 
     return (
         <div className='map-container'>
@@ -147,7 +177,51 @@ function Mapa(props) {
                         </div>
                     </div>
                     <div className='info-media' ref={midiaRef}>
-                        
+                        <Carousel
+                            
+                            slidesToShow={3}
+                            cellSpacing={10}
+                            defaultControlsConfig={{
+                                nextButtonText: '>',
+                                prevButtonText: '<',
+                                prevButtonStyle: {
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    background: '#FAF238',
+                                    color: '#575757',
+                                    fontSize: '30px',
+
+                                },
+                                nextButtonStyle: {
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    background: '#FAF238',
+                                    color: '#575757',
+                                    fontSize: '30px',
+
+                                }
+                            }}
+
+
+                        >
+                            <div className='img'>
+                                <img src={ecoTest}></img>
+                            </div>
+                            <div className='img'>
+                                <img src={ecoTest}></img>
+                            </div>
+                            <div className='img'>
+                                <img src={ecoTest}></img>
+                            </div>
+                            <div className='img'>
+                                <img src={ecoTest}></img>
+                            </div>
+                            <div className='img'>
+                                <img src={ecoTest}></img>
+                            </div>
+                        </Carousel>
                     </div>
 
                 </div>
