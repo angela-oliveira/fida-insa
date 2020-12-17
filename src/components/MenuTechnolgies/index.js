@@ -55,20 +55,13 @@ function MenuTechnologies() {
     }
 
 
-
+// DETERMINA MOMENTO ATIVAÇÃO DA ANIMAÇÃO DO MENU TECNOLOGIAS
     function animateScroll() {
-      const windowsTop = (window.pageYOffset)/3 ;
-
-      // console.log("wind: "+windowsTop)
-      // console.log("menutop: "+menu.offsetTop)
-      
-      if ((windowsTop) > menu.offsetTop){
+      const windowsTop = (window.pageYOffset) / 3;
+      if ((windowsTop) > menu.offsetTop) {
         toggleOptions('.selector')
       }
     }
-
-
-
 
 
     window.addEventListener('scroll', function () {

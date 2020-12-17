@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-=======
+
 button{
     outline: none;
 }
-
->>>>>>> map2
 .map-container{
     /* border: 1px solid #000; */
     display: grid;
@@ -16,39 +13,6 @@ button{
 
 .casca-map{
     /* grid-row: 1/2; */
-<<<<<<< HEAD
-    border: 1px solid #000;
-    grid-column: 3/11;
-    display: flex;
-
-}
-
-.casca-map .info{
-    border: 1px solid #000;
-    width: 100%;
-    margin-top: 4rem;
-}
-
-.info .title-map{
-    border: 1px solid #000;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-.info .info-text{
-    border: 1px solid #000;
-}
-
-.info .info-media{
-    border: 1px solid #000;
-}
-
-
-.map{
-    border: 1px solid #000;
-    width: 100%;
-=======
     /* border: 1px solid #000; */
     grid-column: 3/11;
     display: flex;
@@ -173,8 +137,6 @@ button{
 
 .map .estado{
     fill: var(--color-green-light);
-    
->>>>>>> map2
 }
 
 .estado:hover{
