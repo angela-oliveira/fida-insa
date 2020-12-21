@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import { Link } from 'react-router-dom'
 
@@ -17,6 +17,11 @@ import dataMap from '../../utils/filesJSON/ecofogao.json'
 // console.log(dataMap)
 
 function EcoFogao() {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>

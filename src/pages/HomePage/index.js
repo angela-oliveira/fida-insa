@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import {
     Row,
@@ -37,6 +37,10 @@ const { Meta } = Card;
 
 function HomePage() {
 
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])    
+
     let listCase = document.getElementsByClassName('.list-cases')
 
     function back() {
@@ -52,11 +56,9 @@ function HomePage() {
             {/* COMPONENTE DE CABEÇALHO */}
             <HeaderPage />
 
-            {/* <HeaderHome /> */}
-            {/* <div styles={{ backgroundImage:`url(${background})` }}></div> */}
             <div>
 
-                {/* <img style={{width: 450, paddingLeft: 100, marginBottom: -50, marginTop: 50}} src="/images/blue.png"></img> */}
+                
                 <Row className='main-banner-page'>
 
                     <Col>
@@ -65,15 +67,7 @@ function HomePage() {
                         <div className='banner-page'>
                             <h1 className='renova'>RENOVA</h1>
                             <h1 className='fida'>FIDA</h1>
-                            <Row>
-
-                                {/* <h1>FIDA</h1> */}
-
-                                <div>
-                                    {/* <img style={{width: 350, marginTop: 50 }} src="/images/yellow.png"></img> */}
-                                </div>
-                            </Row>
-
+                            
                             <p>Energias renováveis para<br /> o semiárido</p>
 
                             <Button>Conheça o Projeto +</Button>

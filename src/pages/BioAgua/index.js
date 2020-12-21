@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 import './index.css'
@@ -14,6 +14,11 @@ import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 import dataMap from '../../utils/filesJSON/bioagua.json';
 
 function BioAgua() {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+    
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>

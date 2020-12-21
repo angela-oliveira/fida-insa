@@ -27,8 +27,6 @@ function Mapa(props) {
 
     // ESTADOS
 
-    // console.log(props)
-
     const [selectedEstados, setSelectedEstados] = useState(drawMap);
     const [selectedCity, setSelectedCity] = useState(props.data.features[0]);
 

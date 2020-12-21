@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import './index.css'
@@ -16,6 +16,9 @@ import Parceiros from "../../components/Parceiros"
 import dataMap from "../../utils/filesJSON/eolica.json";
 
 function Eolica() {
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>
