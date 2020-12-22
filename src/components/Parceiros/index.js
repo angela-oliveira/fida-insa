@@ -10,7 +10,7 @@ import fidalogo from "../../utils/images/P_g_web.jpg"
 const { Meta } = Card;
 
 function Parceiros() {
-
+ 
   return (
         <div className="parceiros">
 

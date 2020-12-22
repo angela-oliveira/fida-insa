@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 import {
     Row,
@@ -20,6 +20,12 @@ import imgMain from "../../utils/images/main.png";
 import bgTechnology from "../../utils/images/bg_technology.svg";
 import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
+
+// PATH
+
+import path1 from '../../utils/images/Path8.svg'
+
+
 // import paqtcpblogo from "../../utils/images/paqtcpblogo.png"
 // import insalogo from "../../utils/images/insalogo.png"
 // import ifpblogo from "../../utils/images/logo_ifpb.png"
@@ -37,9 +43,9 @@ const { Meta } = Card;
 
 function HomePage() {
 
-    useEffect(()=>{
+    useEffect(() => {
         window.scrollTo(0, 0)
-    },[])    
+    }, [])
 
     let listCase = document.getElementsByClassName('.list-cases')
 
@@ -53,21 +59,23 @@ function HomePage() {
 
     return (
         <div>
+            {/* PATHs */}
+
+            <div className='path1'></div>
+            <div className='path2'></div>
+            <div className='path3'></div>
+            <div className='path4'></div>
+            
             {/* COMPONENTE DE CABEÇALHO */}
             <HeaderPage />
-
             <div>
-
-                
                 <Row className='main-banner-page'>
-
                     <Col>
-
                         <img src={blue}></img>
                         <div className='banner-page'>
                             <h1 className='renova'>RENOVA</h1>
                             <h1 className='fida'>FIDA</h1>
-                            
+
                             <p>Energias renováveis para<br /> o semiárido</p>
 
                             <Button>Conheça o Projeto +</Button>
@@ -96,7 +104,7 @@ function HomePage() {
             </div>
             <br></br>
 
-            <Case/>
+            <Case />
 
             <div className="team">
                 <Card>
@@ -109,63 +117,9 @@ function HomePage() {
 
                 <br></br>
 
-
-
             </div>
             <div className="parceiros">
                 <Parceiros />
-                {/* <Card >
-                    <h2>Realização</h2>
-
-                    <Row>
-
-                        <Card>
-                            <img alt="example" src={paqtcpblogo} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={insalogo} />
-                            <Meta title="" description="" />
-                        </Card>
-                    </Row>
-
-                    <h2>Parceiros</h2>
-
-                    <Row >
-
-                        <Card hoverable >
-                            <img alt="example" src={ifpblogo} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={ufcglogo} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={paqtcpblogo} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                        <Card hoverable >
-                            <img alt="example" src={procaselogo} />
-                            <Meta title="" description="" />
-                        </Card>
-                    </Row>
-
-                    <h2>Patrocinador</h2>
-
-                    <Row>
-
-                        <Card hoverable >
-                            <img alt="example" src={fidalogo} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                    </Row>
-                </Card> */}
             </div>
             <div className="footer">
                 <img src={footer}></img>

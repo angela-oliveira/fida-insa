@@ -13,7 +13,7 @@ body{
 }
 h1{
     font: normal normal 800 100px/564px;
-    letter-spacing: 13.3px;
+    letter-spacing: 13.3px; 
     color: #141414;
     opacity: 1;
 }
