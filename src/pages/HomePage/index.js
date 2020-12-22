@@ -49,23 +49,13 @@ function HomePage() {
 
     let listCase = document.getElementsByClassName('.list-cases')
 
-    function back() {
-        console.log("Back")
-    }
-
-    function next() {
-        console.log("Next")
-    }
-
     return (
         <div>
             {/* PATHs */}
 
             <div className='path1'></div>
-            <div className='path2'></div>
-            <div className='path3'></div>
-            <div className='path4'></div>
-            
+
+
             {/* COMPONENTE DE CABEÇALHO */}
             <HeaderPage />
             <div>
@@ -99,6 +89,8 @@ function HomePage() {
                 <p>Conheca as tecnologias desenvolvidas</p>
 
                 <br></br>
+                <div className='path2'></div>
+
                 <MenuTechnologies></MenuTechnologies>
 
             </div>
@@ -106,7 +98,10 @@ function HomePage() {
 
             <Case />
 
+            
+
             <div className="team">
+            <div className='path3'></div>
                 <Card>
                     <div className="div-yellow"></div>
                     <h1>EQUIPE</h1>
@@ -122,6 +117,7 @@ function HomePage() {
                 <Parceiros />
             </div>
             <div className="footer">
+            <div className='path4'></div>
                 <img src={footer}></img>
             </div>
         </div>

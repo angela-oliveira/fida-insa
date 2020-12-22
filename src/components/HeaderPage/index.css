@@ -7,6 +7,10 @@
  
 }
 
+.ant-page-header{
+    background:none;
+}
+
 .fida img {
     width: 200px;
     /* margin: -50px; */

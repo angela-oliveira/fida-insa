@@ -15,7 +15,7 @@ import iconEcoFogao from "../../utils/images/2.png";
 import iconEolica from "../../utils/images/3.png";
 import iconBioAgua from "../../utils/images/4.png";
 import iconBioDigestor from "../../utils/images/5.png";
-import path from "../../utils/images/Path 34.svg"
+// import path from "../../utils/images/Path 34.svg"
 
 function MenuTechnologies() {
 
