@@ -89,14 +89,14 @@ button{
 }
 
 .info-media .slider-control-centerright,
-.info-media.slider-control-centerleft,
+.info-media .slider-control-centerleft,
             .info-media .slider-control-bottomcenter{
                 /* position: initial !important; */
                 grid-column: 1/2;
                 transform: translateY(0%) !important;
             }
 
-.info-media .slider-control-bottomcenter{
+.info-media .slider-control-bottomcenter{ 
     left: 30% !important;
 }
 

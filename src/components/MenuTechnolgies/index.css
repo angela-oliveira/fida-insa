@@ -8,12 +8,47 @@
   margin-top: -70px;
   margin-left: -70px;
   
+  
   }
 
   .menu-tecnologias{
     margin-bottom: 3rem;
   }
   
+/* ANIMAÇÃO DO BG DO MENU TECH */
+
+  .bg-menu-tech{
+    position: absolute;
+    font-weight: 600;
+    font-size: 11rem;
+    z-index: -11;
+    /* border: 1px solid #000000; */
+    color: #0e76791f;
+    width: 100%;
+    left: 0;
+    top:5rem;
+    line-height: 10.3rem;
+    opacity: 0.2;
+  }
+
+  /* [data-anime]{
+    opacity: 0;
+    transition: .3s;
+  }
+
+  [data-anime="left"]{
+    transform: translate3d(-3rem, 0, 0);
+  }
+
+  [data-anime].animate{
+    opacity: 0.2;
+    transform: translate3d(0, 0, 0);
+    
+  } */
+
+
+
+
   .selector,
   .selector button {
   font-weight: 600;

@@ -92,7 +92,7 @@ function Mapa(props) {
             .attr("y", -20)
             .attr("width", 15)
             .attr("height", 17)
-            .append("xhtml:img")
+            .append("xhtml:img") 
             .attr("class", "agulha")
             .attr("src", icoPoint)
             .on("click", (d, i) => {

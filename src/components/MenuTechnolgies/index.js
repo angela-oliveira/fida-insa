@@ -21,29 +21,23 @@ function MenuTechnologies() {
 
   const selectRef = useRef(null);
 
-  const inicio = {
-    nome: "ENERGIA EÓLICA",
-    style: { background: "#329BA3", color: "#329BA3", boxshadow: "0px 10px 20px 3px #329ba365" }
-  }
-
   const eolica = {
     nome: "ENERGIA EÓLICA",
     style: { background: "#329BA3", color: "#329BA3" },
     link: "/energia-eolica"
-
   }
   const bioAgua = {
-    nome: "BIO ÁGUA",
+    nome: "BIOÁGUA",
     style: { background: "#1AC3E2", color: "#1AC3E2" },
     link: "/bio-agua"
   }
   const ecoFogao = {
-    nome: "ECO FOGÃO",
+    nome: "ECOFOGÃO",
     style: { background: "#89773C", color: "#89773C" },
     link: "/eco-fogao"
   }
   const bioDigestor = {
-    nome: "BIO DIGESTOR",
+    nome: "BIODIGESTOR",
     style: { background: " #FF7907", color: "#FF7907" },
     link: "/bio-digestor"
   }
@@ -55,6 +49,7 @@ function MenuTechnologies() {
 
 
   const [button, setButton] = useState(eolica)
+  const [BGMenu, setBGMenu] = useState()
 
 
   useEffect(() => {
@@ -82,7 +77,7 @@ function MenuTechnologies() {
       $(s).addClass('open');
       var li = $(s).find('li');
       // var deg = 360/li.length
-      var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 360 / li.length;
+      var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 356 / li.length;
       for (var i = 0; i < li.length; i++) {
         var d = $(s).hasClass('half') ? (i * deg) - 90 : i * deg;
         $(s).hasClass('open') ? rotate(li[i], d) : rotate(li[i], angleStart);
@@ -92,7 +87,7 @@ function MenuTechnologies() {
 
     // DETERMINA MOMENTO ATIVAÇÃO DA ANIMAÇÃO DO MENU TECNOLOGIAS
     function animateScroll() {
-      const windowsTop = (window.pageYOffset) / 4;
+      const windowsTop = (window.pageYOffset) / 3;
       if ((windowsTop) > menu.offsetTop) {
         toggleOptions('.selector')
       }
@@ -105,21 +100,33 @@ function MenuTechnologies() {
     })
 
 
+
+
   })
+
+
 
 
   return (
 
     <Card className="menu-tecnologias" >
-
+      <div className='bg-menu-tech' style={{ color: `${button.style.color}` }} data-anime="left">
+        {button.nome}
+      </div>
       <img src={bgTechnology}></img>
       <div className='selector' ref={selectRef}>
         <ul>
           <li className="c1">
             <Link to='/energia-eolica'>
               <input id='c1' type='checkbox'></input>
-              <label className="label-c1" onClick={()=>{
-              }} onMouseEnter={() => { setButton(eolica) }} for='c1'><img style={{ width: "35px" }} src={iconEolica}></img></label>
+              <label className="label-c1"
+
+                onMouseEnter={() => {
+                  setButton(eolica)
+                  setBGMenu()
+                }}
+
+                for='c1'><img style={{ width: "35px" }} src={iconEolica}></img></label>
             </Link>
           </li>
           <li className="c2">
