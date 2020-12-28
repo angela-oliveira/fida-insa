@@ -2,8 +2,92 @@ import React from 'react';
 import './index.css';
 
 import Chart from 'react-apexcharts'
+import { Table, Tag, Space, Button, Modal  } from 'antd';
 
-function Invest() {
+
+const columns = [
+  {
+    title: 'Instituição Financeira/Agente',
+    dataIndex: 'name',
+    key: 'name',
+  },
+  {
+    title: 'Nome do Instrumento',
+    dataIndex: 'age',
+    key: 'age',
+  },
+  {
+    title: 'Quem pode acessar (PF ou PJ)',
+    dataIndex: 'address',
+    key: 'address',
+  },
+  {
+    title: 'Estado ou Região',
+    key: 'action',
+    dataIndex: 'action'
+  },
+  {
+    title: 'Prazo de Pagamento',
+    key: 'prazo',
+    dataIndex: 'prazo'
+  },
+  {
+    title: 'Mais informações',
+    key: 'more',
+    render: (text, record) => (
+      <Button onClick={() => this.openModal()}>Detalhes</Button>
+    ),
+  },
+];
+
+const data = [
+  {
+    key: '1',
+    name: 'Agência de Fomento do Estado de Pernambuco (AGEFEPE)',
+    age: 'PE Solar',
+    address: 'PJ/PF',
+    action: 'PE',
+    prazo: 'Até 60 meses',
+  },
+  {
+    key: '2',
+    name: 'Banco do Brasil (BB - Consórcios)',
+    age: 'Consórcio Placas Fotovoltaicas',
+    address: 'PJ',
+    action: 'Brasil',
+    prazo: 'Até 72 meses',
+  },
+  {
+    key: '3',
+    name: 'Banco do Nordeste, Banco da Amazônia, Banco do Brasil',
+    age: 'PRODECOOP',
+    address: 'PJ',
+    action: 'Brasil',
+    prazo: 'De 30 a 144 meses',
+  },
+];
+
+
+// function Invest() {
+export default class extends React.Component {
+
+  listCase = document.getElementsByClassName('.list-cases')
+
+  back() {
+      console.log("Back")
+  }
+
+  next() {
+      console.log("Next")
+  }
+  state = {
+      visible: false
+    }
+  
+    openModal() {
+      this.setState({ visible: !this.state.visible })
+    }
+    render(){
     return (
         <div className='Invest'>
             <div className='casca-ana-cb'>
@@ -11,7 +95,27 @@ function Invest() {
                 <p>Entenda como estão divididos os investimentos</p>
                 
                 <div className='cb-graphic'>
-                    <div className='cus-ins'><Chart
+                <Table columns={columns} dataSource={data} />
+
+                <Modal
+                  title='test'
+                  visible={this.state.visible}
+                  width={720}
+                  footer={null}
+                  onCancel={() =>
+                      this.setState({
+                      visible: false
+                      })
+                  }
+                  onOk={() =>
+                      this.setState({
+                      visible: false
+                      })
+                  }
+                  >
+                  <img style={{ width: '100%' }} src={this.state.image} alt="" />
+                </Modal>
+                    {/* <div className='cus-ins'><Chart
                   options={{
                     dataLabels: {
                       enabled: false
@@ -140,7 +244,7 @@ function Invest() {
                 />
                         <div className='cb-gra-label'>FINANCIAMENTO PÚBLICO</div>
                     </div>
-                    <div className='imp-amb'>
+                    <div className='imp-amb'> 
                         <Chart
                             options={{
                                 dataLabels: {
@@ -183,11 +287,13 @@ function Invest() {
                             width="250"
                             />
                         <div className='cb-gra-label'>FUNDOS INTERNACIONAIS</div>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
         </div>
     )
+
+    }
 }
 
-export default Invest;
+// export default Invest;

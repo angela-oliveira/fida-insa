@@ -1,7 +1,8 @@
 .Curiosities{
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 2rem 0rem;
     grid-column: 3/11;
-    height: 500px;
+    /* grid-column: 1/13; */
+    /* height: 500px; */
     border: none;
 }
 .casca-curiosities{

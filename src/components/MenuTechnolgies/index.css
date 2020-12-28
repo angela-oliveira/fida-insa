@@ -1,4 +1,3 @@
-
 .selector {
   position: absolute;
   left: 50%;
@@ -68,7 +67,6 @@
   -webkit-transform: rotate(-360deg);
   transition: all 0.8s ease-in-out;
   }
-  
   .selector li input { display: none; }
   
   .selector li input + label {
@@ -133,7 +131,7 @@
 
   .c1:hover ~ .button{
     background: #329BA3;
-    content: 'test  ';
+    box-shadow: 1px 1px 15px #888888;
   }
   .c2:hover ~ .button{
     background: #1AC3E2;

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link  } from 'react-router-dom'
+import { Col } from 'antd'
 
 import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
@@ -10,12 +11,14 @@ import AnalyzeCO from '../../components/ComponentsPageTechs/AnalyzeCO';
 import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
+import Photos from '../../components/ComponentsPageTechs/Photos'
 import footer from "../../utils/images/Group 137.png";
-import Parceiros from "../../components/Parceiros"
+import Parceiros from "../../components/Parceiros";
 
 function Eolica() {
     return (
         <div id='body'>
+            
             <HeaderTechs></HeaderTechs>
             <Description />
             <Mapa />
@@ -23,12 +26,11 @@ function Eolica() {
             <AnalyzeCO/>
             <Invest />
             <Experience />
+            <Photos />
             <Curiosities />
-            {/* <Parceiros/>  */}
-            {/* <Footer/> */}
-            {/* <div className="footer">
+            <div className="footer">
                 <img src={footer}></img>
-            </div> */}
+            </div>
         </div>
     )
 }
