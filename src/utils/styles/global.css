@@ -10,6 +10,14 @@ body {
   width: 100vw;
 }
 
+div{
+  outline-offset: none ;
+}
+
+.ant-card-bordered{
+  border: none !important;
+}
+
 :root{
   --color-black:#141414;
   --color-green-border:#329BA3;

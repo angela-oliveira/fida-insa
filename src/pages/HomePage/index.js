@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import {
     Row,
@@ -21,6 +21,21 @@ import imgMain from "../../utils/images/main.png";
 import bgTechnology from "../../utils/images/bg_technology.svg";
 import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
+<<<<<<< HEAD
+=======
+
+// PATH
+
+import path1 from '../../utils/images/Path8.svg'
+
+
+// import paqtcpblogo from "../../utils/images/paqtcpblogo.png"
+// import insalogo from "../../utils/images/insalogo.png"
+// import ifpblogo from "../../utils/images/logo_ifpb.png"
+// import ufcglogo from "../../utils/images/ufcglogo.jpg"
+// import procaselogo from "../../utils/images/procaselogo.png"
+// import fidalogo from "../../utils/images/P_g_web.jpg"
+>>>>>>> a340ea43d727ef10a3c42ecec2ac01bd2876fd84
 
 
 // import background from '../public/images/bg_main.png';
@@ -42,6 +57,7 @@ const { Meta } = Card;
 //         console.log("Next")
 //     }
 
+<<<<<<< HEAD
     
 
 //     return (
@@ -204,6 +220,30 @@ const { Meta } = Card;
 export default class extends React.Component {
 
     listCase = document.getElementsByClassName('.list-cases')
+=======
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    let listCase = document.getElementsByClassName('.list-cases')
+
+    return (
+        <div>
+            {/* PATHs */}
+
+            <div className='path1'></div>
+
+
+            {/* COMPONENTE DE CABEÇALHO */}
+            <HeaderPage />
+            <div>
+                <Row className='main-banner-page'>
+                    <Col>
+                        <img src={blue}></img>
+                        <div className='banner-page'>
+                            <h1 className='renova'>RENOVA</h1>
+                            <h1 className='fida'>FIDA</h1>
+>>>>>>> a340ea43d727ef10a3c42ecec2ac01bd2876fd84
 
     back() {
         console.log("Back")
@@ -285,6 +325,7 @@ O RENOVA-FIDA também é apresentado em língua inglesa, aumentando as possibili
                     </Row>
                 </div>
                 <br></br>
+<<<<<<< HEAD
                 <div className="techs">
                     <Card>
                         <div className="div-yellow"></div>
@@ -297,6 +338,29 @@ O RENOVA-FIDA também é apresentado em língua inglesa, aumentando as possibili
                     <MenuTechnologies></MenuTechnologies>
     
                 </div>
+=======
+                <div className='path2'></div>
+
+                <MenuTechnologies></MenuTechnologies>
+
+            </div>
+            <br></br>
+
+            <Case />
+
+            
+
+            <div className="team">
+            <div className='path3'></div>
+                <Card>
+                    <div className="div-yellow"></div>
+                    <h1>EQUIPE</h1>
+                    <p>Conheça quem está à frente desse projeto</p>
+                </Card>
+
+                <Equipe />
+
+>>>>>>> a340ea43d727ef10a3c42ecec2ac01bd2876fd84
                 <br></br>
     
                 <Case/>
@@ -320,7 +384,15 @@ O RENOVA-FIDA também é apresentado em língua inglesa, aumentando as possibili
                    
                 </div>
 
+<<<<<<< HEAD
+=======
+            </div>
+            <div className="parceiros">
+                <Parceiros />
+            </div>
+>>>>>>> a340ea43d727ef10a3c42ecec2ac01bd2876fd84
             <div className="footer">
+            <div className='path4'></div>
                 <img src={footer}></img>
             </div> 
             </div>

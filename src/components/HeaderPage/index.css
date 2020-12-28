@@ -7,21 +7,25 @@
  
 }
 
+.ant-page-header{
+    background:none;
+}
+
 .fida img {
     width: 200px;
     /* margin: -50px; */
 }
 
-.path {
+/* .path {
     top: -722.1895751953125px;
     left: -848.1826782226562px;
     width: 2007px;
     height: 1723px;
-    /* transform: matrix(-0.5, -0.87, 0.87, -0.5, 0, 0); */
+    transform: matrix(-0.5, -0.87, 0.87, -0.5, 0, 0);
     border: 6px dashed var(--unnamed-color-329ba3);
-    /* background: transparent url('img/Path 8.png') 0% 0% no-repeat padding-box; */
+    background: transparent url('img/Path 8.png') 0% 0% no-repeat padding-box;
     background-image: transparent url('../../utils/images/Path 8.svg') 0% 0% no-repeat padding-box;
     border: 6px dashed #329BA3;
     opacity: 1;
     position: absolute;
-}
+} */

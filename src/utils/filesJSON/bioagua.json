@@ -1,0 +1,432 @@
+{
+    "type": "FeatureCollection",
+    "name": "bioagua",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 0,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PVSA - Projeto Viva o Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Campo Grande do Piauí",
+                "Estado": "Piauí",
+                "QtInstal": 12,
+                "NumBenef.": 12
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -41.065329661162544,
+                    -7.183034162673664
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 1,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PVSA - Projeto Viva o Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Francisco Santos",
+                "Estado": "Piauí",
+                "QtInstal": 55,
+                "NumBenef.": 55
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -41.147143300459952,
+                    -7.012830016535406
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PVSA - Projeto Viva o Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Geminiano",
+                "Estado": "Piauí",
+                "QtInstal": 7,
+                "NumBenef.": 7
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -41.335763492559821,
+                    -7.189218479189143
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 3,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PVSA - Projeto Viva o Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Picos",
+                "Estado": "Piauí",
+                "QtInstal": 3,
+                "NumBenef.": 3
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -41.522312334810202,
+                    -7.058929142425903
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 4,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PVSA - Projeto Viva o Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "São João da Varjota",
+                "Estado": "Piauí",
+                "QtInstal": 19,
+                "NumBenef.": 19
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -41.882410010394452,
+                    -6.95659950424393
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 5,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PPF - Projeto Paulo Freire",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Coreaú",
+                "Estado": "Ceará",
+                "QtInstal": 57,
+                "NumBenef.": 57
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.729136486200282,
+                    -3.643303678666775
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 6,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PPF - Projeto Paulo Freire",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Graça",
+                "Estado": "Ceará",
+                "QtInstal": 64,
+                "NumBenef.": 64
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.776705157742427,
+                    -4.048360786000027
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 7,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PPF - Projeto Paulo Freire",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Irauçuba",
+                "Estado": "Ceará",
+                "QtInstal": 82,
+                "NumBenef.": 82
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.818114947029557,
+                    -3.865666249965802
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 8,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PPF - Projeto Paulo Freire",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Massapê",
+                "Estado": "Ceará",
+                "QtInstal": 4,
+                "NumBenef.": 4
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.388028063781185,
+                    -3.484336359109188
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 9,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PPF - Projeto Paulo Freire",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Moraújo",
+                "Estado": "Ceará",
+                "QtInstal": 5,
+                "NumBenef.": 5
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.679928662303347,
+                    -3.46158683669664
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 10,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PPF - Projeto Paulo Freire",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Mucambo",
+                "Estado": "Ceará",
+                "QtInstal": 10,
+                "NumBenef.": 10
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.755135844175797,
+                    -3.898139715275013
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PPF - Projeto Paulo Freire",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Pacujá",
+                "Estado": "Ceará",
+                "QtInstal": 12,
+                "NumBenef.": 12
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.690072557401479,
+                    -4.001266475071579
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 12,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PPF - Projeto Paulo Freire",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Sobral",
+                "Estado": "Ceará",
+                "QtInstal": 105,
+                "NumBenef.": 105
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.226711463090439,
+                    -3.809739292897716
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 13,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PROCASE - Projeto de Desenvolvimento Sustentável do Cariri, Seridó e Curimataú",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Boqueirão",
+                "Estado": "Paraíba",
+                "QtInstal": 9,
+                "NumBenef.": 9
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -36.150527085980507,
+                    -7.507764961340926
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 14,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PROCASE - Projeto de Desenvolvimento Sustentável do Cariri, Seridó e Curimataú",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Caturité",
+                "Estado": "Paraíba",
+                "QtInstal": 6,
+                "NumBenef.": 6
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -36.058861580720723,
+                    -7.415294850075963
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 15,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PRÓSEMIÁRIDO - Projeto Pró-Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Casa Nova",
+                "Estado": "Bahia",
+                "QtInstal": 1,
+                "NumBenef.": 1
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -41.336482050599265,
+                    -9.240251464053483
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 16,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PRÓSEMIÁRIDO - Projeto Pró-Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Juazeiro",
+                "Estado": "Bahia",
+                "QtInstal": 36,
+                "NumBenef.": 36
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.274660050583499,
+                    -9.556882204397207
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 17,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PRÓSEMIÁRIDO - Projeto Pró-Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Remanso",
+                "Estado": "Bahia",
+                "QtInstal": 1,
+                "NumBenef.": 1
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -42.254219524101856,
+                    -9.598436443932128
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 18,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PRÓSEMIÁRIDO - Projeto Pró-Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Sento Sé",
+                "Estado": "Bahia",
+                "QtInstal": 2,
+                "NumBenef.": 2
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -41.638028066157894,
+                    -10.101683345385251
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 19,
+                "Tecnologia": "Bioágua\n",
+                "Projeto": "PRÓSEMIÁRIDO - Projeto Pró-Semiárido",
+                "Tipo": "Sistema Simplificado",
+                "municipio": "Sobradinho",
+                "Estado": "Bahia",
+                "QtInstal": 3,
+                "NumBenef.": 3
+                ,"text":""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -40.863997079923728,
+                    -9.645748264382858
+                ]
+            }
+        }
+    ]
+}

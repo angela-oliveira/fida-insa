@@ -5,7 +5,6 @@ import { PageHeader, Button } from 'antd';
 
 import logoFida from "../../utils/images/logo_fida.png";
 import iconEmail from "../../utils/images/Icon ionic-md-mail.svg";
-import bgPath from "../../utils/images/Path 8.svg"
 
 function HeaderPage() {
 

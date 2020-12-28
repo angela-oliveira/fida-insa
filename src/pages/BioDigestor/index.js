@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 import './index.css'
@@ -11,12 +11,19 @@ import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
+import dataMapa from '../../utils/filesJSON/biodigestor.json';
+
 function BioDigestor() {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+
     return (
         <div id='body'>
             <HeaderTechs></HeaderTechs>
             <Description />
-            <Mapa />
+            <Mapa data={dataMapa}/>
             <AnalyzeCB />
             <AnalyzeCO />
             <Invest />

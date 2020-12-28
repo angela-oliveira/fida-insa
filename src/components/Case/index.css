@@ -78,6 +78,11 @@
     display: grid !important;
     grid-template-columns: 1fr 5%;
     grid-template-rows: 1fr;
+    background: none;
+}
+
+.slider .slider-frame{
+    background: none;
 }
 
 
