@@ -72,14 +72,8 @@ h1{
 
 /* TECHS */
 .techs{
-<<<<<<< HEAD
     margin-top: 10%;
 }
-=======
-    position: relative;
-}
-
->>>>>>> a340ea43d727ef10a3c42ecec2ac01bd2876fd84
 .techs .ant-card{
     display: "flex";
     /* padding-bottom: '0px',  */
@@ -172,16 +166,9 @@ h1{
 
 /* PARCEIROS */
 
-<<<<<<< HEAD
 .parceiros{
     margin-top: 10%;
 }
-=======
-.parceiros .ant-card-bordered{
-    background: none;
-}
-
->>>>>>> a340ea43d727ef10a3c42ecec2ac01bd2876fd84
 .parceiros .ant-card{
     display: flex;
     justify-content: center;

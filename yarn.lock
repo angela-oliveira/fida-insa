@@ -11843,7 +11843,6 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-<<<<<<< HEAD
 use-callback-ref@^1.2.1, use-callback-ref@^1.2.3:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/use-callback-ref/-/use-callback-ref-1.2.4.tgz#d86d1577bfd0b955b6e04aaf5971025f406bea3c"
@@ -11856,14 +11855,6 @@ use-sidecar@^1.0.1:
   dependencies:
     detect-node-es "^1.0.0"
     tslib "^1.9.3"
-=======
-use-resize-observer@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/use-resize-observer/-/use-resize-observer-7.0.0.tgz#15f0efbd5a4e08a8cc51901f21a89ba836f2116e"
-  integrity sha512-+RjrQsk/mL8aKy4TGBDiPkUv6whyeoGDMIZYk0gOGHOlnrsjImC+jG6lfAFcBCKAG9epGRL419adhDNdkDCQkA==
-  dependencies:
-    resize-observer-polyfill "^1.5.1"
->>>>>>> a340ea43d727ef10a3c42ecec2ac01bd2876fd84
 
 use@^3.1.0:
   version "3.1.1"

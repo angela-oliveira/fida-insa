@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-import React from 'react'
-import { Link  } from 'react-router-dom'
-import { Col } from 'antd'
-=======
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
->>>>>>> a340ea43d727ef10a3c42ecec2ac01bd2876fd84
 
 import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
