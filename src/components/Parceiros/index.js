@@ -24,7 +24,7 @@ function Parceiros() {
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card hoverable >
+                        <Card>
                             <img alt="example" src={insalogo} />
                             <Meta title="" description="" />
                         </Card>
@@ -34,22 +34,22 @@ function Parceiros() {
 
                     <Row >
 
-                        <Card hoverable >
+                        <Card>
                             <img alt="example" src={ifpblogo} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card hoverable >
+                        <Card>
                             <img alt="example" src={ufcglogo} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card hoverable >
+                        <Card>
                             <img alt="example" src={paqtcpblogo} />
                             <Meta title="" description="" />
                         </Card>
 
-                        <Card hoverable >
+                        <Card>
                             <img alt="example" src={procaselogo} />
                             <Meta title="" description="" />
                         </Card>
@@ -59,7 +59,7 @@ function Parceiros() {
 
                     <Row>
 
-                        <Card hoverable >
+                        <Card>
                             <img alt="example" src={fidalogo} />
                             <Meta title="" description="" />
                         </Card>

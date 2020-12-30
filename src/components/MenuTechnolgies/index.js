@@ -117,7 +117,7 @@ function MenuTechnologies() {
       <div className='selector' ref={selectRef}>
         <ul>
           <li className="c1">
-            <Link to='/energia-eolica'>
+            <Link to='/energia-eolica/#'>
               <input id='c1' type='checkbox'></input>
               <label className="label-c1"
 

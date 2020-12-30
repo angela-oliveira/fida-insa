@@ -82,9 +82,14 @@
     border-radius: 11px;
     background: rgb(236, 236, 236);
 }
-
+@keyframes example {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
 .graphic .line-gra div{
-    width: 80%;
+    width: 100%;
     background: var(--color-green-medium);
+    animation-name: example;
+    animation-duration: 2s;
 }
 

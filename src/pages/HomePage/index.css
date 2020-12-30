@@ -72,9 +72,8 @@ h1{
 
 /* TECHS */
 .techs{
-    position: relative;
+    margin-top: 10%;
 }
-
 .techs .ant-card{
     display: "flex";
     /* padding-bottom: '0px',  */
@@ -114,6 +113,9 @@ h1{
 
 .techs .ant-card img{
     width: 500px;
+}
+.team{
+    margin-top: 10%;
 }
 
 .team{
@@ -164,10 +166,9 @@ h1{
 
 /* PARCEIROS */
 
-.parceiros .ant-card-bordered{
-    background: none;
+.parceiros{
+    margin-top: 10%;
 }
-
 .parceiros .ant-card{
     display: flex;
     justify-content: center;

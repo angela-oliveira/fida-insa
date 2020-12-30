@@ -2,7 +2,7 @@ boby,html{
     margin: 0%;
     padding: 0%;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #body{
@@ -13,6 +13,7 @@ boby,html{
 
 .footer {
     width: 100%;
+    grid-column: 1/13;
 }
 .footer img {
     width: 100%;
