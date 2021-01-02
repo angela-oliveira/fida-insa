@@ -8,7 +8,7 @@ import './index.css'
 import logoFida from "../../utils/images/logo_fida.png";
 
 
-const HeaderTechs = () => {
+const HeaderTechs = (props) => {
     return (
         <div className="site-page-header-ghost-wrapper">
             <PageHeader
@@ -18,6 +18,17 @@ const HeaderTechs = () => {
 
             >
             </PageHeader>
+            <div className="nave-left">
+                <Link></Link>
+                <button>
+                </button>
+            </div>
+
+            <div className="nave-right">
+                <button>
+                    
+                </button>
+            </div>
         </div>
     );
 }

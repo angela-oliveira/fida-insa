@@ -2,6 +2,8 @@ html{
     overflow-x: hidden;
 }
 
+.ant-card {background: none;}
+
 .main-banner-page{
     padding-left: 150px;
     margin-bottom: 3rem;
@@ -73,6 +75,7 @@ h1{
 /* TECHS */
 .techs{
     margin-top: 10%;
+    position: relative;
 }
 .techs .ant-card{
     display: "flex";
@@ -231,9 +234,10 @@ h1{
     width: 100vw;
     height: 100vh;
     top: -20rem;
+    right: -1rem;
     background-image: url('../../utils/images/Path10.svg');
     background-position-y: -19rem;
-    background-position-x: -14rem;
+    background-position-x: -13rem;
     transform: rotate(-4deg);
     background-size: 118%;
     background-repeat: no-repeat;

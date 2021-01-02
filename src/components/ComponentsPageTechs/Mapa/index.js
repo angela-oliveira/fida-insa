@@ -67,9 +67,16 @@ function Mapa(props) {
                 setSelectedEstados(selectedEstados === features ? drawMap : features);
             })
             .attr("class", "estado")
-            
+
             // .transition(700)
-            .attr("d", features => pathGenerator(features));
+            .attr("d", features => pathGenerator(features))
+            // .append("foreignObject")
+            // .attr("x", 0)
+            // .attr("y", 0)
+            // .attr("width", 15)
+            // .attr("height", 17)
+            // .append("xhtml:div")
+            // .text("BH");
 
 
         svgPoint
@@ -92,7 +99,7 @@ function Mapa(props) {
             .attr("y", -20)
             .attr("width", 15)
             .attr("height", 17)
-            .append("xhtml:img") 
+            .append("xhtml:img")
             .attr("class", "agulha")
             .attr("src", icoPoint)
             .on("click", (d, i) => {
@@ -175,7 +182,7 @@ function Mapa(props) {
                     </div>
                     <div className='info-media' ref={midiaRef}>
                         <Carousel
-                            
+
                             slidesToShow={3}
                             cellSpacing={10}
                             defaultControlsConfig={{
