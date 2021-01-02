@@ -28,7 +28,7 @@
 }
 
 .equipe .slider-control-centerleft{
-    left: 35% !important;
+    left: 30% !important;
     grid-row: 2/3;
     bottom: 0%;
     
@@ -36,9 +36,13 @@
 
 .equipe .slider-control-centerright{
     /* border: 1px solid #000; */
-    right: 35% !important;
+    right: 30% !important;
     grid-row: 2/3;
     bottom: 0%;
+}
+
+.equipe .slider-control-bottomcenter{
+    bottom: 1rem !important;
 }
 
 .equipe .slider button{
