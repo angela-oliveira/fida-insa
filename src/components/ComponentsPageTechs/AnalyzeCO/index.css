@@ -1,7 +1,7 @@
 .analyze-co{
     /* border: 1px solid #000; */
-    grid-column: 3/11;
-    height: 500px;
+    grid-column: 2/12;
+    /* height: 500px; */
     display: flex;
 }
 
@@ -14,7 +14,10 @@
     margin-top: 2rem;
 
 }
-
+.site-card-border-less-wrapper {
+    padding: 30px;
+    background: #ececec;
+  }
 .casca-ana-co .co-label{
     display: flex;
     position: relative;
@@ -41,6 +44,7 @@
 .casca-ana-co .co-graphic{
     display: flex;
     width: 100%;
+    margin-top: 2rem;
 }
 .co-graphic .gra-label{
     /* border: 1px solid #000; */
@@ -93,3 +97,19 @@
     animation-duration: 2s;
 }
 
+.co-patente-trl {
+    padding: 30px;
+    background: #ececec;
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+}
+.co-patente-trl .img {
+    margin:auto;
+    
+}
+.ant-card-head-title {
+    font-weight: bold;
+}
