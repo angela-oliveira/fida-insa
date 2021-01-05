@@ -62,7 +62,19 @@ h1{
     font: normal normal bold 16px Raleway;
     border-color: var(--color-green-border);
 }
+.content-modal-home p{
+    text-align: justify;
+    text-indent: 3rem;
+}
+.ant-modal-title{
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-green-dark);
+}
+.ant-modal-header {
+    background-color: var(--color-yellow);
 
+}
 .ant-row .bg-main{
     position: "relative"; 
     /* background-image: url("../../utils/images/bg_main.png"); */
