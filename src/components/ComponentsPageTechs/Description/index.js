@@ -7,7 +7,7 @@ import Cor from '../../../utils/images/EOLICA-CATAVENTO ZOOM.jpg'
 import { Button, Modal, Tooltip, Row } from 'antd';
 
 import { SearchOutlined } from '@ant-design/icons';
-import { PlusCircleFilled, PlusOutlined, PlusCircleOutlined } from '@ant-design/icons';
+import { PlusOutlined } from '@ant-design/icons';
 
 class Description extends React.Component {
     // listCase = document.getElementsByClassName('.list-cases')
