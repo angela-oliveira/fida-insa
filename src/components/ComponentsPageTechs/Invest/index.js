@@ -92,7 +92,7 @@ export default class extends React.Component {
         <div className='Invest'>
             <div className='casca-ana-cb'>
                 <div className='cb-label'>OPORTUNIDADE DE INVESTIMENTO</div>
-                <p>Entenda como estão divididos os investimentos</p>
+                <p className='p-invest'>Entenda como estão divididos os investimentos</p>
                 
                 <div className='cb-graphic'>
                 <Table columns={columns} dataSource={data} />
