@@ -66,13 +66,13 @@ h1{
     text-align: justify;
     text-indent: 3rem;
 }
-.ant-modal-title{
+.modal-home-page .ant-modal-title{
     font-weight: bold;
     text-align: center;
     color: var(--color-green-dark);
 }
-.ant-modal-header {
-    background-color: var(--color-yellow);
+.modal-home-page .ant-modal-header {
+    background-color: #FAF238;
 
 }
 .ant-row .bg-main{

@@ -57,9 +57,10 @@ export default class extends React.Component {
 
 
                                 <Modal
+                                    className="modal-home-page"
                                     title='Olá, sejam bem vindos!'
                                     visible={this.state.visible}
-                                    width={720}
+                                    width={1000}
                                     footer={null}
                                     onCancel={() =>
                                         this.setState({
