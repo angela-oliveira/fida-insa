@@ -1,7 +1,7 @@
 .Invest{
     border: 1px solid #000;
     grid-column: 1/13;
-    height: 500px;
+    /* height: 500px; */
     border: none;
 }
 .casca-ana-cb{
@@ -9,11 +9,16 @@
 }
 .p-invest{
     text-align: center;
+    text-indent: 0rem;
 }
-.ant-table-cell {
+.cb-graphic {
+    display: flex;
+    flex-direction: column;
+}
+/* .ant-table-cell {
     background-color: #329BA3;
     color: white;
-}
+} */
 th {
     background-color: #000;
 } 
