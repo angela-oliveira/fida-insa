@@ -1,7 +1,8 @@
 .description{
     /* border: 1px solid #000; */
-    grid-column: 3/11;
+    grid-column: 2/12;
     margin-bottom: 2rem;
+    
 
 }
 
@@ -18,17 +19,59 @@
     grid-column: 1/3;
     grid-row: 1/3;
 }
-.description button{
-    border: solid;
-    /* border-radius: 100%; */
-    color: var(--color-green-dark);
-    /* height: 72px; */
-    /* width: 250px; */
-    /* font-size: 17px; */
-    font: normal normal 50px Raleway;
-    border-color: var(--color-green-border);
-}
+p {
 
+    text-align: justify;
+    text-indent: 3rem;
+}
+.button-1{
+    border: none;
+    border-radius:40px;
+    color: #fff;
+    height: 30px;
+    width: 90px;
+    background-color: #329BA3;
+}
+.tooltip {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    /* margin-right: 20px; */
+}
+.tolltip-margin{
+    /* margin-right: 20px; */
+}
+.content-modal p{
+    text-align: justify;
+    text-indent: 3rem;
+}
+.ant-modal-title{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.ant-modal-header {
+    background-color: #329BA3;
+
+}
+/* .anticon-plus-circle{
+    font-size: 30px;
+    color: #08c;
+}
+.more {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.more button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-bottom: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.199);
+} */
 .title-tech .logo-tech{
     display: flex;
 }
@@ -39,7 +82,7 @@
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background: rgb(88, 88, 88);
+    background:#329BA3;
 }
 
 .logo-tech .casca-logo-tech img{
@@ -60,7 +103,9 @@
 /* --- TEMPORARIO --- */
 .logo-tech .label-tech .labelB{
     font-Size: 2.5rem;
-    color: var(--color-green-light);
+    padding-top: 5%;
+    color: #329BA3;
+    /* color: var(--color-green-light); */
 }
 
 /* ------------------ */
@@ -82,12 +127,14 @@
 }
 
 .justify .justify-txt{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     
 }
 
 .justify-txt p{
     margin-right:1rem ;
+    /* grid-column: 1/2; */
 
 }
 
@@ -109,12 +156,15 @@
     /* border: 1px solid #000; */
     width: 100%;
     /* height: 100%; */
+    padding-left: 1rem;
 }
 
 /* DESCRIPTION BOTTOM */
 
 .description .desc-bottom{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    /* display: flex; */
     /* border: 1px solid #000; */
     /* align-items: center; */
     margin-top: 5rem;

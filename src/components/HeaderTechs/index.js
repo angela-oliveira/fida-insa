@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 
 
 import './index.css'
-import logoFida from "../../utils/images/logo_fida.png";
+import logoRenovaSemiarido from "../../utils/images/renova-semiarido.png";
 
 
 const HeaderTechs = (props) => {
@@ -14,7 +14,7 @@ const HeaderTechs = (props) => {
             <PageHeader
 
                 ghost={false}
-                title={<Link to="/" className="fida"><img src={logoFida}></img></Link>}
+                title={<Link to="/" className="fida"><img src={logoRenovaSemiarido}></img></Link>}
 
             >
             </PageHeader>

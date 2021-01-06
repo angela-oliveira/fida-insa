@@ -1,6 +1,6 @@
 .Curiosities{
     margin: 2rem 0rem;
-    grid-column: 3/11;
+    grid-column: 2/12;
     /* grid-column: 1/13; */
     /* height: 500px; */
     border: none;
@@ -22,5 +22,16 @@
     margin: 3rem 0 2rem 0;
 }
 .subtitle{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+.subtitle p {
     text-align: center;
+    text-indent: 0;
+}
+.ant-collapse-header {
+    background-color: #329BA3;
+    color: #fff!important;
+    /* font-weight: bold; */
 }

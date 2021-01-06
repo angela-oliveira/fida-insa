@@ -1,10 +1,20 @@
 import React from 'react';
 import './index.css';
-import { Tabs, Statistic, Card, Row, Col } from 'antd';
+import { Tabs, Statistic, Card, Row, Col, Tooltip, Modal, Button } from 'antd';
+import { PlusOutlined } from '@ant-design/icons';
+
 const { TabPane } = Tabs;
 
-function AnalyzeCB() {
-    return (
+class AnalyzeCB extends React.Component{
+    state = {
+        visible: false
+    }
+
+    openModal() {
+        this.setState({ visible: true })
+    }
+    render () {
+        return (
         <div className='analyze-cb'>
             <div className='casca-ana-cb'>
                 <div className='cb-label'>ANÁLISE CUSTO BENEFÍCIO</div>
@@ -44,8 +54,40 @@ function AnalyzeCB() {
                                     </Card>
                                 </Col>
                             </Row>
-                            
+                                        
+                            <div className=' tolltip-margin'>
+                                <Tooltip title="Ver mais" >
+                                    <Button 
+                                        className='button-1' 
+                                        onClick={() => this.openModal()} 
+                                        type="primary" 
+                                        shape="circle" 
+                                        icon={<PlusOutlined />} 
+                                    />
+                                </Tooltip>
+                                <Modal
+                                    title={'teste'}
+                                    visible={this.state.visible}
+                                    width={1000}
+                                    footer={null}
+                                    onCancel={() =>
+                                        this.setState({
+                                            visible: false
+                                        })
+                                    }
+                                >
+                                    <div className='content-modal'>
+                                        {/* <p>{this.desciption.content}</p> */}
+                                        <p>Existem diversas empresas que fabricam, comercializam, instalam e fornecem serviço de manutenção de cataventos hidráulicos no Semiárido brasileiro. Não obstante, mesmo sendo uma obra da evolução tecnológica, os catavento são práticos, pois podem ser adaptados a diversas situações; duráveis, podem ter uma vida útil de até 30 anos; ecológicos pois não utilizam nenhuma fonte de energia acessória (apenas o movimento dos ventos); e de fácil manutenção, pois suas peças componentes são de fácil aquisição e o conserto pode ser feito em pequenas cidades. 
+                                        </p>
+                                        <p>Os custos de aquisição e manutenção são proporcionais à necessidade de uso e, consequentemente, à vazão de bombeamento de água pretendida e à velocidade média dos ventos na localidade de instalação. No ano de 2020, o preço de aquisição dessa tecnologia pode variar de R$ 4.000,00 a R$ 10.000,00 dependendo da vazão. Por exemplo, um catavento montado em uma torre de 10 m de altura que fornece uma vazão de água entre 10.000 e 15.000 L/dia, pode chegar a R$ 4.900,00 reais. Para o uso de cataventos em sistemas de irrigação, um estudo feito em 2003 pela Embrapa Agroindústria Tropical estimou que para montar uma área irrigada de 6.000 m2 com catavento hidráulico seriam necessários em torno de R$ 15.500,00. Com o preço atualizado para o ano de 2020, esse mesmo sistema poderia custar cerca de R$ 19.300,00. 
+                                        </p>
+                                    </div>
+                                </Modal>
+
+                            </div>
                         </div>
+
                     </TabPane>
                     <TabPane tab="Tempo de vida útil da tecnologia" key="3">
                         <div className="site-statistic-demo-card">
@@ -54,7 +96,7 @@ function AnalyzeCB() {
                                 <Col span={12}>
                                     <Card>
                                         <Statistic
-                                            title="Custos de Manutenção"
+                                            title="Tempo de vida útil"
                                             value={"30 Anos"}
                                             precision={2}
                                             valueStyle={{ color: '#329BA3' }}
@@ -72,7 +114,7 @@ function AnalyzeCB() {
                                 <Col span={12}>
                                     <Card>
                                         <Statistic
-                                            title="Custos de Manutenção"
+                                            title="Impactos ambientais"
                                             value={"0"}
                                             valueStyle={{ color: '#329BA3' }}
                                         />
@@ -137,8 +179,7 @@ function AnalyzeCB() {
                     </div>
                 </div> */}
             </div>
-        </div>
-    )
+        </div>)
+    }
 }
-
-export default AnalyzeCB;
+export default AnalyzeCB
