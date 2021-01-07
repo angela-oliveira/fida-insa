@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import fototest from '../../utils/images/foto_test.jpg';
-import solartest from '../../utils/images/solar_test1.jpg';
+import eolica from '../../utils/images/photos/eólica_fotos/EOLICA-PANORAMICA CATAVENTO-1200.jpg';
+import bioagua from '../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 01.JPG';
+import ecofogao from '../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Maria 01_1200.jpg';
+import biodigestor from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 02.JPG';
+import solar from '../../utils/images/photos/solar/SOLAR_PAINEL_SOLAR_1200.jpg';
+
+
+// import solartest from '../../utils/images/solar_test1.jpg';
 
 import Carousel from 'nuka-carousel'
 
@@ -16,7 +22,7 @@ class Case extends React.Component {
 
                 <Carousel
 
-                    
+
                     slidesToShow={1}
                     slideWidth='700px'
                     cellAlign='center'
@@ -30,32 +36,32 @@ class Case extends React.Component {
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            borderRadius:'50%',
-                            width:'50px',
-                            height:'50px',
+                            borderRadius: '50%',
+                            width: '50px',
+                            height: '50px',
                             background: '#FAF238',
                             color: '#575757',
                             fontSize: '20px',
-                            
+
 
                         },
                         nextButtonStyle: {
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            width:'50px',
-                            height:'50px',
-                            borderRadius:'50%',
+                            width: '50px',
+                            height: '50px',
+                            borderRadius: '50%',
                             background: '#FAF238',
                             color: '#575757',
                             fontSize: '20px',
-                            top:'50px',
+                            top: '50px',
 
                         },
                         pagingDotsStyle: {
                             fill: '#11523b',
                             width: '30px',
-                            right:'30px',
+                            right: '30px',
                         }
                     }}
                     autoGenerateStyleTag={true}
@@ -63,26 +69,17 @@ class Case extends React.Component {
                     <div className='case'>
 
                         <div className='case-content'>
-                            <div className='title' style={{ background: solartest }}>
-                                <h2 className='top' >CASES</h2>
+                            <div className='title'  >
+                                <h2 className='top' >Energia Eólica</h2>
                                 <h2>
-                                    Energia Solar na comunidade Uruçu <br></br>em
-                                                São joão do Cariri
+                                    Projeto aplicado no sítio do Algodão no município de Algodão de Jandaíra - PB
                                             </h2>
                             </div>
                             <div className='img'>
-                                <img src={fototest} alt='Energia solar'></img>
+                                <img src={eolica} alt='Energia Eólica'></img>
                             </div>
                             <article className='text'>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam
-                                            </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            </p>
+
                             </article>
                         </div>
                         <Link to='/'> <div className='more'>+</div></Link>
@@ -90,26 +87,17 @@ class Case extends React.Component {
                     <div className='case'>
 
                         <div className='case-content'>
-                            <div className='title' style={{ background: solartest }}>
-                                <h2 className='top' >CASES</h2>
+                            <div className='title'  >
+                                <h2 className='top' >Bioágua</h2>
                                 <h2>
-                                    Energia Solar na comunidade Uruçu <br></br>em
-                            São joão do Cariri
+                                    Sistema reuso de água cinza no sítio Capoeiras do Asfalto localizado na cidade de Varjota - CE
                         </h2>
                             </div>
                             <div className='img'>
-                                <img src={fototest} alt='Energia solar'></img>
+                                <img src={bioagua} alt='Energia solar'></img>
                             </div>
                             <article className='text'>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam
-                        </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                          
                             </article>
                         </div>
                         <Link to='/'> <div className='more'>+</div></Link>
@@ -117,26 +105,53 @@ class Case extends React.Component {
                     <div className='case'>
 
                         <div className='case-content'>
-                            <div className='title' style={{ background: solartest }}>
-                                <h2 className='top' >CASES</h2>
+                            <div className='title'  >
+                                <h2 className='top' >Ecofogão</h2>
                                 <h2>
-                                    Energia Solar na comunidade Uruçu <br></br>em
-                            São joão do Cariri
+                                    Fogão a lenha instalado no município de Sobral - CE
                         </h2>
                             </div>
                             <div className='img'>
-                                <img src={fototest} alt='Energia solar'></img>
+                                <img src={ecofogao} alt='Energia solar'></img>
                             </div>
                             <article className='text'>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam
-                        </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                                
+                            </article>
+                        </div>
+                        <Link to='/'> <div className='more'>+</div></Link>
+                    </div>
+                    <div className='case'>
+
+                        <div className='case-content'>
+                            <div className='title'  >
+                                <h2 className='top' >Biodigestor</h2>
+                                <h2>
+                                    Sistema para a produção de Biogás no Sítio Cajazeira no município de Varjota - CE
+                        </h2>
+                            </div>
+                            <div className='img'>
+                                <img src={biodigestor} alt='Biodigestor'></img>
+                            </div>
+                            <article className='text'>
+                                
+                            </article>
+                        </div>
+                        <Link to='/'> <div className='more'>+</div></Link>
+                    </div>
+                    <div className='case'>
+
+                        <div className='case-content'>
+                            <div className='title'  >
+                                <h2 className='top' >Energia solar</h2>
+                                <h2>
+                                    Sistema para a produção de Biogás no Sítio Cajazeira no município de Varjota - CE
+                        </h2>
+                            </div>
+                            <div className='img'>
+                                <img src={solar} alt='Energia solar'></img>
+                            </div>
+                            <article className='text'>
+                                
                             </article>
                         </div>
                         <Link to='/'> <div className='more'>+</div></Link>

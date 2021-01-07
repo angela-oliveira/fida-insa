@@ -88,14 +88,14 @@
 
 .container-cases .slider-control-centerleft{
 
-    grid-column: 2/3;
-    bottom:-15%;
+    grid-column: 2/3;   
+    top: 4rem !important;
 }
 
 .container-cases .slider-control-centerright{
 
     grid-column: 2/3;
-    bottom:69%;
+    top : 18rem !important ;
 }
 
 .container-cases .slider-control-bottomcenter{
@@ -106,7 +106,7 @@
 .container-cases .slider-control-bottomcenter{
     transform: rotate(90deg)!important;
     bottom: 308px !important;
-    left: -32px !important;
+    left: -3.2rem !important;
 }
 
  .case{
@@ -129,18 +129,18 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 30%;
     grid-template-areas:". . . . ."
-                        "img img title title title"
-                        "img img title title title"
-                        "img img text text text";   
+                        "img img img title title"
+                        "img img img title title"
+                        ". . . title title"   ;
 }
 
 .case .case-content article::after{
     position: absolute;
     bottom: 0%;
     content: '';
-    width: 82%;
+    width: 94%;
     right: 0%;
-    border-top: 145px solid var(--color-yellow);
+    border-top: 4rem solid var(--color-yellow);
     z-index: -2;
     }
 
@@ -167,6 +167,7 @@
     color: var(--color-green-dark);
     font-weight: 700;
     font-size: 1.9rem;
+    width: 300px;
 }
 
  .case .case-content .title .top{

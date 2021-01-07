@@ -193,7 +193,7 @@
   .c2:hover ~ .button{
     background: #1AC3E2;
   }
-  .c3:hover ~ .button{
+  .c3:active ~ .button{
     background: #89773C;
   }
   .c4:hover ~ .button{
