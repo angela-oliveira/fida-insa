@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { select, geoPath, geoMercator, svg } from "d3";
 import useResizeObserver from 'use-resize-observer';
-import drawMap from '../../../utils/filesJSON/semiarido.geo.json';
+import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
 
 import icoPoint from '../../../utils/images/place_01.svg';
 import ecoTest from '../../../utils/images/photos/ecotest.jpg';

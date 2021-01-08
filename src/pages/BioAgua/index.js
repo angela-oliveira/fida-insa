@@ -16,8 +16,6 @@ import dataMap from '../../utils/filesJSON/bioagua/datamap/bioagua.json';
 
 import footer from "../../utils/images/footer-agua.png";
 
-import dataMap from '../../utils/filesJSON/bioagua.json';
-
 
 function BioAgua() {
 
