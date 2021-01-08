@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css';
 
-import LogoTech from '../../../utils/images/ic_eolica.png'
-import Cor from '../../../utils/images/EOLICA-CATAVENTO ZOOM.jpg'
+import LogoTech from '../../../utils/images/ic_ecofogao.png'
+import Cor from '../../../utils/images/ecofogao_principal.jpg'
 
 import { Button, Modal, Tooltip, Row } from 'antd';
 
@@ -30,43 +30,6 @@ class Description extends React.Component {
     factors = {
         title: 'Fatores de promovem ou limitam a adoção da tecnologia'
     }
-    modal = () => {
-        const p = []
-        p.push(
-            <Modal
-                title={this.desciption.title}
-                visible={this.state.visible}
-                width={1000}
-                footer={null}
-                onCancel={() =>
-                    this.setState({
-                        visible: false
-                    })
-                }
-                onOk={() =>
-                    this.setState({
-                        visible: false
-                    })
-                }
-            >
-                <div className='content-modal'>
-                    {/* <p>{this.desciption.content}</p> */}
-                    <p>Cataventos são dispositivos que aproveitam a energia dos ventos. Eles podem ser usados para geração de energia elétrica ou para o bombeamento de água destinada ao armazenamento ou irrigação. É possível ainda que sejam utilizados para movimentar aeradores de tanques de tratamento de água ou na aquicultura.
-                    </p>
-                    <p>Para o bombeamento de água, o catavento deve ser instalado em conjunto com uma bomba do tipo pistão. Para fins de irrigação, é geralmente utilizado para bombear água para reservatórios posicionados numa cota maior do terreno. Do reservatório, a água pode então ser distribuída por gravidade a sistemas de irrigação por gotejamento, microaspersão ou superfície. É um sistema de alto custo de aquisição em comparação ao sistema de bombeamento elétrico, mas de baixo custo de operação e manutenção. Uma necessidade básica para a instalação do sistema é que na região tenha ventos acima de 2 m/s.
-                    </p>
-                    <p>Já no uso para geração de energia elétrica, os cataventos são acoplados a geradores elétricos (aerogeradores) que são ligados à rede pública de eletricidade, ou ainda utilizados para alimentar um banco de baterias. A energia gerada por esses dispositivos é então denominada de Energia Eólica. Embora o potencial brasileiro para a geração de energia eólica seja elevado, as regiões com maior percentual da agricultura familiar instalada não apresentam potencial para a geração de energia por grandes parques eólicos. No entanto, há potencial eólico suficiente para geração de energia elétrica a ser utilizada no processo produtivo da agricultura familiar com uso da irrigação.
-                    </p>
-                    <p>Como visto, são diversas as aplicações dos cataventos, que variam de acordo com a necessidade, principalmente em áreas remotas, onde são utilizados para geração doméstica de energia elétrica e para bombear água. Também são empregados em sítios turísticos ou naqueles longe das redes elétricas, para a geração de energia elétrica para operar todos os equipamentos de apoio e máquinas de processamento. Os aerogeradores de pequeno porte são utilizados para provimento de energia em escalas variadas, para atendimento desde uma comunidade isolada, até pequenos arranjos para gerar eletricidade em parques eólicos compostos por pequenos aerogeradores. Nestas escalas, os aerogeradores de pequeno porte são usados para suprimento de água, dessedentação de animais, irrigação e drenagem de várzeas, podendo ou não estar associados a outros dispositivos de geração e armazenamento de energia em sistemas híbridos, ou seja, sistemas com mais de uma fonte de energia. Formas de produção local, a exemplo, pequenos aerogeradores, poderiam vir também a representar uma solução definitiva para suas necessidades de energia elétrica ou ainda a utilização de cataventos no bombeamento de água do subsolo para o uso agrícola e doméstico.
-                    </p>
-                </div>
-            </Modal>
-        )
-        return p
-    }
-    // showModal = modal => {
-    //     this.setState
-    // }
 
     openModal() {
         this.setState({ visible1: true })
@@ -89,12 +52,12 @@ class Description extends React.Component {
                                 <img src={LogoTech} alt='logo da tecnologia'></img>
                             </div>
                             <div className='label-tech' >
-                                <h2 className='labelA'>ENERGIA</h2>
-                                <h2 className='labelB'>EÓLICA</h2>
+                                <h2 className='labelA'>ECO</h2>
+                                <h2 className='labelB'>FOGÃO</h2>
                             </div>
                         </div>
                         <br></br>
-                        <p>Cataventos são dispositivos que aproveitam a energia dos ventos. Eles podem ser usados para geração de energia elétrica ou para o bombeamento de água destinada ao armazenamento ou irrigação. É possível ainda que sejam utilizados para movimentar aeradores de tanques de tratamento de água ou na aquicultura.          
+                        <p>O ecofogão é uma tecnologia composta por uma base de tijolos onde está embutida uma câmara de combustão fechada por uma placa metálica de ferro fundido com aberturas (bocas) para encaixe das panelas. Ao lado, tem-se o forno feito de ferro em formato retangular por onde circula externamente o calor produzido na câmara de combustão, seguindo para a chaminé junto com a fumaça.
                         </p>
                         <div className='tooltip tolltip-margin'>
                             <Tooltip title="Ver mais" >
@@ -123,14 +86,11 @@ class Description extends React.Component {
                                 }
                             >
                                 <div className='content-modal'>
-                                    {/* <p>{this.desciption.content}</p> */}
-                                    <p>Cataventos são dispositivos que aproveitam a energia dos ventos. Eles podem ser usados para geração de energia elétrica ou para o bombeamento de água destinada ao armazenamento ou irrigação. É possível ainda que sejam utilizados para movimentar aeradores de tanques de tratamento de água ou na aquicultura.
+                                    <p>O fogão ecológico ou ecofogão utilizado nos projetos financiados pelo FIDA tratam-se de um melhoramento do fogão a lenha tradicional, que consome menos lenha e tem acoplado um forno. Para o uso e confecção do fogão ecológico são usados menos recursos financeiros e menos recursos naturais, além de preservar uma das tradições camponesas, as comidas preparadas no forno à lenha.
                                     </p>
-                                    <p>Para o bombeamento de água, o catavento deve ser instalado em conjunto com uma bomba do tipo pistão. Para fins de irrigação, é geralmente utilizado para bombear água para reservatórios posicionados numa cota maior do terreno. Do reservatório, a água pode então ser distribuída por gravidade a sistemas de irrigação por gotejamento, microaspersão ou superfície. É um sistema de alto custo de aquisição em comparação ao sistema de bombeamento elétrico, mas de baixo custo de operação e manutenção. Uma necessidade básica para a instalação do sistema é que na região tenha ventos acima de 2 m/s.
+                                    <p>Em relação ao fogão a lenha tradicional, a câmara fechada do ecofogão possibilita um processo de produção de mais calor, aproveitando melhor a queima da madeira, tornando-se mais eficiente e com o mínimo de produção de fumaça, que é expelida por meio de uma chaminé de cerâmica até a parte de fora do telhado das casas, reduzindo o consumo de lenha e, consequentemente a emissão de fumaça.
                                     </p>
-                                    <p>Já no uso para geração de energia elétrica, os cataventos são acoplados a geradores elétricos (aerogeradores) que são ligados à rede pública de eletricidade, ou ainda utilizados para alimentar um banco de baterias. A energia gerada por esses dispositivos é então denominada de Energia Eólica. Embora o potencial brasileiro para a geração de energia eólica seja elevado, as regiões com maior percentual da agricultura familiar instalada não apresentam potencial para a geração de energia por grandes parques eólicos. No entanto, há potencial eólico suficiente para geração de energia elétrica a ser utilizada no processo produtivo da agricultura familiar com uso da irrigação.
-                                    </p>
-                                    <p>Como visto, são diversas as aplicações dos cataventos, que variam de acordo com a necessidade, principalmente em áreas remotas, onde são utilizados para geração doméstica de energia elétrica e para bombear água. Também são empregados em sítios turísticos ou naqueles longe das redes elétricas, para a geração de energia elétrica para operar todos os equipamentos de apoio e máquinas de processamento. Os aerogeradores de pequeno porte são utilizados para provimento de energia em escalas variadas, para atendimento desde uma comunidade isolada, até pequenos arranjos para gerar eletricidade em parques eólicos compostos por pequenos aerogeradores. Nestas escalas, os aerogeradores de pequeno porte são usados para suprimento de água, dessedentação de animais, irrigação e drenagem de várzeas, podendo ou não estar associados a outros dispositivos de geração e armazenamento de energia em sistemas híbridos, ou seja, sistemas com mais de uma fonte de energia. Formas de produção local, a exemplo, pequenos aerogeradores, poderiam vir também a representar uma solução definitiva para suas necessidades de energia elétrica ou ainda a utilização de cataventos no bombeamento de água do subsolo para o uso agrícola e doméstico.
+                                    <p>A tecnologia social dos ecofogões/fogões ecológicos é apresentada como a alternativa mais eficiente aos fogões a lenha tradicionais. Esta tecnologia foi empregada por vários projetos de energias renováveis e de fortalecimento da agricultura familiar, como exemplo no Projeto Paulo Freire (PPF) no Ceará, para facilitar e melhorar a vida do homem no campo e preservar mais a natureza.
                                     </p>
                                 </div>
                             </Modal>
@@ -140,9 +100,9 @@ class Description extends React.Component {
                     <div className='justify'>
                         <div className='justify-label'>QUAL A JUSTIFICATIVA</div>
                         <div className='justify-txt'>
-                            <p>Tanto o catavento destinado ao bombeamento de águas do subsolo, quanto aqueles destinados à produção de energia elétrica em pequena escala se adequam perfeitamente ao uso em comunidades agrícolas, pois fornecem meios necessários à subsistência humana, animal e vegetal. Deve-se também considerar que a diversificação da matriz energética rural é imprescindível, especialmente para ampliar o aproveitamento dos recursos naturais disponíveis nas propriedades rurais.</p>
+                            <p>Na região Nordeste do Brasil, 85% das famílias da zona rural utilizam a lenha para o cozimento de alimentos. O modelo dos fogões ecológicos instalados nas comunidades através do CETRA (Centro de Estudos do Trabalho e de Assessoria ao Trabalhador) pelo Projeto Paulo Freire é baseado no ecofogão desenvolvido pela AS-PTA (Associação para a Agricultura Familiar e Agro­ecologia) para diminuir os efeitos prejudiciais causados pelo uso frequente dos fogões à lenha convencionais, pensando no desmatamento da vegetação nativa e nos problemas respiratórios oriundos da inalação da fumaça liberada pelo fogão.</p>
 
-                            <p>É importante também levar em consideração que o uso de tecnologias como essa melhoram a renda do agricultor, pois diminuem os custos de manutenção. Além disso, o catavento é uma tecnologia que não requer conhecimento técnico avançado e nem um custo de manutenção elevado para sua manutenção.
+                            <p>O principal objetivo é tornar sustentável o uso da madeira, evitando os problemas de saúde, melhorando a qualidade de vida das famílias e evitando a emissão de gases causadores do efeito estufa.
 
                             </p>
                         </div>
@@ -169,10 +129,13 @@ class Description extends React.Component {
                                 }
                             >
                                 <div className='content-modal'>
-                                    {/* <p>{this.desciption.content}</p> */}
-                                    <p>Tanto o catavento destinado ao bombeamento de águas do subsolo, quanto aqueles destinados à produção de energia elétrica em pequena escala se adequam perfeitamente ao uso em comunidades agrícolas, pois fornecem meios necessários à subsistência humana, animal e vegetal. Deve-se também considerar que a diversificação da matriz energética rural é imprescindível, especialmente para o aproveitamento dos recursos naturais disponíveis nas propriedades rurais. É importante também levar em consideração que o uso de tecnologias como essa melhoram a renda do agricultor, pois diminuem os custos de manutenção. O catavento é uma tecnologia que traz consigo a perspectiva do agricultor adquirir um recurso tecnológico importante que não requer conhecimento técnico avançado e nem apresenta um custo de manutenção elevado para sua manutenção.
+                                    <p>Os fogões a lenha utilizados para a cocção, na sua maioria, possuem baixa eficiência energética, geralmente menor que 10%. Por ser incompleta, a queima da lenha potencializa emissões de dióxido de carbono, dióxido de enxofre, monóxido de carbono, dióxido de nitrogênio, além de compostos orgânicos particulados aos quais a exposição provoca doenças respiratórias.
                                     </p>
-                                    <p>A possibilidade de rentabilizar os recursos financeiros do agricultor, evitando que ele invista em equipamentos que requeiram conhecimento técnico específico e elevado custo de aquisição, como é o caso de painéis fotovoltáicos, oportunizou a centenas de propriedades rurais a melhoria na qualidade de vida através da cessão de kits de catavento com sistemas de irrigação pelo FIDA. Atualmente no Semiárido brasileiro, os cataventos rurais mais utilizados são aqueles destinados ao bombeamento de água para consumo e irrigação. Na Paraíba, por exemplo, foram instalados 498 cataventos entre os anos de 2016 e 2019, uma parceria do Governo da Paraíba e o FIDA, em comunidades beneficiadas pelo Procase (Projeto de Desenvolvimento Sustentável do Cariri, Seridó e Curimataú), em 56 municípios do semiárido paraibano. Em geral, esses equipamentos são populares e quase sempre possuem o mesmo design, seguindo o modelo americano. Realizam o trabalho mecânico de bombear água e, por serem populares, após instalados, sua manutenção é fácil e com frequência espaçada.
+                                    <p>Pensando em aplicar e melhorar uma tecnologia para a inclusão social das populações com menor condição financeira, iniciou-se a propagação da utilização de tecnologias sustentáveis. As tecnologias sociais podem ser definidas como técnicas, produtos e métodos multiplicados, testados e comprovados, como parte da solução de uma demanda social e sua respectiva capacidade de solução e transformação, dentro da coletividade.
+                                    </p>
+                                    <p>Afora a necessidade de um manejo adequado para extração da lenha, o modo de preparação dos alimentos nesses fogões necessita de uma atenção especial, uma vez que causam danos à saúde, devido ao alto índice de emissão de fumaça. Outra preocupação relacionada ao uso de fogões a lenha é a relação da mulher que dedica em torno de 18 horas semanais na busca de lenha para o preparo dos alimentos, expostas a situações que trazem riscos de vida por acidentes.
+                                    </p>
+                                    <p>Pensando no meio ambiente, as formas tradicionais de cozinhar alimentos envolvem um alto consumo de combustíveis vegetais como lenha e carvão vegetal, resultando em uma combustão incompleta, onde são emitidos gases que agravam o efeito estufa e outros produtos que contribuem para o aquecimento global. Além disso, cerca de 30% da lenha consumida é coletada de forma não sustentável, resultando em emissões que equivalem a 2% das emissões globais de CO2 e no desmatamento causando perda de biodiversidade local.
                                     </p>
                                 </div>
                             </Modal>
@@ -188,8 +151,8 @@ class Description extends React.Component {
 
                 <div className='desc-bottom'>
                     <div className='fatores-label'>FATORES QUE PROMOVEM OU LIMITAM A ADOÇÃO DA TECNOLOGIA</div>
-                    <div className='fato-txtA'><p>O uso da energia eólica, seja para o bombeamento hidráulico de poços, seja para a geração de energia elétrica, apresenta diversas vantagens de usos bem como desafios. Ao contrário de outras fontes de energia como o petróleo e até mesmo a água, o vento é simplesmente o ar em circulação e, em função disso, não há chances de acabar um dia. Por isso, não há restrição para o uso e aproveitamento dos benefícios da energia eólica.</p></div>
-                    <div className='fato-txtB'><p>Essa fonte energética é tão sustentável que não há emissão de quaisquer elementos que poluem o ar ou o meio ambiente. Se não bastassem a preservação do meio ambiente, a energia eólica é econômica. Na agricultura familiar o aproveitamento dos ventos ocorre principalmente com o uso de cataventos hidráulicos. A principal vantagem para o uso desses equipamentos na agricultura familiar do semiárido é que os cataventos funcionam sob condição de baixa e média pressão podendo, assim, ser utilizados para o bombeamento de fontes de água de pequena vazão.</p> </div>
+                    <div className='fato-txtA'><p>Como fator que promove a adoção do ecofogão, destaca-se a sua maior eficiência em relação ao fogão a lenha tradicional por utilizar menos lenha e ser mais ecológico do ponto de vista da emissão de gases tóxicos e de efeito estufa, tornando-se uma tecnologia ideal para a convivência sustentável do agricultor com o ambiente onde vive. Considerando que o fogão é um dos objetos mais utilizados e importantes da nossa casa, pois é nele que se prepara a comida da família todos os dias, algumas agricultoras destacam que preferem usar o fogão à lenha para cozinhar em relação ao fogão a gás, pois dizem que a comida fica muito mais saborosa e ainda não precisam gastar dinheiro comprando gás. Este fato torna ainda mais relevante a vantagem do ecofogão em relação ao fogão a lenha tradicional.</p></div>
+                    <div className='fato-txtB'><p>Por outro lado, as agricultoras ou seus filhos enfrentam algumas dificuldades para continuar usando o seu fogão a lenha, pois conseguir a madeira requer um trabalho pesado e cansativo, chegando a ser perigoso. Ultimamente, as mulheres precisam andar cada vez mais longe para juntar um feixe de lenha. Se já é trabalhoso ir longe, pior ainda é ter que trazer o peso para a porta de casa, processo muitas vezes feito de forma manual e até com a ajuda das crianças. O mais grave disso é que essa atividade repetidamente por dias está contribuindo ainda mais para diminuir as matas e a vegetação nativa. Usar lenha retirada em grande quantidade prejudica o equilíbrio do ecossistema e a população que vive e depende daquele local.</p> </div>
                 </div>
 
                 <div className='tooltip tolltip-margin'>
@@ -214,16 +177,7 @@ class Description extends React.Component {
                         }
                     >
                         <div className='content-modal'>
-                            {/* <p>{this.desciption.content}</p> */}
-                            <p>O uso da energia eólica, seja para o bombeamento hidráulico de poços, seja para a geração de energia elétrica, apresenta diversas vantagens de usos e bem como desafios. Ao contrário de outras fontes de energia como o petróleo e até mesmo a água, o vento é simplesmente o ar em circulação e, em função disso, não há chances de acabar um dia. Por isso, não há restrição para o uso e aproveitamento dos benefícios da energia eólica. Essa fonte energética é tão sustentável que não há emissão de quaisquer elementos que poluem o ar ou o meio ambiente. Se não bastassem a preservação do meio ambiente, a energia eólica é econômica. Na agricultura familiar o aproveitamento dos ventos ocorre principalmente com o uso de cataventos hidráulicos. A principal vantagem para o uso desses equipamentos na agricultura familiar do semiárido é que os cataventos funcionam sob condição de baixa e média pressão podendo, assim, ser utilizados para o bombeamento de fontes de água de pequena vazão. Além disso, não requer a filtração da água para o seu bombeamento e permite a aplicação localizada da água, com um menor custo de investimento em relação aos demais sistemas de irrigação.
-                            </p>
-                            <p>Contudo, algumas dessas vantagens apresentadas podem tranquilamente também serem desvantagens, pois esse tipo de tecnologia é limitada a regiões com disponibilidade de ventos. Esse fato é ainda mais importante quando se trata do uso de cataventos para a irrigação, onde o bombeamento precisa ser mais constante. Além disso, o uso para bombeamento de águas salobras também aumenta os custos com a manutenção, pois o equipamento é constantemente afetado por incrustação e ferrugem. Assim, esse sistema é indicado para irrigação de áreas menores que 3 ha, o que limita a expansão das áreas produtivas.
-                            </p>
-                            <p>Em geral o custo x benefício é maior do que a instalação de eletrobombas. Nos testes realizados pela Embrapa em Pacajus-CE, o sistema apresentou eficiência para pequenas áreas. Na comparação com o sistema de bombeamento elétrico, a utilização do catavento apresentou um custo inicial maior. Mas, a médio e longo prazos, o sistema de irrigação utilizando energia eólica apresentou vantagens, uma vez que não é preciso pagar pela fonte de energia, a manutenção dos equipamentos também tem um custo menor, além de ser um sistema não poluidor do meio ambiente. Levando em conta o volume diário médio de água bombeado, a utilização de um conjunto eletrobomba de 1.0 CV monofásica seria suficiente para atender a demanda hídrica de uma área de 6.000 m2 irrigados. Contudo, deve ser levada em consideração a necessidade da existência de rede elétrica e, ainda, ao pagamento mensal da conta de energia. Qualquer que seja o sistema de acionamento da bomba, pequenos agricultores descapitalizados não podem arcar com as despesas de implantação.
-                            </p>
-                            <p>Mas não é apenas o processo de aquisição que pode ser considerado um desafio transponível para o uso dessa tecnologia por agricultores familiares no Semiárido brasileiro. Embora seja uma tecnologia popular e muito conhecida no meio rural, em geral o equipamento requer manutenção rotineira e o reparo deve ser feito por pessoal especializado. Isso pode dificultar a manutenção, especialmente em comunidades mais afastadas de zonas urbanas. Além disso, com o bombeamento de águas pesadas o equipamento é frequentemente afetado por incrustação de ferrugem. Assim, capacitar minimamente o agricultor para realizar a manutenção e executar pequenos reparos, é crucial para a independência tecnológica, empoderamento e, consequentemente a redução significativa de custos com assistência técnica.
-                            </p>
-                            <p>Um outro desafio, que se torna mais uma limitação da tecnologia, é que para seu uso, se faz necessário existir na localidade a disponibilidade permanente de ventos, especialmente quando a destinação do catavento é para o bombeamento de água para irrigação, o que exige um fluxo de ventos mais constante. Além disso, o uso do catavento para irrigação é comprovadamente eficaz para pequenas áreas produtivas, o que pode auxiliar na operação de pequenos produtores, mas é um desafio a ser considerado, quando se trata do seu uso em comunidades.
+                            <p>Existem pontos positivos e negativos da tecnologia do Ecofogão, sendo positivo quando o equipamento elimina o escape de fumaça que, antes, circulava por dentro da cozinha e até da casa; utiliza menor quantidade lenha e consequentemente contribui para preservação do meio ambiente; emite menos gases tóxicos à atmosfera, diminuindo o efeito estufa; traz um benefício econômico pois diminui o consumo de gás de cozinha (GLP-Butano); diminui o risco de acidentes de trabalho no manejo; evita o trabalho exaustivo na extração de madeira do meio ambiente e não passa gosto de fumaça para as comidas, pois utiliza uma chaminé para jogar a fumaça pra fora da casa. Os pontos negativos são que, infelizmente, ainda utiliza lenha na geração de calor; produz de fuligem e CO2; ainda traz riscos de queimaduras e requer manutenção de limpeza da fuligem na chaminé quando entope.
                             </p>
                         </div>
                     </Modal>

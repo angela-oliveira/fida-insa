@@ -11,10 +11,10 @@ import AnalyzeCO from '../../components/ComponentsPageEcofogao/AnalyzeCO';
 import Invest from '../../components/ComponentsPageEcofogao/Invest';
 import Experience from '../../components/ComponentsPageEcofogao/Experience';
 import Curiosities from '../../components/ComponentsPageEcofogao/Curiosities';
+import Photos from '../../components/ComponentsPageEcofogao/Photos'
+import footer from "../../utils/images/Group 137.png";
 
 import dataMap from '../../utils/filesJSON/ecofogao.json'
-
-// console.log(dataMap)
 
 function EcoFogao() {
 
@@ -31,10 +31,11 @@ function EcoFogao() {
             <AnalyzeCO/>
             <Invest />
             <Experience />
+            <Photos />
             <Curiosities />
-
-            {/* <Parceiros/> */}
-            {/* <Footer/> */}
+            <div className="footer">
+                <img src={footer}></img>
+            </div>
         </div>
     )
 }

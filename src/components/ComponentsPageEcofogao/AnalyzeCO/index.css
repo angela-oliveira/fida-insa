@@ -38,7 +38,7 @@
     height: 140px;
     z-index: -1;
     border-radius: 50%;
-    background:var(--color-green-medium);
+    background: #B4A163!important;
 }
 
 .casca-ana-co .co-graphic{
@@ -92,7 +92,7 @@
   }
 .graphic .line-gra div{
     width: 100%;
-    background: var(--color-green-medium);
+    background: #89773C!important;
     animation-name: example;
     animation-duration: 2s;
 }
@@ -104,12 +104,26 @@
     /* flex-direction: row; */
     /* align-items: center; */
     display: grid;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 35% 30% 35%;
 }
 .co-patente-trl .img {
     margin:auto;
     
 }
+.co-patente-trl .img img {
+    width: 300px;
+}
 .ant-card-head-title {
     font-weight: bold;
+}
+
+/* Table  */
+
+.ant-table-thead tr th{
+  background-color: #89773C!important;
+  color: white!important;
+}
+.ant-table-container {
+  border: solid;
+  border-color: #89773C!important;
 }

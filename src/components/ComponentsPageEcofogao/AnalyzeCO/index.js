@@ -1,8 +1,52 @@
 import React from 'react';
-import { Card, Row, Col } from 'antd'
+import { Card, Table } from 'antd'
 import './index.css';
-import TRL from "../../../utils/images/cor3.png"
+import TRL from "../../../utils/images/cor5.png"
 
+const columns = [
+    {
+      title: 'Gás',
+      dataIndex: 'gas',
+      key: 'gas',
+    },
+    {
+      title: 'Fogão a lenha tradicional tCO2e',
+      dataIndex: 'fogao',
+      key: 'fogao',
+    },
+    {
+      title: 'Ecofogão tCO2e',
+      dataIndex: 'ecofogao',
+      key: 'ecofogao',
+    }
+    
+]
+const data = [
+    {
+        key: '1',
+        gas: 'CO2',
+        fogao: '22,169020',
+        ecofogao: '9,232757',
+      },
+      {
+        key: '2',
+        gas: 'CH4',
+        fogao: '1,654500',
+        ecofogao: '0,689238',
+      },
+      {
+        key: '2',
+        gas: 'N2O',
+        fogao: '0,262955',
+        ecofogao: '0,109543',
+      },
+      {
+        key: '2',
+        gas: 'Total',
+        fogao: '24,086475',
+        ecofogao: '10,031537',
+      },
+]
 function AnalyzeCO() {
     return (
         <div className='analyze-co'>
@@ -11,8 +55,13 @@ function AnalyzeCO() {
                 <div className="site-card-border-less-wrapper">
 
                     <Card bordered={false}>
-                        <p>A redução das emissões de CO2 nos sistemas com cataventos pode ser calculada a partir da comparação com o consumo de energia elétrica para o bombeamento de volume de água equivalente (no caso de bombas elétricas) ou pela comparação com o consumo de diesel no caso de conjuntos motobomba a combustível. Apesar de ser necessário um estudo caso a caso para verificar a redução das emissões de CO2 com cataventos, a substituição do bombeamento elétrico ou a combustível pelo bombeamento por cataventos pode mitigar as emissões de CO2 para a atmosfera. A tecnologia se enquadra no escopo 2, que se refere à compra de energia, de acordo com o inventário de emissões do GHG Protocol.</p>
+                        <p>A redução das emissões de CO2 com o ecofogão foi calculada em comparação com o fogão a lenha tradicional. O ecofogão tem a vantagem de utilizar uma menor quantidade de lenha, produzir menos fuligem e fumaça. Com isso, o ecofogão é a melhor alternativa para a cocção de alimentos com o uso de lenha, reduzindo em 58,4% a emissão de CO2. </p>
                     </Card>
+                        <Table 
+                            columns={columns} 
+                            dataSource={data} 
+                            pagination={ false } 
+                        />
                 </div>
                 <div className='co-graphic'>
                     <div className='gra-label'>QUANTIDADE INSTALADA E NÚMERO DE BENEFICIÁRIOS</div>
@@ -49,14 +98,23 @@ function AnalyzeCO() {
                 <div className='co-bottom'></div>
                 <div className='co-patente-trl'> 
                     <Card title="Quantidade de patentes" bordered={false}>
-                        <p>Embora o catavento seja considerado uma invenção muito antiga, ao longo da história ele tem recebido diversos aprimoramentos direcionados a aumentar a eficiência desta tecnologia. Por exemplo, pesquisando a palavra-chave “catavento” na base do Instituto Nacional de Propriedade Industrial (INPI) de 1992 a 2015 registraram-se 27 pedidos de patentes. Contudo, destas, contabilizaram-se apenas 10 pedidos que efetivamente se relacionam com melhorias voltadas para o bombeamento de água e irrigação de lavouras para comunidades rurais. Destas, os documentos das patentes PI 0012810-4 e PI 0000092-2 não estão disponíveis no banco de dados do INPI. O documento PI 0805788-5 A2 refere-se a uma tecnologia para geração de energia elétrica para pequenas comunidades, devido a isso, foi também considerada relevante. Outras tecnologias como a patente BR 20 2012 012558 2, por exemplo, trata de melhorias na estrutura da bomba d´água acoplada ao catavento. Nesta tecnologia, a bomba tem sua eficiência aumentada pela utilização de um pistão de dupla ação proporcionando uma redução de potência e disponibilizando segurança ao sistema de rotor eólico e bomba. Outro benefício a desta invenção é que o recalque da água pode atingir até 150 metros.
+                        <p>A Ecofogão® foi a pioneira no desenvolvimento do fogão a lenha ecológico no Brasil e sua história vem da PROLEÑA uma ONG na América Central que foi pioneira a nível global no desenvolvimento do fogão a lenha ecológico. O desenvolvimento do fogão a lenha ecológico veio da observação do Rogério Carneiro de Miranda que é engenheiro florestal.
+                        </p>
+                        <p>
+                        Assim começou a partir de 1994 os primeiros passos no desenvolvimento do fogão a lenha ecológico. Atualmente, um fogão a lenha ecológico tem uma alta eficiência energética, com a transformação da lenha em mais energia e em menos fumaça.
+                        </p>
+                        <p>
+                        A partir de 2003 de volta ao Brasil, começou a desenvolver a empresa Ecofogão Indústria de Fogões Ltda a qual adaptou os Ecofogões às condições brasileiras, com melhores materiais, novos modelos e novas aplicações como forno e serpentina.
                         </p>
                     </Card>
                     <div className='img'>
                         <img src={TRL}></img>
                     </div>
                     <Card title="TRL da Tecnologia social" bordered={false}>
-                        <p>A escala dos níveis de maturidade tecnológica (Technology Readiness Level - TRL) permite classificar e acompanhar o grau de maturidade do desenvolvimento de uma tecnologia, além de possibilitar a comparação direta entre diferentes ativos. Para produtos que já estão no mercado esses ativos devem ser classificados na escala a partir de 7 até 9. O catavento em seu formato atual já é uma tecnologia estável, aprimorada, amplamente comercializada e popular. Embora seja popularizado e considerado simples para uso e manutenção, o catavento hidráulico passou por muitos aprimoramentos tecnológicos ao longos dos anos, desde a sua idealização na Pérsia, 915 a.C. Mesmo assim, toda e qualquer tecnologia ainda é passível de ser aperfeiçoada, ou reformulada para otimizar sua performance ou destiná-la a outro uso. Para os projetos apoiados pelo FIDA, o catavento tem sido associado especialmente ao cultivo de palma e hortas, promovendo alimentação para os pequenos rebanhos e a população agrícola do semiárido.
+                        <p>O grau de maturidade tecnológica – TRL – do ecofogão está classificado entre o grau 8 e 9 pois o sistema real foi desenvolvido e aprovado através de operações bem-sucedidas. O TRL 9 é alcançado quando o elemento está integrado no sistema final e operando.
+                        </p>
+                        <p>
+                        Percebe-se, através dos conceitos estudados, que os níveis de maturidade tecnológica de um elemento não são delimitados em relação às atividades realizadas. Além disso, vale destacar que um mesmo elemento pode apresentar diferentes níveis de maturidade tecnológica, pois depende da sua aplicação e do sistema final a ser integrado.
                         </p>
                     </Card>
                     {/* <div className="site-card-wrapper">

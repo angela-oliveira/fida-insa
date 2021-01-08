@@ -143,3 +143,31 @@
     [data-theme="dark"] .site-statistic-demo-card {
       background: #303030;
     }
+
+.text-indent-4 {
+    text-indent: 4rem;
+}
+
+.ant-tabs-tab-btn:hover {
+    color: #89773C!important
+}
+.ant-tabs-tab-btn:active {
+    color: #89773C!important
+}
+.ant-tabs-tab-btn:focus {
+    color: #89773C!important
+}
+.ant-tabs-tab:hover {
+    color: #89773C!important;
+}
+
+.ant-tabs-tab:active {
+    color: #89773C!important;
+}
+
+.ant-tabs-tab:focus {
+    color: #89773C!important;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #89773C!important;
+}

@@ -30,7 +30,7 @@ p {
     color: #fff;
     height: 30px;
     width: 90px;
-    background-color: #329BA3;
+    background-color: #89773C!important;
 }
 .tooltip {
     display: flex;
@@ -51,7 +51,7 @@ p {
     color: white;
 }
 .ant-modal-header {
-    background-color: #329BA3;
+    background-color: #89773C!important;
 
 }
 /* .anticon-plus-circle{
@@ -82,7 +82,7 @@ p {
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background:#329BA3;
+    background:#89773C!important;
 }
 
 .logo-tech .casca-logo-tech img{
@@ -104,7 +104,7 @@ p {
 .logo-tech .label-tech .labelB{
     font-Size: 2.5rem;
     padding-top: 5%;
-    color: #329BA3;
+    color: #89773C!important;
     /* color: var(--color-green-light); */
 }
 

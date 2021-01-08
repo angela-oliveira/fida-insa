@@ -4,13 +4,15 @@ import './index.css';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from "react-images";
 // import "../../../utils/images/eolica"
-import img1 from "../../../utils/images/eolica/EOLICA-AGRICULTORES COM O CULTIVO.jpg"
-import img2 from "../../../utils/images/eolica/EOLICA-CAMPO DE PALMA.jpg"
-import img3 from "../../../utils/images/eolica/EOLICA-CAMPO SECO.jpg"
-import img4 from "../../../utils/images/eolica/EOLICA-CATAVENTO.jpg"
-import img5 from "../../../utils/images/eolica/EOLICA-CATAVENTO ZOOM.jpg"
-import img6 from "../../../utils/images/eolica/EOLICA-FAMILIA.JPG"
-import img7 from "../../../utils/images/eolica/EOLICA-PANORAMICA CATAVENTO.jpg"
+import img1 from "../../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Flaviana 04_1200.jpg"
+import img2 from "../../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Flaviana 06_1200.jpg"
+import img3 from "../../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Flaviana 07_1200.jpg"
+import img4 from "../../../utils/images/photos/Ecofogao/varjota_cajazeiras/02 VARJOTA-Cajazeiras-Nazaré e Luzanira 01_1200.jpg"
+import img5 from "../../../utils/images/photos/Ecofogao/varjota_cajazeiras/02 VARJOTA-Cajazeiras-Nazaré e Luzanira 02_1200.jpg"
+import img6 from "../../../utils/images/photos/Ecofogao/varjota_cajazeiras/02 VARJOTA-Cajazeiras-Nazaré e Luzanira 04_1200.jpg"
+import img7 from "../../../utils/images/photos/Ecofogao/varjota_varzea/02 VARJOTA-Várzea da Palha-Cida 02_1200.jpg"
+import img8 from "../../../utils/images/photos/Ecofogao/varjota_varzea/02 VARJOTA-Várzea da Palha-Cida 04_1200.jpg"
+import img9 from "../../../utils/images/photos/Ecofogao/varjota_varzea/02 VARJOTA-Várzea da Palha-Cida 06_1200.jpg"
 
 
 
@@ -23,34 +25,44 @@ const photos= [
     },
     {
       src: img2,
-      width: 1,
-      height: 1
-    },
-      {
-        src: img3,
-        width: 3,
-        height: 4
-      },
-    {
-        src: img4,
-        width: 3,
-        height: 4
+      width: 4,
+      height: 3
     },
     {
-        src: img5,
-        width: 3,
-        height: 4
+      src: img3,
+      width: 4,
+      height: 3
     },
     {
-        src: img6,
-        width: 4,
-        height: 3
+      src: img4,
+      width: 4,
+      height: 3
     },
     {
-        src: img7,
-        width: 4,
-        height: 3
-      }
+      src: img5,
+      width: 4,
+      height: 3
+    },
+    {
+      src: img6,
+      width: 4,
+      height: 3
+    },
+    {
+      src: img7,
+      width: 4,
+      height: 3
+    },
+    {
+      src: img8,
+      width: 4,
+      height: 3
+    },
+    {
+      src: img9,
+      width: 4,
+      height: 3
+    }
   ];
 
 function Photos() {
