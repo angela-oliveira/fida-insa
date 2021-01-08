@@ -262,6 +262,7 @@ const data = [
     link: "LINK PARA MAIS INFORMAÇÕES: https://www.bnb.gov.br/fne-agua"
   }
 ];
+
 class InvestPrivate extends React.Component {
 
   listCase = document.getElementsByClassName('.list-cases')

@@ -29,7 +29,7 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Compra + Instalação"
-                                                value={"7.000,00 (compra + instalação)"}
+                                                value={" 3.529,00"}
                                                 precision={2}
                                                 valueStyle={{ color: '#329BA3' }}
                                                 prefix={"R$"}
@@ -48,7 +48,7 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Custos de Manutenção"
-                                                value={"500,00/ano"}
+                                                value={"5 a  R$ 200,00"}
                                                 precision={2}
                                                 valueStyle={{ color: '#329BA3' }}
                                                 prefix={"R$"}
@@ -57,37 +57,7 @@ class AnalyzeCB extends React.Component {
                                     </Col>
                                 </Row>
 
-                                <div className=' tolltip-margin'>
-                                    <Tooltip title="Ver mais" >
-                                        <Button
-                                            className='button-1'
-                                            onClick={() => this.openModal()}
-                                            type="primary"
-                                            shape="circle"
-                                            icon={<PlusOutlined />}
-                                        />
-                                    </Tooltip>
-                                    <Modal
-                                        title={'teste'}
-                                        visible={this.state.visible}
-                                        width={1000}
-                                        footer={null}
-                                        onCancel={() =>
-                                            this.setState({
-                                                visible: false
-                                            })
-                                        }
-                                    >
-                                        <div className='content-modal'>
-                                            {/* <p>{this.desciption.content}</p> */}
-                                            <p>Existem diversas empresas que fabricam, comercializam, instalam e fornecem serviço de manutenção de cataventos hidráulicos no Semiárido brasileiro. Não obstante, mesmo sendo uma obra da evolução tecnológica, os catavento são práticos, pois podem ser adaptados a diversas situações; duráveis, podem ter uma vida útil de até 30 anos; ecológicos pois não utilizam nenhuma fonte de energia acessória (apenas o movimento dos ventos); e de fácil manutenção, pois suas peças componentes são de fácil aquisição e o conserto pode ser feito em pequenas cidades.
-                                        </p>
-                                            <p>Os custos de aquisição e manutenção são proporcionais à necessidade de uso e, consequentemente, à vazão de bombeamento de água pretendida e à velocidade média dos ventos na localidade de instalação. No ano de 2020, o preço de aquisição dessa tecnologia pode variar de R$ 4.000,00 a R$ 10.000,00 dependendo da vazão. Por exemplo, um catavento montado em uma torre de 10 m de altura que fornece uma vazão de água entre 10.000 e 15.000 L/dia, pode chegar a R$ 4.900,00 reais. Para o uso de cataventos em sistemas de irrigação, um estudo feito em 2003 pela Embrapa Agroindústria Tropical estimou que para montar uma área irrigada de 6.000 m2 com catavento hidráulico seriam necessários em torno de R$ 15.500,00. Com o preço atualizado para o ano de 2020, esse mesmo sistema poderia custar cerca de R$ 19.300,00.
-                                        </p>
-                                        </div>
-                                    </Modal>
-
-                                </div>
+                                
                             </div>
 
                         </TabPane>
@@ -109,31 +79,72 @@ class AnalyzeCB extends React.Component {
 
                             </div>
                         </TabPane>
-                        <TabPane tab="Impactos ambientais" key="4">
-                            <div className="site-statistic-demo-card">
-                                <Row gutter={16}>
-                                    <Col span={6}></Col>
-                                    <Col span={12}>
-                                        <Card>
-                                            <Statistic
-                                                title="Impactos ambientais"
-                                                value={"0"}
-                                                valueStyle={{ color: '#329BA3' }}
-                                            />
-                                        </Card>
-                                    </Col>
-                                </Row>
+                        <TabPane className='key4' tab="Impactos ambientais" key="4">
+                            <b>Problema:</b>
+                            <p>
+                            Segundo a Food and Agriculture Organization of the United Nations (2014), a maior fonte de emissão de gases do efeito estufa na agricultura é proveniente da fermentação entérica, em razão da produção de metano por meio da digestão dos animais ruminantes e expulsão por eructação.
+                            </p>
+                            
+                            <b>Solução:</b>
+                            <p>A produção animal é uma atividade econômica muito recorrente e existe em diversos lugares onde a agricultura pode ser praticada, mesmo em regiões que não são favorecidas por recursos naturais hídricos ou vegetais, como as regiões áridas ou semiáridas nordestinas. Com o objetivo de diminuir o impacto que essa atividade causa ao meio ambiente, podem ser utilizadas tecnologias sustentáveis, como o biodigestor, para fins de tratamento dos resíduos dos animais, como também agregar valor ao resíduo que antes seria descartado.</p>
+                            
+                            <b>Problema:</b>
+                            <p>Os dejetos expelidos pelos animais são depositados no solo, servindo de nutrientes para plantas. No entanto, no caso dos recursos hídricos em geral, pode haver contaminação pelo excesso desse material, principalmente em locais com elevadas taxas de evaporação e difícil renovação hídrica. Nas redondezas das fontes de abastecimento de água acumulam-se muitos animais, como nos cursos de águas e açudes, por razão da falta de mata ciliares, o que facilita o acesso às águas.</p>
 
-                            </div>
+                            <b>Solução:</b>
+
+                            <p>De forma geral, verifica-se que a biodigestão anaeróbia é uma prática que auxilia na minimização da poluição que é causada por resíduos animais e vegetais, ajuda na eliminação de ervas daninhas e também de bactérias causadoras de doenças, eliminação de maus odores e moscas tradicionais esterqueiras, entre outros. </p>
+
+                            <b>Problema:</b>
+
+                            <p>O resíduo resultante do processamento da mandioca para fabricação da farinha é chamado de manipueira e é obtido na etapa de prensagem da mandioca. Esse efluente possui um impacto negativo no meio ambiente, aos seres humanos e animais, devido a um composto encontrado em sua composição chamado de ácido cianídrico, e que se trata de uma substância venenosa e nociva. </p>
+
+                            <b>Solução:</b>
+
+                            <p>Para diminuir o impacto ambiental que esse efluente causa, é necessário realizar o seu tratamento por meio do uso de biodigestores, com a consequente produção de biogás, que pode ser utilizado pelos produtores em diversas atividades, inclusive como fonte de energia para a secagem da mandioca, diminuindo também o impacto que o forno a lenha causa à natureza.</p>
+
                         </TabPane>
                         <TabPane tab="Impactos sociais" key="5">
                             <p>
-                                Os longos períodos de estiagem, somado às altas temperaturas, fazem do convívio com o Semiárido brasileiro, um desafio para o agricultor familiar, especialmente de regiões mais pobres. Para aqueles que não abandonaram suas terras em busca de sustento nas grandes cidades, é comum andar quilômetros de distância à procura de água, nem sempre potável, carregada em cima de jumentos, ou mesmo ainda em latas pesadas sob a cabeça. Para as famílias, essa tarefa é quase sempre da mulher e das crianças, pois o homem é responsável pelo trabalho na roça, pela cria dos animais e pela comercialização dos produtos do trabalho familiar. Indiretamente, essas condições desafiadoras trazem consequências até mesmo para saúde e a redução do nível de escolaridade dessas populações. A ampliação da oferta de água promovida pelo FIDA, em parceria com os Governos Estaduais, impactou positivamente na vida dessas pessoas. Com a água, a produtividade agrícola e dos rebanhos aumentou nessas regiões e, com isso, a fixação do homem no campo, possibilitando a ampliação da área cultivada e, consequentemente, oferta de alimentos para a mesa de todos.
+                            No cotidiano dos grandes centros urbanos, as tecnologias são utilizadas para auxiliar e trazer retorno no âmbito econômico ou de bem-estar, facilitando o trabalho das pessoas. O uso de tecnologias adaptadas também deve ser estendido para o meio rural, com o intuito de ajudar o pequeno agricultor nas suas tarefas. Devido a várias dificuldades de trabalho que surgem no campo, o pequeno produtor rural, em muitos casos, necessita buscar sua fonte de renda nas cidades, tendo que abandonar o local em que viveu grande parte de sua vida, na maioria das situações. Pensando nisso, as tecnologias podem ser empregadas para diminuir ou erradicar possíveis problemas que impeçam o desenvolvimento do trabalho no campo, como também, podem ser benéficas em termos econômicos e ambientais. A maior parte da produção dos alimentos disponibilizados para a população brasileira é produzida pela agricultura familiar, constituída por pequenos produtores rurais, povos e comunidades tradicionais.  Diante disso, verifica-se a importância que a pessoa do campo tem para a sociedade e, por isso, mais ferramentas devem ser disponibilizadas com o fim de agregar valor ao trabalho rural.
                         </p>
+                        <div className=' tolltip-margin'>
+                                    <Tooltip title="Ver mais" >
+                                        <Button
+                                            className='button-1'
+                                            onClick={() => this.openModal()}
+                                            type="primary"
+                                            shape="circle"
+                                            icon={<PlusOutlined />}
+                                        />
+                                    </Tooltip>
+                                    <Modal
+                                        title={'Impactos sociais'}
+                                        visible={this.state.visible}
+                                        width={1000}
+                                        footer={null}
+                                        onCancel={() =>
+                                            this.setState({
+                                                visible: false
+                                            })
+                                        }
+                                    >
+                                        <div className='content-modal'>
+                                           <p>Os custos de aquisição e manutenção são proporcionais à necessidade de uso e, consequentemente, à vazão de bombeamento de água pretendida e à velocidade média dos ventos na localidade de instalação. No ano de 2020, o preço de aquisição dessa tecnologia pode variar de R$ 4.000,00 a R$ 10.000,00 dependendo da vazão. Por exemplo, um catavento montado em uma torre de 10 m de altura que fornece uma vazão de água entre 10.000 e 15.000 L/dia, pode chegar a R$ 4.900,00 reais. Para o uso de cataventos em sistemas de irrigação, um estudo feito em 2003 pela Embrapa Agroindústria Tropical estimou que para montar uma área irrigada de 6.000 m2 com catavento hidráulico seriam necessários em torno de R$ 15.500,00. Com o preço atualizado para o ano de 2020, esse mesmo sistema poderia custar cerca de R$ 19.300,00. </p>
+
+                                            <p>Projetos como os que o FIDA apoia, além de levarem auxílio tecnológico e conhecimento à pessoa que trabalha no campo, também impactam positivamente a vida de mulheres. A instalação do biodigestor, além do retorno econômico e sustentável, traz uma qualidade de vida e gera uma fonte de renda para as agricultoras por meio, por exemplo, da fabricação de bolos e pães a partir da utilização do biogás gerado em sua propriedade, em substituição ao gás de cozinha (GLP). Esses projetos também estimulam a criação ou fortalecimento de grupos de mulheres nas comunidades, para que possam gerar renda juntas. O biofertilizante produzido no biodigestor pode ser utilizado como adubo orgânico nas árvores frutíferas, hortaliças e viveiros de mudas, cujo produto pode ser vendido ou submetido a um processamento, como na produção de doces e polpas a partir de frutas produzidas na propriedade dessas mulheres. Além disso, o procedimento de fabricação é realizado em cozinhas comunitárias em que todas participam da elaboração dos produtos secundários. 
+
+                                        </p>
+                                            <p>Em Pajeú II, localizada na comunidade Poço Redondo do município de Tabira – PE, há um grupo de mulheres que é beneficiado pelas ações diretas do projeto Dom Helder Câmara (PDHC) e outros projetos. Trata-se de um exemplo de impacto social positivo utilizando biodigestores e outras tecnologias.  O uso do biodigestor influencia positivamente na segurança alimentar das famílias rurais beneficiadas. Um dos produtos gerados, o biofertilizante, é utilizado nos quintais produtivos como defensor natural e adubo orgânico fornecendo os nutrientes necessários para as plantas, tendo como consequência o aumento da produção e melhora nas refeições da família, devido a diversidade e qualidade dos produtos produzidos.
+                                        </p>
+                                        </div>
+                                    </Modal>
+
+                                </div>
                         </TabPane>
                         <TabPane tab="Adaptação à realidade da agricultura familiar" key="6">
                             <p>
-                                Com o índice de desenvolvimento humano baixo em regiões interioranas do semiárido brasileiro, é esperado que o nível de escolaridade, de saneamento básico e financeiro dessas comunidades também sejam baixos. Consequentemente, o acesso a empresas que possam oferecer assistência técnica especializada também é limitado. Desta forma, para que uma determinada tecnologia possa ser adotada por essas comunidades, é imprescindível, que seja considerada a resistência/durabilidade, a simplicidade de operação e reparo, bem como o barateamento dos custos com a manutenção. Os cataventos cumprem com todas essas exigências, sendo uma tecnologia consolidada, um equipamento considerado resistente e duradouro, com baixo custo de aquisição e manutenção e com fácil manejo. Embora tenha algumas limitações, especialmente quanto à capacidade de uso e à necessidade de ventos constantes, tem sido uma alternativa barata e importante para proporcionar qualidade de vida ao homem do campo no Semiárido brasileiro.
+                            No ano de 2008, um projeto piloto utilizando o modelo de biodigestor sertanejo foi implementado na comunidade de Santo Antônio II, em Afogados da Ingazeira (PE). Esse programa foi desenvolvido pela Diaconia e o Projeto Dom Helder Câmara, contando com o apoio do Fundo Internacional de Desenvolvimento Agrícola (FIDA). Por meio desse projeto foram realizadas modificações no biodigestor com o objetivo de torná-lo mais acessível à comunidade rural. *saiba mais*
                         </p>
                         </TabPane>
                     </Tabs>

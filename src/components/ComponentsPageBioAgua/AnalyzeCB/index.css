@@ -39,12 +39,6 @@
     align-items: center;
 }
 
-.key4{
-    overflow-y: auto;
-    height: 350px;
-    padding: 1rem;
-}
-
 .casca-ana-cb .cb-graphic
 .cb-gra-label{
     display: flex;

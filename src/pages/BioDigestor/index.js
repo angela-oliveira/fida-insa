@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 
 import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
-import Description from '../../components/ComponentsPageTechs/Description';
+
+import Description from '../../components/ComponentsPageBioDiges/Description';
 import Mapa from '../../components/ComponentsPageTechs/Mapa';
-import AnalyzeCB from '../../components/ComponentsPageTechs/AnalyzeCB';
-import AnalyzeCO from '../../components/ComponentsPageTechs/AnalyzeCO';
-import Invest from '../../components/ComponentsPageTechs/Invest';
-import Experience from '../../components/ComponentsPageTechs/Experience';
-import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
+import AnalyzeCB from '../../components/ComponentsPageBioDiges/AnalyzeCB';
+import AnalyzeCO from '../../components/ComponentsPageBioDiges/AnalyzeCO';
+import Invest from '../../components/ComponentsPageBioDiges/Invest';
+import Experience from '../../components/ComponentsPageBioDiges/Experience';
+import Curiosities from '../../components/ComponentsPageBioDiges/Curiosities';
 
 import dataMapa from '../../utils/filesJSON/biodigestor/biodigestor.json';
 

@@ -45,6 +45,7 @@
     display: flex;
     width: 100%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .co-graphic .gra-label{
     /* border: 1px solid #000; */

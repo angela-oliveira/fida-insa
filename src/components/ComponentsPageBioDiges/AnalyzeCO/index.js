@@ -7,11 +7,15 @@ function AnalyzeCO() {
     return (
         <div className='analyze-co'>
             <div className='casca-ana-co'>
-                <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2 (-245KG/MÊS)</div>
+                <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2 (KG/mês)</div>
                 <div className="site-card-border-less-wrapper">
 
                     <Card bordered={false}>
-                        <p>A redução das emissões de CO2 nos sistemas com cataventos pode ser calculada a partir da comparação com o consumo de energia elétrica para o bombeamento de volume de água equivalente (no caso de bombas elétricas) ou pela comparação com o consumo de diesel no caso de conjuntos motobomba a combustível. Apesar de ser necessário um estudo caso a caso para verificar a redução das emissões de CO2 com cataventos, a substituição do bombeamento elétrico ou a combustível pelo bombeamento por cataventos pode mitigar as emissões de CO2 para a atmosfera. A tecnologia se enquadra no escopo 2, que se refere à compra de energia, de acordo com o inventário de emissões do GHG Protocol.</p>
+                        <p>O biodigestor apresenta a vantagem de gerar biogás (CH4) pela digestão anaeróbica da matéria orgânica animal e vegetal. Dentre os combustíveis domésticos, o biogás é considerado o que possui menor impacto ambiental. </p>
+
+                        <p>Para a obtenção das emissões de CO2 pelo biodigestor, é necessário um estudo caso a caso para realizar um inventário considerando a quantidade e o tipo de material orgânico adicionado (esterco de aves, suínos, bovinos, material vegetal) e as análises químicas do biofertilizante produzido. </p>
+
+                        <p>O cálculo da redução das emissões de CO2 no biodigestor deve levar em conta a quantidade emitida pela queima do biogás em comparação com o gás de cozinha tradicional (GLP) para cocção, no escopo da combustão estacionária. </p>
                     </Card>
                 </div>
                 <div className='co-graphic'>
@@ -20,25 +24,37 @@ function AnalyzeCO() {
                         <div className='graphic'>
                             <div className='label'>
                                 <div className='left'>QUANTIDADE INSTALADA</div>
-                                <div className='right'>498</div>
+                                <div className='right'>258</div>
                             </div>
                             <div className='line-gra'>
                                 <div></div>
                             </div>
                         </div>
+
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>QUANTIDADE A SER INSTALADA</div>
+                                <div className='right'> 255</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+
                         <div className='graphic'>
                             <div className='label'>
                                 <div className='left'>NUMERO DE BENEFICIADOS</div>
-                                <div className='right'> 3671 famílias</div>
+                                <div className='right'> 1308</div>
                             </div>
                             <div className='line-gra'>
                                 <div></div>
                             </div>
                         </div>
+                        
                         <div className='graphic'>
                             <div className='label'>
                                 <div className='left'>MUNICÍPIOS</div>
-                                <div className='right'>56</div>
+                                <div className='right'>25</div>
                             </div>
                             <div className='line-gra'>
                                 <div></div>
@@ -49,14 +65,15 @@ function AnalyzeCO() {
                 <div className='co-bottom'></div>
                 <div className='co-patente-trl'> 
                     <Card title="Quantidade de patentes" bordered={false}>
-                        <p>Embora o catavento seja considerado uma invenção muito antiga, ao longo da história ele tem recebido diversos aprimoramentos direcionados a aumentar a eficiência desta tecnologia. Por exemplo, pesquisando a palavra-chave “catavento” na base do Instituto Nacional de Propriedade Industrial (INPI) de 1992 a 2015 registraram-se 27 pedidos de patentes. Contudo, destas, contabilizaram-se apenas 10 pedidos que efetivamente se relacionam com melhorias voltadas para o bombeamento de água e irrigação de lavouras para comunidades rurais. Destas, os documentos das patentes PI 0012810-4 e PI 0000092-2 não estão disponíveis no banco de dados do INPI. O documento PI 0805788-5 A2 refere-se a uma tecnologia para geração de energia elétrica para pequenas comunidades, devido a isso, foi também considerada relevante. Outras tecnologias como a patente BR 20 2012 012558 2, por exemplo, trata de melhorias na estrutura da bomba d´água acoplada ao catavento. Nesta tecnologia, a bomba tem sua eficiência aumentada pela utilização de um pistão de dupla ação proporcionando uma redução de potência e disponibilizando segurança ao sistema de rotor eólico e bomba. Outro benefício a desta invenção é que o recalque da água pode atingir até 150 metros.
+                        <p>Quantidade de patentes depositadas no Brasil: 101 patentes.
+                            A pesquisa foi realizada utilizando como palavra-chave “biodigestor”. Em 1980, foi registrado pelo Escritório Europeu de Patentes o pedido de depósito da patente intitulada “Cuba de fermentação para biodigestores” (do inglês Fermentation vat for biodigesters) com número de registro EP0051082, tendo como inventores Josef Neubauer, J. Sigmund Buchner e Albert Strasser.
                         </p>
                     </Card>
                     <div className='img'>
-                        <img src={TRL}></img>
+                        <img src=''></img>
                     </div>
                     <Card title="TRL da Tecnologia social" bordered={false}>
-                        <p>A escala dos níveis de maturidade tecnológica (Technology Readiness Level - TRL) permite classificar e acompanhar o grau de maturidade do desenvolvimento de uma tecnologia, além de possibilitar a comparação direta entre diferentes ativos. Para produtos que já estão no mercado esses ativos devem ser classificados na escala a partir de 7 até 9. O catavento em seu formato atual já é uma tecnologia estável, aprimorada, amplamente comercializada e popular. Embora seja popularizado e considerado simples para uso e manutenção, o catavento hidráulico passou por muitos aprimoramentos tecnológicos ao longos dos anos, desde a sua idealização na Pérsia, 915 a.C. Mesmo assim, toda e qualquer tecnologia ainda é passível de ser aperfeiçoada, ou reformulada para otimizar sua performance ou destiná-la a outro uso. Para os projetos apoiados pelo FIDA, o catavento tem sido associado especialmente ao cultivo de palma e hortas, promovendo alimentação para os pequenos rebanhos e a população agrícola do semiárido.
+                        <p>A TRL (do inglês, Technology Readiness Level) trata-se de uma escala que informa o nível de maturidade tecnológica. A escala em questão é dividida em nove níveis, e cada nível corresponde a uma fase do desenvolvimento da tecnologia. No caso do biodigestor, pode-se classificá-lo com número de TRL entre 8 e 9, visto que o TRL 8 corresponde a um sistema qualificado e testado estando na fase de industrialização, e o TRL 9, consiste em classificar a tecnologia como um sistema em operação que possui comprovação do que se propõe a realizar; sendo assim a tecnologia está pronto para ser produzida e comercializada. Os primeiros registros da implementação e utilização de biodigestores no Brasil se deram por volta da década de 70, após a crise do petróleo, iniciada no final de 1973. Desde lá, a comercialização é realizada, e os equipamentos podem ser adquiridos por intermédio de empresas especializadas nesse tipo de tecnologia. Por isso, o biodigestor possui maturidade tecnológica, de acordo com a TRL, entre 8 e 9. 
                         </p>
                     </Card>
                     {/* <div className="site-card-wrapper">

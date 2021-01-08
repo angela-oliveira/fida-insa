@@ -29,7 +29,7 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Compra + Instalação"
-                                                value={" 3.529,00"}
+                                                value={"3.500,00 à R$ 7.500,00"}
                                                 precision={2}
                                                 valueStyle={{ color: '#329BA3' }}
                                                 prefix={"R$"}
@@ -48,7 +48,7 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Custos de Manutenção"
-                                                value={"5 a  R$ 200,00"}
+                                                value={"0,00  à R$ 600,00"}
                                                 precision={2}
                                                 valueStyle={{ color: '#329BA3' }}
                                                 prefix={"R$"}
@@ -57,7 +57,7 @@ class AnalyzeCB extends React.Component {
                                     </Col>
                                 </Row>
 
-                                
+
                             </div>
 
                         </TabPane>
@@ -69,7 +69,7 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Tempo de vida útil"
-                                                value={"30 Anos"}
+                                                value={"20 Anos"}
                                                 precision={2}
                                                 valueStyle={{ color: '#329BA3' }}
                                             />
@@ -79,36 +79,11 @@ class AnalyzeCB extends React.Component {
 
                             </div>
                         </TabPane>
-                        <TabPane className='key4' tab="Impactos ambientais" key="4">
-                            <b>Problema:</b>
-                            <p>
-                            Segundo a Food and Agriculture Organization of the United Nations (2014), a maior fonte de emissão de gases do efeito estufa na agricultura é proveniente da fermentação entérica, em razão da produção de metano por meio da digestão dos animais ruminantes e expulsão por eructação.
-                            </p>
-                            
-                            <b>Solução:</b>
-                            <p>A produção animal é uma atividade econômica muito recorrente e existe em diversos lugares onde a agricultura pode ser praticada, mesmo em regiões que não são favorecidas por recursos naturais hídricos ou vegetais, como as regiões áridas ou semiáridas nordestinas. Com o objetivo de diminuir o impacto que essa atividade causa ao meio ambiente, podem ser utilizadas tecnologias sustentáveis, como o biodigestor, para fins de tratamento dos resíduos dos animais, como também agregar valor ao resíduo que antes seria descartado.</p>
-                            
-                            <b>Problema:</b>
-                            <p>Os dejetos expelidos pelos animais são depositados no solo, servindo de nutrientes para plantas. No entanto, no caso dos recursos hídricos em geral, pode haver contaminação pelo excesso desse material, principalmente em locais com elevadas taxas de evaporação e difícil renovação hídrica. Nas redondezas das fontes de abastecimento de água acumulam-se muitos animais, como nos cursos de águas e açudes, por razão da falta de mata ciliares, o que facilita o acesso às águas.</p>
+                        <TabPane tab="Impactos ambientais" key="4">
+                            <div className="">
+                                <p>Segundo o Sistema Nacional de Informações Saneamento (SNIS), no Brasil o atendimento da população à coleta de esgoto corresponde a 53%. A partir desse cenário, é possível observar uma cadeia de possíveis impactos negativos. Em locais que não possuem saneamento, o principal problema está relacionado ao fato de que os esgotos não tratados são lançados sem nenhum critério. Essa ação gera um efeito dominó, pois com o aumento indiscriminado de carga orgânica no solo, pode ocorrer infiltração pelo lençol freático atingindo os corpos hídricos e com isso, aumentando as taxas de nitrogênio e fósforo na água,. O excesso desses elementos  causam reações químicas, físicas e biológicas e pode ocasionar a morte dos organismos aquáticos, doenças de veiculação hídrica, entre outros problemas. Embora a água tenha um poder incrível de se recuperar, que é o de autodepuração, uma grande quantidade de esgoto lançado dificulta o tratamento para que ela se torne potável novamente.</p>
 
-                            <b>Solução:</b>
-
-                            <p>De forma geral, verifica-se que a biodigestão anaeróbia é uma prática que auxilia na minimização da poluição que é causada por resíduos animais e vegetais, ajuda na eliminação de ervas daninhas e também de bactérias causadoras de doenças, eliminação de maus odores e moscas tradicionais esterqueiras, entre outros. </p>
-
-                            <b>Problema:</b>
-
-                            <p>O resíduo resultante do processamento da mandioca para fabricação da farinha é chamado de manipueira e é obtido na etapa de prensagem da mandioca. Esse efluente possui um impacto negativo no meio ambiente, aos seres humanos e animais, devido a um composto encontrado em sua composição chamado de ácido cianídrico, e que se trata de uma substância venenosa e nociva. </p>
-
-                            <b>Solução:</b>
-
-                            <p>Para diminuir o impacto ambiental que esse efluente causa, é necessário realizar o seu tratamento por meio do uso de biodigestores, com a consequente produção de biogás, que pode ser utilizado pelos produtores em diversas atividades, inclusive como fonte de energia para a secagem da mandioca, diminuindo também o impacto que o forno a lenha causa à natureza.</p>
-
-                        </TabPane>
-                        <TabPane tab="Impactos sociais" key="5">
-                            <p>
-                            No cotidiano dos grandes centros urbanos, as tecnologias são utilizadas para auxiliar e trazer retorno no âmbito econômico ou de bem-estar, facilitando o trabalho das pessoas. O uso de tecnologias adaptadas também deve ser estendido para o meio rural, com o intuito de ajudar o pequeno agricultor nas suas tarefas. Devido a várias dificuldades de trabalho que surgem no campo, o pequeno produtor rural, em muitos casos, necessita buscar sua fonte de renda nas cidades, tendo que abandonar o local em que viveu grande parte de sua vida, na maioria das situações. Pensando nisso, as tecnologias podem ser empregadas para diminuir ou erradicar possíveis problemas que impeçam o desenvolvimento do trabalho no campo, como também, podem ser benéficas em termos econômicos e ambientais. A maior parte da produção dos alimentos disponibilizados para a população brasileira é produzida pela agricultura familiar, constituída por pequenos produtores rurais, povos e comunidades tradicionais.  Diante disso, verifica-se a importância que a pessoa do campo tem para a sociedade e, por isso, mais ferramentas devem ser disponibilizadas com o fim de agregar valor ao trabalho rural.
-                        </p>
-                        <div className=' tolltip-margin'>
+                                <div className=' tolltip-margin'>
                                     <Tooltip title="Ver mais" >
                                         <Button
                                             className='button-1'
@@ -119,7 +94,7 @@ class AnalyzeCB extends React.Component {
                                         />
                                     </Tooltip>
                                     <Modal
-                                        title={'Impactos sociais'}
+                                        title={'teste'}
                                         visible={this.state.visible}
                                         width={1000}
                                         footer={null}
@@ -130,21 +105,24 @@ class AnalyzeCB extends React.Component {
                                         }
                                     >
                                         <div className='content-modal'>
-                                           <p>Os custos de aquisição e manutenção são proporcionais à necessidade de uso e, consequentemente, à vazão de bombeamento de água pretendida e à velocidade média dos ventos na localidade de instalação. No ano de 2020, o preço de aquisição dessa tecnologia pode variar de R$ 4.000,00 a R$ 10.000,00 dependendo da vazão. Por exemplo, um catavento montado em uma torre de 10 m de altura que fornece uma vazão de água entre 10.000 e 15.000 L/dia, pode chegar a R$ 4.900,00 reais. Para o uso de cataventos em sistemas de irrigação, um estudo feito em 2003 pela Embrapa Agroindústria Tropical estimou que para montar uma área irrigada de 6.000 m2 com catavento hidráulico seriam necessários em torno de R$ 15.500,00. Com o preço atualizado para o ano de 2020, esse mesmo sistema poderia custar cerca de R$ 19.300,00. </p>
-
-                                            <p>Projetos como os que o FIDA apoia, além de levarem auxílio tecnológico e conhecimento à pessoa que trabalha no campo, também impactam positivamente a vida de mulheres. A instalação do biodigestor, além do retorno econômico e sustentável, traz uma qualidade de vida e gera uma fonte de renda para as agricultoras por meio, por exemplo, da fabricação de bolos e pães a partir da utilização do biogás gerado em sua propriedade, em substituição ao gás de cozinha (GLP). Esses projetos também estimulam a criação ou fortalecimento de grupos de mulheres nas comunidades, para que possam gerar renda juntas. O biofertilizante produzido no biodigestor pode ser utilizado como adubo orgânico nas árvores frutíferas, hortaliças e viveiros de mudas, cujo produto pode ser vendido ou submetido a um processamento, como na produção de doces e polpas a partir de frutas produzidas na propriedade dessas mulheres. Além disso, o procedimento de fabricação é realizado em cozinhas comunitárias em que todas participam da elaboração dos produtos secundários. 
-
-                                        </p>
-                                            <p>Em Pajeú II, localizada na comunidade Poço Redondo do município de Tabira – PE, há um grupo de mulheres que é beneficiado pelas ações diretas do projeto Dom Helder Câmara (PDHC) e outros projetos. Trata-se de um exemplo de impacto social positivo utilizando biodigestores e outras tecnologias.  O uso do biodigestor influencia positivamente na segurança alimentar das famílias rurais beneficiadas. Um dos produtos gerados, o biofertilizante, é utilizado nos quintais produtivos como defensor natural e adubo orgânico fornecendo os nutrientes necessários para as plantas, tendo como consequência o aumento da produção e melhora nas refeições da família, devido a diversidade e qualidade dos produtos produzidos.
-                                        </p>
+                                            {/* <p>{this.desciption.content}</p> */}
+                                            <p>Com o tratamento pelo Sistema bioágua é possível diminuir esse lançamento indiscriminado de esgoto, aproveitando a matéria orgânica presente na água cinza tratada para irrigar culturas. Alguns estudos mostram a importância da matéria orgânica e outros elementos presentes na água de reúso e sua aplicação na agricultura por melhorar as condições físicas, biológicas e químicas do solo. Um dos fatores está relacionado ao aumento de alguns elementos químicos como o fósforo e nitrogênio, que são problema para os corpos hídricos por causa da eutrofização, mas que, para algumas classes de solos da região Semiárida brasileira, como por exemplo o Neossolo litólico,  seriam uma solução, pois são elementos pouco encontrados nessas localidades e são nutrientes importantes para o desenvolvimento das culturas.</p>
                                         </div>
                                     </Modal>
 
                                 </div>
+
+                            </div>
+                        </TabPane>
+                        <TabPane tab="Impactos sociais" key="5">
+                            <p>
+                            Quando comparado ao reúso no descarte da água cinza, o Sistema bioágua facilita o trabalho da família agricultora, pois para fazer o reúso de descarte eles teriam que reunir as águas após cada uso na cozinha e lavagem das roupas e armazenar esse volume em baldes ou compartimentos, geralmente, de 100 ou 200 litros. Após todo esse trabalho, as águas cinzas podem ser utilizadas nas regas das plantas no entorno das casas, ainda que de maneira manual, sendo planta por planta, tornando ainda mais cansativa a atividade. No sistema bioágua, as águas usadas são destinadas por tubulações hidráulicas até os filtros biológicos e físicos, onde ocorre o tratamento e armazenamento posterior em reservatórios maiores e apropriados. Desse reservatório, a água pode ser bombeada para um sistema de irrigação por gotejo, simplificando todo o trabalho com o reúso de água de descarte domiciliar e ainda possibilita ampliar o sistema de produção de plantas, proporcionando mais tempo livre para outras atividades, inclusive para geração de mais renda. *ver mais*
+
+                        </p>
                         </TabPane>
                         <TabPane tab="Adaptação à realidade da agricultura familiar" key="6">
                             <p>
-                            No ano de 2008, um projeto piloto utilizando o modelo de biodigestor sertanejo foi implementado na comunidade de Santo Antônio II, em Afogados da Ingazeira (PE). Esse programa foi desenvolvido pela Diaconia e o Projeto Dom Helder Câmara, contando com o apoio do Fundo Internacional de Desenvolvimento Agrícola (FIDA). Por meio desse projeto foram realizadas modificações no biodigestor com o objetivo de torná-lo mais acessível à comunidade rural. *saiba mais*
+                            A adaptação do agricultor à nova rotina se dá por meio das ações de capacitação e troca de saberes que acontecem durante as etapas de implantação da tecnologia. A partir de visitas a propriedades que já utilizam a tecnologia, o agricultor tem a oportunidade de experienciar a rotina da tecnologia e tirar dúvidas em relação à sua manutenção.  Com a implantação do sistema e todo o procedimento de preparação, bem como, o comprometimento do agricultor com a tecnologia, é possível obter os resultados desejados.
                         </p>
                         </TabPane>
                     </Tabs>

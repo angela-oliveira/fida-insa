@@ -6,9 +6,10 @@ import Parceiros from "../../../components/Parceiros"
 
 const { Panel } = Collapse;
 
-const text1 = `A origem do catavento remonta aos antigos moinhos de vento. Essa origem não está realmente clara, mas alguns estudiosos acreditam ter originado na Pérsia de 915 a.C, hoje Irã. Entretanto, existem indicações sobre o emprego de moinhos de vento mais remotos no Iraque, Egito e China. Na Europa, os moinhos de vento foram introduzidos no século XII, mas somente no século XV se espalharam pelo continente. Ao longo dos séculos, o uso da energia dos ventos se prestou a muitas aplicações como na moagem de grãos, extração de óleo, bombeamento de água, dentre outras.`
-const text2 = `O funcionamento do catavento baseia-se no movimento das massas de ar, que, ao passar pelas hélices fazem com que suas pás girem. Para bombeamento de água, o catavento deve ser instalado em conjunto com uma bomba do tipo pistão. Para fins de irrigação, é geralmente utilizado para bombear água para reservatórios elevados. Do reservatório, a água pode então ser distribuída por gravidade a sistemas de irrigação por gotejamento, microaspersão ou superfície. É um sistema de alto custo de aquisição em comparação ao sistema de bombeamento elétrico, mas de baixo custo de operação e manutenção.`
-const text3 = `Charles Francis Brush (1849-1929), um dos fundadores da indústria elétrica dos Estados Unidos, construiu um grande moinho de vento na sua propriedade, em Cleveland. Esse foi o primeiro registro de uma turbina movida pelo vento para produção de eletricidade. O diâmetro do rotor era de 17 metros, com 144 lâminas feitas de madeira. A turbina funcionou por 20 anos e era usada para carregar baterias que ficavam no celeiro de sua mansão. Essa primeira versão gerava apenas 12 quilowatts (kW).`
+const text1 = `A implementação dos primeiros biodigestores no Brasil ocorreu na década de 70 após a crise do petróleo iniciada no final de 1973. Essa crise atingiu muitos países importadores de petróleo, principalmente aqueles em desenvolvimento, como o Brasil. Diante disso, houve uma necessidade de recorrer a outros métodos para se obter energia. Em Brasília no ano 1979, foram construídos os primeiros biodigestores por meio do projeto do Programa de Mobilização Energética (PME) que consistia em um conjunto de ações voltadas à conservação de energia e à substituição dos derivados de petróleo por combustíveis alternativos.`
+const text2 = `A Política Nacional de Resíduos Sólidos (PNRS) é instituída pela Lei n° 12.305/10 e possui instrumentos relevantes para o País enfrentar os principais problemas ambientais, sociais e econômicos consequente do manejo inadequado dos resíduos sólidos com o objetivo de combater a poluição.
+A PNRS ressalta a distinção entre resíduo, isto é, aquilo que possui um valor agregado podendo ser reciclado ou reaproveitado, e rejeito, esse consiste em um material sem valor econômico não podendo ser submetido a tratamento e recuperação através dos processamentos.`
+
 // const textCuriosities = {
 //     title:"" ,
 //     text: ""
@@ -18,27 +19,33 @@ const text3 = `Charles Francis Brush (1849-1929), um dos fundadores da indústri
 
 function Curiosities() {
     return (
-        <div className='Curiosities'> 
-        
+        <div className='Curiosities'>
+
             <div className='casca-curiosities'>
                 <div className='curiosities-label'>VOCÊ SABIA?</div>
                 <div className='subtitle'><p>Veja algumas dúvidas e curiosidades</p>
                 </div>
                 <Collapse accordion>
-                    <Panel header="A origem do catavento é datada de 915 a.C" key="1">
-                    <p>{text1}</p>
+                    <Panel header="História dos Biodigestores no Brasil" key="1">
+                        <p>{text1}</p>
                     </Panel>
-                    <Panel header="Uma tecnologia simples com uma fonte energética inesgotável para a agricultura" key="2">
-                    <p>{text2}</p>
+                    <Panel header="Política Nacional de Resíduos Sólidos (PNRS)" key="2">
+                        <p>{text2}</p>
+                        Os principais objetivos da PNRS são:
+                            <ul>
+                                <li>Extinção, redução, reutilização, reciclagem e tratamento de resíduos sólidos;</li>
+                                <li>Os rejeitos devem ser descartados de forma adequada;</li>
+                                <li>Realizar a intensificação da educação ambiental;</li>
+                            </ul>
                     </Panel>
-                    <Panel header="A transição de um moinho de vento para a geração de energia elétrica" key="3">
-                    <p>{text3}</p>
+                    <Panel header="Cada tipo de animal produz uma quantidade diferente de metano" key="3">
+                        <p>A produção de biogás varia de acordo com o tipo de esterco que se coloca no biodigestor. Com isso, estima-se que AVES podem produzir cerca de 0,014 (m3/cabeça/dia) de biogás, levando em consideração  que o animal tenha uma massa de 2,5 kg. SUÍNOS podem produzir cerca de 0,240 (m3/cabeça/dia) de biogás, levando em consideração que o animal tenha um massa de 90 kg. BOVINOS podem produzir cerca de 0,240 (m3/cabeça/dia) de biogás, levando em consideração que o animal tenha uma massa de 500 kg.</p>
                     </Panel>
                 </Collapse>
 
             </div>
 
-            <Parceiros /> 
+            <Parceiros />
         </div>
     )
 }

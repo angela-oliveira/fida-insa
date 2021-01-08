@@ -6,46 +6,72 @@ import Parceiros from "../../../components/Parceiros"
 
 const { Panel } = Collapse;
 
-const text1 = `A implementação dos primeiros biodigestores no Brasil ocorreu na década de 70 após a crise do petróleo iniciada no final de 1973. Essa crise atingiu muitos países importadores de petróleo, principalmente aqueles em desenvolvimento, como o Brasil. Diante disso, houve uma necessidade de recorrer a outros métodos para se obter energia. Em Brasília no ano 1979, foram construídos os primeiros biodigestores por meio do projeto do Programa de Mobilização Energética (PME) que consistia em um conjunto de ações voltadas à conservação de energia e à substituição dos derivados de petróleo por combustíveis alternativos.`
-const text2 = `A Política Nacional de Resíduos Sólidos (PNRS) é instituída pela Lei n° 12.305/10 e possui instrumentos relevantes para o País enfrentar os principais problemas ambientais, sociais e econômicos consequente do manejo inadequado dos resíduos sólidos com o objetivo de combater a poluição.
-A PNRS ressalta a distinção entre resíduo, isto é, aquilo que possui um valor agregado podendo ser reciclado ou reaproveitado, e rejeito, esse consiste em um material sem valor econômico não podendo ser submetido a tratamento e recuperação através dos processamentos.`
+const text1 = `A água é um bem vital para diferentes culturas, e, desde a antiguidade, as civilizações se desenvolvem em locais próximos aos cursos d’água, como rios, lagos, mar e outros. 
+`
 
-// const textCuriosities = {
-//     title:"" ,
-//     text: ""
-// }
+const text2 = `A qualidade da água já era uma preocupação há 2.000 a.C., pois os persas puniam quem poluísse os recursos hídricos.
+`
+const text3 = `
+O tratamento de água tem registro no antigo Egito, há cerca de 1.500 a.C. Havia uma preocupação por parte dos egípcios com a água imprópria, devido a transmissão de doenças. Por isso, eles realizavam o tratamento da água utilizando sulfato de alumínio com o objetivo de clarificar a água.
+`
+const text4 = `
+
+A origem da palavra saneamento deriva do latim e pode ter vários significados, dentre eles está: tornar saudável, habitável, curar, sarar e restituir.
+
+`
+const text5 = `Há registros que os gregos utilizavam as águas dispostas nos esgotos para irrigar as plantações, realizando dessa forma o reuso das águas.
+
+`
+
 
 
 
 function Curiosities() {
     return (
-        <div className='Curiosities'>
-
+        <div className='Curiosities'> 
+        
             <div className='casca-curiosities'>
                 <div className='curiosities-label'>VOCÊ SABIA?</div>
                 <div className='subtitle'><p>Veja algumas dúvidas e curiosidades</p>
                 </div>
                 <Collapse accordion>
-                    <Panel header="História dos Biodigestores no Brasil" key="1">
-                        <p>{text1}</p>
+                    <Panel header="A origem do catavento é datada de 915 a.C" key="1">
+                    <p>{text1}</p>
                     </Panel>
-                    <Panel header="Política Nacional de Resíduos Sólidos (PNRS)" key="2">
-                        <p>{text2}</p>
-                        Os principais objetivos da PNRS são:
-                            <ul>
-                                <li>Extinção, redução, reutilização, reciclagem e tratamento de resíduos sólidos;</li>
-                                <li>Os rejeitos devem ser descartados de forma adequada;</li>
-                                <li>Realizar a intensificação da educação ambiental;</li>
-                            </ul>
+                    <Panel header="História e a Qualidade da Água" key="2">
+                    <p>{text2}</p>
                     </Panel>
-                    <Panel header="Cada tipo de animal produz uma quantidade diferente de metano" key="3">
-                        <p>A produção de biogás varia de acordo com o tipo de esterco que se coloca no biodigestor. Com isso, estima-se que AVES podem produzir cerca de 0,014 (m3/cabeça/dia) de biogás, levando em consideração  que o animal tenha uma massa de 2,5 kg. SUÍNOS podem produzir cerca de 0,240 (m3/cabeça/dia) de biogás, levando em consideração que o animal tenha um massa de 90 kg. BOVINOS podem produzir cerca de 0,240 (m3/cabeça/dia) de biogás, levando em consideração que o animal tenha uma massa de 500 kg.</p>
+                    <Panel header="Tratamento de Água" key="3">
+                    <p>{text3}</p>
+                    <p>Os antigos Sânscritos e Gregos recomendavam o tratamento da água. Eles realizavam o armazenamento em vasos de cobre, removiam a “nebulosidade” da água por processos de filtração, exposição à luz do sol e ebulição.</p>
+                    <p>
+                    Em 1855, John Snow conseguiu provar que a cólera era uma doença de veiculação hídrica. Isso ocorreu através de um estudo de caso em que observou uma rua onde havia um poço que era contaminado com águas de um esgoto, e no outro lado, as águas escorriam para longe. Ele percebeu que as pessoas que bebiam a água contaminada com água de esgoto quase todos adoeciam, e com isso, ele conseguiu comprovar sua teoria. (Local: Tâmisa)
+
+                    </p>
+
+                    <p>No final da década de 1880, Louis Pasteur demonstrou a “Teoria do Germe” para doenças. Essa teoria explica como organismos microscópicos podem transmitir doenças a partir da água.
+
+                    </p>
+                    </Panel>
+                    <Panel header="Saneamento e Uso da Água" key="4">
+                    <p>{text4}</p>
+                    
+                    <p>
+                    No Brasil, o saneamento básico é um direito assegurado pela Constituição e pela Lei nº. 11.445/2007. O saneamento consiste em conjunto de serviços, infraestruturas e instalações operacionais de abastecimento de água potável, esgotamento sanitário, limpeza urbana, manejo de resíduos sólidos e drenagem de águas pluviais.
+
+                    </p>
+                    <p>Uso da água é necessário para as mais diversas finalidades, inclusive para fins potáveis, como: higiene básica, tarefas domésticas, irrigação, cozimento e higienização de alimentos, entre outros. 
+
+                    </p>
+                    </Panel>
+                    <Panel header="Reuso de Água" key="5">
+                    <p>{text5}</p>
                     </Panel>
                 </Collapse>
 
             </div>
 
-            <Parceiros />
+            <Parceiros /> 
         </div>
     )
 }
