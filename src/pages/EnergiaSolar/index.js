@@ -11,7 +11,7 @@ import Invest from '../../components/ComponentsPageSolar/Invest';
 import Experience from '../../components/ComponentsPageSolar/Experience';
 import Curiosities from '../../components/ComponentsPageSolar/Curiosities';
 import Photos from '../../components/ComponentsPageSolar/Photos'
-import footer from "../../utils/images/rodape_solar.png";
+import footer from "../../utils/images/footer-solar.png";
 
 import dataMap from '../../utils/filesJSON/solar.json'
 

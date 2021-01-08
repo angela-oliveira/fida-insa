@@ -11,7 +11,7 @@ import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
-import footer from "../../utils/images/rodape_bioagua.png";
+import footer from "../../utils/images/footer-agua.png";
 
 import dataMap from '../../utils/filesJSON/bioagua.json';
 
