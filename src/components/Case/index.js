@@ -144,7 +144,7 @@ class Case extends React.Component {
                             <div className='title'  >
                                 <h2 className='top' >Energia solar</h2>
                                 <h2>
-                                    Sistema para a produção de Biogás no Sítio Cajazeira no município de Varjota - CE
+                                    Painel solar instalado  no Sítio Saquinho, no município de Nova Palmeira -PB 
                         </h2>
                             </div>
                             <div className='img'>
