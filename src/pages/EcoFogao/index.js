@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 
 import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
-import Description from '../../components/ComponentsPageTechs/Description';
-import Mapa from '../../components/ComponentsPageTechs/Mapa';
-import AnalyzeCB from '../../components/ComponentsPageTechs/AnalyzeCB';
-import AnalyzeCO from '../../components/ComponentsPageTechs/AnalyzeCO';
-import Invest from '../../components/ComponentsPageTechs/Invest';
-import Experience from '../../components/ComponentsPageTechs/Experience';
-import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
+import Description from '../../components/ComponentsPageEcofogao/Description';
+import Mapa from '../../components/ComponentsPageEcofogao/Mapa';
+import AnalyzeCB from '../../components/ComponentsPageEcofogao/AnalyzeCB';
+import AnalyzeCO from '../../components/ComponentsPageEcofogao/AnalyzeCO';
+import Invest from '../../components/ComponentsPageEcofogao/Invest';
+import Experience from '../../components/ComponentsPageEcofogao/Experience';
+import Curiosities from '../../components/ComponentsPageEcofogao/Curiosities';
 
 import dataMap from '../../utils/filesJSON/ecofogao.json'
 
