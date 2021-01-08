@@ -11,7 +11,7 @@ import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
-import dataMap from '../../utils/filesJSON/solar.json'
+import dataMap from '../../utils/filesJSON/solar/solar.json'
 
 function Solar() {
 

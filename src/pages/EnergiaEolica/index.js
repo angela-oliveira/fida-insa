@@ -14,7 +14,11 @@ import Photos from '../../components/ComponentsPageTechs/Photos'
 import footer from "../../utils/images/Group 137.png";
 import Parceiros from "../../components/Parceiros";
 
-import dataMap from "../../utils/filesJSON/eolica.json";
+import dataMap from "../../utils/filesJSON/eolica/datamap/eolica.json";
+
+import infoEolica from "../../utils/filesJSON/eolica/infoEolica.json";
+
+console.log(infoEolica.descricao)
 
 function Eolica() {
     useEffect(()=>{
@@ -24,14 +28,14 @@ function Eolica() {
         <div id='body'>
             
             <HeaderTechs></HeaderTechs>
-            <Description />
+            <Description data={infoEolica.descricao}/>
             <Mapa data={dataMap}/>
-            <AnalyzeCB />
-            <AnalyzeCO/>
-            <Invest />
+            <AnalyzeCB data={infoEolica.analiseCusto}/>
+            <AnalyzeCO data={infoEolica.analiseCO2}/>
+            <Invest data={infoEolica}/>
             <Experience />
             <Photos />
-            <Curiosities />
+            <Curiosities data={infoEolica.voceSabia}/>
             <div className="footer">
                 <img src={footer}></img>
             </div>

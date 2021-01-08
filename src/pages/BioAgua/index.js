@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom'
 
 import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
-import Description from '../../components/ComponentsPageTechs/Description';
-import Mapa from '../../components/ComponentsPageTechs/Mapa';
-import AnalyzeCB from '../../components/ComponentsPageTechs/AnalyzeCB';
-import AnalyzeCO from '../../components/ComponentsPageTechs/AnalyzeCO';
-import Invest from '../../components/ComponentsPageTechs/Invest';
-import Experience from '../../components/ComponentsPageTechs/Experience';
-import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
-import dataMap from '../../utils/filesJSON/bioagua.json';
+import Description from '../../components/ComponentsPageBioAgua/Description';
+import Mapa from '../../components/ComponentsPageBioAgua/Mapa';
+import AnalyzeCB from '../../components/ComponentsPageBioAgua/AnalyzeCB';
+import AnalyzeCO from '../../components/ComponentsPageBioAgua/AnalyzeCO';
+import Invest from '../../components/ComponentsPageBioAgua/Invest';
+import Experience from '../../components/ComponentsPageBioAgua/Experience';
+import Curiosities from '../../components/ComponentsPageBioAgua/Curiosities';
+
+import dataMap from '../../utils/filesJSON/bioagua/datamap/bioagua.json';
 
 function BioAgua() {
 
