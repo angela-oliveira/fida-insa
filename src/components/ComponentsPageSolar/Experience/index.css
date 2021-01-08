@@ -1,0 +1,56 @@
+.Experience {
+    margin: 2rem 0rem 2rem 0rem;
+    border: 1px solid #000;
+    grid-column: 1/13;
+    /* height: 500px; */
+    border: none;
+}
+.casca-experience{
+    margin: 0rem 0rem 2rem 13rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* grid-column: 1/13; */
+}
+.experience-label{
+    display: flex;
+    justify-content: left;
+    min-width: 200px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin: 3rem 0 1rem 0;
+}
+.solar-experience .experience-content{
+    background-color: #E2AF28;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 2rem 10rem;
+}
+.experience-text{
+
+    padding: 2rem;
+    color: #fff;
+}
+.experience-text .experience-text-label{
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+    color: #fff;
+}
+
+.experience-text .experience-text-txt{
+    display: flex;
+    
+}
+
+.experience-text-txt p{
+    margin-right:1rem ;
+
+}
+.video{
+    grid-column: 2/3;
+}
+.photos{
+    margin: 2rem 13rem 2rem 13rem;
+}

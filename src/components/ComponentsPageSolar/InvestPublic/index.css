@@ -1,0 +1,23 @@
+.invest-public {
+  margin-top: 2rem;
+}
+.solar-investpublic .ant-table-thead tr th{
+  background-color: #E2AF28;
+  color: white!important;
+}
+.invest-p{
+  text-indent: 0rem;
+  font-weight: bold;
+}
+.solar-investpublic .ant-table-container {
+  border: solid;
+  border-color: #E2AF28;
+}
+.expanded-table {
+    background-color: #00000033 ;
+    padding: 1rem;
+}
+.expanded-table p {
+    margin: 1rem;
+    text-indent: 0rem;
+}

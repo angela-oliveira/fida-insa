@@ -13,6 +13,9 @@ import Experience from '../../components/ComponentsPageBioDiges/Experience';
 import Curiosities from '../../components/ComponentsPageBioDiges/Curiosities';
 
 import dataMapa from '../../utils/filesJSON/biodigestor/biodigestor.json';
+=======
+import footer from "../../utils/images/footer-digestor.png";
+
 
 function BioDigestor() {
 
@@ -30,9 +33,10 @@ function BioDigestor() {
             <Invest />
             <Experience />
             <Curiosities />
+            <div className="footer">
+                <img src={footer}></img>
+            </div>
 
-            {/* <Parceiros/> */}
-            {/* <Footer/> */}
         </div>
     )
 }

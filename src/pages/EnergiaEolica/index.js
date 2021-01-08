@@ -11,7 +11,7 @@ import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 import Photos from '../../components/ComponentsPageTechs/Photos'
-import footer from "../../utils/images/Group 137.png";
+import footer from "../../utils/images/footer-eolica.png";
 import Parceiros from "../../components/Parceiros";
 
 import dataMap from "../../utils/filesJSON/eolica/datamap/eolica.json";

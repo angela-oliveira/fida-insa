@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom'
 
 import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
-import Description from '../../components/ComponentsPageTechs/Description';
-import Mapa from '../../components/ComponentsPageTechs/Mapa';
-import AnalyzeCB from '../../components/ComponentsPageTechs/AnalyzeCB';
-import AnalyzeCO from '../../components/ComponentsPageTechs/AnalyzeCO';
-import Invest from '../../components/ComponentsPageTechs/Invest';
-import Experience from '../../components/ComponentsPageTechs/Experience';
-import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
+import Description from '../../components/ComponentsPageSolar/Description';
+import Mapa from '../../components/ComponentsPageSolar/Mapa';
+import AnalyzeCB from '../../components/ComponentsPageSolar/AnalyzeCB';
+import AnalyzeCO from '../../components/ComponentsPageSolar/AnalyzeCO';
+import Invest from '../../components/ComponentsPageSolar/Invest';
+import Experience from '../../components/ComponentsPageSolar/Experience';
+import Curiosities from '../../components/ComponentsPageSolar/Curiosities';
+import Photos from '../../components/ComponentsPageSolar/Photos'
+import footer from "../../utils/images/footer-solar.png";
 
 import dataMap from '../../utils/filesJSON/solar/solar.json'
 
@@ -28,7 +30,11 @@ function Solar() {
             <AnalyzeCO/>
             <Invest />
             <Experience />
+            <Photos />
             <Curiosities />
+            <div className="footer">
+                <img src={footer}></img>
+            </div>
         </div>
     )
 }

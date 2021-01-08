@@ -14,6 +14,11 @@ import Curiosities from '../../components/ComponentsPageBioAgua/Curiosities';
 
 import dataMap from '../../utils/filesJSON/bioagua/datamap/bioagua.json';
 
+import footer from "../../utils/images/footer-agua.png";
+
+import dataMap from '../../utils/filesJSON/bioagua.json';
+
+
 function BioAgua() {
 
     useEffect(()=>{
@@ -30,9 +35,10 @@ function BioAgua() {
             <Invest />
             <Experience />
             <Curiosities />
+            <div className="footer">
+                <img src={footer}></img>
+            </div>
 
-            {/* <Parceiros/> */}
-            {/* <Footer/> */}
         </div>
     )
 }
