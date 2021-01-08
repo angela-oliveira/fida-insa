@@ -49,7 +49,7 @@ const data = [
 ]
 function AnalyzeCO() {
     return (
-        <div className='analyze-co'>
+        <div className='ecofogao-analyze-co analyze-co'>
             <div className='casca-ana-co'>
                 <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2 (-245KG/MÊS)</div>
                 <div className="site-card-border-less-wrapper">
@@ -58,6 +58,7 @@ function AnalyzeCO() {
                         <p>A redução das emissões de CO2 com o ecofogão foi calculada em comparação com o fogão a lenha tradicional. O ecofogão tem a vantagem de utilizar uma menor quantidade de lenha, produzir menos fuligem e fumaça. Com isso, o ecofogão é a melhor alternativa para a cocção de alimentos com o uso de lenha, reduzindo em 58,4% a emissão de CO2. </p>
                     </Card>
                         <Table 
+                            className='table-ecofogao-analyzeco'
                             columns={columns} 
                             dataSource={data} 
                             pagination={ false } 

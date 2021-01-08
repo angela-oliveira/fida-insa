@@ -24,7 +24,7 @@ p {
     text-align: justify;
     text-indent: 3rem;
 }
-.button-1{
+.solar-curiosities .button-1{
     border: none;
     border-radius:40px;
     color: #fff;
@@ -33,15 +33,15 @@ p {
     background-color: #EFB802;
 }
 
-.button-1:hover{
+.solar-curiosities .button-1:hover{
     background-color: #FAF238;
 }
 
-.button-1:active{
+.solar-curiosities .button-1:active{
     background-color: #FAF238;
 }
 
-.button-1:focus{
+.solar-curiosities .button-1:focus{
     background-color: #FAF238;
 }
 .tooltip {
@@ -62,7 +62,7 @@ p {
     text-align: center;
     color: white;
 }
-.ant-modal-header {
+.solar-curiosities .ant-modal-header {
     background-color: #EFB802;
 
 }
@@ -88,7 +88,7 @@ p {
     display: flex;
 }
 
-.title-tech .logo-tech .casca-logo-tech{
+.solar-curiosities .title-tech .logo-tech .casca-logo-tech{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ p {
 }
 
 /* --- TEMPORARIO --- */
-.logo-tech .label-tech .labelB{
+.solar-curiosities .logo-tech .label-tech .labelB{
     font-Size: 2.5rem;
     padding-top: 5%;
     color: #EFB802;

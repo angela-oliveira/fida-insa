@@ -20,7 +20,7 @@ const text5 = `Secador solar: composto por uma peça que desempenha simultaneame
 
 function Curiosities() {
     return (
-        <div className='Curiosities'> 
+        <div className='solar-curiosities Curiosities'> 
         
             <div className='casca-curiosities'>
                 <div className='curiosities-label'>VOCÊ SABIA?</div>

@@ -150,26 +150,26 @@
     display: flex;
     align-items: center;
 }
-.ant-tabs-tab-btn:hover {
+.solar-analyzecb .ant-tabs-tab-btn:hover {
     color: #E2AF28
 }
-.ant-tabs-tab-btn:active {
+.solar-analyzecb .ant-tabs-tab-btn:active {
     color: #E2AF28
 }
-.ant-tabs-tab-btn:focus {
+.solar-analyzecb .ant-tabs-tab-btn:focus {
     color: #E2AF28
 }
-.ant-tabs-tab:hover {
+.solar-analyzecb .ant-tabs-tab:hover {
     color: #E2AF28;
 }
 
-.ant-tabs-tab:active {
+.solar-analyzecb .ant-tabs-tab:active {
     color: #E2AF28;
 }
 
-.ant-tabs-tab:focus {
+.solar-analyzecb .ant-tabs-tab:focus {
     color: #E2AF28;
 }
-.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+.solar-analyzecb .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #E2AF28;
 }

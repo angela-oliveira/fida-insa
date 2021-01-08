@@ -30,8 +30,8 @@
     text-align: center;
     text-indent: 0;
 }
-.ant-collapse-header {
-    background-color: #89773C!important;
-    color: #fff!important;
+.ecofogao-analyze-curiosities .ant-collapse-header {
+    background-color: #89773C;
+    color: #fff;
     /* font-weight: bold; */
 }

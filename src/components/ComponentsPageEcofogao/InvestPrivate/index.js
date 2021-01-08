@@ -200,7 +200,7 @@ class InvestPrivate extends React.Component {
     }
     render(){
     return (
-        <div className='invest-private'> 
+        <div className='ecofogao-analyze-investprivate invest-private'> 
         <div><p className="invest-p">FINANCIAMENTOS PRIVADO</p></div>
           <Table 
             columns={columns} 

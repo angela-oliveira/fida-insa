@@ -44,7 +44,7 @@ function Experience() {
   // };
 
     return (
-        <div className='Experience'> 
+        <div className='solar-experience Experience'> 
             <div className='casca-experience'>
                 <div className='experience-label'>EXPERIÊNCIAS REAIS</div>
                 <p>Veja os nosso registros</p>

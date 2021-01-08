@@ -46,7 +46,7 @@ const data = [
 class AnalyzeCO extends React.Component {
     render(){
         return(
-            <div className='analyze-co'>
+            <div className='solar-analyzeco analyze-co'>
                 <div className='casca-ana-co'>
                     <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2 (-245KG/MÊS)</div>
                     <div className="site-card-border-less-wrapper">

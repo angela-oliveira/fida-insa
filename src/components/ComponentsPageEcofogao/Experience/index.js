@@ -8,7 +8,7 @@ import Gallery from 'react-photo-gallery';
 function Experience() {
 
     return (
-        <div className='Experience'> 
+        <div className='ecofogao-analyze-experience Experience'> 
             <div className='casca-experience'>
                 <div className='experience-label'>EXPERIÊNCIAS REAIS</div>
                 <p>Veja os nosso registros</p>

@@ -22,7 +22,7 @@ const text7 = `As informações tradicionais relativas à oferta e consumo de en
 
 function Curiosities() {
     return (
-        <div className='Curiosities'> 
+        <div className='ecofogao-analyze-curiosities Curiosities'> 
         
             <div className='casca-curiosities'>
                 <div className='curiosities-label'>VOCÊ SABIA?</div>

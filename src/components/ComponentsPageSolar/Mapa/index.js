@@ -165,7 +165,7 @@ function Mapa(props) {
 
 
     return (
-        <div className='map-container'>
+        <div className='solar-map map-container'>
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>

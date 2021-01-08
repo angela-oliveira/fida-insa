@@ -29,7 +29,7 @@
     text-align: center;
     margin: 2rem 0 6rem 0;
 }
-.casca-ana-co .co-label::before{
+.solar-analyzeco .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
     top: -39px;
@@ -90,7 +90,7 @@
     from {width: 0%;}
     to {width: 100%;}
   }
-.graphic .line-gra div{
+  .solar-analyzeco .graphic .line-gra div{
     width: 100%;
     background: #E2AF28;
     animation-name: example;
@@ -115,11 +115,11 @@
 }
 
 
-.site-card-border-less-wrapper .ant-table-thead tr th{
+.solar-analyzeco .site-card-border-less-wrapper .ant-table-thead tr th{
     background-color: #E2AF28;
     color: white!important;
   }
-.site-card-border-less-wrapper .ant-table-container {
+.solar-analyzeco .site-card-border-less-wrapper .ant-table-container {
     border: solid;
     border-color: #E2AF28;
   }

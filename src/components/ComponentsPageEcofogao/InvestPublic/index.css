@@ -1,17 +1,17 @@
 .invest-public {
   margin-top: 2rem;
 }
-.ant-table-thead tr th{
-  background-color: #329BA3;
+.ecofogao-analyze-investpublic .ant-table-thead tr th{
+  background-color: #89773C;
   color: white!important;
 }
 .invest-p{
   text-indent: 0rem;
   font-weight: bold;
 }
-.ant-table-container {
+.ecofogao-analyze-investpublic .ant-table-container {
   border: solid;
-  border-color: #329BA3;
+  border-color: #89773C;
 }
 .expanded-table {
     background-color: #00000033 ;

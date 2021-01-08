@@ -24,13 +24,13 @@ p {
     text-align: justify;
     text-indent: 3rem;
 }
-.button-1{
+.ecofogao-analyze-description .button-1{
     border: none;
     border-radius:40px;
     color: #fff;
     height: 30px;
     width: 90px;
-    background-color: #89773C!important;
+    background-color: #89773C;
 }
 .tooltip {
     display: flex;
@@ -50,8 +50,8 @@ p {
     text-align: center;
     color: white;
 }
-.ant-modal-header {
-    background-color: #89773C!important;
+.ecofogao-analyze-description .ant-modal-header {
+    background-color: #89773C;
 
 }
 /* .anticon-plus-circle{
@@ -76,13 +76,13 @@ p {
     display: flex;
 }
 
-.title-tech .logo-tech .casca-logo-tech{
+.ecofogao-analyze-description .title-tech .logo-tech .casca-logo-tech{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background:#89773C!important;
+    background:#89773C;
 }
 
 .logo-tech .casca-logo-tech img{
@@ -101,10 +101,10 @@ p {
 }
 
 /* --- TEMPORARIO --- */
-.logo-tech .label-tech .labelB{
+.ecofogao-analyze-description .logo-tech .label-tech .labelB{
     font-Size: 2.5rem;
     padding-top: 5%;
-    color: #89773C!important;
+    color: #89773C;
     /* color: var(--color-green-light); */
 }
 

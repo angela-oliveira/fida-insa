@@ -1,7 +1,7 @@
 .invest-public {
   margin-top: 2rem;
 }
-.ant-table-thead tr th{
+.solar-investpublic .ant-table-thead tr th{
   background-color: #E2AF28;
   color: white!important;
 }
@@ -9,7 +9,7 @@
   text-indent: 0rem;
   font-weight: bold;
 }
-.ant-table-container {
+.solar-investpublic .ant-table-container {
   border: solid;
   border-color: #E2AF28;
 }

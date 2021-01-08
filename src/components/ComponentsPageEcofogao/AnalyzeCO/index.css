@@ -29,7 +29,7 @@
     text-align: center;
     margin: 2rem 0 6rem 0;
 }
-.casca-ana-co .co-label::before{
+.ecofogao-analyze-co .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
     top: -39px;
@@ -38,7 +38,7 @@
     height: 140px;
     z-index: -1;
     border-radius: 50%;
-    background: #B4A163!important;
+    background: #B4A163;
 }
 
 .casca-ana-co .co-graphic{
@@ -90,9 +90,9 @@
     from {width: 0%;}
     to {width: 100%;}
   }
-.graphic .line-gra div{
+.ecofogao-analyze-co .graphic .line-gra div{
     width: 100%;
-    background: #89773C!important;
+    background: #89773C;
     animation-name: example;
     animation-duration: 2s;
 }
@@ -119,11 +119,11 @@
 
 /* Table  */
 
-.ant-table-thead tr th{
-  background-color: #89773C!important;
-  color: white!important;
+.ecofogao-analyze-co .table-ecofogao-analyzeco .ant-table-thead tr th{
+  background-color: #89773C;
+  color: white;
 }
-.ant-table-container {
+.ecofogao-analyze-co .table-ecofogao-analyzeco .ant-table-container {
   border: solid;
-  border-color: #89773C!important;
+  border-color: #89773C;
 }

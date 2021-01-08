@@ -148,26 +148,29 @@
     text-indent: 4rem;
 }
 
-.ant-tabs-tab-btn:hover {
-    color: #89773C!important
+.ecofogao-analyze-cb .ant-tabs-tab-btn:hover {
+    color: #89773C
 }
-.ant-tabs-tab-btn:active {
-    color: #89773C!important
+.ecofogao-analyze-cb .ant-tabs-tab-btn:active {
+    color: #89773C
 }
-.ant-tabs-tab-btn:focus {
-    color: #89773C!important
+.ecofogao-analyze-cb .ant-tabs-tab-btn:focus {
+    color: #89773C
 }
-.ant-tabs-tab:hover {
-    color: #89773C!important;
-}
-
-.ant-tabs-tab:active {
-    color: #89773C!important;
+.ecofogao-analyze-cb .ant-tabs-tab:hover {
+    color: #89773C;
 }
 
-.ant-tabs-tab:focus {
-    color: #89773C!important;
+.ecofogao-analyze-cb .ant-tabs-tab:active {
+    color: #89773C;
 }
-.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: #89773C!important;
+
+.ecofogao-analyze-cb .ant-tabs-tab:focus {
+    color: #89773C;
+}
+.ecofogao-analyze-cb .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #89773C;
+}
+.ecofogao-analyze-cb .button-1 {
+    background-color: #89773C;
 }

@@ -2,7 +2,7 @@
 button{
     outline: none;
 }
-.map-container{
+.ecofogao-analyze-map {
     /* border: 1px solid #000; */
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -132,12 +132,12 @@ button{
     stroke: var(--color-green-medium);
 }
 
-.map .estado{
-    fill:#B4A163!important;
+.ecofogao-analyze-map .map .estado{
+    fill:#B4A163;
 }
 
-.estado:hover{
-    fill: #5F4E18!important;
+.ecofogao-analyze-map .estado:hover{
+    fill: #5F4E18;
 }
 
 

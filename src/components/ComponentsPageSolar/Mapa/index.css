@@ -2,7 +2,7 @@
 button{
     outline: none;
 }
-.map-container{
+.solar-map {
     /* border: 1px solid #000; */
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -131,11 +131,11 @@ button{
     stroke: var(--color-green-medium);
 }
 
-.map .estado{
+.solar-map .map .estado{
     fill: #FAF238;
 }
 
-.estado:hover{
+.solar-map .estado:hover{
     fill: #EFB802;
 }
 
