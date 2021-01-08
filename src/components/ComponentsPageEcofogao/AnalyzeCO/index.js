@@ -70,7 +70,7 @@ function AnalyzeCO() {
                         <div className='graphic'>
                             <div className='label'>
                                 <div className='left'>QUANTIDADE INSTALADA</div>
-                                <div className='right'>498</div>
+                                <div className='right'>994</div>
                             </div>
                             <div className='line-gra'>
                                 <div></div>
@@ -79,7 +79,7 @@ function AnalyzeCO() {
                         <div className='graphic'>
                             <div className='label'>
                                 <div className='left'>NUMERO DE BENEFICIADOS</div>
-                                <div className='right'> 3671 famílias</div>
+                                <div className='right'> 2982 famílias</div>
                             </div>
                             <div className='line-gra'>
                                 <div></div>
@@ -88,7 +88,7 @@ function AnalyzeCO() {
                         <div className='graphic'>
                             <div className='label'>
                                 <div className='left'>MUNICÍPIOS</div>
-                                <div className='right'>56</div>
+                                <div className='right'>27</div>
                             </div>
                             <div className='line-gra'>
                                 <div></div>

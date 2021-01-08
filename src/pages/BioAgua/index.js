@@ -11,6 +11,8 @@ import Invest from '../../components/ComponentsPageTechs/Invest';
 import Experience from '../../components/ComponentsPageTechs/Experience';
 import Curiosities from '../../components/ComponentsPageTechs/Curiosities';
 
+import footer from "../../utils/images/rodape_bioagua.png";
+
 import dataMap from '../../utils/filesJSON/bioagua.json';
 
 function BioAgua() {
@@ -29,9 +31,10 @@ function BioAgua() {
             <Invest />
             <Experience />
             <Curiosities />
+            <div className="footer">
+                <img src={footer}></img>
+            </div>
 
-            {/* <Parceiros/> */}
-            {/* <Footer/> */}
         </div>
     )
 }
