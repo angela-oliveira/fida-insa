@@ -6,9 +6,11 @@ import Parceiros from "../../../components/Parceiros"
 
 const { Panel } = Collapse;
 
-const text1 = `A origem do catavento remonta aos antigos moinhos de vento. Essa origem não está realmente clara, mas alguns estudiosos acreditam ter originado na Pérsia de 915 a.C, hoje Irã. Entretanto, existem indicações sobre o emprego de moinhos de vento mais remotos no Iraque, Egito e China. Na Europa, os moinhos de vento foram introduzidos no século XII, mas somente no século XV se espalharam pelo continente. Ao longo dos séculos, o uso da energia dos ventos se prestou a muitas aplicações como na moagem de grãos, extração de óleo, bombeamento de água, dentre outras.`
-const text2 = `O funcionamento do catavento baseia-se no movimento das massas de ar, que, ao passar pelas hélices fazem com que suas pás girem. Para bombeamento de água, o catavento deve ser instalado em conjunto com uma bomba do tipo pistão. Para fins de irrigação, é geralmente utilizado para bombear água para reservatórios elevados. Do reservatório, a água pode então ser distribuída por gravidade a sistemas de irrigação por gotejamento, microaspersão ou superfície. É um sistema de alto custo de aquisição em comparação ao sistema de bombeamento elétrico, mas de baixo custo de operação e manutenção.`
-const text3 = `Charles Francis Brush (1849-1929), um dos fundadores da indústria elétrica dos Estados Unidos, construiu um grande moinho de vento na sua propriedade, em Cleveland. Esse foi o primeiro registro de uma turbina movida pelo vento para produção de eletricidade. O diâmetro do rotor era de 17 metros, com 144 lâminas feitas de madeira. A turbina funcionou por 20 anos e era usada para carregar baterias que ficavam no celeiro de sua mansão. Essa primeira versão gerava apenas 12 quilowatts (kW).`
+const text1 = `Alexandre Edmond Becquerel descobriu o efeito fotovoltaico em 1939, enquanto realizava experiências eletroquímicas na oficina de seu pai. Em 1873 foi criada a primeira célula fotovoltaica que era feita de selênio. Atualmente quase 80% dos painéis solares são compostos por alguma variação de silício graças a Calvin Fuller que, em 1954, desenvolveu as células fotovoltaicas de silício. No ano de 1973, foi construída a primeira casa abastecida por energia solar, fato realizado pela Universidade de Delaware nos EUA. Mas foi em 2004 que foram produzidas mundialmente milhões de células com eficiência na ordem dos 16%, ultrapassando pela primeira vez a barreira de 1 gigawatt de potência elétrica anual.`
+const text2 = `“Aqualuz”: tecnologia voltada para o tratamento de cisternas, usando apenas o Sol, sem haver a necessidade de usar substâncias químicas, filtros sofisticados, nem intervenções na cisterna. Sua montagem acontece em apenas 10 minutos, com uso diário por 20 anos, sendo sua baixa manutenção feita apenas com água e sabão. A tecnologia é constituída por uma caixa de inox coberta por um vidro e uma tubulação simples ligada à cisterna.`
+const text3 = `Destilador Solar: é um protótipo (DSR) robotizado de baixo custo e de fácil operacionalização, com sistema de rastreio solar, visando aplicações residenciais, laboratoriais e industriais, para destilação de água. O equipamento é composto por quatro partes fundamentais: calha receptora; tubo absorvedor; sistema robotizado de mobilidade da antena e sistema de arrefecimento da condensadora.`
+const text4 = `Dessalinizador solar: a tecnologia promove a destilação solar eliminando completamente todos os sais, metais pesados, bactérias e micróbios presentes em águas poluídas, assim também como a remoção de vários pesticidas, devido às altas temperaturas e a radiação ultravioleta. No final do processo, é feita facilmente uma reconstituição simples de sais para uso como água potável.`
+const text5 = `Secador solar: composto por uma peça que desempenha simultaneamente a função de coletar a energia solar e de servir como câmara de secagem, onde a radiação solar incide diretamente sobre o produto colocado no secador. O ar é aquecido e a circulação é feita por convecção natural, sendo uma secagem rápida e de baixo custo.`
 // const textCuriosities = {
 //     title:"" ,
 //     text: ""
@@ -25,14 +27,14 @@ function Curiosities() {
                 <div className='subtitle'><p>Veja algumas dúvidas e curiosidades</p>
                 </div>
                 <Collapse accordion>
-                    <Panel header="A origem do catavento é datada de 915 a.C" key="1">
+                    <Panel header=" Você sabia que a energia fotovoltaica vem desde 1839?" key="1">
                     <p>{text1}</p>
                     </Panel>
-                    <Panel header="Uma tecnologia simples com uma fonte energética inesgotável para a agricultura" key="2">
+                    <Panel header="Você sabia que além da energia solar outros dispositivos são utilizados para aproveitar energia proveniente do sol?" key="2">
                     <p>{text2}</p>
-                    </Panel>
-                    <Panel header="A transição de um moinho de vento para a geração de energia elétrica" key="3">
                     <p>{text3}</p>
+                    <p>{text4}</p>
+                    <p>{text5}</p>
                     </Panel>
                 </Collapse>
 

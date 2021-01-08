@@ -107,29 +107,8 @@ function Experience() {
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/JTqz_xzozl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>  
                 
-                  {/* <Pagination size="small" total={50} />  */}
               </div>
             </Carousel>
-            {/* <div className='photos'>
-
-                <Gallery photos={photos} onClick={openLightbox} direction={"column"} /> */}
-                {/* Esse argumento PHOYO_SET será substituida para uma
-                 pasta com as fotos */}
-                 {/* <ModalGateway>
-                  {viewerIsOpen ? (
-                    <Modal onClose={closeLightbox}>
-                      <Carousel
-                        currentIndex={currentImage}
-                        views={photos.map(x => ({
-                          ...x,
-                          srcset: x.srcSet,
-                          caption: x.title
-                        }))}
-                      />
-                    </Modal>
-                  ) : null}
-                </ModalGateway>
-            </div> */}
         </div>
     )
 }

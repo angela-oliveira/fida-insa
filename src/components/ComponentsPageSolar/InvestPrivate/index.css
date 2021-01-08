@@ -2,7 +2,7 @@
   margin-top: 2rem;
 }
 .ant-table-thead tr th{
-  background-color: #329BA3;
+  background-color: #E2AF28;
   color: white!important;
 }
 .invest-p{
@@ -11,7 +11,7 @@
 }
 .ant-table-container {
   border: solid;
-  border-color: #329BA3;
+  border-color: #E2AF28;
 }
 .expanded-table {
     background-color: #00000033 ;

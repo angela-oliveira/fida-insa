@@ -143,3 +143,33 @@
     [data-theme="dark"] .site-statistic-demo-card {
       background: #303030;
     }
+.analise-cb-background {
+    background-color: #ececec;
+    padding: 1rem;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+.ant-tabs-tab-btn:hover {
+    color: #E2AF28
+}
+.ant-tabs-tab-btn:active {
+    color: #E2AF28
+}
+.ant-tabs-tab-btn:focus {
+    color: #E2AF28
+}
+.ant-tabs-tab:hover {
+    color: #E2AF28;
+}
+
+.ant-tabs-tab:active {
+    color: #E2AF28;
+}
+
+.ant-tabs-tab:focus {
+    color: #E2AF28;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #E2AF28;
+}

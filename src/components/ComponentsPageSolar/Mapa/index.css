@@ -8,7 +8,7 @@ button{
     grid-template-columns: repeat(12,1fr);
     grid-column: 1/13;
     height: 100vh;
-    background: var(--color-green-medium);
+    background: #D5A50A;
 } 
 
 .casca-map{
@@ -132,11 +132,11 @@ button{
 }
 
 .map .estado{
-    fill: var(--color-green-light);
+    fill: #FAF238;
 }
 
 .estado:hover{
-    fill: #2ec2b8;
+    fill: #EFB802;
 }
 
 
