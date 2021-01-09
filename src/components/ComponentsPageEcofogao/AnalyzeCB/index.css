@@ -81,6 +81,16 @@
     justify-content: space-between;
 }
 
+.analise-cb-background{
+    overflow-y: auto;
+    align-items: initial !important;
+    padding-bottom: 1rem;
+}
+
+.analise-cb-background{
+    
+}
+
 .cb-bottom
 .txt-left,
 .txt-right{
