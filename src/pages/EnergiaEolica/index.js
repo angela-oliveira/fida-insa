@@ -27,7 +27,7 @@ function Eolica() {
     return (
         <div id='body'>
             
-            <HeaderTechs></HeaderTechs>
+            <HeaderTechs linkBack='/energia-solar' linkNext='/bio-agua'></HeaderTechs>
             <Description data={infoEolica.descricao}/>
             <Mapa data={dataMap}/>
             <AnalyzeCB data={infoEolica.analiseCusto}/>

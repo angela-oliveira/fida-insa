@@ -25,7 +25,7 @@ function BioAgua() {
     
     return (
         <div id='body'>
-            <HeaderTechs></HeaderTechs>
+            <HeaderTechs linkBack='/energia-eolica' linkNext='/eco-fogao'></HeaderTechs>
             <Description />
             <Mapa data={dataMap}/>
             <AnalyzeCB />

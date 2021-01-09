@@ -25,7 +25,7 @@ function BioDigestor() {
 
     return (
         <div id='body'>
-            <HeaderTechs></HeaderTechs>
+            <HeaderTechs linkBack='/eco-fogao' linkNext='/energia-solar'></HeaderTechs>
             <Description />
             <Mapa data={dataMapa}/>
             <AnalyzeCB />

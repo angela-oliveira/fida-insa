@@ -19,15 +19,15 @@ const HeaderTechs = (props) => {
             >
             </PageHeader>
             <div className="nave-left">
-                <Link></Link>
-                <button>
-                </button>
+                <Link to={props.linkBack}>
+                <button>a</button>
+                </Link>
             </div>
 
             <div className="nave-right">
-                <button>
-                    
-                </button>
+            <Link to={props.linkNext}>
+                <button>b</button>
+            </Link>
             </div>
         </div>
     );
