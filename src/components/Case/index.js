@@ -82,7 +82,7 @@ class Case extends React.Component {
 
                             </article>
                         </div>
-                        <Link to='/'> <div className='more'>+</div></Link>
+                        
                     </div>
                     <div className='case'>
 
@@ -100,7 +100,7 @@ class Case extends React.Component {
                           
                             </article>
                         </div>
-                        <Link to='/'> <div className='more'>+</div></Link>
+                        
                     </div>
                     <div className='case'>
 
@@ -118,7 +118,7 @@ class Case extends React.Component {
                                 
                             </article>
                         </div>
-                        <Link to='/'> <div className='more'>+</div></Link>
+                        
                     </div>
                     <div className='case'>
 
@@ -136,7 +136,7 @@ class Case extends React.Component {
                                 
                             </article>
                         </div>
-                        <Link to='/'> <div className='more'>+</div></Link>
+                        
                     </div>
                     <div className='case'>
 
@@ -154,7 +154,7 @@ class Case extends React.Component {
                                 
                             </article>
                         </div>
-                        <Link to='/'> <div className='more'>+</div></Link>
+                        
                     </div>
 
 
