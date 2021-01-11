@@ -4,7 +4,13 @@ import useResizeObserver from 'use-resize-observer';
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
 
 import icoPoint from '../../../utils/images/place_01.svg';
-import ecoTest from '../../../utils/images/photos/ecotest.jpg';
+
+import bioAgua1 from '../../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 04.JPG';
+import bioAgua2 from '../../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 13.JPG';
+import bioAgua3 from '../../../utils/images/photos/Bioágua/Robério - Bioágua 02.JPG';
+import bioAgua4 from '../../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 01.JPG';
+import bioAgua5 from '../../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 10.JPG';
+
 
 import './index.css';
 import Carousel from 'nuka-carousel';
@@ -211,25 +217,30 @@ function Mapa(props) {
 
                         >
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={bioAgua1}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={bioAgua2}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={bioAgua3}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={bioAgua4}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={bioAgua5}></img>
                             </div>
                         </Carousel>
                     </div>
 
                 </div>
                 <div className='map' ref={wrapperRef}>
+                <div className='zoom-out' onClick={()=>{
+                        setSelectedEstados(drawMap)
+                    }}>
+                        Mapa completo
+                    </div>
                     <svg ref={svgRef}></svg>
                 </div>
             </div>

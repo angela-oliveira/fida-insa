@@ -115,6 +115,10 @@ button{
 
 /* MAPA */
 
+ .zoom-out{
+    background: var(--color-orange-medium);
+}
+
 .map{
     /* border: 1px solid #000; */
     width: 100%;

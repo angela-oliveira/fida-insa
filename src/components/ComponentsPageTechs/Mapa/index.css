@@ -21,6 +21,7 @@ button{
 
 .casca-map .info{
     /* border: 1px solid #000; */
+    position: relative;
     width: 100%;
     margin-top: 4rem;
 }
@@ -36,7 +37,14 @@ button{
 .info .info-text{
     /* border: 1px solid #000; */
     margin-bottom: 1rem;
+    transition: all 1s;
     
+    
+}
+
+.city foreignObject:active ~ .info-text{
+    margin-left: 2rem;
+    background: #000;
 }
 
 .info-text .txt-title{
@@ -121,6 +129,23 @@ button{
     display: flex;
     align-items: center;
     margin-left: 1.5rem;
+    position: relative;
+}
+
+.map .zoom-out{
+    cursor: pointer;
+    border: 1px solid var(--color-green-medium);
+    border-radius: 20px;
+    background-color: var(--color-green-light);
+    height: 1.8rem;
+    width: 7rem;
+    position: absolute;
+    right: 0px;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
 }
 
 .map svg{
@@ -178,5 +203,7 @@ button{
     /* color: aliceblue; */
     position: relative;
 } 
+
+
 
 /* arrow-bottom */

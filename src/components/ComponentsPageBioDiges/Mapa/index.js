@@ -3,7 +3,7 @@ import { select, geoPath, geoMercator, svg } from "d3";
 import useResizeObserver from 'use-resize-observer';
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
 
-import icoPoint from '../../../utils/images/place_01.svg';
+
 import ecoTest from '../../../utils/images/photos/ecotest.jpg';
 
 import './index.css';
@@ -70,13 +70,13 @@ function Mapa(props) {
 
             // .transition(700)
             .attr("d", features => pathGenerator(features))
-            // .append("foreignObject")
-            // .attr("x", 0)
-            // .attr("y", 0)
-            // .attr("width", 15)
-            // .attr("height", 17)
-            // .append("xhtml:div")
-            // .text("BH");
+        // .append("foreignObject")
+        // .attr("x", 0)
+        // .attr("y", 0)
+        // .attr("width", 15)
+        // .attr("height", 17)
+        // .append("xhtml:div")
+        // .text("BH");
 
 
         svgPoint
@@ -211,25 +211,30 @@ function Mapa(props) {
 
                         >
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={props.fotoDiges.bio1}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={props.fotoDiges.bio1}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={props.fotoDiges.bio1}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={bioDige4}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={bioDige5}></img>
                             </div>
                         </Carousel>
                     </div>
 
                 </div>
                 <div className='map' ref={wrapperRef}>
+                    <div className='zoom-out' onClick={() => {
+                        setSelectedEstados(drawMap)
+                    }}>
+                        Mapa completo
+                    </div>
                     <svg ref={svgRef}></svg>
                 </div>
             </div>

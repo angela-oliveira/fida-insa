@@ -230,6 +230,11 @@ function Mapa(props) {
 
                 </div>
                 <div className='map' ref={wrapperRef}>
+                <div className='zoom-out' onClick={()=>{
+                        setSelectedEstados(drawMap)
+                    }}>
+                        Mapa completo
+                    </div>
                     <svg ref={svgRef}></svg>
                 </div>
             </div>

@@ -16,6 +16,9 @@ import Parceiros from "../../components/Parceiros";
 
 import dataMap from "../../utils/filesJSON/eolica/datamap/eolica.json";
 
+
+import icoSolar from '../../utils/images/1.png';
+import icoAgua from '../../utils/images/4.png';
 import infoEolica from "../../utils/filesJSON/eolica/infoEolica.json";
 
 console.log(infoEolica.descricao)
@@ -27,7 +30,7 @@ function Eolica() {
     return (
         <div id='body'>
             
-            <HeaderTechs linkBack='/energia-solar' linkNext='/bio-agua'></HeaderTechs>
+            <HeaderTechs linkBack='/energia-solar' iconBack={icoSolar} linkNext='/bio-agua' iconNext={icoAgua} ></HeaderTechs>
             <Description data={infoEolica.descricao}/>
             <Mapa data={dataMap}/>
             <AnalyzeCB data={infoEolica.analiseCusto}/>

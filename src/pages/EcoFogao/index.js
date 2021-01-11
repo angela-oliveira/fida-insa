@@ -14,6 +14,9 @@ import Curiosities from '../../components/ComponentsPageEcofogao/Curiosities';
 import Photos from '../../components/ComponentsPageEcofogao/Photos'
 import footer from "../../utils/images/footer-fogao.png";
 
+import icoAgua from '../../utils/images/4.png';
+import icoBioDigestor from '../../utils/images/5.png';
+
 import dataMap from '../../utils/filesJSON/ecofogao/ecofogao.json'
 
 function EcoFogao() {
@@ -24,7 +27,7 @@ function EcoFogao() {
 
     return (
         <div id='body'>
-            <HeaderTechs linkBack='/bio-agua' linkNext='/bio-digestor'></HeaderTechs>
+            <HeaderTechs linkBack='/bio-agua' iconBack={icoAgua} linkNext='/bio-digestor' iconNext={icoBioDigestor} ></HeaderTechs>
             <Description />
             <Mapa data={dataMap}/>
             <AnalyzeCB/>

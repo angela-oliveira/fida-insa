@@ -13,6 +13,9 @@ import Curiosities from '../../components/ComponentsPageSolar/Curiosities';
 import Photos from '../../components/ComponentsPageSolar/Photos'
 import footer from "../../utils/images/footer-solar.png";
 
+import icoDigestor from '../../utils/images/5.png'
+import icoEolica from '../../utils/images/3.png'
+
 import dataMap from '../../utils/filesJSON/solar/solar.json'
 
 function Solar() {
@@ -23,7 +26,7 @@ function Solar() {
 
     return (
         <div id='body'>
-            <HeaderTechs linkBack="/bio-digestor" linkNext="/energia-eolica"></HeaderTechs>
+            <HeaderTechs linkBack="/bio-digestor" iconBack={icoDigestor} linkNext="/energia-eolica" iconNext={icoEolica}></HeaderTechs>
             <Description />
             <Mapa data={dataMap}/>
             <AnalyzeCB />

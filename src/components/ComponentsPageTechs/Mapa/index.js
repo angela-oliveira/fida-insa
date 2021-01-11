@@ -4,7 +4,12 @@ import useResizeObserver from 'use-resize-observer';
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
 
 import icoPoint from '../../../utils/images/place_01.svg';
-import ecoTest from '../../../utils/images/photos/ecotest.jpg';
+
+import eolica1 from '../../../utils/images/photos/eólica_fotos/EOLICA-FAMILIA-1200.jpg';
+import eolica2 from '../../../utils/images/photos/eólica_fotos/EOLICA-PANORAMICA CATAVENTO-1200.jpg';
+import eolica3 from '../../../utils/images/photos/eólica_fotos/EOLICA-CATAVENTO-1200.jpg';
+import eolica4 from '../../../utils/images/photos/eólica_fotos/EOLICA-CAMPO SECO-1200.jpg';
+import eolica5 from '../../../utils/images/photos/eólica_fotos/a.jpg';
 
 import './index.css';
 import Carousel from 'nuka-carousel';
@@ -21,6 +26,8 @@ function Mapa(props) {
     const wrapperRef = useRef(null);
     // const infoCityRef = useRef(null);
     const midiaRef = useRef(null);
+
+    const zoomRef = useRef(null);
 
     // adquirindo a proporção dada pelo css
     const { widthRef, heightRef } = useResizeObserver({ wrapperRef });
@@ -45,6 +52,7 @@ function Mapa(props) {
         // REFERENCIAS
         const svg = select(svgRef.current);
         const svgPoint = select(svgRef.current);
+        
 
 
 
@@ -69,14 +77,8 @@ function Mapa(props) {
             .attr("class", "estado")
 
             // .transition(700)
-            .attr("d", features => pathGenerator(features))
-            // .append("foreignObject")
-            // .attr("x", 0)
-            // .attr("y", 0)
-            // .attr("width", 15)
-            // .attr("height", 17)
-            // .append("xhtml:div")
-            // .text("BH");
+            .attr("d", features => pathGenerator(features));
+            
 
 
         svgPoint
@@ -110,6 +112,8 @@ function Mapa(props) {
 
     useEffect(() => {
 
+        const zoom = select(zoomRef)
+
         const { width, height } = wrapperRef.current.getBoundingClientRect();
         const projection = geoMercator().fitSize([width, height], selectedEstados);
         let pathGenerator = geoPath().projection(projection);
@@ -133,8 +137,8 @@ function Mapa(props) {
             .data(props.data.features)
             .transition()
             .attr("transform", function (d) {
-                return "translate(" + projection(d.geometry.coordinates) + ")"
-            })
+                return "translate(" + projection(d.geometry.coordinates) + ")"  
+            }) 
 
     })
 
@@ -195,7 +199,6 @@ function Mapa(props) {
                                     background: '#FAF238',
                                     color: '#575757',
                                     fontSize: '30px',
-
                                 },
                                 nextButtonStyle: {
                                     display: 'flex',
@@ -207,29 +210,32 @@ function Mapa(props) {
 
                                 }
                             }}
-
-
                         >
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={eolica1}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={eolica2}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={eolica3}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={eolica4}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={eolica5}></img>
                             </div>
                         </Carousel>
                     </div>
 
                 </div>
                 <div className='map' ref={wrapperRef}>
+                    <div className='zoom-out' onClick={()=>{
+                        setSelectedEstados(drawMap)
+                    }}>
+                        Mapa completo
+                    </div>
                     <svg ref={svgRef}></svg>
                 </div>
             </div>

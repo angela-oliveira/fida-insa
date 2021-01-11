@@ -14,6 +14,9 @@ import Curiosities from '../../components/ComponentsPageBioAgua/Curiosities';
 
 import dataMap from '../../utils/filesJSON/bioagua/datamap/bioagua.json';
 
+
+import icoFogao from '../../utils/images/2.png'
+import icoEolica from '../../utils/images/3.png'
 import footer from "../../utils/images/footer-agua.png";
 
 
@@ -25,7 +28,7 @@ function BioAgua() {
     
     return (
         <div id='body'>
-            <HeaderTechs linkBack='/energia-eolica' linkNext='/eco-fogao'></HeaderTechs>
+            <HeaderTechs linkBack='/energia-eolica' iconBack={icoEolica} linkNext='/eco-fogao' iconNext={icoFogao} ></HeaderTechs>
             <Description />
             <Mapa data={dataMap}/>
             <AnalyzeCB />

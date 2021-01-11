@@ -4,7 +4,11 @@ import useResizeObserver from 'use-resize-observer';
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
 
 import icoPoint from '../../../utils/images/place_01.svg';
-import ecoTest from '../../../utils/images/photos/ecotest.jpg';
+import fogao1 from '../../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Maria 01_1200.jpg';
+import fogao2 from '../../../utils/images/photos/Ecofogao/varjota_cajazeiras/02 VARJOTA-Cajazeiras-Nazaré e Luzanira 02_1200.jpg';
+import fogao3 from '../../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Valci e Isleane 08_1200.jpg';
+import fogao4 from '../../../utils/images/photos/Ecofogao/varjota_cajazeiras/02 VARJOTA-Cajazeiras-Nazaré e Luzanira 04_1200.jpg';
+import fogao5 from '../../../utils/images/photos/Ecofogao/varjota_varzea/02 VARJOTA-Várzea da Palha-Cida 06_1200.jpg';
 
 import './index.css';
 import Carousel from 'nuka-carousel';
@@ -211,25 +215,30 @@ function Mapa(props) {
 
                         >
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={fogao1}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={fogao2}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={fogao3}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={fogao4}></img>
                             </div>
                             <div className='img'>
-                                <img src={ecoTest}></img>
+                                <img src={fogao5}></img>
                             </div>
                         </Carousel>
                     </div>
 
                 </div>
                 <div className='map' ref={wrapperRef}>
+                <div className='zoom-out' onClick={()=>{
+                        setSelectedEstados(drawMap)
+                    }}>
+                        Mapa completo
+                    </div>
                     <svg ref={svgRef}></svg>
                 </div>
             </div>

@@ -133,6 +133,7 @@ button{
 
 .map .estado{
     fill: var(--color-green-light);
+    cursor: zoom-in;
 }
 
 .estado:hover{
@@ -169,6 +170,7 @@ button{
 } 
 
 .agulha{
+    cursor: pointer;
     height: auto;
     width: 15px;
     height: 15px;
