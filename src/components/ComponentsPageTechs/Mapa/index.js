@@ -11,7 +11,7 @@ import eolica3 from '../../../utils/images/photos/eólica_fotos/EOLICA-CATAVENTO
 import eolica4 from '../../../utils/images/photos/eólica_fotos/EOLICA-CAMPO SECO-1200.jpg';
 import eolica5 from '../../../utils/images/photos/eólica_fotos/a.jpg';
 
-import './index.css';
+import './index.css'; 
 import Carousel from 'nuka-carousel';
 
 
@@ -169,7 +169,7 @@ function Mapa(props) {
 
 
     return (
-        <div className='map-container'>
+        <div className='eolica-map map-container'>
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>

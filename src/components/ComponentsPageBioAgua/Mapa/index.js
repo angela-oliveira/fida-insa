@@ -171,7 +171,7 @@ function Mapa(props) {
 
 
     return (
-        <div className='map-container'>
+        <div className='bioagua-map map-container'>
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>

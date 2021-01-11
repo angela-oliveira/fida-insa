@@ -8,8 +8,13 @@ button{
     grid-template-columns: repeat(12,1fr);
     grid-column: 1/13;
     height: 100vh;
-    background: #D5A50A;
+    background: var(--color-yellow-medium);
 } 
+
+.solar-map .zoom-out{
+    background:var(--color-yellow-light);
+    border: 1px solid var(--color-yellow-medium);
+}
 
 .casca-map{
     /* grid-row: 1/2; */
@@ -128,15 +133,15 @@ button{
     width: 100%;
     height: 100%;
     stroke-width: 1px;
-    stroke: var(--color-green-medium);
+    stroke: var(--color-yellow-medium);
 }
 
 .solar-map .map .estado{
-    fill: #FAF238;
+    fill: var(--color-yellow-light);
 }
 
 .solar-map .estado:hover{
-    fill: #EFB802;
+    fill: #ffd903;
 }
 
 

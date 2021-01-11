@@ -68,6 +68,7 @@ p {
     border: none;
     background: rgba(0, 0, 0, 0.199);
 } */
+
 .title-tech .logo-tech{
     display: flex;
 }
@@ -92,8 +93,8 @@ p {
 .biodigestor-description .button-1:focus{
     background-color: #F1AD74;
 }
-.logo-tech .casca-logo-tech img{
-    height: 3.5rem;
+.biodigestor-description .logo-tech .casca-logo-tech img{
+    height: 2.6rem;
 }
 
 .biodigestor-description .logo-tech .label-tech h2{

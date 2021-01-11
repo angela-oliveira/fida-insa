@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-import LogoTech from '../../../utils/images/ic_eolica.png'
+import LogoTech from '../../../utils/images/5.png'
 import Cor from '../../../utils/images/photos/Biodigestor/capa_Biodigestor.JPG'
 
 import { Button, Modal, Tooltip, Row } from 'antd';

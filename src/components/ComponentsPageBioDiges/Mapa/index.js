@@ -3,9 +3,6 @@ import { select, geoPath, geoMercator, svg } from "d3";
 import useResizeObserver from 'use-resize-observer';
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
 
-
-import ecoTest from '../../../utils/images/photos/ecotest.jpg';
-
 import './index.css';
 import Carousel from 'nuka-carousel';
 
@@ -171,7 +168,7 @@ function Mapa(props) {
 
 
     return (
-        <div className='map-container'>
+        <div className='biodiges-analyze-map map-container'>
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>

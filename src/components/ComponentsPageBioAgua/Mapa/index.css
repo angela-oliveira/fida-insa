@@ -1,14 +1,14 @@
-
+    
 button{
     outline: none;
 }
-.map-container{
+.bioagua-map {
     /* border: 1px solid #000; */
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-column: 1/13;
     height: 100vh;
-    background: var(--color-green-medium);
+    background: var(--color-blue-medium) !important;
 } 
 
 .casca-map{
@@ -115,6 +115,11 @@ button{
 
 /* MAPA */
 
+.bioagua-map .zoom-out{
+    background-color: var(--color-blue-light) !important;
+    border: 1px solid var(--color-blue-medium);
+}
+
 .map{
     /* border: 1px solid #000; */
     width: 100%;
@@ -123,16 +128,16 @@ button{
     margin-left: 1.5rem;
 }
 
-.map svg{
+.bioagua-map .map svg{
     display: block;
     width: 100%;
     height: 100%;
     stroke-width: 1px;
-    stroke: var(--color-green-medium);
+    stroke: var(--color-blue-medium);
 }
 
-.map .estado{
-    fill: var(--color-green-light);
+.bioagua-map .map .estado{
+    fill: var(--color-blue-light);
     cursor: zoom-in;
 }
 
