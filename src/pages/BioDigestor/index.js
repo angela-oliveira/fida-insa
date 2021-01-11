@@ -5,7 +5,7 @@ import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
 
 import Description from '../../components/ComponentsPageBioDiges/Description';
-import Mapa from '../../components/ComponentsPageTechs/Mapa';
+import Mapa from '../../components/ComponentsPageBioDiges/Mapa';
 import AnalyzeCB from '../../components/ComponentsPageBioDiges/AnalyzeCB';
 import AnalyzeCO from '../../components/ComponentsPageBioDiges/AnalyzeCO';
 import Invest from '../../components/ComponentsPageBioDiges/Invest';
