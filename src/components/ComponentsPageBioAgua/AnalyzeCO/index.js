@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, Row, Col } from 'antd'
 import './index.css';
-import TRL from "../../../utils/images/cor3.png"
+import TRL from "../../../utils/images/cor.png"
 
 function AnalyzeCO() {
     return (
-        <div className='analyze-co'>
+        <div className='bioagua-analyzeco analyze-co'>
             <div className='casca-ana-co'>
-                <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2 (-245KG/MÊS)</div>
+                <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2</div>
                 <div className="site-card-border-less-wrapper">
 
                     <Card bordered={false}>
@@ -57,7 +57,7 @@ function AnalyzeCO() {
                         </p>
                     </Card>
                     <div className='img'>
-                        <img src=""></img>
+                        <img src={TRL}></img>
                     </div>
                     <Card title="TRL da Tecnologia social" bordered={false}>
                         <p>Para avaliar a maturidade tecnológica do Sistema Bioágua utilizou-se a  Technology Readiness Level -TRL que é uma metodologia que mensura  essa maturidade, utilizando uma escala com nove níveis, e cada nível corresponde a uma fase de desenvolvimento. A partir desse conceito é possível avaliar que o Sistema Bioágua se enquadra na TRL de 7 a 8, pois a TRL 7 consiste na demonstração do protótipo do sistema/subsistema em ambiente operacional e a TRL 8 trata-se de um sistema real desenvolvido e aprovado.

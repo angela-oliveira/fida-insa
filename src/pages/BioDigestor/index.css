@@ -10,3 +10,7 @@ boby,html{
  grid-template-columns: repeat(12,1fr);
 
 }
+.modal-biodigestor .ant-modal-header {
+    background-color: #FF7907;
+
+}

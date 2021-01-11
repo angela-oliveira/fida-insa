@@ -10,3 +10,8 @@ boby,html{
  grid-template-columns: repeat(12,1fr);
 
 }
+
+.modal-ecofogao .ant-modal-header {
+    background-color: #89773C;
+
+}

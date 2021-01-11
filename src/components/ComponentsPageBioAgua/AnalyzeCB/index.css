@@ -143,3 +143,29 @@
     [data-theme="dark"] .site-statistic-demo-card {
       background: #303030;
     }
+.bioagua-analysecb .ant-tabs-tab-btn:hover {
+    color: #1AC3E2
+}
+.bioagua-analysecb .ant-tabs-tab-btn:active {
+    color: #1AC3E2
+}
+.bioagua-analysecb .ant-tabs-tab-btn:focus {
+    color: #1AC3E2
+}
+.bioagua-analysecb .ant-tabs-tab:hover {
+    color: #1AC3E2;
+}
+
+.bioagua-analysecb .ant-tabs-tab:active {
+    color: #1AC3E2;
+}
+
+.bioagua-analysecb .ant-tabs-tab:focus {
+    color: #1AC3E2;
+}
+.bioagua-analysecb .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #1AC3E2;
+}
+.bioagua-analysecb .button-1 {
+    background-color: #1AC3E2;
+}

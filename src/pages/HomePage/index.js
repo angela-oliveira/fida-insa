@@ -48,10 +48,9 @@ export default class extends React.Component {
                             <img src={blue}></img>
                             <div className='banner-page'>
                                 <h1 className='renova'>RENOVA</h1>
-                                <h1 className='fida'>FIDA</h1>
+                                <h1 className='fida'>SEMIÁRIDO</h1>
 
-
-                                <p>Energias renováveis para<br /> o semiárido</p>
+                                <div className="text-p">Energias renováveis</div>
 
                                 <Button onClick={() => this.openModal()}>Conheça o Projeto +</Button>
 
@@ -139,9 +138,3 @@ export default class extends React.Component {
         );
     }
 }
-
-// function HomePage(){
-//     return(<h1>HomePage</h1>)
-// }
-
-// export default HomePage;

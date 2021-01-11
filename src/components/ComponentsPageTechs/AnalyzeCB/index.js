@@ -68,7 +68,7 @@ class AnalyzeCB extends React.Component {
                                         />
                                     </Tooltip>
                                     <Modal
-                                        title={'teste'}
+                                        title={'Custo de Manutenção'}
                                         visible={this.state.visible}
                                         width={1000}
                                         footer={null}

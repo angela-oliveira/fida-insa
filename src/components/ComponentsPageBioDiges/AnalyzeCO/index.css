@@ -29,16 +29,16 @@
     text-align: center;
     margin: 2rem 0 6rem 0;
 }
-.casca-ana-co .co-label::before{
+.biodigestor-analyzeco .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
-    top: -39px;
+    top: -55px;
     left:13rem;
     width: 140px;
     height: 140px;
     z-index: -1;
     border-radius: 50%;
-    background:var(--color-green-medium);
+    background: #FF7907;
 }
 
 .casca-ana-co .co-graphic{
@@ -91,9 +91,9 @@
     from {width: 0%;}
     to {width: 100%;}
   }
-.graphic .line-gra div{
+.biodigestor-analyzeco .graphic .line-gra div{
     width: 100%;
-    background: var(--color-green-medium);
+    background:#FF7907;
     animation-name: example;
     animation-duration: 2s;
 }

@@ -17,7 +17,7 @@ class AnalyzeCB extends React.Component {
     }
     render() {
         return (
-            <div className='analyze-cb'>
+            <div className='bioagua-analysecb analyze-cb'>
                 <div className='casca-ana-cb'>
                     <div className='cb-label'>ANÁLISE CUSTO BENEFÍCIO</div>
                     <Tabs tabPosition='left'>

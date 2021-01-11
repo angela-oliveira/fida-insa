@@ -10,3 +10,8 @@ boby,html{
  grid-template-columns: repeat(12,1fr);
 
 }
+
+.modal-bioagua .ant-modal-header {
+    background-color: #1AC3E2;
+
+}

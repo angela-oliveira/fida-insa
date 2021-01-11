@@ -48,7 +48,7 @@ class AnalyzeCO extends React.Component {
         return(
             <div className='solar-analyzeco analyze-co'>
                 <div className='casca-ana-co'>
-                    <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2 (-245KG/MÊS)</div>
+                    <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2</div>
                     <div className="site-card-border-less-wrapper">
 
                         <Card bordered={false}>

@@ -230,7 +230,7 @@ class InvestPublic extends React.Component {
     }
     render(){
     return (
-        <div className='invest-public'> 
+        <div className='biodigestor-invest invest-public'> 
         <div><p className="invest-p">FINANCIAMENTOS PÚBLICOS</p></div>
           <Table 
             columns={columns} 

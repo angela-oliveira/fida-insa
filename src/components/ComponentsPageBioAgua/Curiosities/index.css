@@ -30,8 +30,8 @@
     text-align: center;
     text-indent: 0;
 }
-.ant-collapse-header {
-    background-color: #329BA3;
+.bioagua-curiosities .ant-collapse-header {
+    background-color: #108EA5;
     color: #fff!important;
     /* font-weight: bold; */
 }

@@ -20,6 +20,7 @@
   }
 .casca-ana-co .co-label{
     display: flex;
+    justify-content: center;
     position: relative;
     width: 600px;
     font-size: 1.7rem;
@@ -32,7 +33,7 @@
 .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
-    top: -39px;
+    top: -55px;
     left:13rem;
     width: 140px;
     height: 140px;

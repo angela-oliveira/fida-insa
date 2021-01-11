@@ -26,7 +26,7 @@ export default class extends React.Component {
     }
     render(){
     return (
-        <div className='Invest'>
+        <div className='bioagua-invest Invest'>
             <div className='casca-ana-cb'>
                 <div className='cb-label'>OPORTUNIDADE DE INVESTIMENTO</div>
                 <p className='p-invest'>Entenda como estão divididos os investimentos</p>

@@ -36,13 +36,13 @@ function Curiosities() {
                     <p>{text2}</p>
                     <p>{text3}</p>
                     </Panel>
-                    <Panel header="Fatos relevantes: Devido à exposição à fumaça, a queima de combustível também produz efeitos negativos para a saúde" key="3">
+                    <Panel header="Fatos relevantes: Devido à exposição à fumaça, a queima de combustível também produz efeitos negativos para a saúde" key="4">
                     <p>{text4}</p>
                     </Panel>
-                    <Panel header="Fatos relevantes: Devido à exposição à fumaça, a queima de combustível também produz efeitos negativos para a saúde" key="3">
+                    <Panel header="Fatos relevantes: A lenha tradicionalmente teve um papel importante como fonte de energia no Brasil" key="5">
                     <p>{text5}</p>
                     </Panel>
-                    <Panel header="Fatos relevantes: Devido à exposição à fumaça, a queima de combustível também produz efeitos negativos para a saúde" key="3">
+                    <Panel header="Fatos relevantes: Ferramenta de visualização e análise de dados" key="6">
                     <p>{text6}</p>
                     <p>{text7}</p>
                     </Panel>
