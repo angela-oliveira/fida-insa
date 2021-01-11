@@ -211,13 +211,13 @@ function Mapa(props) {
 
                         >
                             <div className='img'>
-                                <img src={props.fotoDiges.bio1}></img>
+                                <img src={bioDige1}></img>
                             </div>
                             <div className='img'>
-                                <img src={props.fotoDiges.bio1}></img>
+                                <img src={bioDige2}></img>
                             </div>
                             <div className='img'>
-                                <img src={props.fotoDiges.bio1}></img>
+                                <img src={bioDige3}></img>
                             </div>
                             <div className='img'>
                                 <img src={bioDige4}></img>
