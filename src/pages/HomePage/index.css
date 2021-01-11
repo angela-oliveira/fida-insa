@@ -51,6 +51,12 @@ h1{
     font-weight: 300;
     font-size: 30px;
 }
+.ant-row .banner-page .text-p {
+
+    color: var(--color-black-text);
+    font-weight: 300;
+    font-size: 30px;
+}
 
 .ant-row .banner-page button{
     border: solid;
@@ -58,6 +64,7 @@ h1{
     color: var(--color-green-dark);
     height: 72px;
     width: 250px;
+    margin-top: 3rem;
     /* font-size: 17px; */
     font: normal normal bold 16px Raleway;
     border-color: var(--color-green-border);

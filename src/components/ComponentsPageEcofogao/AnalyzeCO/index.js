@@ -3,6 +3,11 @@ import { Card, Table } from 'antd'
 import './index.css';
 import TRL from "../../../utils/images/cor5.png"
 
+const numberSub = '2'
+const sub = numberSub.sub()
+console.log('aqui', sub)
+const text = `Fogão a lenha tradicional tCO${sub}e`
+console.log(text)
 const columns = [
     {
       title: 'Gás',
@@ -51,7 +56,7 @@ function AnalyzeCO() {
     return (
         <div className='ecofogao-analyze-co analyze-co'>
             <div className='casca-ana-co'>
-                <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2 (-245KG/MÊS)</div>
+                <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2</div>
                 <div className="site-card-border-less-wrapper">
 
                     <Card bordered={false}>

@@ -17,7 +17,7 @@ class AnalyzeCB extends React.Component {
     }
     render() {
         return (
-            <div className='analyze-cb'>
+            <div className='biodigestor analyze-cb'>
                 <div className='casca-ana-cb'>
                     <div className='cb-label'>ANÁLISE CUSTO BENEFÍCIO</div>
                     <Tabs tabPosition='left'>
@@ -31,7 +31,7 @@ class AnalyzeCB extends React.Component {
                                                 title="Compra + Instalação"
                                                 value={" 3.529,00"}
                                                 precision={2}
-                                                valueStyle={{ color: '#329BA3' }}
+                                                valueStyle={{ color: '#FF7907' }}
                                                 prefix={"R$"}
                                             />
                                         </Card>
@@ -50,7 +50,7 @@ class AnalyzeCB extends React.Component {
                                                 title="Custos de Manutenção"
                                                 value={"5 a  R$ 200,00"}
                                                 precision={2}
-                                                valueStyle={{ color: '#329BA3' }}
+                                                valueStyle={{ color: '#FF7907' }}
                                                 prefix={"R$"}
                                             />
                                         </Card>
@@ -71,7 +71,7 @@ class AnalyzeCB extends React.Component {
                                                 title="Tempo de vida útil"
                                                 value={"30 Anos"}
                                                 precision={2}
-                                                valueStyle={{ color: '#329BA3' }}
+                                                valueStyle={{ color: '#FF7907' }}
                                             />
                                         </Card>
                                     </Col>
@@ -123,6 +123,7 @@ class AnalyzeCB extends React.Component {
                                         visible={this.state.visible}
                                         width={1000}
                                         footer={null}
+                                        className="modal-biodigestor"
                                         onCancel={() =>
                                             this.setState({
                                                 visible: false

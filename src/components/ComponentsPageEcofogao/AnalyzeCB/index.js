@@ -40,6 +40,7 @@ class AnalyzeCB extends React.Component{
                                         visible={this.state.visible}
                                         width={1000}
                                         footer={null}
+                                        className="modal-ecofogao"
                                         onCancel={() =>
                                             this.setState({
                                                 visible: false

@@ -149,3 +149,34 @@
     [data-theme="dark"] .site-statistic-demo-card {
       background: #303030;
     }
+
+.text-indent-4 {
+    text-indent: 4rem;
+}
+
+.biodigestor .ant-tabs-tab-btn:hover {
+    color: #FF7907
+}
+.biodigestor .ant-tabs-tab-btn:active {
+    color: #FF7907
+}
+.biodigestor .ant-tabs-tab-btn:focus {
+    color: #FF7907
+}
+.biodigestor .ant-tabs-tab:hover {
+    color: #FF7907;
+}
+
+.biodigestor .ant-tabs-tab:active {
+    color: #FF7907;
+}
+
+.biodigestor .ant-tabs-tab:focus {
+    color: #FF7907;
+}
+.biodigestor .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #FF7907;
+}
+.biodigestor .button-1 {
+    background-color: #FF7907;
+}

@@ -24,13 +24,24 @@ p {
     text-align: justify;
     text-indent: 3rem;
 }
-.button-1{
+.bioagua-description .button-1{
     border: none;
     border-radius:40px;
     color: #fff;
     height: 30px;
     width: 90px;
-    background-color: #329BA3;
+    background-color: #1AC3E2;
+}
+.bioagua-description .button-1:hover{
+    background-color: #7ED3E2;
+}
+
+.bioagua-description .button-1:active{
+    background-color: #7ED3E2;
+}
+
+.bioagua-description .button-1:focus{
+    background-color: #7ED3E2;
 }
 .tooltip {
     display: flex;
@@ -49,10 +60,6 @@ p {
     font-weight: bold;
     text-align: center;
     color: white;
-}
-.ant-modal-header {
-    background-color: #329BA3;
-
 }
 /* .anticon-plus-circle{
     font-size: 30px;
@@ -76,13 +83,13 @@ p {
     display: flex;
 }
 
-.title-tech .logo-tech .casca-logo-tech{
+.bioagua-description .title-tech .logo-tech .casca-logo-tech{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background:#329BA3;
+    background:#1AC3E2;
 }
 
 .logo-tech .casca-logo-tech img{
@@ -101,10 +108,10 @@ p {
 }
 
 /* --- TEMPORARIO --- */
-.logo-tech .label-tech .labelB{
+.bioagua-description .logo-tech .label-tech .labelB{
     font-Size: 2.5rem;
     padding-top: 5%;
-    color: #329BA3;
+    color: #1AC3E2;
     /* color: var(--color-green-light); */
 }
 

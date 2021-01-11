@@ -19,9 +19,6 @@
 }
 
 
-
-
-
 .equipe .slider-frame{
     /* border: 1px solid #000; */
     
@@ -109,5 +106,8 @@
 
 .equipe .label .name{
     font-weight: 600;
+    color: var(--color-black-text);
+}
+.equipe .label .function{
     color: var(--color-black-text);
 }

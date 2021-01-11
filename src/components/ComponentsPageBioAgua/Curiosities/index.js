@@ -28,7 +28,7 @@ const text5 = `Há registros que os gregos utilizavam as águas dispostas nos es
 
 function Curiosities() {
     return (
-        <div className='Curiosities'> 
+        <div className='bioagua-curiosities Curiosities'> 
         
             <div className='casca-curiosities'>
                 <div className='curiosities-label'>VOCÊ SABIA?</div>

@@ -74,6 +74,7 @@ class Description extends React.Component {
                                 visible={this.state.visible1}
                                 width={1000}
                                 footer={null}
+                                className="modal-ecofogao"
                                 onCancel={() =>
                                     this.setState({
                                         visible1: false
@@ -122,6 +123,7 @@ class Description extends React.Component {
                                 visible={this.state.visible2}
                                 width={1000}
                                 footer={null}
+                                className="modal-ecofogao"
                                 onCancel={() =>
                                     this.setState({
                                         visible2: false
@@ -170,6 +172,7 @@ class Description extends React.Component {
                         visible={this.state.visible3}
                         width={1000}
                         footer={null}
+                        className="modal-ecofogao"
                         onCancel={() =>
                             this.setState({
                                 visible3: false

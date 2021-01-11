@@ -25,37 +25,6 @@ class Description extends React.Component {
     factors = {
         title: 'Fatores de promovem ou limitam a adoção da tecnologia'
     }
-    modal = () => {
-        const p = []
-        p.push(
-            <Modal
-                title={this.desciption.title}
-                visible={this.state.visible}
-                width={1000}
-                footer={null}
-                onCancel={() =>
-                    this.setState({
-                        visible: false
-                    })
-                }
-                onOk={() =>
-                    this.setState({
-                        visible: false
-                    })
-                }
-            >
-                <div className='content-modal'>
-                    <p>Os principais investimentos realizados pelo FIDA estão voltados para a implantação de sistemas fotovoltaicos em agroindústrias e comunidades no semiárido brasileiro. Os sistemas fotovoltaicos são compostos por painéis solares fotovoltaicos, que são, basicamente, dispositivos utilizados na conversão da luz do Sol em energia elétrica em células fotovoltaicas. As células solares ou fotovoltaicas são as responsáveis pela captação e conversão dos raios solares em energia elétrica.
-                    </p>
-                    <p>Os sistemas ainda aportam um módulo fotovoltaico que é o componente responsável por gerar a energia, sendo basicamente uma placa protegida por vidro onde as células solares são colocadas e conectadas umas às outras por fios, completando a montagem de um módulo. Para a montagem de um sistema fotovoltaico autônomo com a finalidade de utilização na irrigação de áreas agrícolas, além dos equipamentos citados acima, é necessário um regulador de carga, uma bateria ou banco de baterias e um inversor de corrente contínua para corrente alternada, a fim de atender ao conjunto motobomba e aos possíveis equipamentos elétricos do sistema de automação da irrigação alimentados com corrente alternada, havendo alguns casos em que não se utiliza bateria.
-                    </p>
-                    <p>Quando conectado à rede elétrica, existe a necessidade de um inversor solar para promover a inversão da energia elétrica gerada pelo painel solar de corrente contínua (CC) para corrente alternada (CA), demandada pela maioria dos equipamentos elétricos, além de um quadro de luz que recebe a energia que sai do inversor solar e a distribui para sua casa ou empresa, bem como de um relógio que calcula e faz com que o excesso de eletricidade produzida quando houver muito sol ou pouco consumo volte para a rede elétrica. Essa energia elétrica adicional é inserida na rede da distribuidora, se tornando "créditos de energia" que podem ser utilizados de noite, em dias nublados ou nos próximos meses. Além disso, esse relógio também mede a entrada de energia pública que é consumida quando não houver sol, calculando o saldo devedor de energia a distribuidora, nesses casos. Diferentemente dos meios convencionais na produção de eletricidade que utilizam do princípio da indução eletromagnética para gerar uma corrente alternada no circuito, a conversão fotovoltaica se dá de forma direta, em que os fótons provenientes do Sol interagem diretamente com os elétrons das células do material semicondutor, gerando uma corrente de sentido único, ou seja, uma corrente contínua.
-                    </p>
-                </div>
-            </Modal>
-        )
-        return p
-    }
 
     openModal() {
         this.setState({ visible1: true })
@@ -100,12 +69,8 @@ class Description extends React.Component {
                                 visible={this.state.visible1}
                                 width={1000}
                                 footer={null}
+                                className="modal-solar"
                                 onCancel={() =>
-                                    this.setState({
-                                        visible1: false
-                                    })
-                                }
-                                onOk={() =>
                                     this.setState({
                                         visible1: false
                                     })
@@ -148,6 +113,7 @@ class Description extends React.Component {
                                 visible={this.state.visible2}
                                 width={1000}
                                 footer={null}
+                                className="modal-solar"
                                 onCancel={() =>
                                     this.setState({
                                         visible2: false
@@ -190,6 +156,7 @@ class Description extends React.Component {
                         visible={this.state.visible3}
                         width={1000}
                         footer={null}
+                        className="modal-solar"
                         onCancel={() =>
                             this.setState({
                                 visible3: false

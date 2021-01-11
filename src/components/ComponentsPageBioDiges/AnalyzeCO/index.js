@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, Row, Col } from 'antd'
 import './index.css';
-import TRL from "../../../utils/images/cor3.png"
+import TRL from "../../../utils/images/cor2.png"
 
 function AnalyzeCO() {
     return (
-        <div className='analyze-co'>
+        <div className='biodigestor-analyzeco analyze-co'>
             <div className='casca-ana-co'>
-                <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2 (KG/mês)</div>
+                <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2</div>
                 <div className="site-card-border-less-wrapper">
 
                     <Card bordered={false}>
@@ -70,7 +70,7 @@ function AnalyzeCO() {
                         </p>
                     </Card>
                     <div className='img'>
-                        <img src=''></img>
+                        <img src={TRL}></img>
                     </div>
                     <Card title="TRL da Tecnologia social" bordered={false}>
                         <p>A TRL (do inglês, Technology Readiness Level) trata-se de uma escala que informa o nível de maturidade tecnológica. A escala em questão é dividida em nove níveis, e cada nível corresponde a uma fase do desenvolvimento da tecnologia. No caso do biodigestor, pode-se classificá-lo com número de TRL entre 8 e 9, visto que o TRL 8 corresponde a um sistema qualificado e testado estando na fase de industrialização, e o TRL 9, consiste em classificar a tecnologia como um sistema em operação que possui comprovação do que se propõe a realizar; sendo assim a tecnologia está pronto para ser produzida e comercializada. Os primeiros registros da implementação e utilização de biodigestores no Brasil se deram por volta da década de 70, após a crise do petróleo, iniciada no final de 1973. Desde lá, a comercialização é realizada, e os equipamentos podem ser adquiridos por intermédio de empresas especializadas nesse tipo de tecnologia. Por isso, o biodigestor possui maturidade tecnológica, de acordo com a TRL, entre 8 e 9. 

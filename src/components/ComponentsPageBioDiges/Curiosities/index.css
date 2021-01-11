@@ -30,8 +30,8 @@
     text-align: center;
     text-indent: 0;
 }
-.ant-collapse-header {
-    background-color: #329BA3;
+.biodigestor-curiosities .ant-collapse-header {
+    background-color: #FF7907;
     color: #fff!important;
     /* font-weight: bold; */
 }

@@ -24,13 +24,13 @@ p {
     text-align: justify;
     text-indent: 3rem;
 }
-.button-1{
+.biodigestor-description .button-1{
     border: none;
     border-radius:40px;
     color: #fff;
     height: 30px;
     width: 90px;
-    background-color: #329BA3;
+    background-color: #FF7907;
 }
 .tooltip {
     display: flex;
@@ -49,10 +49,6 @@ p {
     font-weight: bold;
     text-align: center;
     color: white;
-}
-.ant-modal-header {
-    background-color: #329BA3;
-
 }
 /* .anticon-plus-circle{
     font-size: 30px;
@@ -76,24 +72,35 @@ p {
     display: flex;
 }
 
-.title-tech .logo-tech .casca-logo-tech{
+.biodigestor-description .title-tech .logo-tech .casca-logo-tech{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background:#329BA3;
+    background:#FF7907;
 }
 
+.biodigestor-description .button-1:hover{
+    background-color: #F1AD74;
+}
+
+.biodigestor-description .button-1:active{
+    background-color: #F1AD74;
+}
+
+.biodigestor-description .button-1:focus{
+    background-color: #F1AD74;
+}
 .logo-tech .casca-logo-tech img{
     height: 3.5rem;
 }
 
-.logo-tech .label-tech h2{
+.biodigestor-description .logo-tech .label-tech h2{
     font-Size: 1.7rem;
     font-Weight: 800;
     letter-Spacing: 1px;
-    margin-Bottom: -24px;
+    margin-Bottom: -28px;
     margin-top: -0.6rem;
     margin-left: 0.5rem ;
     color: var(--color-green-dark);
@@ -101,10 +108,10 @@ p {
 }
 
 /* --- TEMPORARIO --- */
-.logo-tech .label-tech .labelB{
+.biodigestor-description .logo-tech .label-tech .labelB{
     font-Size: 2.5rem;
     padding-top: 5%;
-    color: #329BA3;
+    color: #FF7907;
     /* color: var(--color-green-light); */
 }
 

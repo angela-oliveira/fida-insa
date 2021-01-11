@@ -19,7 +19,7 @@ A PNRS ressalta a distinção entre resíduo, isto é, aquilo que possui um valo
 
 function Curiosities() {
     return (
-        <div className='Curiosities'>
+        <div className='biodigestor-curiosities Curiosities'>
 
             <div className='casca-curiosities'>
                 <div className='curiosities-label'>VOCÊ SABIA?</div>
