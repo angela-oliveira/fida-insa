@@ -23,23 +23,23 @@ const photos= [
     },
     {
       src: img2,
-      width: 1,
-      height: 1
+      width: 4,
+      height: 3
     },
       {
         src: img3,
-        width: 3,
-        height: 4
+        width: 4,
+        height: 3
       },
     {
         src: img4,
-        width: 3,
-        height: 4
+        width: 4,
+        height: 3
     },
     {
         src: img5,
-        width: 3,
-        height: 4
+        width: 4,
+        height: 3
     },
     {
         src: img6,

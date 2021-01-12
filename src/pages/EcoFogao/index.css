@@ -15,3 +15,14 @@ boby,html{
     background-color: #89773C;
 
 }
+.modal-ecofogao .table-ecofogao-analyzeco .ant-table-thead tr th {
+    background-color: #89773C;
+    color: white;
+
+}
+.modal-ecofogao .table-ecofogao-analyzeco .ant-table-container {
+    border: solid;
+    border-color: #89773C;
+
+}
+

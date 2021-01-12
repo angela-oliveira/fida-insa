@@ -12,6 +12,9 @@
     justify-content: center;
     /* grid-column: 1/13; */
 }
+.subtitle-bioagua {
+    text-indent: 0%;
+}
 .experience-label{
     display: flex;
     justify-content: left;

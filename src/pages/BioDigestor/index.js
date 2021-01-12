@@ -11,6 +11,7 @@ import AnalyzeCO from '../../components/ComponentsPageBioDiges/AnalyzeCO';
 import Invest from '../../components/ComponentsPageBioDiges/Invest';
 import Experience from '../../components/ComponentsPageBioDiges/Experience';
 import Curiosities from '../../components/ComponentsPageBioDiges/Curiosities';
+import Photos from '../../components/ComponentsPageBioDiges/Photos';
 
 import icoFogao from '../../utils/images/2.png'
 import icoSolar from '../../utils/images/1.png';
@@ -50,6 +51,7 @@ function BioDigestor() {
             <AnalyzeCO />
             <Invest />
             <Experience />
+            <Photos />
             <Curiosities />
             <div className="footer">
                 <img src={footer}></img>
