@@ -14,9 +14,9 @@ function HeaderPage() {
                     ghost={false}
                     title={<Link to="/" className="fida"><img src={logoRenovaSemiarido}></img></Link>}
                     extra={[
-                        <Button key="3"><img src={iconEmail}></img></Button>,
-                        <Button key="2">PT</Button>,
-                        <Button key="1">EN</Button>,
+                        // <Button key="3"><img src={iconEmail}></img></Button>,
+                        // <Button key="2">PT</Button>,
+                        // <Button key="1">EN</Button>,
                     ]}
                 >
                 </PageHeader>

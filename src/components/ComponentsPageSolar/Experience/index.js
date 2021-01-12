@@ -11,7 +11,7 @@ function Experience() {
         <div className='solar-experience Experience'> 
             <div className='casca-experience'>
                 <div className='experience-label'>EXPERIÊNCIAS REAIS</div>
-                <p>Veja os nosso registros</p>
+                <p className='subtitle-solar'>Veja os nosso registros</p>
                 
             </div>
             <Carousel
@@ -48,13 +48,20 @@ function Experience() {
               <div className='experience-content'>
                 
                   <div className='experience-text'>
-                      <div className='experience-text-label'>EXPERIÊNCIA NA COMUNIDADE RIBEIRA DE CABACEIRAS</div>
+                      <div className='experience-text-label'>Sítio Saquinho, Município Nova Palmeira - PB</div>
                       <div className='experience-text-txt'>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet mauris nulla, et gravida dui faucibus vitae. Suspendisse pellentesque lobortis lorem id tempus. Mauris sed viverra dolor. Sed non mollis purus, eu tincidunt dui.</p>
+                          <p>Fomos até Picuí e Nova palmeira visualizar as ações realizadas com financiamento FIDA. Em
+Picuí, visitamos a Cooperativa Agroindustrial do Seridó e Curimataú Paraibano - COOASC, que
+foi beneficiada com a instalação de um sistema solar fotovoltaico para redução dos custos no
+processamento de polpas de frutas. Já em Nova palmeira, na comunidade Saquinho, visitamos
+a propriedade do Sr. Euclides e família, que foram beneficiados com um kit solar fotovoltaico
+para fins de irrigação da sua propriedade. Todas famílias beneficiadas com as experiências se
+mostraram satisfeitas e agradecidas pela concessão das tecnologias.</p>
                       </div>
                   </div> 
                   <div className='video'>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JTqz_xzozl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4k_v5_CypM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      
                   </div>  
                 
                   {/* <Pagination size="small" total={50} />  */}
@@ -62,13 +69,61 @@ function Experience() {
               <div className='experience-content'>
                 
                   <div className='experience-text'>
-                      <div className='experience-text-label'>EXPERIÊNCIA NA COMUNIDADE RIBEIRA DE CABACEIRAS</div>
+                      <div className='experience-text-label'>Sítio Saquinho, Município Nova Palmeira - PB</div>
                       <div className='experience-text-txt'>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet mauris nulla, et gravida dui faucibus vitae. Suspendisse pellentesque lobortis lorem id tempus. Mauris sed viverra dolor. Sed non mollis purus, eu tincidunt dui.</p>
+                          <p>Fomos até Picuí e Nova palmeira visualizar as ações realizadas com financiamento FIDA. Em
+Picuí, visitamos a Cooperativa Agroindustrial do Seridó e Curimataú Paraibano - COOASC, que
+foi beneficiada com a instalação de um sistema solar fotovoltaico para redução dos custos no
+processamento de polpas de frutas. Já em Nova palmeira, na comunidade Saquinho, visitamos
+a propriedade do Sr. Euclides e família, que foram beneficiados com um kit solar fotovoltaico
+para fins de irrigação da sua propriedade. Todas famílias beneficiadas com as experiências se
+mostraram satisfeitas e agradecidas pela concessão das tecnologias.</p>
                       </div>
                   </div> 
                   <div className='video'>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JTqz_xzozl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/vQn0akkP5UM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      
+                  </div>  
+                
+              </div>
+              <div className='experience-content'>
+                
+                  <div className='experience-text'>
+                      <div className='experience-text-label'>Cooperativa Agroindustrial do Seridó e Curimatau Paraibano - COOASC</div>
+                      <div className='experience-text-txt'>
+                          <p>Fomos até Picuí e Nova palmeira visualizar as ações realizadas com financiamento FIDA. Em
+Picuí, visitamos a Cooperativa Agroindustrial do Seridó e Curimataú Paraibano - COOASC, que
+foi beneficiada com a instalação de um sistema solar fotovoltaico para redução dos custos no
+processamento de polpas de frutas. Já em Nova palmeira, na comunidade Saquinho, visitamos
+a propriedade do Sr. Euclides e família, que foram beneficiados com um kit solar fotovoltaico
+para fins de irrigação da sua propriedade. Todas famílias beneficiadas com as experiências se
+mostraram satisfeitas e agradecidas pela concessão das tecnologias.</p>
+                      </div>
+                  </div> 
+                  <div className='video'>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/7Sg1tf4E-QA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  
+                      
+                  </div>  
+                
+              </div>
+              <div className='experience-content'>
+                
+                  <div className='experience-text'>
+                      <div className='experience-text-label'>Estrutura da Cooperativa</div>
+                      <div className='experience-text-txt'>
+                          <p>Fomos até Picuí e Nova palmeira visualizar as ações realizadas com financiamento FIDA. Em
+Picuí, visitamos a Cooperativa Agroindustrial do Seridó e Curimataú Paraibano - COOASC, que
+foi beneficiada com a instalação de um sistema solar fotovoltaico para redução dos custos no
+processamento de polpas de frutas. Já em Nova palmeira, na comunidade Saquinho, visitamos
+a propriedade do Sr. Euclides e família, que foram beneficiados com um kit solar fotovoltaico
+para fins de irrigação da sua propriedade. Todas famílias beneficiadas com as experiências se
+mostraram satisfeitas e agradecidas pela concessão das tecnologias.</p>
+                      </div>
+                  </div> 
+                  <div className='video'>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/ivcJRzeBik4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  
                   </div>  
                 
               </div>

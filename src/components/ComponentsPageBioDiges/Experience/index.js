@@ -11,7 +11,7 @@ function Experience() {
         <div className='biodigestor-experience Experience'> 
             <div className='casca-experience'>
                 <div className='experience-label'>EXPERIÊNCIAS REAIS</div>
-                <p>Veja os nosso registros</p>
+                <p className="subtitle-biodigestor">Veja os nosso registros</p>
                 
             </div>
             <Carousel
@@ -48,27 +48,14 @@ function Experience() {
               <div className='experience-content'>
                 
                   <div className='experience-text'>
-                      <div className='experience-text-label'>EXPERIÊNCIA NA COMUNIDADE RIBEIRA DE CABACEIRAS</div>
+                      <div className='experience-text-label'>EXPERIÊNCIA BIODIGESTOR</div>
                       <div className='experience-text-txt'>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet mauris nulla, et gravida dui faucibus vitae. Suspendisse pellentesque lobortis lorem id tempus. Mauris sed viverra dolor. Sed non mollis purus, eu tincidunt dui.</p>
+                          <p></p>
                       </div>
                   </div> 
                   <div className='video'>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JTqz_xzozl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>  
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/i9ICihT9ncE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
-                  {/* <Pagination size="small" total={50} />  */}
-              </div>
-              <div className='experience-content'>
-                
-                  <div className='experience-text'>
-                      <div className='experience-text-label'>EXPERIÊNCIA NA COMUNIDADE RIBEIRA DE CABACEIRAS</div>
-                      <div className='experience-text-txt'>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet mauris nulla, et gravida dui faucibus vitae. Suspendisse pellentesque lobortis lorem id tempus. Mauris sed viverra dolor. Sed non mollis purus, eu tincidunt dui.</p>
-                      </div>
-                  </div> 
-                  <div className='video'>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JTqz_xzozl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>  
                 
                   {/* <Pagination size="small" total={50} />  */}
