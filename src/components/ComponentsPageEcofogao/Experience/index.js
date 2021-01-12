@@ -47,18 +47,31 @@ function Experience() {
                     autoGenerateStyleTag={true}>
               <div className='experience-content'>
                 
-                  <div className='experience-text'>
-                      <div className='experience-text-label'>EXPERIÊNCIA NA COMUNIDADE RIBEIRA DE CABACEIRAS</div>
+              <div className='experience-text'>
+                      <div className='experience-text-label'>Município de Sobral-CE</div>
                       <div className='experience-text-txt'>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet mauris nulla, et gravida dui faucibus vitae. Suspendisse pellentesque lobortis lorem id tempus. Mauris sed viverra dolor. Sed non mollis purus, eu tincidunt dui.</p>
+                          <p>Na Serra do Rosário, município de Sobral-CE, na comunidade Santa Luzia, mora o agricultor Gerardo Elias da Silva, 61 anos, com sua esposa Maria de Lima Silva, de 59 anos e seus filhos e netos. As famílias foram contempladas com a implantação do Ecofogão onde este equipamento eliminou a fumaça que, antes, circulava por dentro da casa contribuindo para preservação do meio ambiente e melhorando a saúde dos agricultores no município de Sobral-CE. Outro benefício foi o econômico, onde o consumo de gás de cozinha reduziu em decorrência do maior uso do Ecofogão, já que o gás que custava R$ 75,00/mês para família e, hoje, um botijão dura em torno de 2-3 meses. Seu Gerardo representa uma das 25 famílias contempladas com o ecofogão que também foram contemplados com projeto produtivo em avicultura caipira e quintais produtivos, além do reuso d´água de cinzas domiciliares.</p>
                       </div>
                   </div> 
                   <div className='video'>
-                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/JTqz_xzozl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/2olpnzhpRVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
                   </div>  
                 
-                  {/* <Pagination size="small" total={50} />  */}
               </div>
+              <div className='experience-content'>
+                
+                  <div className='experience-text'>
+                      <div className='experience-text-label'>Município de Sobral-CE</div>
+                      <div className='experience-text-txt'>
+                          <p>Na Serra do Rosário, município de Sobral-CE, na comunidade Santa Luzia, mora o agricultor Gerardo Elias da Silva, 61 anos, com sua esposa Maria de Lima Silva, de 59 anos e seus filhos e netos. As famílias foram contempladas com a implantação do Ecofogão onde este equipamento eliminou a fumaça que, antes, circulava por dentro da casa contribuindo para preservação do meio ambiente e melhorando a saúde dos agricultores no município de Sobral-CE. Outro benefício foi o econômico, onde o consumo de gás de cozinha reduziu em decorrência do maior uso do Ecofogão, já que o gás que custava R$ 75,00/mês para família e, hoje, um botijão dura em torno de 2-3 meses. Seu Gerardo representa uma das 25 famílias contempladas com o ecofogão que também foram contemplados com projeto produtivo em avicultura caipira e quintais produtivos, além do reuso d´água de cinzas domiciliares.</p>
+                      </div>
+                  </div> 
+                  <div className='video'>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mlzqDEGTFcg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+                  </div>                
+                </div>
             </Carousel>
         </div>
     )
