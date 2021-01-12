@@ -1,24 +1,33 @@
 import React from 'react';
 import { Row, Card } from 'antd';
+
+// Realização 
 import paqtcpblogo from "../../utils/images/parceiros/paqtcpblogo.png"
 import insalogo from "../../utils/images/parceiros/insalogo.png"
-import fidalogo from "../../utils/images/parceiros/logo fida.png"
 import iacoc from "../../utils/images/parceiros/iacoc.png"
+
+// Patrocinador
+import fidalogo from "../../utils/images/parceiros/logo fida.png"
+
 
 // Parceiros
 
-import ifpblogo from "../../utils/images/parceiros/logo_ifpb.png"
-import ufcglogo from "../../utils/images/parceiros/ufcglogo.jpg"
 import procaselogo from "../../utils/images/parceiros/procaselogo.png"
 
-// uepb
+import ifpblogo from "../../utils/images/parceiros/logo_ifpb.png"
+import ufcglogo from "../../utils/images/parceiros/ufcglogo.jpg"
 
+// uepb
 import uepb from "../../utils/images/parceiros/uepb.jpg"
 //laprov
 import laprov from "../../utils/images/parceiros/LAPROV.jpg"
 // cetra 
 import cetra from "../../utils/images/parceiros/cetra.png"
 // pdhc dom helder
+// Dom Tavora 
+import domtavora from "../../utils/images/parceiros/dom-tavora.jpg"
+// paulo freire
+import paulofreire from "../../utils/images/parceiros/paulofreire.png"
 
 // viva o semiario 
 import vivasemiarido from "../../utils/images/parceiros/viva-semiarido.png"
@@ -32,9 +41,11 @@ import piaui from "../../utils/images/parceiros/Logo-Piaui.png"
 import bahia from "../../utils/images/parceiros/Logo-Bahia.jpeg"
 // paraiba 
 import paraiba from "../../utils/images/parceiros/logo-Paraiba.jpeg"
+// sergipe
+import sergipe from "../../utils/images/parceiros/sergipe.jpeg"
 
 // outros   
-import aksaam from "../../utils/images/parceiros/AKSAAM.png"
+import aksaam from "../../utils/images/parceiros/aksaam.png"
 import funarbe from "../../utils/images/parceiros/Funarbe.png"
 import ippds from "../../utils/images/parceiros/ippds.png"
 import ufv from "../../utils/images/parceiros/UFV.png"
@@ -122,10 +133,22 @@ function Parceiros() {
                             <img alt="example" src={ippds} />
                             <Meta title="" description="" />
                         </Card>
+                        <Card>
+                            <img alt="example" src={paulofreire} />
+                            <Meta title="" description="" />
+                        </Card>
+                        <Card>
+                            <img alt="example" src={domtavora} />
+                            <Meta title="" description="" />
+                        </Card>
 
                     </Row>
                     <Row >
 
+                        <Card>
+                            <img alt="example" src={sergipe} />
+                            <Meta title="" description="" />
+                        </Card>
                         <Card>
                             <img alt="example" src={ceara} />
                             <Meta title="" description="" />
