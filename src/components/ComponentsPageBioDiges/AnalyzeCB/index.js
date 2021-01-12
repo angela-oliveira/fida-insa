@@ -9,11 +9,16 @@ const { TabPane } = Tabs;
 
 class AnalyzeCB extends React.Component {
     state = {
-        visible: false
+        visible: false,
+        visible1: false
     }
 
     openModal() {
         this.setState({ visible: true })
+    }
+
+    openModal1(){
+        this.setState({visible1: true})
     }
     render() {
         return (
@@ -145,8 +150,50 @@ class AnalyzeCB extends React.Component {
                         </TabPane>
                         <TabPane tab="Adaptação à realidade da agricultura familiar" key="6">
                             <p>
-                            No ano de 2008, um projeto piloto utilizando o modelo de biodigestor sertanejo foi implementado na comunidade de Santo Antônio II, em Afogados da Ingazeira (PE). Esse programa foi desenvolvido pela Diaconia e o Projeto Dom Helder Câmara, contando com o apoio do Fundo Internacional de Desenvolvimento Agrícola (FIDA). Por meio desse projeto foram realizadas modificações no biodigestor com o objetivo de torná-lo mais acessível à comunidade rural. *saiba mais*
+                            No ano de 2008, um projeto piloto utilizando o modelo de biodigestor sertanejo foi implementado na comunidade de Santo Antônio II, em Afogados da Ingazeira (PE). Esse programa foi desenvolvido pela Diaconia e o Projeto Dom Helder Câmara, contando com o apoio do Fundo Internacional de Desenvolvimento Agrícola (FIDA). Por meio desse projeto foram realizadas modificações no biodigestor com o objetivo de torná-lo mais acessível à comunidade rural.
                         </p>
+                        <div className=' tolltip-margin'>
+                                <Tooltip title="Ver mais" >
+                                    <Button
+                                        className='button-1'
+                                        onClick={() => this.openModal1()}
+                                        type="primary"
+                                        shape="circle"
+                                        icon={<PlusOutlined />}
+                                    />
+                                </Tooltip>
+                                <Modal
+                                    title={'Adaptação à realidade da agricultura familiar'}
+                                    visible={this.state.visible1}
+                                    width={1000}
+                                    footer={null}
+                                    onCancel={() =>
+                                        this.setState({
+                                            visible1: false
+                                        })
+                                    }
+                                >
+                                    <div className='content-modal'>
+                                        {/* <p>{this.desciption.content}</p> */}
+                                        <p>O biodigestor sertanejo, conforme a ilustração a seguir, se originou a partir do modelo indiano e aadaptação foi realizada visando questões como a disponibilidade de materiais para sua construção em lojas de materiais de construção nas cidades do interior.</p>
+
+                                        <p>O biodigestor sertanejo compreende as seguintes partes:</p>
+                                        <ol type='1'>
+                                            <li>Caixa de alimentação;</li>
+                                            <li>Fermentador;</li>
+                                            <li>Gasômetro;</li>
+                                            <li>Adaptador/filtro primário de água;</li>
+                                            <li>Tanque de saída do biogás;</li>
+                                            <li>Saída dos resíduos.</li>
+                                        </ol>
+                                        <p>Na caixa de alimentação, é colocado o material orgânico que abastecerá, posteriormente, o tanque de fermentação (fermentador), no qual será produzido o biogás. Esse ficará armazenado no gasômetro. No tanque de saída, será eliminado um produto líquido ou matéria residual que pode ser denominado de biofertilizante, isto é, um fertilizante orgânico que pode ser utilizado para adubação líquida ou sólida. Obiogás produzido pode ser utilizado para o aquecimento térmico, como combustível para motores e geradores e como gás para cozinha.</p>
+                                        <b>Tem curiosidade ou deseja saber como construir um biodigestor? </b><a href='https://issuu.com/diaconia_web/docs/manual_do_biodigestor'>Saiba mais</a>
+
+
+                                    </div>
+                                </Modal>
+
+                            </div>
                         </TabPane>
                     </Tabs>
 

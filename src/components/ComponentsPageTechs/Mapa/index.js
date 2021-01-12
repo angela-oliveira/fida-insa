@@ -37,7 +37,7 @@ function Mapa(props) {
     const [selectedEstados, setSelectedEstados] = useState(drawMap);
     const [selectedCity, setSelectedCity] = useState(props.data.features[0]);
 
-
+    const [agulha,setagulha] = useState(icoPoint);
     const [estado, setEstado] = useState(props.data.features[0].properties.Estado);
     const [cidade, setCidade] = useState(props.data.features[0].properties.municipio);
     const [text, setText] = useState(props.data.features[0].properties.text);

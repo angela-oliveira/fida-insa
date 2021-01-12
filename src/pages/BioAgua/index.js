@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import './index.css'
@@ -11,6 +11,7 @@ import AnalyzeCO from '../../components/ComponentsPageBioAgua/AnalyzeCO';
 import Invest from '../../components/ComponentsPageBioAgua/Invest';
 import Experience from '../../components/ComponentsPageBioAgua/Experience';
 import Curiosities from '../../components/ComponentsPageBioAgua/Curiosities';
+import Photos from '../../components/ComponentsPageBioAgua/Photos';
 
 import dataMap from '../../utils/filesJSON/bioagua/datamap/bioagua.json';
 
@@ -22,19 +23,20 @@ import footer from "../../utils/images/footer-agua.png";
 
 function BioAgua() {
 
-    useEffect(()=>{
+    useEffect(() => {
         window.scrollTo(0, 0)
-    },[])
-    
+    }, [])
+
     return (
         <div id='body'>
             <HeaderTechs linkBack='/energia-eolica' iconBack={icoEolica} linkNext='/eco-fogao' iconNext={icoFogao} ></HeaderTechs>
             <Description />
-            <Mapa data={dataMap}/>
+            <Mapa data={dataMap} />
             <AnalyzeCB />
             <AnalyzeCO />
             <Invest />
             <Experience />
+            <Photos />
             <Curiosities />
             <div className="footer">
                 <img src={footer}></img>

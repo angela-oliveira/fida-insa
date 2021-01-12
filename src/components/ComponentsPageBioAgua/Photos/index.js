@@ -4,13 +4,13 @@ import './index.css';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from "react-images";
 // import "../../../utils/images/eolica"
-import img1 from "../../../utils/images/eolica/EOLICA-AGRICULTORES COM O CULTIVO.jpg"
-import img2 from "../../../utils/images/eolica/EOLICA-CAMPO DE PALMA.jpg"
-import img3 from "../../../utils/images/eolica/EOLICA-CAMPO SECO.jpg"
-import img4 from "../../../utils/images/eolica/EOLICA-CATAVENTO.jpg"
-import img5 from "../../../utils/images/eolica/EOLICA-CATAVENTO ZOOM.jpg"
-import img6 from "../../../utils/images/eolica/EOLICA-FAMILIA.JPG"
-import img7 from "../../../utils/images/eolica/EOLICA-PANORAMICA CATAVENTO.jpg"
+import img1 from "../../../utils/images/photos/Bioágua/Robério - Bioágua 02.JPG"
+import img2 from "../../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 10.JPG"
+import img3 from "../../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 11.JPG"
+import img4 from "../../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 13.JPG"
+import img5 from "../../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 04.JPG"
+import img6 from "../../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 01.JPG"
+import img7 from "../../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 01.JPG"
 
 
 
