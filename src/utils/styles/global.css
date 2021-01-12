@@ -1,24 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;800&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   font-size: 18px;
   width: 100vw;
 }
 
+div{
+  outline-offset: none ;
+}
+
+.ant-card-bordered{
+  border: none !important;
+}
+
 :root{
   --color-black:#141414;
-  --color-green-light:#329BA3;
-  --color-black-text:#393939;
-  --color-green-dark:#11523B;
   --color-green-border:#329BA3;
   --color-yellow:#FAF238;
+  --color-black-text:#393939;
+
+  /* EOLICA GREEN */
+  --color-green-light:#30d1c5;
+  --color-green-medium:#329ba3;
+  --color-green-dark:#11523b;
+
+  /* BIO-AGUA BLUE */
+  --color-blue-light: #1ac3e2;
+  --color-blue-medium:#1593aa;
+  --color-blue-dark:#0d5f6e;
+
+  /* ECO-FOGÃO BROWN */
+  --color-brown-light:#aea58a;
+  --color-brown-medium:#89773c;
+  --color-brown-dark:#5f4e18; 
+
+  /* BIO-DIGESTOR ORANGE*/
+  --color-orange-light:#e5ae89;
+  --color-orange-medium:#ff791e;
+  --color-orange-dark:#cc6016;
+
+  /* SOLAR YELLOW */
+
+  --color-yellow-light:#faf238;
+  --color-yellow-medium:#e3ca2e;
+  --color-yellow-dark:#e2af28;
+
+
 }
 
 h1 {
-font: normal 800 100px Raleway;
+font: normal 800 100px 'Raleway', sans-serif;
 letter-spacing: 13.3px;
 color: #141414;
 opacity: 1;

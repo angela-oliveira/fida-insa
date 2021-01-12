@@ -30,4 +30,4 @@ const HeaderHome = () => {
     
 }
 
-export default HeaderHome;
+// export default HeaderHome;

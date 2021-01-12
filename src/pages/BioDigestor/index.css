@@ -1,0 +1,16 @@
+boby,html{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+}
+
+#body{
+ display: grid;
+ grid-template-columns: repeat(12,1fr);
+
+}
+.modal-biodigestor .ant-modal-header {
+    background-color: #FF7907;
+
+}

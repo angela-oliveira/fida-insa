@@ -1,0 +1,37 @@
+.Curiosities{
+    margin: 2rem 0rem;
+    grid-column: 2/12;
+    /* grid-column: 1/13; */
+    /* height: 500px; */
+    border: none;
+}
+.casca-curiosities{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.curiosities-label{
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--color-green-dark);
+    line-height: 1.5rem;
+    margin: 3rem 0 2rem 0;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+.subtitle p {
+    text-align: center;
+    text-indent: 0;
+}
+.bioagua-curiosities .ant-collapse-header {
+    background-color: #108EA5;
+    color: #fff!important;
+    /* font-weight: bold; */
+}

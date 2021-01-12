@@ -1,0 +1,197 @@
+.description{
+    /* border: 1px solid #000; */
+    grid-column: 2/12;
+    margin-bottom: 2rem;
+    
+
+}
+
+.description .desc-top{
+    /* border: 1px solid #000; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 16% 1fr 60%;
+    
+}
+
+.desc-top .title-tech{
+    /* border: 1px solid #000; */
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+p {
+
+    text-align: justify;
+    text-indent: 3rem;
+}
+.biodigestor-description .button-1{
+    border: none;
+    border-radius:40px;
+    color: #fff;
+    height: 30px;
+    width: 90px;
+    background-color: #FF7907;
+}
+.tooltip {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    /* margin-right: 20px; */
+}
+.tolltip-margin{
+    /* margin-right: 20px; */
+}
+.content-modal p{
+    text-align: justify;
+    text-indent: 3rem;
+}
+.ant-modal-title{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+/* .anticon-plus-circle{
+    font-size: 30px;
+    color: #08c;
+}
+.more {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.more button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-bottom: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.199);
+} */
+
+.title-tech .logo-tech{
+    display: flex;
+}
+
+.biodigestor-description .title-tech .logo-tech .casca-logo-tech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background:#FF7907;
+}
+
+.biodigestor-description .button-1:hover{
+    background-color: #F1AD74;
+}
+
+.biodigestor-description .button-1:active{
+    background-color: #F1AD74;
+}
+
+.biodigestor-description .button-1:focus{
+    background-color: #F1AD74;
+}
+.biodigestor-description .logo-tech .casca-logo-tech img{
+    height: 2.6rem;
+}
+
+.biodigestor-description .logo-tech .label-tech h2{
+    font-Size: 1.7rem;
+    font-Weight: 800;
+    letter-Spacing: 1px;
+    margin-Bottom: -28px;
+    margin-top: -0.6rem;
+    margin-left: 0.5rem ;
+    color: var(--color-green-dark);
+    opacity: 1;
+}
+
+/* --- TEMPORARIO --- */
+.biodigestor-description .logo-tech .label-tech .labelB{
+    font-Size: 2.5rem;
+    padding-top: 5%;
+    color: #FF7907;
+    /* color: var(--color-green-light); */
+}
+
+/* ------------------ */
+
+.desc-top .title-tech p{
+    margin:1rem 1rem 0 0;
+}
+
+.desc-top .justify{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    /* margin-top: -2rem; */
+}
+
+.justify .justify-label{
+    font-weight: 700;
+    color: var(--color-green-dark);
+    margin-bottom: 1.4rem;
+}
+
+.justify .justify-txt{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.justify-txt p{
+    margin-right:1rem ;
+    /* grid-column: 1/2; */
+
+}
+
+.description .casca-img-tech{
+    /* position: relative; */
+    /* top: -15%; */
+    right: 0%;
+    width: 100%;
+    /* height: 32rem; */
+    /* border: 1px solid #000; */
+    grid-column: 3/5;
+    grid-row: 1/4;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.casca-img-tech img{
+    /* position: relative; */
+    /* top: -12%; */
+    /* border: 1px solid #000; */
+    width: 100%;
+    /* height: 100%; */
+    padding-left: 1rem;
+    
+}
+
+/* DESCRIPTION BOTTOM */
+
+.description .desc-bottom{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    /* display: flex; */
+    /* border: 1px solid #000; */
+    /* align-items: center; */
+    margin-top: 5rem;
+    
+}
+
+.desc-bottom .fatores-label{
+    /* border: 1px solid #000; */
+    min-width: 200px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-green-dark);
+    line-height: 1.5rem;  
+}
+
+.fato-txtA ,.fato-txtB{
+    width: auto;
+    margin-left: 1rem;
+}
+

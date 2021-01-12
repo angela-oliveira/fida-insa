@@ -1,0 +1,50 @@
+.Invest{
+    border: 1px solid #000;
+    grid-column: 1/13;
+    /* height: 500px; */
+    border: none;
+}
+.casca-ana-cb{
+    text-align: center;
+}
+.p-invest{
+    text-align: center;
+    text-indent: 0rem;
+}
+.cb-graphic {
+    display: flex;
+    flex-direction: column;
+}
+/* .ant-table-cell {
+    background-color: #329BA3;
+    color: white;
+} */
+th {
+    background-color: #000;
+} 
+table {
+    border-color: #000;
+}
+.invest-private {
+  margin-top: 2rem;
+}
+.solar-invest .ant-table-thead tr th{
+  background-color: #E2AF28;
+  color: white!important;
+}
+.invest-p{
+  text-indent: 0rem;
+  font-weight: bold;
+}
+.solar-invest .ant-table-container {
+  border: solid;
+  border-color: #E2AF28;
+}
+.expanded-table {
+    background-color: #00000033 ;
+    padding: 1rem;
+}
+.expanded-table p {
+    margin: 1rem;
+    text-indent: 0rem;
+}

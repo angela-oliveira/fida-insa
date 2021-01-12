@@ -1,0 +1,23 @@
+.invest-private {
+  margin-top: 2rem;
+}
+.ecofogao-analyze-investprivate .ant-table-thead tr th{
+  background-color: #89773C;
+  color: white!important;
+}
+.invest-p{
+  text-indent: 0rem;
+  font-weight: bold;
+}
+.ecofogao-analyze-investprivate .ant-table-container {
+  border: solid;
+  border-color: #89773C;
+}
+.expanded-table {
+    background-color: #00000033 ;
+    padding: 1rem;
+}
+.expanded-table p {
+    margin: 1rem;
+    text-indent: 0rem;
+}

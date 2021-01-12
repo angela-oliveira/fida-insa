@@ -1,0 +1,28 @@
+boby,html{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+}
+
+#body{
+ display: grid;
+ grid-template-columns: repeat(12,1fr);
+
+}
+
+.modal-ecofogao .ant-modal-header {
+    background-color: #89773C;
+
+}
+.modal-ecofogao .table-ecofogao-analyzeco .ant-table-thead tr th {
+    background-color: #89773C;
+    color: white;
+
+}
+.modal-ecofogao .table-ecofogao-analyzeco .ant-table-container {
+    border: solid;
+    border-color: #89773C;
+
+}
+
