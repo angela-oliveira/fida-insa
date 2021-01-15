@@ -9,6 +9,9 @@ import img2 from "../../../utils/images/photos/solar/SOLAR_FAMILIA_SEU_EUCLIDES_
 import img3 from "../../../utils/images/photos/solar/SOLAR_PAINEL_SOLAR_1200.jpg"
 import img4 from "../../../utils/images/photos/solar/SOLAR_TECNOLOGIA_E_CAMPO_1200.jpg"
 import img5 from "../../../utils/images/photos/solar/SOLAR_TECNOLOGIA_E_CAMPO_DISTANTE_1200.jpg"
+import img6 from "../../../utils/images/photos/solar/SOLAR- FILA DE PAINES COOPERATIVA.jpg"
+import img7 from "../../../utils/images/photos/solar/SOLAR - INTEGRANTES DA COOPERATIVA.jpg"
+import img8 from "../../../utils/images/photos/solar/SOLAR - PAINEL FOTOVOLTAICO COOPERATIVA.jpg"
 
 
 
@@ -36,6 +39,21 @@ const photos= [
     },
     {
         src: img5,
+        width: 4,
+        height: 3
+    },
+    {
+        src: img6,
+        width: 4,
+        height: 3
+    },
+    {
+        src: img7,
+        width: 4,
+        height: 3
+    },
+    {
+        src: img8,
         width: 4,
         height: 3
     }
