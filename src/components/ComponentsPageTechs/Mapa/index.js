@@ -23,6 +23,8 @@ function Mapa(props) {
     // referencia os elementos
     // const pointRef = useRef(null);
     const svgRef = useRef(null);
+    const svgPointRef = useRef(null);
+
     const wrapperRef = useRef(null);
     // const infoCityRef = useRef(null);
     const midiaRef = useRef(null);
@@ -51,7 +53,7 @@ function Mapa(props) {
 
         // REFERENCIAS
         const svg = select(svgRef.current);
-        const svgPoint = select(svgRef.current);
+        const svgPoint = select(svgPointRef.current);
         
 
 
@@ -85,25 +87,32 @@ function Mapa(props) {
 
             .selectAll(".city")
             .data(props.data.features)
-            .join("g")
+            .join("svg")
+            .attr("xmlns","http://www.w3.org/2000/svg")
             .attr("class", "city")
-            .attr("transform", function (d) {
-                return "translate(" + projection(d.geometry.coordinates) + ")"
-            })
+            .attr("width","44")
+            .attr("height","63")
+            .attr("viewBox","0 -10 15 20")
+            
             .attr("key", (d) => d.properties.id)
-            // .append("path")
-            // .attr("d", "M-15.734-63.086A21.446,21.446,0,0,1,0-69.617,21.325,21.325,0,0,1,15.66-63.16,21.325,21.325,0,0,1,22.117-47.5a29.685,29.685,0,0,1-2.3,10.539A64.971,64.971,0,0,1,14.25-25.828q-3.266,5.2-6.457,9.723t-5.418,7.2L0-6.383Q-.891-7.422-2.375-9.129t-5.344-6.828A114.4,114.4,0,0,1-14.473-25.9a72.229,72.229,0,0,1-5.27-10.91A30.031,30.031,0,0,1-22.117-47.5,21.2,21.2,0,0,1-15.734-63.086Z")
-            // .attr("fill", "#ddd456")
-            // .attr("stroke-width", 1)
-            // .attr("width", 10)
-            .append("foreignObject")
-            .attr("x", -5)
-            .attr("y", -20)
-            .attr("width", 15)
-            .attr("height", 17)
-            .append("xhtml:img")
-            .attr("class", "agulha")
-            .attr("src", icoPoint)
+
+            // .append("g")
+            .append('path')
+            .attr("top","0")    
+            .attr("d", "M-15.734-63.086A21.446,21.446,0,0,1,0-69.617,21.325,21.325,0,0,1,15.66-63.16,21.325,21.325,0,0,1,22.117-47.5a29.685,29.685,0,0,1-2.3,10.539A64.971,64.971,0,0,1,14.25-25.828q-3.266,5.2-6.457,9.723t-5.418,7.2L0-6.383Q-.891-7.422-2.375-9.129t-5.344-6.828A114.4,114.4,0,0,1-14.473-25.9a72.229,72.229,0,0,1-5.27-10.91A30.031,30.031,0,0,1-22.117-47.5,21.2,21.2,0,0,1-15.734-63.086Z")
+            .attr("transform","translate(0.62725830078125, 10.0411834716797)")
+            .attr("fill", "#ddd456")
+            .attr("stroke-width", 1)
+            .attr("width", 10)
+
+            // .append("foreignObject")
+            // .attr("x", -5)
+            // .attr("y", -20)
+            // .attr("width", 15)
+            // .attr("height", 17)
+            // .append("xhtml:img")
+            // .attr("class", "agulha")
+            // .attr("src", icoPoint)
             .on("click", (d, i) => {
                 setSelectedCity(selectedCity === i ? i : i)
             });
@@ -112,13 +121,12 @@ function Mapa(props) {
 
     useEffect(() => {
 
-        const zoom = select(zoomRef)
 
         const { width, height } = wrapperRef.current.getBoundingClientRect();
         const projection = geoMercator().fitSize([width, height], selectedEstados);
         let pathGenerator = geoPath().projection(projection);
         const svg = select(svgRef.current);
-        const svgPoint = select(svgRef.current);
+        const svgPoint = select(svgPointRef.current);
 
         svg
             .selectAll(".estado")
@@ -187,11 +195,11 @@ function Mapa(props) {
                     <div className='info-media' ref={midiaRef}>
                         <Carousel
 
-                            slidesToShow={3}
+                            slidesToShow={3} 
                             cellSpacing={10}
                             defaultControlsConfig={{
-                                nextButtonText: '>',
-                                prevButtonText: '<',
+                                nextButtonText: ' ',
+                                prevButtonText: ' ',
                                 prevButtonStyle: {
                                     display: 'flex',
                                     justifyContent: 'center',
@@ -237,6 +245,7 @@ function Mapa(props) {
                         Mapa completo
                     </div>
                     <svg ref={svgRef}></svg>
+                    <div className='citys' ref={svgPointRef}></div>
                 </div>
             </div>
         </div>

@@ -189,8 +189,8 @@ function Mapa(props) {
                             slidesToShow={3}
                             cellSpacing={10}
                             defaultControlsConfig={{
-                                nextButtonText: '>',
-                                prevButtonText: '<',
+                                nextButtonText: ' ',
+                                prevButtonText: ' ',
                                 prevButtonStyle: {
                                     display: 'flex',
                                     justifyContent: 'center',
