@@ -99,7 +99,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA</div>
+                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
                         <div className='justify-txt'>
                             <p>Na região Nordeste do Brasil, 85% das famílias da zona rural utilizam a lenha para o cozimento de alimentos. O modelo dos fogões ecológicos instalados nas comunidades através do CETRA (Centro de Estudos do Trabalho e de Assessoria ao Trabalhador) pelo Projeto Paulo Freire é baseado no ecofogão desenvolvido pela AS-PTA (Associação para a Agricultura Familiar e Agro­ecologia) para diminuir os efeitos prejudiciais causados pelo uso frequente dos fogões à lenha convencionais, pensando no desmatamento da vegetação nativa e nos problemas respiratórios oriundos da inalação da fumaça liberada pelo fogão.</p>
 

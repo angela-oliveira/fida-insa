@@ -122,7 +122,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA</div>
+                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
                         <div className='justify-txt'>
                             <p>Considerando a missão e os desafios do FIDA e ressaltando a tecnologia em questão, tem-se que o biodigestor consiste em uma tecnologia sustentável e economicamente viável para produtores rurais com um retorno econômico e ambiental. O biofertilizante pode ser utilizado para potencializar as lavouras dispensando a necessidade de compra de fertilizantes industriais e o biogás produzido pode ser utilizado para substituir o gás de cozinha (GLP), o que representa uma economia de recursos financeiros para os usuários.</p>
 
