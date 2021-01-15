@@ -3,15 +3,15 @@ import { Row, Card } from 'antd';
 
 // Realização 
 import paqtcpblogo from "../../utils/images/parceiros/paqtcpblogo.png"
-import insalogo from "../../utils/images/parceiros/insalogo.png"
+import insalogo from "../../utils/images/parceiros/logo Insa 2020.jpg"
 import iacoc from "../../utils/images/parceiros/iacoc.png"
 
 // Patrocinador
-import fidalogo from "../../utils/images/parceiros/logo fida.png"
+import fidalogo from "../../utils/images/parceiros/P_g_web.jpg"
 
 
 // Parceiros
-
+import energy from "../../utils/images/parceiros/energy.jpeg"
 import procaselogo from "../../utils/images/parceiros/procaselogo.png"
 
 import ifpblogo from "../../utils/images/parceiros/logo_ifpb.png"
@@ -102,6 +102,10 @@ function Parceiros() {
                         </Card>
                         <Card>
                             <img alt="example" src={aksaam} />
+                            <Meta title="" description="" />
+                        </Card>
+                        <Card>
+                            <img alt="example" src={energy} />
                             <Meta title="" description="" />
                         </Card>
                     </Row>
