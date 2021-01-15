@@ -100,14 +100,6 @@ function Parceiros() {
                             <img alt="example" src={prosemiarido} />
                             <Meta title="" description="" />
                         </Card>
-                        <Card>
-                            <img alt="example" src={aksaam} />
-                            <Meta title="" description="" />
-                        </Card>
-                        <Card>
-                            <img alt="example" src={energy} />
-                            <Meta title="" description="" />
-                        </Card>
                     </Row>
 
                     <Row >
@@ -131,6 +123,17 @@ function Parceiros() {
                         </Card>
                         <Card>
                             <img alt="example" src={funarbe} />
+                            <Meta title="" description="" />
+                        </Card>
+
+                    </Row>
+                    <Row>
+                        <Card>
+                            <img alt="example" src={aksaam} />
+                            <Meta title="" description="" />
+                        </Card>
+                        <Card>
+                            <img alt="example" src={energy} />
                             <Meta title="" description="" />
                         </Card>
                         <Card>
