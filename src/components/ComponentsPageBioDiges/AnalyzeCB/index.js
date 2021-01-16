@@ -74,7 +74,7 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Tempo de vida útil"
-                                                value={"30 Anos"}
+                                                value={"10 Anos"}
                                                 precision={2}
                                                 valueStyle={{ color: '#FF7907' }}
                                             />
