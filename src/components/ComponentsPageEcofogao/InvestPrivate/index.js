@@ -55,7 +55,7 @@ const data = [
     period: 'PRAZO DE CARÊNCIA: Até 03 meses',
     warranty: 'GARANTIAS EXIGIDAS DO TOMADOR DO CRÉDITO: A solicitação de garantia ou não dependerá do relacionamento com o cliente, prazo e valor financiado - será solicitado investimentos, imóveis, bens alienáveis',
     interest: 'TAXA DE JUROS: A Partir de 0,99% a.m',
-    link: 'https://www.santander.com.br/creditos-e-financiamentos-para-empresas/expansao-de-negocios/cdc-sustentavel-solar <h1>',
+    link: 'https://www.santander.com.br/creditos-e-financiamentos-para-empresas/expansao-de-negocios/cdc-sustentavel-solar',
     obs: 'OBSERVAÇÕES: -'
   },
   {
@@ -215,7 +215,7 @@ class InvestPrivate extends React.Component {
               <p style={{ margin: 0, marginBottom: 10 }}>{record.warranty}</p>
               <p style={{ margin: 0, marginBottom: 10 }}>{record.interest}</p>
 
-              <p style={{ margin: 0, marginBottom: 10 }}> LINK PARA MAIS INFORMAÇÕES: <a src={record.link}> {record.link} </a></p>
+              <p style={{ margin: 0, marginBottom: 10 }}> LINK PARA MAIS INFORMAÇÕES: <a href={record.link}> {record.link} </a></p>
               
               <p style={{ margin: 0, marginBottom: 10 }}>{record.obs}</p>
             </div>,
