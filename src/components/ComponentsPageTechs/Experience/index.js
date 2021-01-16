@@ -4,7 +4,10 @@ import { Pagination } from 'antd';
 
 import Carousel, { NextButton } from 'nuka-carousel';
 
+
 function Experience() {
+
+
 
     return (
         <div className='Experience'> 
@@ -14,6 +17,7 @@ function Experience() {
                 
             </div>
             <Carousel
+                    
                     slidesToShow={1}
                     cellSpacing={63}
                     defaultControlsConfig={{
