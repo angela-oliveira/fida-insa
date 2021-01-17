@@ -75,7 +75,37 @@ button{
     height: 150px;
 }
 
+.info-media .img{
+    position: relative;
+}
+
+.info-media .zoom-image{
+    
+    top:1rem;
+    left: 1.7rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    position: absolute;
+    opacity: 0.5;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    background-image: url(../../../utils/images/zoom.png);
+    background-repeat: no-repeat;
+    background-size: 1.4rem;
+    background-position: center;
+}
+
+
+
+.modal-img img{
+    width:100%;
+    margin-top: 1rem;
+}
+
+
 .info-media img{
+    position: absolute;
     width: 100px;
 }
 

@@ -17,41 +17,7 @@ function Experience() {
 
     const vid1 = select(vid1Ref)
 
-    $('.slider-control-centerright').on("click",function(){
-        console.log("foi foi foi")
-        
-    });
-
-    // function name(func,args) {
-
-    //     console.log("vid1: " + vid1)
-    //     // console.log("video: " + a)
-
-    //     let iframes = document.querySelectorAll("iframe")
-    //     console.log( iframes)
-    //     console.log( iframes[0])
-    //     console.log(iframes[1])
-
-    //     for (let i = 0; i < iframes.length; ++i) {
-    //         if (iframes[i]) {
-    //             let src = iframes[i].getAttribute('src');
-    //             console.log("src: "+src)
-    //             if (src) {
-    //                 if (src.indexOf('youtube.com/embed') != -1) {
-    //                     iframes[i].contentWindow.postMessage(JSON.stringify({
-    //                         'event': 'command',
-    //                         'func': "stopvideo",
-    //                         'args': args || []
-    //                     }), "*");
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    // }
-
-
-
+    
     return (
         <div className='ecofogao-analyze-experience Experience'>
             <div className='casca-experience'>
@@ -62,9 +28,6 @@ function Experience() {
             <Carousel
                 afterSlide={() => { 
                     $('.video-frame')[0].stopVideo()
-                    console.log("aaaaaaaaaaaaaaaf")
-                    console.log()
-
                     $('.video-frame')[0].contentWindow.postMessage('{"event":"command","func":"' + '"pauseVideo()"' + '","args":""}', '*');
                   }}
                 slidesToShow={1}
