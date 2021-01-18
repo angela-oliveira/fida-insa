@@ -11,7 +11,7 @@ import { PlusOutlined } from '@ant-design/icons';
 
 class Description extends React.Component {
     // listCase = document.getElementsByClassName('.list-cases')
-    
+
     state = {
         visible1: false,
         visible2: false,
@@ -57,16 +57,16 @@ class Description extends React.Component {
                             </div>
                         </div>
                         <br></br>
-                        <p>Cataventos são dispositivos que aproveitam a energia dos ventos. Eles podem ser usados para geração de energia elétrica ou para o bombeamento de água destinada ao armazenamento ou irrigação. É possível ainda que sejam utilizados para movimentar aeradores de tanques de tratamento de água ou na aquicultura.          
+                        <p>Cataventos são dispositivos que aproveitam a energia dos ventos. Eles podem ser usados para geração de energia elétrica ou para o bombeamento de água destinada ao armazenamento ou irrigação. É possível ainda que sejam utilizados para movimentar aeradores de tanques de tratamento de água ou na aquicultura.
                         </p>
                         <div className='tooltip tolltip-margin'>
                             <Tooltip title="Ver mais" >
-                                <Button 
-                                    className='button-1' 
-                                    onClick={() => this.openModal()} 
-                                    type="primary" 
-                                    shape="circle" 
-                                    icon={<PlusOutlined />} 
+                                <Button
+                                    className='button-1'
+                                    onClick={() => this.openModal()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<PlusOutlined />}
                                 />
                             </Tooltip>
                             <Modal
@@ -101,7 +101,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA</div>
+                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
                         <div className='justify-txt'>
                             <p>Tanto o catavento destinado ao bombeamento de águas do subsolo, quanto aqueles destinados à produção de energia elétrica em pequena escala se adequam perfeitamente ao uso em comunidades agrícolas, pois fornecem meios necessários à subsistência humana, animal e vegetal. Deve-se também considerar que a diversificação da matriz energética rural é imprescindível, especialmente para ampliar o aproveitamento dos recursos naturais disponíveis nas propriedades rurais.</p>
 
@@ -109,18 +109,18 @@ class Description extends React.Component {
 
                             </p>
                         </div>
-                            <div className='tooltip'>
-                                <Tooltip title="Ver mais">
-                                    <Button 
-                                        className='button-1' 
-                                        onClick={() => this.openModal2()} 
-                                        type="primary" 
-                                        shape="circle" 
-                                        icon={<PlusOutlined />} 
-                                    />
-                                </Tooltip>
+                        <div className='tooltip'>
+                            <Tooltip title="Ver mais">
+                                <Button
+                                    className='button-1'
+                                    onClick={() => this.openModal2()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<PlusOutlined />}
+                                />
+                            </Tooltip>
 
-                                <Modal
+                            <Modal
                                 title={this.justify.title}
                                 visible={this.state.visible2}
                                 width={1000}
@@ -139,7 +139,7 @@ class Description extends React.Component {
                                     </p>
                                 </div>
                             </Modal>
-                            </div>
+                        </div>
                     </div>
 
                     <div className='casca-img-tech'>
@@ -157,12 +157,12 @@ class Description extends React.Component {
 
                 <div className='tooltip tolltip-margin'>
                     <Tooltip title="Ver mais" >
-                        <Button 
-                            className='button-1' 
-                            onClick={() => this.openModal3()} 
-                            type="primary" 
-                            shape="circle" 
-                            icon={<PlusOutlined />} 
+                        <Button
+                            className='button-1'
+                            onClick={() => this.openModal3()}
+                            type="primary"
+                            shape="circle"
+                            icon={<PlusOutlined />}
                         />
                     </Tooltip>
                     <Modal

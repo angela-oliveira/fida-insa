@@ -30,12 +30,26 @@
     bottom: 0%;
     
 }
+.equipe .slider-control-centerleft button{
+    background-image: url('../../utils/images/arrow.svg') !important;
+    background-size: 50% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
 
 .equipe .slider-control-centerright{
     /* border: 1px solid #000; */
     right: 30% !important;
     grid-row: 2/3;
     bottom: 0%;
+}
+
+.equipe .slider-control-centerright button{
+    background-image: url('../../utils/images/arrow.svg') !important;
+    background-size: 50% !important;
+    background-position: center !important;
+    transform: rotate(180deg);
+    background-repeat: no-repeat !important;
 }
 
 .equipe .slider-control-bottomcenter{

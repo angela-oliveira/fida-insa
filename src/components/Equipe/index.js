@@ -36,8 +36,8 @@ class Equipe extends React.Component {
                     slidesToShow={4}
                     cellSpacing={47}
                     defaultControlsConfig={{
-                        nextButtonText: '>',
-                        prevButtonText: '<',
+                        nextButtonText: ' ',
+                        prevButtonText: ' ',
                         prevButtonStyle: {
                             display: 'flex',
                             justifyContent: 'center',

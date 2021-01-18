@@ -8,6 +8,7 @@ import bioagua from '../../utils/images/photos/Bioágua/sobral_santaluzia/Flavia
 import ecofogao from '../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Maria 01_1200.jpg';
 import biodigestor from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 02.JPG';
 import solar from '../../utils/images/photos/solar/SOLAR_PAINEL_SOLAR_1200.jpg';
+import seta from '../../utils/images/arrow.svg'
 
 
 // import solartest from '../../utils/images/solar_test1.jpg';
@@ -28,9 +29,8 @@ class Case extends React.Component {
                     cellAlign='center'
                     vertical={true}
                     defaultControlsConfig={{
-
-                        nextButtonText: 'Ⅴ',
-                        prevButtonText: 'Λ',
+                        nextButtonText: ' ',
+                        prevButtonText: ' ',
                         prevButtonStyle: {
 
                             display: 'flex',

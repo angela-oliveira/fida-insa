@@ -37,7 +37,7 @@ const data = [
       },
       {
         key: '2',
-        mes: 'Agosto/2010',
+        mes: 'Agosto/2020',
         consumo: '0,165',
         medio: '0,01070',
         total: '0,017655',

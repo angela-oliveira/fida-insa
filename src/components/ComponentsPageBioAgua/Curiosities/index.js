@@ -35,7 +35,7 @@ function Curiosities() {
                 <div className='subtitle'><p>Veja algumas dúvidas e curiosidades</p>
                 </div>
                 <Collapse accordion>
-                    <Panel header="A origem do catavento é datada de 915 a.C" key="1">
+                    <Panel header="Importância da Água" key="1">
                     <p>{text1}</p>
                     </Panel>
                     <Panel header="História e a Qualidade da Água" key="2">

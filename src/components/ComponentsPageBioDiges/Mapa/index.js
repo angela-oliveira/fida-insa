@@ -1,7 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { select, geoPath, geoMercator, svg } from "d3";
 import useResizeObserver from 'use-resize-observer';
+
+import { Modal } from 'antd'
+
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
+
 
 import './index.css';
 import Carousel from 'nuka-carousel';
@@ -41,6 +45,12 @@ function Mapa(props) {
     const [instalacao, setInstalacao] = useState(props.data.features[0].properties.QtInstal)
     const [tecnologia, setTecnologia] = useState(props.data.features[0].properties.Tecnologia)
     const [projeto, setProjeto] = useState(props.data.features[0].properties.Projeto)
+
+    const [visible1, setVisible1] = useState(false);
+    const [visible2, setVisible2] = useState(false);
+    const [visible3, setVisible3] = useState(false);
+    const [visible4, setVisible4] = useState(false);
+    const [visible5, setVisible5] = useState(false);
 
 
     useEffect(() => {
@@ -189,8 +199,8 @@ function Mapa(props) {
                             slidesToShow={3}
                             cellSpacing={10}
                             defaultControlsConfig={{
-                                nextButtonText: '>',
-                                prevButtonText: '<',
+                                nextButtonText: ' ',
+                                prevButtonText: ' ',
                                 prevButtonStyle: {
                                     display: 'flex',
                                     justifyContent: 'center',
@@ -215,21 +225,87 @@ function Mapa(props) {
                         >
                             <div className='img'>
                                 <img src={bioDige1}></img>
+                                <div className='zoom-image' onClick={() => { setVisible1(true) }}></div>
                             </div>
                             <div className='img'>
                                 <img src={bioDige2}></img>
+                                <div className='zoom-image' onClick={() => { setVisible2(true) }}></div>
                             </div>
                             <div className='img'>
                                 <img src={bioDige3}></img>
+                                <div className='zoom-image' onClick={() => { setVisible3(true) }}></div>
                             </div>
                             <div className='img'>
                                 <img src={bioDige4}></img>
+                                <div className='zoom-image' onClick={() => { setVisible4(true) }}></div>
                             </div>
                             <div className='img'>
                                 <img src={bioDige5}></img>
+                                <div className='zoom-image' onClick={() => { setVisible5(true) }}></div>
                             </div>
                         </Carousel>
                     </div>
+
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible1}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible1(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={bioDige1}></img>
+                        </div>
+                    </Modal>
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible2}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible2(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={bioDige2}></img>
+                        </div>
+                    </Modal>
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible3}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible3(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={bioDige3}></img>
+                        </div>
+                    </Modal>
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible4}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible4(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={bioDige4}></img>
+                        </div>
+                    </Modal>
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible5}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible5(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={bioDige5}></img>
+                        </div>
+                    </Modal>
 
                 </div>
                 <div className='map' ref={wrapperRef}>
