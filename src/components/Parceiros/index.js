@@ -72,7 +72,7 @@ function Parceiros() {
                         </Card>
 
                         <Card>
-                            <img alt="example" src={insalogo} />
+                            <img className="logo-grande" alt="example" src={insalogo} />
                             <Meta title="" description="" />
                         </Card>
                     </Row>
@@ -100,14 +100,6 @@ function Parceiros() {
                             <img alt="example" src={prosemiarido} />
                             <Meta title="" description="" />
                         </Card>
-                        <Card>
-                            <img alt="example" src={aksaam} />
-                            <Meta title="" description="" />
-                        </Card>
-                        <Card>
-                            <img alt="example" src={energy} />
-                            <Meta title="" description="" />
-                        </Card>
                     </Row>
 
                     <Row >
@@ -133,6 +125,17 @@ function Parceiros() {
                             <img alt="example" src={funarbe} />
                             <Meta title="" description="" />
                         </Card>
+
+                    </Row>
+                    <Row>
+                        <Card>
+                            <img alt="example" src={aksaam} />
+                            <Meta title="" description="" />
+                        </Card>
+                        <Card>
+                            <img alt="example" src={energy} />
+                            <Meta title="" description="" />
+                        </Card>
                         <Card>
                             <img alt="example" src={ippds} />
                             <Meta title="" description="" />
@@ -150,7 +153,7 @@ function Parceiros() {
                     <Row >
 
                         <Card>
-                            <img alt="example" src={sergipe} />
+                            <img className="logo-grande" alt="example" src={sergipe} />
                             <Meta title="" description="" />
                         </Card>
                         <Card>
@@ -178,7 +181,7 @@ function Parceiros() {
                     <Row>
 
                         <Card>
-                            <img alt="example" src={fidalogo} />
+                            <img className="logo-fida" alt="example" src={fidalogo} />
                             <Meta title="" description="" />
                         </Card>
 

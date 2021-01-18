@@ -97,7 +97,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA</div>
+                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
                         <div className='justify-txt'>
                             <p>O Sistema Bioágua promove a economia de água, permitindo ao usuário a sua reutilização para fins não potáveis, como o cultivo de plantas, a lavagem de calçadas e pisos, entre outros usos. Isso é fundamental em períodos de crise hídrica, ainda mais no Semiárido brasileiro, que tem como característica climática uma intensa evaporação de água e precipitação média anual menor que 800 mm. Os Projetos financiados pelo FIDA que envolvem a instalação e a implantação de tecnologias sociais como o Sistema Bioágua são bastante relevantes, pois o reúso da água cinza tratada para fins agrícolas é uma alternativa viável que aumenta a disponibilidade hídrica e ajuda a superar a escassez, mitigando os impactos severos da seca.</p>
 
