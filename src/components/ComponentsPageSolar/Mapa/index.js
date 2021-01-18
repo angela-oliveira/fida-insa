@@ -3,6 +3,8 @@ import { select, geoPath, geoMercator, svg } from "d3";
 import useResizeObserver from 'use-resize-observer';
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
 
+import { Modal } from 'antd';
+
 import icoPoint from '../../../utils/images/place_01.svg';
 
 import './index.css';
@@ -13,6 +15,8 @@ import solar2 from '../../../utils/images/photos/solar/SOLAR_FAMILIA_SEU_EUCLIDE
 import solar3 from '../../../utils/images/photos/solar/SOLAR_TECNOLOGIA_E_CAMPO_DISTANTE_1200.jpg'
 import solar4 from '../../../utils/images/photos/solar/SOLAR_TECNOLOGIA_E_CAMPO_1200.jpg'
 import solar5 from '../../../utils/images/photos/solar/SOLAR_EUCLIDES_E_PAINEL_SOLAR_1200.jpg'
+
+
 
 
 
@@ -43,6 +47,12 @@ function Mapa(props) {
     const [instalacao, setInstalacao] = useState(props.data.features[0].properties.QtInstal)
     const [tecnologia, setTecnologia] = useState(props.data.features[0].properties.Tecnologia)
     const [projeto, setProjeto] = useState(props.data.features[0].properties.Projeto)
+
+    const [visible1, setVisible1] = useState(false);
+    const [visible2, setVisible2] = useState(false);
+    const [visible3, setVisible3] = useState(false);
+    const [visible4, setVisible4] = useState(false);
+    const [visible5, setVisible5] = useState(false);
 
 
     useEffect(() => {
@@ -75,13 +85,13 @@ function Mapa(props) {
 
             // .transition(700)
             .attr("d", features => pathGenerator(features))
-            // .append("foreignObject")
-            // .attr("x", 0)
-            // .attr("y", 0)
-            // .attr("width", 15)
-            // .attr("height", 17)
-            // .append("xhtml:div")
-            // .text("BH");
+        // .append("foreignObject")
+        // .attr("x", 0)
+        // .attr("y", 0)
+        // .attr("width", 15)
+        // .attr("height", 17)
+        // .append("xhtml:div")
+        // .text("BH");
 
 
         svgPoint
@@ -191,8 +201,8 @@ function Mapa(props) {
                             slidesToShow={3}
                             cellSpacing={10}
                             defaultControlsConfig={{
-                                nextButtonText: '>',
-                                prevButtonText: '<',
+                                nextButtonText: ' ',
+                                prevButtonText: ' ',
                                 prevButtonStyle: {
                                     display: 'flex',
                                     justifyContent: 'center',
@@ -217,25 +227,91 @@ function Mapa(props) {
                         >
                             <div className='img'>
                                 <img src={solar1}></img>
+                                <div className='zoom-image' onClick={() => { setVisible1(true) }}></div>
                             </div>
                             <div className='img'>
                                 <img src={solar2}></img>
+                                <div className='zoom-image' onClick={() => { setVisible2(true) }}></div>
                             </div>
                             <div className='img'>
                                 <img src={solar3}></img>
+                                <div className='zoom-image' onClick={() => { setVisible3(true) }}></div>
                             </div>
                             <div className='img'>
                                 <img src={solar4}></img>
+                                <div className='zoom-image' onClick={() => { setVisible4(true) }}></div>
                             </div>
                             <div className='img'>
                                 <img src={solar5}></img>
+                                <div className='zoom-image' onClick={() => { setVisible5(true) }}></div>
                             </div>
                         </Carousel>
                     </div>
 
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible1}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible1(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={solar1}></img>
+                        </div>
+                    </Modal>
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible2}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible2(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={solar2}></img>
+                        </div>
+                    </Modal>
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible3}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible3(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={solar3}></img>
+                        </div>
+                    </Modal>
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible4}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible4(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={solar4}></img>
+                        </div>
+                    </Modal>
+                    <Modal
+                        // title={this.justify.title}
+                        visible={visible5}
+                        width={750}
+                        footer={null}
+                        onCancel={() => setVisible5(false)
+                        }
+                    >
+                        <div className='content-modal modal-img'>
+                            <img src={solar5}></img>
+                        </div>
+                    </Modal>
+
                 </div>
                 <div className='map' ref={wrapperRef}>
-                <div className='zoom-out' onClick={()=>{
+                    <div className='zoom-out' onClick={() => {
                         setSelectedEstados(drawMap)
                     }}>
                         Mapa completo

@@ -19,8 +19,8 @@ function Experience() {
                     slidesToShow={1}
                     cellSpacing={63}
                     defaultControlsConfig={{
-                        nextButtonText: '>',
-                        prevButtonText: '<',
+                        nextButtonText: ' ',
+                        prevButtonText: ' ',
                         prevButtonStyle: {
                             display:'flex',
                             justifyContent:'center',
