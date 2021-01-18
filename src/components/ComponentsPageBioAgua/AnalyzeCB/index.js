@@ -1,11 +1,80 @@
 import React from 'react';
 import './index.css';
-import { Tabs, Statistic, Card, Row, Col, Tooltip, Modal, Button } from 'antd';
+import { Tabs, Statistic, Card, Row, Col, Tooltip, Modal, Button, List } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
+
+import ods1 from '../../../utils/images/biodigestor/ODS1.png'
+import ods2 from '../../../utils/images/biodigestor/ODS2.png'
+import ods3 from '../../../utils/images/biodigestor/ODS3.png'
+import ods4 from '../../../utils/images/biodigestor/ODS4.png'
+import ods5 from '../../../utils/images/biodigestor/ODS5.png'
+import ods6 from '../../../utils/images/biodigestor/ODS6.png'
+import ods8 from '../../../utils/images/biodigestor/ODS8.png'
+import ods10 from '../../../utils/images/biodigestor/ODS10.png'
+import ods11 from '../../../utils/images/biodigestor/ODS11.png'
+import ods12 from '../../../utils/images/biodigestor/ODS12.png'
+import ods13 from '../../../utils/images/biodigestor/ODS13.png'
 
 const { TabPane } = Tabs;
 
 
+const data = [
+    {
+      title: 'ERRADICAÇÃO DA POBREZA',
+      avatar: ods1,
+      description: 'Contribui para a erradicação da pobreza, permite o acesso a serviços essenciais, estimula o mercado local e reduz a exposição a vulnerabilidades auxiliando no enfrentamento das crises hídricas recorrentes no Semiárido.'
+    },
+    {
+      title: 'FOME ZERO E AGRICULTURA SUSTENTÁVEL',
+      avatar: ods2,
+      description: 'Permite o acesso à alimentação segura, adequada e saudável para o ano, devido ao aumento da produtividade agrícola, disponibilizando renda a pequenos produtores e garantindo o autoconsumo dos agricultores familiares. Promove a segurança alimentar a partir de uma agricultura sustentável.'
+    },
+    {
+      title: 'SAÚDE E BEM-ESTAR',
+      avatar: ods3,
+      description: 'Reduz o número de doenças de veiculação hídrica e de vetores provenientes da falta de saneamento.'
+    },
+    {
+      title: 'EDUCAÇÃO DE QUALIDADE',
+      avatar: ods4,
+      description: 'Difunde o conhecimento permitindo a troca de saberes a grupos em situação de vulnerabilidade.'
+    },
+    {
+      title: 'IGUALDADE DE GÊNERO',
+      avatar: ods5,
+      description: 'Discute as formas de discriminação de gênero para as mulheres do campo, como forma de eliminar a desigualdade nos trabalhos do campo que são remunerados ou não, com a participação plena e efetiva das mulheres nos processos de decisão.'
+    },
+    {
+      title: 'ÁGUA POTÁVEL E SANEAMENTO',
+      avatar: ods6,
+      description: 'Melhora a qualidade de água reduzindo a poluição ao minimizar o lançamento indiscriminado de efluentes não tratados. Aumento do reúso seguro localmente, principalmente na região rural do Semiárido o que permite o acesso a água de reuso para irrigação.'
+    },
+    {
+      title: 'TRABALHO DECENTE E CRESCIMENTO ECONÔMICO',
+      avatar: ods8,
+      description: 'Aumento da diversificação de produtos agrícolas, agregando valor e incentivando o empreendedorismo rural.'
+    },
+    {
+      title: 'REDUÇÃO DAS DESIGUALDADES',
+      avatar: ods10,
+      description: 'Promove a inclusão social, econômica e política com a finalidade de reduzir as desigualdades.'
+    },
+    {
+      title: 'CIDADES E COMUNIDADES SUSTENTÁVEIS',
+      avatar: ods11,
+      description: 'Melhoria da habitação aumentando a resiliência de áreas afetadas por desastres naturais de origem hidrometeorológica e climatológica.'
+    },
+    {
+      title: 'CONSUMO E PRODUÇÃO RESPONSÁVEIS',
+      avatar: ods12,
+      description: 'Redução da geração de resíduos por meio da Economia Circular.'
+    },
+    {
+      title: 'AÇÃO CONTRA A MUDANÇA GLOBAL DO CLIMA',
+      avatar: ods13,
+      description: 'Amplia a resiliência e a capacidade adaptativa a riscos e impactos resultantes da mudança do clima e desastres naturais.'
+    },
+  ];
 
 class AnalyzeCB extends React.Component {
     state = {
@@ -124,7 +193,7 @@ class AnalyzeCB extends React.Component {
                                 Quando comparado ao reúso no descarte da água cinza, o Sistema bioágua facilita o trabalho da família agricultora, pois para fazer o reúso de descarte eles teriam que reunir as águas após cada uso na cozinha e lavagem das roupas e armazenar esse volume em baldes ou compartimentos, geralmente, de 100 ou 200 litros. Após todo esse trabalho, as águas cinzas podem ser utilizadas nas regas das plantas no entorno das casas, ainda que de maneira manual, sendo planta por planta, tornando ainda mais cansativa a atividade. No sistema bioágua, as águas usadas são destinadas por tubulações hidráulicas até os filtros biológicos e físicos, onde ocorre o tratamento e armazenamento posterior em reservatórios maiores e apropriados. Desse reservatório, a água pode ser bombeada para um sistema de irrigação por gotejo, simplificando todo o trabalho com o reúso de água de descarte domiciliar e ainda possibilita ampliar o sistema de produção de plantas, proporcionando mais tempo livre para outras atividades, inclusive para geração de mais renda.
 
                         </p>
-                            <div className=' tolltip-margin'>
+                            {/* <div className=' tolltip-margin'>
                                 <Tooltip title="Ver mais" >
                                     <Button
                                         className='button-1'
@@ -146,7 +215,6 @@ class AnalyzeCB extends React.Component {
                                     }
                                 >
                                     <div className='content-modal'>
-                                        {/* <p>{this.desciption.content}</p> */}
                                         <p>Ao levar em consideração 17 objetivos do Desenvolvimento Sustentável da ONU o Sistema Bioágua se enquadra nos seguintes objetivos:</p>
 
                                         <p>Contribui para a erradicação da pobreza, permite o acesso a serviços essenciais, estimula o mercado local e reduz a exposição a vulnerabilidades auxiliando no enfrentamento das crises hídricas recorrentes no Semiárido.</p>
@@ -174,7 +242,7 @@ class AnalyzeCB extends React.Component {
                                     </div>
                                 </Modal>
 
-                            </div>
+                            </div> */}
                         </TabPane>
                         <TabPane tab="Adaptação à realidade da agricultura familiar" key="6">
                             <p>
@@ -183,48 +251,36 @@ class AnalyzeCB extends React.Component {
                         </TabPane>
                     </Tabs>
 
-                    {/* <div className='cb-graphic'>
-                    <div className='cus-ins'>
-                        <div className='c-i-gra'>R$0</div>
-                        <div className='cb-gra-label'>Custo de instalação</div>
-                    </div>
-                    <div className='cus-man'>
-                        <div className='c-m-gra'>R$0</div>
-                        <div className='cb-gra-label'>Custo de manutenção por ano</div>
-                    </div>
-                    <div className='tem-vid'>
-                        <div className='t-m-gra'>0 anos</div>
-                        <div className='cb-gra-label'>Tempo de vida útil da tecnologia</div>
-                    </div>
-                    <div className='imp-amb'>
-                        <div className='i-m-gra'>0%</div>
-                        <div className='cb-gra-label'>Impactos ambientais</div>
-                    </div>
                 </div>
-                <div className='cb-bottom'>
-                    <div className='txt-left'>
-                        <div className='txt-label'> IMPACTOS SOCIAIS</div>
-                        <div className='cb-txt'>
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit natoque phasellus congue, dis blandit id aliquet
-                            morbi felis litora iaculis. Nisl sociosqu justo phasellus
-                            vitae risus nunc vel mattis eu, ultrices feugiat malesuada
-                            eleifend dui pretium duis posuere nascetur,
-                            faucibus sapien natoque velit dis quis ex tempor.
+
+                <div className=''>                    
+                 
+                    <Card className="list-ods">
+                        <div className="title-card-ods">
+                        <div className='title-ods'>Ao levar em consideração 17 objetivos do Desenvolvimento Sustentável da ONU o Sistema Bioágua se enquadra nos seguintes objetivos:</div>
+
                         </div>
-                    </div>
-                    <div className='txt-right'>
-                        <div className='txt-label'>ADAPTAÇÃO Á REALIDADE DA AGRICULTURA FAMILIAR</div>
-                        <div className='cb-txt'>
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit natoque phasellus congue, dis blandit id aliquet
-                            morbi felis litora iaculis. Nisl sociosqu justo phasellus
-                            vitae risus nunc vel mattis eu, ultrices feugiat malesuada
-                            eleifend dui pretium duis posuere nascetur,
-                            faucibus sapien natoque velit dis quis ex tempor.
-                        </div>
-                    </div>
-                </div> */}
+                        <List
+                            itemLayout="horizontal"
+                            dataSource={data}
+                            renderItem={item => (
+                            <List.Item>
+                                <List.Item.Meta
+                                avatar={<img className="image-ods" src={item.avatar} alt=''></img>}
+                                // avatar={<Avatar src={item.avatar} />}
+                                title={item.title}
+                                description={item.description}
+                                />
+                                {/* <List.Item.Meta
+                                avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                                title={<a href="https://ant.design">{item.title}</a>}
+                                description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+                                /> */}
+                            </List.Item>
+                            )}
+                        />
+
+                    </Card>
                 </div>
             </div>)
     }
