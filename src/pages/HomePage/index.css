@@ -305,3 +305,8 @@ h1{
 .logo-fida {
   height:  7rem!important;
 }
+
+.link-table-invest a{
+    text-decoration: none;
+    color: black;
+}
