@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { select, geoPath, geoMercator, svg } from "d3";
 import useResizeObserver from 'use-resize-observer';
-import { Modal } from 'antd';
+import { Modal, Tooltip } from 'antd';
 
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
 
@@ -62,17 +62,17 @@ function Mapa(props) {
         document.querySelector("input").checked = false
         setTimeout(() => {
             document.querySelector("input").checked = false
-        },1000)
+        }, 1000)
 
     }
-    
+
     useEffect(() => {
 
         // REFERENCIAS
         const svg = select(svgRef.current);
         const svgPoint = select(svgRef.current);
 
-        
+
 
 
         // const infoCity = select(infoCityRef.current);
@@ -131,17 +131,17 @@ function Mapa(props) {
             .attr("width", 15)
             .attr("height", 17)
             .append("xhtml:label")
-            .attr("for","animar") 
-            .on("click",()=>{
+            .attr("for", "animar")
+            .on("click", () => {
                 desmarc()
-            })    
+            })
             .append("xhtml:img")
             .attr("class", "agulha")
             .attr("src", icoPoint)
             .on("click", (d, i) => {
                 setSelectedCity(selectedCity === i ? i : i)
             })
-            
+
 
     }, [wrapperRef, widthRef, heightRef])
 
@@ -203,7 +203,7 @@ function Mapa(props) {
 
 
     return (
-        <div className='eolica-map map-container'> 
+        <div className='eolica-map map-container'>
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>

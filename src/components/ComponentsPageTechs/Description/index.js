@@ -32,7 +32,7 @@ class Description extends React.Component {
     }
 
     openModal() {
-        this.setState({ visible1: true })
+        this.setState({ visible1: true }) 
     }
 
     openModal2() {
