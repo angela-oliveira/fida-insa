@@ -122,7 +122,7 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Custos de Manutenção"
-                                                value={"0,00  à R$ 600,00"}
+                                                value={"Até R$ 600,00"}
                                                 precision={2}
                                                 valueStyle={{ color: '#329BA3' }}
                                                 prefix={"R$"}
@@ -168,7 +168,7 @@ class AnalyzeCB extends React.Component {
                                         />
                                     </Tooltip>
                                     <Modal
-                                        title={'teste'}
+                                        title={'Impactos Ambientais'}
                                         visible={this.state.visible}
                                         width={1000}
                                         footer={null}
