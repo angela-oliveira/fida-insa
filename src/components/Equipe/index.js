@@ -88,18 +88,7 @@ class Equipe extends React.Component {
                             </div>
                         </div>
                     </a>
-                    {/* <a className="link" href="#" target="_blank"> */}
-                        <div className="item">
-                            <div className='img'>
-                                <img src={Daniel} alt='Daniel Casimiro'></img>
-                            </div>
-                            <div className='label'>
-                                <div className='name'>Daniel Casimiro</div>
-                                <div className='function'>Pesquisador</div>
-                            </div>
-                        </div>
-                    {/* </a> */}
-                    {/* <a className="link" href="#" target="_blank"> */}
+
                         <div className="item">
                             <div className='img'>
                                 <img src={Ary} alt='Ary Prata'></img>
@@ -108,8 +97,16 @@ class Equipe extends React.Component {
                                 <div className='name'>Ary Prata</div>
                                 <div className='function'>Pesquisador</div>
                             </div>
-                        </div>
-                    {/* </a> */}
+                        </div> 
+                        <div className="item">
+                            <div className='img'>
+                                <img src={Daniel} alt='Daniel Casimiro'></img>
+                            </div>
+                            <div className='label'>
+                                <div className='name'>Daniel Casimiro</div>
+                                <div className='function'>Pesquisador</div>
+                            </div>
+                        </div>                 
                     <a className="link" href="https://www.linkedin.com/in/jmouram/" target="_blank">
                         <div className="item">
                             <div className='img'>
@@ -118,6 +115,37 @@ class Equipe extends React.Component {
                             <div className='label'>
                                 <div className='name'>Josemir Moura</div>
                                 <div className='function'>Pesquisador</div>
+                            </div>
+                        </div>
+                    </a>
+                        <div className="item">
+                            <div className='img'>
+                                <img src={Jucelino} alt=''></img>
+                            </div>
+                            <div className='label'>
+                                <div className='name'>Jucelino de Sousa</div>
+                                <div className='function'>Pesquisador</div>
+                            </div>
+                        </div>
+                    <a className="link" href="https://www.linkedin.com/in/rebeca-albino-706172126/" target="_blank">
+                        <div className="item">
+                            <div className='img'>
+                                <img src={Rebeca} alt=''></img>
+                            </div>
+                            <div className='label'>
+                                <div className='name'>Rebeca Albino</div>
+                                <div className='function'>Pesquisadora</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a className="link" href="https://www.linkedin.com/in/vanessa-dos-santos-gomes-707301181/" target="_blank">
+                        <div className="item">
+                            <div className='img'>
+                                <img src={Vanessa} alt=''></img>
+                            </div>
+                            <div className='label'>
+                                <div className='name'>Vanessa dos Santos</div>
+                                <div className='function'>Pesquisadora</div>
                             </div>
                         </div>
                     </a>
@@ -154,50 +182,6 @@ class Equipe extends React.Component {
                             </div>
                         </div>
                     </a>
-                    <a className="link" href="https://www.linkedin.com/in/rebeca-albino-706172126/" target="_blank">
-                        <div className="item">
-                            <div className='img'>
-                                <img src={Rebeca} alt=''></img>
-                            </div>
-                            <div className='label'>
-                                <div className='name'>Rebeca Albino</div>
-                                <div className='function'>Pesquisadora</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a className="link" href="https://www.linkedin.com/in/vanessa-dos-santos-gomes-707301181/" target="_blank">
-                        <div className="item">
-                            <div className='img'>
-                                <img src={Vanessa} alt=''></img>
-                            </div>
-                            <div className='label'>
-                                <div className='name'>Vanessa dos Santos</div>
-                                <div className='function'>Pesquisadora</div>
-                            </div>
-                        </div>
-                    </a>
-                    {/* <a className="link" href="#" target="_blank"> */}
-                        <div className="item">
-                            <div className='img'>
-                                <img src={Jucelino} alt=''></img>
-                            </div>
-                            <div className='label'>
-                                <div className='name'>Jucelino de Sousa</div>
-                                <div className='function'>Pesquisador</div>
-                            </div>
-                        </div>
-                    {/* </a> */}
-                    <a className="link" href="https://www.linkedin.com/in/thiago-xavier/" target="_blank">
-                        <div className="item">
-                            <div className='img'>
-                                <img src={Thiago} alt=''></img>
-                            </div>
-                            <div className='label'>
-                                <div className='name'>Thiago Xavier</div>
-                                <div className='function'>Designer</div>
-                            </div>
-                        </div>
-                    </a>
                     <a className="link" href="https://www.linkedin.com/in/kenyaaraujo/" target="_blank">
                         <div className="item">
                             <div className='img'>
@@ -206,6 +190,17 @@ class Equipe extends React.Component {
                             <div className='label'>
                                 <div className='name'>Kenya Araújo</div>
                                 <div className='function'>Geotecnóloga</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a className="link" href="https://www.linkedin.com/in/thiago-xavier/" target="_blank">
+                        <div className="item">
+                            <div className='img'>
+                                <img src={Thiago} alt=''></img>
+                            </div>
+                            <div className='label'>
+                                <div className='name'>Thiago Xavier</div>
+                                <div className='function'>Designer</div>
                             </div>
                         </div>
                     </a>
