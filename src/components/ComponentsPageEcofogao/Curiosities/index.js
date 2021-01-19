@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.css';
 import { Collapse } from 'antd';
+import vocesabia1 from '../../../../src/utils/images/vocesabia1.JPG'
+import vocesabia2 from '../../../../src/utils/images/vocesabia2.jpg'
 
 import Parceiros from "../../../components/Parceiros"
 
@@ -31,10 +33,17 @@ function Curiosities() {
                 <Collapse accordion>
                     <Panel header="Secando as roupas lavadas" key="1">
                     <p>{text1}</p>
+                    <div className="div-image-curiosities">
+                        <img className="image-curiosities" src={vocesabia1} alt=''></img>
+                    </div>
+                    
                     </Panel>
                     <Panel header="Fogão ecológico reduz em até 82% a emissão de poluentes" key="2">
                     <p>{text2}</p>
                     <p>{text3}</p>
+                    <div className="div-image-curiosities">
+                        <img className="image-curiosities" src={vocesabia2} alt=''></img>
+                    </div>
                     </Panel>
                     <Panel header="Fatos relevantes: Devido à exposição à fumaça, a queima de combustível também produz efeitos negativos para a saúde" key="4">
                     <p>{text4}</p>

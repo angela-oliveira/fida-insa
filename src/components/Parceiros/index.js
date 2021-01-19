@@ -105,7 +105,7 @@ function Parceiros() {
                     <Row >
 
                         <Card>
-                            <img alt="example" src={ifpblogo} />
+                            <img alt="example" src={ufv} />
                             <Meta title="" description="" />
                         </Card>
 
@@ -114,11 +114,11 @@ function Parceiros() {
                             <Meta title="" description="" />
                         </Card>
                         <Card>
-                            <img alt="example" src={uepb} />
+                            <img alt="example" src={ifpblogo} />
                             <Meta title="" description="" />
                         </Card>
                         <Card>
-                            <img alt="example" src={ufv} />
+                            <img alt="example" src={uepb} />
                             <Meta title="" description="" />
                         </Card>
                         <Card>

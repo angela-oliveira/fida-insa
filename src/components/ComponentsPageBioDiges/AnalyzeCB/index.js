@@ -1,11 +1,88 @@
 import React from 'react';
 import './index.css';
-import { Tabs, Statistic, Card, Row, Col, Tooltip, Modal, Button } from 'antd';
+import { Tabs, Statistic, Card, Row, Col, Tooltip, Modal, Button, List } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
+import img1 from '../../../utils/images/biodigestor/23.png'
+import img2 from '../../../utils/images/biodigestor/24.png'
+import img3 from '../../../utils/images/biodigestor/25.png'
+
+import ods1 from '../../../utils/images/biodigestor/ODS1.png'
+import ods2 from '../../../utils/images/biodigestor/ODS2.png'
+import ods3 from '../../../utils/images/biodigestor/ODS3.png'
+import ods4 from '../../../utils/images/biodigestor/ODS4.png'
+import ods5 from '../../../utils/images/biodigestor/ODS5.png'
+import ods6 from '../../../utils/images/biodigestor/ODS6.png'
+import ods7 from '../../../utils/images/biodigestor/ODS7.png'
+import ods8 from '../../../utils/images/biodigestor/ODS8.png'
+import ods10 from '../../../utils/images/biodigestor/ODS10.png'
+import ods11 from '../../../utils/images/biodigestor/ODS11.png'
+import ods12 from '../../../utils/images/biodigestor/ODS12.png'
+import ods13 from '../../../utils/images/biodigestor/ODS13.png'
 
 const { TabPane } = Tabs;
 
-
+const data = [
+    {
+      title: 'ERRADICAÇÃO DA POBREZA',
+      avatar: ods1,
+      description: 'Contribui para a erradicação da pobreza, permite o acesso a serviços essenciais, estimula o mercado local e reduz a exposição inadequada aos resíduos.'
+    },
+    {
+      title: 'FOME ZERO E AGRICULTURA SUSTENTÁVEL',
+      avatar: ods2,
+      description: 'Permite o acesso à alimentação segura, adequada e saudável para o ano, devido ao aumento da produtividade agrícola, disponibilizando renda a pequenos produtores e garantindo o autoconsumo, promovendo a segurança alimentar a partir de uma agricultura sustentável'
+    },
+    {
+      title: 'SAÚDE E BEM-ESTAR',
+      avatar: ods3,
+      description: 'Reduz o número de doenças de veiculação hídrica, de vetores provenientes da falta de saneamento e outros.'
+    },
+    {
+      title: 'EDUCAÇÃO DE QUALIDADE',
+      avatar: ods4,
+      description: 'Difunde o conhecimento permitindo a troca de saberes a grupos em situação de vulnerabilidade.'
+    },
+    {
+      title: 'IGUALDADE DE GÊNERO',
+      avatar: ods5,
+      description: 'Discute as formas de discriminação de gênero para as mulheres do campo, como forma de eliminar a desigualdade nos trabalhos do campo, sendo remunerados ou não, com a participação plena e efetiva das mulheres.'
+    },
+    {
+      title: 'ÁGUA POTÁVEL E SANEAMENTO',
+      avatar: ods6,
+      description: 'Melhora a qualidade do ambiente evitando a poluição dos recursos hídricos ao destinar adequadamente os resíduos sólidos vegetais e animais. Também há um aumento na utilização do biofertilizante como defensor agrícola e adubo orgânico, diminuindo ou eliminando o uso de produtos sintéticos prejudiciais à saúde do agricultor, do consumidor e do meio ambiente, principalmente na região rural do Semiárido o que permite o acesso a produtos cultivados de forma agroecológica.'
+    },
+    {
+      title: 'ENERGIA LIMPA E ACESSÍVEL',
+      avatar: ods7,
+      description: 'Permite o acesso à energia limpa e de baixo custo proveniente da biomassa. O biogás pode ser utilizado para cocção e como combustível para bombas de irrigação em áreas rurais de países em desenvolvimento.'
+    },
+    {
+      title: 'TRABALHO DECENTE E CRESCIMENTO ECONÔMICO',
+      avatar: ods8,
+      description: 'Promove o aumento da modernização tecnológica sustentável, geração de emprego, e consequentemente, diversificação de produtos agrícolas, agregando valor ao trabalho e incentivando o empreendedorismo rural.'
+    },
+    {
+      title: 'REDUÇÃO DAS DESIGUALDADES',
+      avatar: ods10,
+      description: 'Promove a inclusão social, econômica e política com a finalidade de reduzir as desigualdades.'
+    },
+    {
+      title: 'CIDADES E COMUNIDADES SUSTENTÁVEIS',
+      avatar: ods11,
+      description: 'Reduz o impacto ambiental negativo, com ênfase na gestão dos resíduos sólidos animais e vegetais e aumento da qualidade do ar, evitando dessa forma a emissão de gases de efeito estufa e disposição irregular de efluentes em locais em que não há aterros sanitários. Tais tratamentos podem ser realizados através de um biodigestor. '
+    },
+    {
+      title: 'CONSUMO E PRODUÇÃO RESPONSÁVEIS',
+      avatar: ods12,
+      description: 'Constitui um exemplo de manejo correto dos resíduos sólidos orgânicos, por meio da reciclagem desses em biodigestores. Com isso, evita-se a liberação de gases de efeito estufa para o ar e contaminação das águas superficiais e subterrâneas.'
+    },
+    {
+      title: 'AÇÃO CONTRA A MUDANÇA GLOBAL DO CLIMA',
+      avatar: ods13,
+      description: 'A mudança do clima é decorrente dos gases liberados de forma irregular, e a partir da conscientização e a capacidade humana e institucional sobre mitigação, adaptação e redução de impacto, é possível, através da utilização de tecnologias sustentáveis, como o biodigestor, reduzir tais mudanças que afetam o meio ambiente e a sociedade.'
+    },
+  ];
 
 class AnalyzeCB extends React.Component {
     state = {
@@ -85,6 +162,13 @@ class AnalyzeCB extends React.Component {
                             </div>
                         </TabPane>
                         <TabPane className='key4' tab="Impactos ambientais" key="4">
+                            
+                            <Row justify="space-around">
+
+                            <div>
+                                <img className="image-impactos" src={img1} alt=''></img>
+                            </div>
+                            </Row>
                             <b>Problema:</b>
                             <p>
                             Segundo a Food and Agriculture Organization of the United Nations (2014), a maior fonte de emissão de gases do efeito estufa na agricultura é proveniente da fermentação entérica, em razão da produção de metano por meio da digestão dos animais ruminantes e expulsão por eructação.
@@ -93,6 +177,12 @@ class AnalyzeCB extends React.Component {
                             <b>Solução:</b>
                             <p>A produção animal é uma atividade econômica muito recorrente e existe em diversos lugares onde a agricultura pode ser praticada, mesmo em regiões que não são favorecidas por recursos naturais hídricos ou vegetais, como as regiões áridas ou semiáridas nordestinas. Com o objetivo de diminuir o impacto que essa atividade causa ao meio ambiente, podem ser utilizadas tecnologias sustentáveis, como o biodigestor, para fins de tratamento dos resíduos dos animais, como também agregar valor ao resíduo que antes seria descartado.</p>
                             
+                            <Row justify="space-around">
+
+                            <div>
+                                <img className="image-impactos" src={img2} alt=''></img>
+                            </div>
+                            </Row>
                             <b>Problema:</b>
                             <p>Os dejetos expelidos pelos animais são depositados no solo, servindo de nutrientes para plantas. No entanto, no caso dos recursos hídricos em geral, pode haver contaminação pelo excesso desse material, principalmente em locais com elevadas taxas de evaporação e difícil renovação hídrica. Nas redondezas das fontes de abastecimento de água acumulam-se muitos animais, como nos cursos de águas e açudes, por razão da falta de mata ciliares, o que facilita o acesso às águas.</p>
 
@@ -100,6 +190,12 @@ class AnalyzeCB extends React.Component {
 
                             <p>De forma geral, verifica-se que a biodigestão anaeróbia é uma prática que auxilia na minimização da poluição que é causada por resíduos animais e vegetais, ajuda na eliminação de ervas daninhas e também de bactérias causadoras de doenças, eliminação de maus odores e moscas tradicionais esterqueiras, entre outros. </p>
 
+                            <Row justify="space-around">
+
+                            <div>
+                                <img className="image-impactos" src={img3} alt=''></img>
+                            </div>
+                            </Row>
                             <b>Problema:</b>
 
                             <p>O resíduo resultante do processamento da mandioca para fabricação da farinha é chamado de manipueira e é obtido na etapa de prensagem da mandioca. Esse efluente possui um impacto negativo no meio ambiente, aos seres humanos e animais, devido a um composto encontrado em sua composição chamado de ácido cianídrico, e que se trata de uma substância venenosa e nociva. </p>
@@ -193,50 +289,40 @@ class AnalyzeCB extends React.Component {
                         </TabPane>
                     </Tabs>
 
-                    {/* <div className='cb-graphic'>
-                    <div className='cus-ins'>
-                        <div className='c-i-gra'>R$0</div>
-                        <div className='cb-gra-label'>Custo de instalação</div>
-                    </div>
-                    <div className='cus-man'>
-                        <div className='c-m-gra'>R$0</div>
-                        <div className='cb-gra-label'>Custo de manutenção por ano</div>
-                    </div>
-                    <div className='tem-vid'>
-                        <div className='t-m-gra'>0 anos</div>
-                        <div className='cb-gra-label'>Tempo de vida útil da tecnologia</div>
-                    </div>
-                    <div className='imp-amb'>
-                        <div className='i-m-gra'>0%</div>
-                        <div className='cb-gra-label'>Impactos ambientais</div>
-                    </div>
+                   
                 </div>
-                <div className='cb-bottom'>
-                    <div className='txt-left'>
-                        <div className='txt-label'> IMPACTOS SOCIAIS</div>
-                        <div className='cb-txt'>
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit natoque phasellus congue, dis blandit id aliquet
-                            morbi felis litora iaculis. Nisl sociosqu justo phasellus
-                            vitae risus nunc vel mattis eu, ultrices feugiat malesuada
-                            eleifend dui pretium duis posuere nascetur,
-                            faucibus sapien natoque velit dis quis ex tempor.
+                <div className=''>                    
+                 
+                    <Card className="list-ods">
+                        <div className="title-card-ods">
+                        <div className='title-ods'>Considerando os 17 Objetivos do Desenvolvimento Sustentável da ONU, o Biodigestor se enquadra nos seguintes objetivos:</div>
+
                         </div>
-                    </div>
-                    <div className='txt-right'>
-                        <div className='txt-label'>ADAPTAÇÃO Á REALIDADE DA AGRICULTURA FAMILIAR</div>
-                        <div className='cb-txt'>
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit natoque phasellus congue, dis blandit id aliquet
-                            morbi felis litora iaculis. Nisl sociosqu justo phasellus
-                            vitae risus nunc vel mattis eu, ultrices feugiat malesuada
-                            eleifend dui pretium duis posuere nascetur,
-                            faucibus sapien natoque velit dis quis ex tempor.
-                        </div>
-                    </div>
-                </div> */}
+                        <List
+                            itemLayout="horizontal"
+                            dataSource={data}
+                            renderItem={item => (
+                            <List.Item>
+                                <List.Item.Meta
+                                avatar={<img className="image-ods" src={item.avatar} alt=''></img>}
+                                // avatar={<Avatar src={item.avatar} />}
+                                title={item.title}
+                                description={item.description}
+                                />
+                                {/* <List.Item.Meta
+                                avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                                title={<a href="https://ant.design">{item.title}</a>}
+                                description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+                                /> */}
+                            </List.Item>
+                            )}
+                        />
+
+                    </Card>
                 </div>
-            </div>)
+                
+            </div>
+            )
     }
 }
 export default AnalyzeCB
