@@ -180,3 +180,23 @@
 .biodigestor .button-1 {
     background-color: #FF7907;
 }
+.image-impactos {
+    width: 7rem;
+}
+.image-ods {
+    width: 5rem;
+}
+.list-ods {
+    margin-top: 3rem;    
+}
+.title-ods {
+    width: 60%;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-green-dark);
+    margin-bottom: 1.4rem;
+}
+.title-card-ods {
+    display: flex;
+    justify-content: center;
+}
