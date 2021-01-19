@@ -52,6 +52,15 @@ function Mapa(props) {
     const [visible4, setVisible4] = useState(false);
     const [visible5, setVisible5] = useState(false);
 
+    function desmarc() {
+        console.log("entrou!")
+        document.querySelector("input").checked = false
+        setTimeout(() => {
+            document.querySelector("input").checked = false
+        },1000)
+
+    }
+
 
     useEffect(() => {
 
@@ -112,6 +121,11 @@ function Mapa(props) {
             .attr("y", -20)
             .attr("width", 15)
             .attr("height", 17)
+            .append("xhtml:label")
+            .attr("for","animar") 
+            .on("click",()=>{
+                desmarc()
+            })    
             .append("xhtml:img")
             .attr("class", "agulha")
             .attr("src", icoPoint)
@@ -182,6 +196,7 @@ function Mapa(props) {
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>
+                    <input type="checkbox" id="animar"></input>
                     <div className='info-text' >
                         {/* <div className='txt-title'>COMUNIDADE DE RIBEIRINHA</div> */}
                         <div className='txt-sub'>{cidade} - {estado} </div>

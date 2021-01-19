@@ -57,13 +57,22 @@ function Mapa(props) {
     const [visible5, setVisible5] = useState(false);
 
 
+    function desmarc() {
+        console.log("entrou!")
+        document.querySelector("input").checked = false
+        setTimeout(() => {
+            document.querySelector("input").checked = false
+        },1000)
+
+    }
+    
     useEffect(() => {
 
         // REFERENCIAS
         const svg = select(svgRef.current);
         const svgPoint = select(svgRef.current);
 
-
+        
 
 
         // const infoCity = select(infoCityRef.current);
@@ -121,9 +130,11 @@ function Mapa(props) {
             .attr("y", -20)
             .attr("width", 15)
             .attr("height", 17)
-            // .append("xhtml:input")
-            // .attr("type","radio")  
-            .attr("class","check")          
+            .append("xhtml:label")
+            .attr("for","animar") 
+            .on("click",()=>{
+                desmarc()
+            })    
             .append("xhtml:img")
             .attr("class", "agulha")
             .attr("src", icoPoint)
@@ -192,10 +203,11 @@ function Mapa(props) {
 
 
     return (
-        <div className='eolica-map map-container'>
+        <div className='eolica-map map-container'> 
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>
+                    <input type="checkbox" id="animar"></input>
                     <div className='info-text' >
                         {/* <div className='txt-title'>COMUNIDADE DE RIBEIRINHA</div> */}
                         <div className='txt-sub'>{cidade} - {estado} </div>
