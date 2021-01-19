@@ -214,7 +214,7 @@ class InvestPrivate extends React.Component {
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.period}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.warranty}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.interest}</p>
-                <p style={{ margin: 0, marginBottom: 10 }}>LINK PARA MAIS INFORMAÇÕES: <a href={record.link}>{record.link}</a></p>
+                <p className="link-table-invest" style={{ margin: 0, marginBottom: 10 }}>LINK PARA MAIS INFORMAÇÕES: <a target="_blank" href={record.link}>{record.link}</a></p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.obs}</p>
                 </div>,
               rowExpandable: record => record.key !== 'Not Expandable',

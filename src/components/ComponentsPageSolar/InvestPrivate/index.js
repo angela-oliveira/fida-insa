@@ -100,7 +100,7 @@ const data = [
     period: "PRAZO DE CARÊNCIA: Até 70 dias",
     warranty: "GARANTIAS EXIGIDAS DO TOMADOR DO CRÉDITO: Equipamentos Financiados",
     interest: "TAXA DE JUROS: A Partir de 0,99% p/ Correntista. A Partir de 1,37% p/ Não Correntista",
-    link: "https://www.santanderfinanciamentos.com.br/portal/wps/gcm/package/financiamentos/financeira_11012019_94442.zip/sustentabilidade.html",
+    link: "https://www.santander.com.br/hotsite/santanderfinanciamentos/sustentabilidade.html",
     obs: "OBSERVAÇÕES: Somente através das empresas Parceiras"
   },
   {
@@ -228,7 +228,7 @@ const data = [
     period: "PRAZO DE CARÊNCIA: De acordo com a linha de financiamento",
     warranty: "GARANTIAS EXIGIDAS DO TOMADOR DO CRÉDITO: Podem ser requeridas garantias adicionais além do Fampe.",
     interest: "TAXA DE JUROS: 0,1% a.m.",
-    link: "http://www.sebrae.com.br/sites/PortalSebrae/sebraeaz/ferramenta-facilita-acesso-ao-credito-para-os-pequenos-negocios,ac58742e7e294410VgnVCM2000003c74010aRCRD",
+    link: "https://www.sebrae.com.br/sites/PortalSebrae/sebraeaz/fundo-de-aval-do-sebrae-oferece-garantia-para-os-pequenos-negocios,ac58742e7e294410VgnVCM2000003c74010aRCRD",
     obs: "OBSERVAÇÕES: -"
   },
   {
@@ -307,7 +307,7 @@ class InvestPrivate extends React.Component {
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.period}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.warranty}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.interest}</p>
-                <p style={{ margin: 0, marginBottom: 10 }}>LINK PARA MAIS INFORMAÇÕES: <a href={record.link}>{record.link}</a></p>
+                <p className="link-table-invest" style={{ margin: 0, marginBottom: 10 }}>LINK PARA MAIS INFORMAÇÕES: <a target="_blank" href={record.link}>{record.link}</a></p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.obs}</p>
                 </div>,
               rowExpandable: record => record.key !== 'Not Expandable',

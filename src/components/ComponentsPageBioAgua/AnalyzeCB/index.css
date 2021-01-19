@@ -169,3 +169,21 @@
 .bioagua-analysecb .button-1 {
     background-color: #1AC3E2;
 }
+
+.image-ods {
+    width: 5rem;
+}
+.list-ods {
+    margin-top: 3rem;    
+}
+.title-ods {
+    width: 60%;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-green-dark);
+    margin-bottom: 1.4rem;
+}
+.title-card-ods {
+    display: flex;
+    justify-content: center;
+}

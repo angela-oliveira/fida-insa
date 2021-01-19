@@ -132,7 +132,7 @@ const data = [
     period: 'PRAZO DE CARÊNCIA: Até 06 meses',
     warranty: 'GARANTIAS EXIGIDAS DO TOMADOR DO CRÉDITO: Próprio sistema para geração de energia',
     interest: 'TAXA DE JUROS: Não informado',
-    link: 'https://www.bnb.gov.br/credito/cdc-energias-renovaveis',
+    link: 'https://www.bnb.gov.br/voce/credito',
     obs: 'OBSERVAÇÕES: -'
   },
   {
@@ -212,7 +212,7 @@ const data = [
     period: 'PRAZO DE CARÊNCIA: De 3 a 8 anos, dependendo do empreendimento financiado',
     warranty: 'GARANTIAS EXIGIDAS DO TOMADOR DO CRÉDITO: Negociadas entre a instituição financeira credenciada e o cliente.',
     interest: 'TAXA DE JUROS: Pré-fixada de 2,75% ao ano',
-    link: 'https://sistema.ouvidorias.gov.br/Login/Identificacao.aspx?idFormulario=3&tipo=8&ReturnUrl=%2fpublico%2fManifestacao%2fRegistrarManifestacao.aspx%3fidFormulario%3d3%26tipo%3d8%26origem%3didp%26modo%3d',
+    link: 'https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/pronaf-bioeconomia',
     obs: 'OBSERVAÇÕES: -'
   },
   {
@@ -352,7 +352,7 @@ class InvestPublic extends React.Component {
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.period}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.warranty}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.interest}</p>
-                <p style={{ margin: 0, marginBottom: 10 }}>LINK PARA MAIS INFORMAÇÕES: <a href={record.link}>{record.link}</a></p>
+                <p className="link-table-invest" style={{ margin: 0, marginBottom: 10 }}>LINK PARA MAIS INFORMAÇÕES: <a target="_blank" href={record.link}>{record.link}</a></p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.obs}</p>
                 </div>,
               rowExpandable: record => record.key !== 'Not Expandable',

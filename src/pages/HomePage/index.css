@@ -298,3 +298,17 @@ h1{
 .footer img {
     width: 100%;
 }
+.parceiros .ant-card .ant-row .ant-card img {
+  height: 4rem;
+}
+.logo-grande {
+  height:  5rem!important;
+}
+.logo-fida {
+  height:  7rem!important;
+}
+
+.link-table-invest a{
+    text-decoration: none;
+    color: black;
+}

@@ -34,10 +34,10 @@ class AnalyzeCB extends React.Component{
                     <TabPane className="analise-cb-background" tab="Custos de manutenção" key="2">
                         <div>
                             <p>
-                                Este sistema possui uma manutenção (após 25 anos) equivalente a R$ 5.000,00.
+                            O sistema domiciliar  possui uma manutenção (após 25 anos) equivalente a R$ 5.000,00.
                             </p>
                             <p>
-                                Tem-se o custo com manutenção, representado pela substituição de inversores no 15º ano, no valor de R$ 22.131,40 e a depreciação de 1,5% no primeiro ano e 0,7% do custo de aquisição nos demais. 
+                            Enquanto que o com o sistema comercial o custo com manutenção é representado pela substituição de inversores no 15º ano, no valor de R$ 22.131,40 e a depreciação de 1,5% no primeiro ano e 0,7% do custo de aquisição nos demais.
                             </p>
                         </div>
                     </TabPane>

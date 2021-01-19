@@ -3,8 +3,33 @@ import './index.css';
 
 import LogoTech from '../../../utils/images/5.png'
 import Cor from '../../../utils/images/photos/Biodigestor/capa_Biodigestor.JPG'
+import img1 from '../../../utils/images/biodigestor/biodiest_indiano.png'
+import img2 from '../../../utils/images/biodigestor/esquema.png'
+import img3 from '../../../utils/images/biodigestor/1.png'
+import img4 from '../../../utils/images/biodigestor/8.png'
+import img5 from '../../../utils/images/biodigestor/7.png'
+import img6 from '../../../utils/images/biodigestor/2.png'
+import img7 from '../../../utils/images/biodigestor/18.png'
+import img8 from '../../../utils/images/biodigestor/22.png'
+import img9 from '../../../utils/images/biodigestor/3.png'
+import img10 from '../../../utils/images/biodigestor/4.png'
+import img11 from '../../../utils/images/biodigestor/5.png'
+import img12 from '../../../utils/images/biodigestor/6.png'
+import img13 from '../../../utils/images/biodigestor/11.png'
+import img14 from '../../../utils/images/biodigestor/12.png'
+import img15 from '../../../utils/images/biodigestor/13.png'
+import img16 from '../../../utils/images/biodigestor/9.png'
+import img17 from '../../../utils/images/biodigestor/14.png'
+import img18 from '../../../utils/images/biodigestor/15.png'
+import img19 from '../../../utils/images/biodigestor/10.png'
+import img20 from '../../../utils/images/biodigestor/16.png'
+import img21 from '../../../utils/images/biodigestor/sol.png'
+import img22 from '../../../utils/images/biodigestor/17.png'
+import img23 from '../../../utils/images/biodigestor/19.png'
+import img24 from '../../../utils/images/biodigestor/20.png'
+import img25 from '../../../utils/images/biodigestor/21.png'
 
-import { Button, Modal, Tooltip, Row } from 'antd';
+import { Button, Modal, Tooltip, Row, Col } from 'antd';
 
 import { SearchOutlined } from '@ant-design/icons';
 import { PlusOutlined } from '@ant-design/icons';
@@ -18,11 +43,7 @@ class Description extends React.Component {
         visible3: false
     }
     desciption = {
-        title: 'Energia Eólica',
-        content: `Catavento são dispositivos que aproveitam a energia dos ventos. Eles podem ser usados para geração de energia elétrica ou para o bombeamento de água destinada ao armazenamento ou irrigação. É possível ainda que sejam utilizados para movimentar aeradores de tanques de tratamento de água ou na aquicultura.\n \r 
-        Para o bombeamento de água, o catavento deve ser instalado em conjunto com uma bomba do tipo pistão. Para fins de irrigação, é geralmente utilizado para bombear água para reservatórios posicionados numa cota maior do terreno. Do reservatório, a água pode então ser distribuída por gravidade a sistemas de irrigação por gotejamento, microaspersão ou superfície. É um sistema de alto custo de aquisição em comparação ao sistema de bombeamento elétrico, mas de baixo custo de operação e manutenção. Uma necessidade básica para a instalação do sistema é que na região tenha ventos acima de 2 m/s.
-        Já no uso para geração de energia elétrica, os cataventos são acoplados a geradores elétricos (aerogeradores) que são ligados à rede pública de eletricidade, ou ainda utilizados para alimentar um banco de baterias. A energia gerada por esses dispositivos é então denominada de Energia Eólica. Embora o potencial brasileiro para a geração de energia eólica seja elevado, as regiões com maior percentual da agricultura familiar instalada não apresentam potencial para a geração de energia por grandes parques eólicos. No entanto, há potencial eólico suficiente para geração de energia elétrica a ser utilizada no processo produtivo da agricultura familiar com uso da irrigação.
-        Como visto, são diversas as aplicações dos cataventos, que variam de acordo com a necessidade, principalmente em áreas remotas, onde são utilizados para geração doméstica de energia elétrica e para bombear água. Também são empregados em sítios turísticos ou naqueles longe das redes elétricas, para a geração de energia elétrica para operar todos os equipamentos de apoio e máquinas de processamento. Os aerogeradores de pequeno porte são utilizados para provimento de energia em escalas variadas, para atendimento desde uma comunidade isolada, até pequenos arranjos para gerar eletricidade em parques eólicos compostos por pequenos aerogeradores. Nestas escalas, os aerogeradores de pequeno porte são usados para suprimento de água, dessedentação de animais, irrigação e drenagem de várzeas, podendo ou não estar associados a outros dispositivos de geração e armazenamento de energia em sistemas híbridos, ou seja, sistemas com mais de uma fonte de energia. Formas de produção local, a exemplo, pequenos aerogeradores, poderiam vir também a representar uma solução definitiva para suas necessidades de energia elétrica ou ainda a utilização de cataventos no bombeamento de água do subsolo para o uso agrícola e doméstico.`
+        title: 'Biodigestor'
     }
     justify = {
         title: 'Justificativa'
@@ -103,7 +124,10 @@ class Description extends React.Component {
                                     </ul>
 
                                     <p>De acordo com as etapas mostradas, a estrutura física de um biodigestor modelo indiano é ilustrada a seguir: <br></br>
-                                    <img src='' alt='img'></img>
+                                    
+                                    <div className="div-image-curiosities">
+                                        <img className="image-curiosities" src={img1} alt=''></img>
+                                    </div>
                                     </p>
                                     <p>Existe uma entrada para os resíduos orgânicos, local onde o agricultor coloca diariamente dejetos de origem animal ou vegetal; um tanque de fermentação, que é onde a mágica da transformação de matéria orgânica em biogás acontece; e duas saídas: uma para coletar o biogás produzido no tanque de fermentação e o outro para retirar o resto de matéria orgânica que passou pela transformação. Com isso, o produtor pode recolher o biogás pela parte superior do biodigestor e utilizá-lo como gás no fogão da sua cozinha. O restante da matéria orgânica, chamada de biofertilizante, pode ser aplicado em sua plantação, agindo como defensivo agrícola, evitando pragas, doenças e insetos, e funcionando como repositor de matéria orgânica do solo, suprindo, principalmente, nitrogênio e fósforo, favorecendo dessa forma o crescimento saudável das plantas.
                                     </p>
@@ -112,7 +136,9 @@ class Description extends React.Component {
 
 
                                     </p>
-                                    <img img='' alt='img'></img>
+                                    <div className="div-image-curiosities">
+                                        <img className="image-curiosities" src={img2} alt=''></img>
+                                    </div>
                                     <p>
                                     É importante ressaltar que somente bactérias anaeróbias participam da fase de metanogênese (formação do metano), na qual é produzido o gás metano. Essas bactérias possuem uma sensibilidade a variações de temperatura, operando em uma temperatura entre 10 e 45°C.
                                     </p>
@@ -122,7 +148,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA</div>
+                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
                         <div className='justify-txt'>
                             <p>Considerando a missão e os desafios do FIDA e ressaltando a tecnologia em questão, tem-se que o biodigestor consiste em uma tecnologia sustentável e economicamente viável para produtores rurais com um retorno econômico e ambiental. O biofertilizante pode ser utilizado para potencializar as lavouras dispensando a necessidade de compra de fertilizantes industriais e o biogás produzido pode ser utilizado para substituir o gás de cozinha (GLP), o que representa uma economia de recursos financeiros para os usuários.</p>
 
@@ -191,7 +217,7 @@ class Description extends React.Component {
                         visible={this.state.visible3}
                         width={1000}
                         footer={null}
-                        className="modal-biodigestor"
+                        className="modal-biodigestor modal-biodigestor-description"
                         onCancel={() =>
                             this.setState({
                                 visible3: false
@@ -200,86 +226,283 @@ class Description extends React.Component {
                     >
                         <div className='content-modal'>
                             {/* <p>{this.desciption.content}</p> */}
-                            <b>Temperatura</b>
-                            <p>
-                                A temperatura é um fator importante para a produção do biogás, principal produto gerado no biodigestor. O processo pode ocorrer em uma temperatura entre 10° e 60°C, dependendo do tipo de bactéria.
-                            </p>
+                            <Row justify="space-around"><b>Temperatura</b></Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img3} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
+                                    <div>
+                                    <p>
+                                        A temperatura é um fator importante para a produção do biogás, principal produto gerado no biodigestor. O processo pode ocorrer em uma temperatura entre 10° e 60°C, dependendo do tipo de bactéria.
+                                    </p>
+                                    </div>
+                                </Col>
 
+                            </Row>
                             
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img4} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
+                                    <div>
+                        
+                                    <p>O processo de produção de biogás não é afetado com o aumento da temperatura em poucos graus, porém, um decréscimo em alguns graus pode prejudicar a produção de metano. Vale enfatizar que a ação de bactérias acidificantes não é afetada pelo decréscimo da temperatura, e devido a isso, poderá ocorrer uma possível acumulação de ácidos tendo como consequência uma falha estrutural no biodigestor.
+                                    </p>
 
-                            <p>O processo de produção de biogás não é afetado com o aumento da temperatura em poucos graus, porém, um decréscimo em alguns graus pode prejudicar a produção de metano. Vale enfatizar que a ação de bactérias acidificantes não é afetada pelo decréscimo da temperatura, e devido a isso, poderá ocorrer uma possível acumulação de ácidos tendo como consequência uma falha estrutural no biodigestor.
-                            </p>
+                                    </div>
+                                </Col>
 
+                            </Row>
 
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img5} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
+                                    <div>
+                        
 
-                            <p>
-                                Durante as estações frias, pode ocorrer uma diminuição na produção de biogás devido a faixa de operação dos microrganismos envolvidos no processo de digestão anaeróbia. Os sistemas mesofílicos são bastante sensíveis quanto à questão de variação da temperatura ambiente, podendo ocorrer a parada ou diminuição da produção de biogás no período de inverno em climas mais frios.
+                                    <p>
+                                        Durante as estações frias, pode ocorrer uma diminuição na produção de biogás devido a faixa de operação dos microrganismos envolvidos no processo de digestão anaeróbia. Os sistemas mesofílicos são bastante sensíveis quanto à questão de variação da temperatura ambiente, podendo ocorrer a parada ou diminuição da produção de biogás no período de inverno em climas mais frios.
 
-                            </p>
+                                    </p>
+                                    </div>
+                                </Col>
 
+                            </Row>
 
-                            <b>pH</b>
+                            <Row justify="space-around"><b>pH</b></Row>
+                            <Row justify="space-around">
+                            <Col span={12}>
+                            <div>
+                                                <img className="image-fatores" src={img6} alt=''></img>
+                                    </div>
+                            </Col>
+                            <Col span={12}>
                             <p>O processo anaeróbio é afetado diretamente quando ocorrem pequenas oscilações nos valores de pH. Os microrganismos metanogênicos, os responsáveis pela produção de metano, são mais suscetíveis a essas variações de pH, do que os demais microrganismos.
                             </p>
-                            <b>Local de coleta da biomassa</b>
+                            </Col>
+                            </Row>
+                            <Row justify="space-around"><b>Local de coleta da biomassa</b></Row>
+                            <Row justify="space-around">
+                            <Col span={12}>
+                            <div>
+                                                <img className="image-fatores" src={img7} alt=''></img>
+                                    </div>
+                            </Col>
+                            <Col span={12}>
                             <p>Em currais em que o chão é feito de terra, pode haver contaminação do biodigestor com outros materiais, e, influenciar na produção de biogás.
                             </p>
+                            </Col>
+                            </Row>
 
-                            <b>Agitação da Biomassa</b>
+                            <Row justify="space-around"><b>Agitação da Biomassa</b></Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img8} alt=''></img>
+                                    </div>
+                                </Col>
 
+                                <Col span={12}>
                             <p>É necessário agitar o material orgânico para facilitar o contato dos microrganismos com a biomassa. Porém, agitar muito pode causar arraste da biomassa, e com isso, tem-se perda de eficiência de produção.</p>
 
-                            <b>GUIA DE MANUTENÇÃO PREVENTIVA</b>
+                                </Col>
+                            <Row justify="space-around"><b>GUIA DE MANUTENÇÃO PREVENTIVA</b></Row>
 
                             <br/><br/>
-                            
-                            <b>Manutenção do Equipamento</b>
-                            
+                            </Row>
+                            <Row justify="space-around"><b>Manutenção do Equipamento</b></Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img9} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>A manutenção da estrutura do biodigestor é importante devido ao desgaste das partes integrantes do biodigestor, como por exemplo, válvulas, tubulações e tanques, que podem ocasionar vazamentos do biogás.</p>
 
+                                </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img10} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>Como o biogás consiste é uma mistura de gases, em que o metano e dióxido de carbono estão em maiores quantidades. A concentração de metano  CH4 está entre 40 a 75%, variando de acordo com o tipo de biomassa empregada, e o dióxido de carbono (CO2) entre 25 a 40% .</p>
 
+                                </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img11} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>O metano em condições normais de temperatura e pressão, consiste em um gás incolor, inodoro, inflamável e o vazamento desse gás em contato com o ar poderá ocorrer explosões, se manuseado em local fechado e na presença de uma fonte de ignição</p>
 
+                                </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img12} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>O metano em sua forma gasosa pode ser tóxico ao ser humano, se inalado em altas concentrações pode causar vertigem e sonolência, asfixia, parada cardíaca, danos no sistema nervoso e outros danos à saúde. Por isso, deve-se evitar contato com o biogás caso ocorra vazamentos no biodigestor.
                             </p>
-
-                            <b>Como identificar vazamentos no biodigestor?</b>
-
+                                </Col>
+                            </Row>
+                            <Row justify="space-around"><b>Como identificar vazamentos no biodigestor?</b></Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img13} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>O vazamento pode ser identificado caso o operador sinta um cheiro de ovo podre nas proximidades do biodigestor significa que há vazamentos no gasômetro e que devem ser eliminados.
                             </p>
 
-                            <p>Outra forma de identificar o local do vazamento é utilizar espuma de sabão neutro, de forma abundante, com auxílio de uma esponja nas tubulações, conexões e válvulas que transportam o gás. Caso ocorra formação de bolhas, significa que há vazamento naquele local.</p>
-
-                            <b>Providências a serem tomadas em caso de vazamentos:</b>
-                            
+                            </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img14} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
+                            <p>O vazamento pode ser identificado caso o operador sinta um cheiro de ovo podre nas proximidades do biodigestor significa que há vazamentos no gasômetro e que devem ser eliminados.
+                            </p>
+                            </Col>
+                            </Row>
+                            <Row justify="space-around"><b>Providências a serem tomadas em caso de vazamentos:</b></Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img15} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>Providenciar ventilação nas redondezas das linhas de gás.</p>
+                            </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img16} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             
                             <p>Já em relação à propriedade inflamável que o biogás possui, deve-se evitar fumar e acender fósforos ou isqueiro. Também, deve-se evitar utilizar aparelhos elétricos, fontes de ignição e não acionar nenhum interruptor próximo a área do biodigestor.</p>
 
+                            </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img17} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>Fechar as válvulas de fornecimento de gás, se possível.</p>
+                            
+                            </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img18} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             
                             <p>Os aparelhos queimadores, como o fogão, devem ser protegidos de correntes de ar contaminado com o biogás.</p>
 
+                            </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img19} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>Caso ocorra vazamentos, e seja necessário ir ao local onde se encontra o gás, utilize máscara para proteção respiratória. Recomenda-se que se utilize respirador semifacial com suprimento de ar.</p>
 
+                            </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img20} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>Devido aos riscos citados anteriormente, é fundamental a manutenção frequente para manter a conservação dos tanques, tubulações de máquinas e equipamentos, e dessa forma, garantir que não ocorram vazamentos que possam resultar em contaminação ambiental e danos à saúde humana e animal.</p>
-
-                            <b>Como identificar que as peças do biodigestor necessitam passar por manutenção?</b>
-
+                            
+                            </Col>
+                            </Row>
+                            <Row justify="space-around"><b>Como identificar que as peças do biodigestor necessitam passar por manutenção?</b></Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img21} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>Como o biodigestor fica exposto ao sol e a maioria das partes integrantes do biodigestor são fabricadas de plástico, como mangueiras de borracha, canos PVC, válvulas e outros, com o passar dos anos, o sol provocará descoloração e ressecamento da tubulação, tornando a sua estrutura frágil. Diante disso, qualquer impacto externo pode acarretar trinca, quebra ou algum dano a estrutura da tubulação, válvula, mangueira e afins.                            
                             </p>
+                                </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img22} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                                 Dessa forma, é necessário realizar uma inspeção visual externa, verificando:
                             <ul>
 
                                 <li>A condição física das partes integrantes, como mangueiras, canos PVC, válvulas e outros, do biodigestor;</li>
                                 <li>Verificar se as conexões (joelho (cotovelo), Tê e outros) e tubos estão sempre bem conectados e se não há vazamento nessas;</li>
                             </ul>
-
-                            <b>Manejo do Biodigestor</b>
-
+                                </Col>
+                            </Row>
+                            <Row justify="space-around"><b>Manejo do Biodigestor</b></Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img23} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>O manejo do biodigestor pode ser considerado um fator limitante pelo fato de requerer tempo e cuidado para que se tenha um ótimo funcionamento diário. De forma geral, o biodigestor sertanejo, que é do tipo batelada, funciona compreendendo quatro etapas, conforme apresentado a seguir.</p>
 
+                                </Col>
+                            </Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img24} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <ol type='a'>
                                 <li>
                                 Inicia-se o processo adicionando o resíduo orgânico e a água apenas uma vez na câmara de digestão. É necessário realizar a maceração (esmagar) para dissolver o material orgânico em água, no caso do estrume, sabe-se que esse tem a superfície externa mais dura, por isso necessita realizar tal processo, para melhorar a homogeneização; 
@@ -291,18 +514,28 @@ class Description extends React.Component {
 
                                 <li>Retorna a etapa (a).</li>
                             </ol>
-
-                            <b>Quantidade de matéria:</b>
-
+                                </Col>
+                            </Row>
+                            <Row justify="space-around"><b>Quantidade de matéria:</b></Row>
+                            <Row justify="space-around">
+                                <Col span={12}>
+                                    <div>
+                                                <img className="image-fatores" src={img25} alt=''></img>
+                                    </div>
+                                </Col>
+                                <Col span={12}>
                             <p>O carregamento do biodigestor deve ser realizado de acordo com as especificações de projeto para evitar problemas posteriores. Por exemplo, a sobrecarga do biodigestor pode fazer com que ocorra uma acidificação do meio, isso ocorre devido a ação das bactérias responsáveis pela degradação dos polímeros grandes, por possuírem atividade com maior formação de ácidos orgânicos;</p>
                             <p>Em virtude disso, as quantidades de resíduos orgânicos e água a serem inseridos na caixa de entrada do biodigestor é de 1:1.  Para as condições do Semiárido, dois carrinhos de mão de esterco bovino por dia é uma quantidade suficiente para uma propriedade com cinco habitantes. Outro fator relevante está relacionado à necessidade de adição de água, pois ajuda a homogeneizar a biomassa, proporcionando  um ambiente adequado para que os organismos presentes acelerem o processo de fermentação. </p>
-
-                            <b>Tempo de Operação:</b>
-
+                            
+                            </Col>
+                            </Row>
+                            <Row justify="space-around"><b>Tempo de Operação:</b></Row>
+                            <Row justify="space-around">
                             <p>A biomassa contida no biodigestor passa por um processo chamado retenção hidráulica que representa o tempo suficiente para ocorrer a fermentação para a geração do biogás (MACHADO, 2011). O tempo para esse processo ocorrer, varia de acordo com: o modelo do biodigestor, temperatura, umidade, entre outros fatores (MACHADO, 2011).  Em condições adequadas, o biodigestor pode gerar biogás com até 45 dias (QUADROS et al, 2007) .</p>
-
-                            <b>Pontos cruciais para o manejo do biodigestor:</b>
-
+                            
+                            </Row>
+                            <Row justify="space-around"><b>Pontos cruciais para o manejo do biodigestor:</b></Row>
+                            <Row justify="space-around">
                             <ol type='1'>
                                 <li>Devido às condições térmicas de funcionamento do biodigestor, é fundamental que o local onde o equipamento esteja seja exposto ao sol em abundância;</li>
 
@@ -313,7 +546,7 @@ class Description extends React.Component {
                                 <li>Substâncias como desinfetante, bactericidas, resíduos de antibióticos e água tratada com cloro (Cl) não podem estar presentes nos dejetos ou na água para alimentação do biodigestor, pois, possivelmente, promoverão a morte das bactérias no interior do biodigestor, tendo como consequência uma má performance na produção de biogás.</li>
 
                             </ol>
-
+                            </Row>
                         </div>
                     </Modal>
 
