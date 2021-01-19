@@ -215,6 +215,7 @@ button{
 
 .map .estado{
     fill: var(--color-green-light);
+    cursor: zoom-in;
 }
 
 .estado:hover{
@@ -268,7 +269,27 @@ button{
     /* background: #000; */
     /* color: aliceblue; */
     position: relative;
+
 } 
+
+foreignObject{
+    background-image: url(../../../utils/images/point2.svg);
+    background-size: 0.59rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+foreignObject .check{
+    
+
+}
+
+.agulha-select{
+    opacity: 0;
+}
+.agulha:hover{
+    opacity: 0;
+}
 
 
 

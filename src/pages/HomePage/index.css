@@ -5,8 +5,10 @@ html{
 .ant-card {background: none;}
 
 .main-banner-page{
+    display: flex;
     padding-left: 150px;
     margin-bottom: 3rem;
+    flex-flow: nowrap;
 }
 
 .ant-row .ant-col{
@@ -88,7 +90,7 @@ h1{
 }
 
 .ant-row .bg-main img{
-    width: 600px;
+    width: 90%;
 }
 
 /* TECHS */

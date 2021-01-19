@@ -121,12 +121,16 @@ function Mapa(props) {
             .attr("y", -20)
             .attr("width", 15)
             .attr("height", 17)
+            // .append("xhtml:input")
+            // .attr("type","radio")  
+            .attr("class","check")          
             .append("xhtml:img")
             .attr("class", "agulha")
             .attr("src", icoPoint)
             .on("click", (d, i) => {
                 setSelectedCity(selectedCity === i ? i : i)
-            });
+            })
+            
 
     }, [wrapperRef, widthRef, heightRef])
 
@@ -316,11 +320,11 @@ function Mapa(props) {
 
                 </div>
                 <div className='map' ref={wrapperRef}>
-                    <div className='zoom-out' onClick={() => {
+                    {/* <div className='zoom-out' onClick={() => {
                         setSelectedEstados(drawMap)
                     }}>
                         Mapa completo
-                    </div>
+                    </div> */}
                     <svg ref={svgRef}></svg>
                     <div className='citys' ref={svgPointRef}></div>
                 </div>
