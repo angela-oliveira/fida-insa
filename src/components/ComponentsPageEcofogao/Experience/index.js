@@ -13,8 +13,8 @@ import { select } from 'd3';
 
 function Experience() {
 
-    const [video1Link, setVideo1Link] = useState("https://www.youtube.com/embed/2olpnzhpRVY")
-    const [video2Link, setVideo2Link] = useState("https://www.youtube.com/embed/mlzqDEGTFcg")
+    const [video1Link, setVideo1Link] = useState("https://www.youtube.com/embed/Z_2zhb4JxBg")
+    const [video2Link, setVideo2Link] = useState("https://www.youtube.com/embed/RMeXQCTpMx4")
     const [page, setPage] = useState(0);
 
     const vid1Ref = useRef(null)
@@ -24,10 +24,10 @@ function Experience() {
     function resetVideo() {
 
         if(video1Link == ""){
-            setVideo1Link("https://www.youtube.com/embed/2olpnzhpRVY")
+            setVideo1Link("https://www.youtube.com/embed/Z_2zhb4JxBg")
             setVideo2Link("")
         }else{
-            setVideo2Link("https://www.youtube.com/embed/mlzqDEGTFcg")
+            setVideo2Link("https://www.youtube.com/embed/RMeXQCTpMx4")
             setVideo1Link("")
         }
 

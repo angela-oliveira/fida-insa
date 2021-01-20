@@ -1,5 +1,5 @@
 html{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body,html{
@@ -311,26 +311,29 @@ h1{
     width: 50vw;
     height: 50vh;
     /* height: 10rem; */
-    background-position-y: -45vh;    
-    background-position-x: -23vw;
+    background-position-y: -19rem;    
+    background-position-x: -18rem;
     background-image: url('../../utils/images/Path8.svg');
     background-size: 140%;
     background-repeat: no-repeat;
+    transform: rotate(5deg);
     z-index: -10;
 }
 
-.path2{
+
+.path2 {
     position: absolute;
     /* border: 1px solid #00000065; */
-    width: 100%;
+    width: 103%;
     height: 100vh;
-    top:10px;
+    top: 10px;
     background-position-y: -6rem;
-    background-position-x: -3rem;
-    background-image: url('../../utils/images/Path9.svg');
-    background-size: 165%;
+    background-position-x: 0rem;
+    background-image: url(/static/media/Path9.4397ba26.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
     z-index: -10;
+
 }
 
 .path3{
@@ -392,6 +395,14 @@ h1{
         background-size: 161%;
         background-repeat: no-repeat;
         z-index: -10;
+    }
+
+    .path3{
+        display: none;
+    }
+
+    .path4{
+        display: none;
     }
 }
 

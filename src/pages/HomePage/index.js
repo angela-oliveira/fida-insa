@@ -112,7 +112,7 @@ export default class extends React.Component {
                 <Case />
 
                 <div className="team">
-                    {/* <div className='path3'></div> */}
+                    <div className='path3'></div>
                     <Card>
                         <div className="div-yellow"></div>
                         <h1>EQUIPE</h1>
@@ -132,7 +132,7 @@ export default class extends React.Component {
                 </div>
 
                 <div className="footer">
-                    {/* <div className='path4'></div> */}
+                    <div className='path4'></div>
                     <img src={footer}></img>
                 </div>
             </div>
