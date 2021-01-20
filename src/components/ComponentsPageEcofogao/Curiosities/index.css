@@ -44,3 +44,15 @@
 .image-curiosities {
     width: 50%;
 }
+.component-cartilha {
+    display: flex;
+    justify-content: center;
+}
+.button-download-cartilha-ecofogao {
+    border: none;
+    border-radius:40px;
+    color: #fff;
+    height: 3rem;
+    width: 10rem;
+    background-color: #89773C;
+}

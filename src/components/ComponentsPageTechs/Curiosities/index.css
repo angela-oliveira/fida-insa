@@ -35,3 +35,15 @@
     color: #fff!important;
     /* font-weight: bold; */
 }
+.component-cartilha {
+    display: flex;
+    justify-content: center;
+}
+.button-download-cartilha-eolica {
+    border: none;
+    border-radius:40px;
+    color: #fff;
+    height: 3rem;
+    width: 10rem;
+    background-color: #329BA3;
+}

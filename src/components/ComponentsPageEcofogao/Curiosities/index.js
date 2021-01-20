@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
-import { Collapse } from 'antd';
+import { Collapse, Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
 import vocesabia1 from '../../../../src/utils/images/vocesabia1.JPG'
 import vocesabia2 from '../../../../src/utils/images/vocesabia2.jpg'
 
@@ -57,6 +58,29 @@ function Curiosities() {
                     </Panel>
                 </Collapse>
 
+            </div>
+            <div className='curiosities-label'>Cartilha Ecofogão</div>
+                <div className='subtitle'><p>Informações resumidas sobre a tecnologia Ecofogão</p>
+                </div>
+            {/* <div className="component-cartilha">
+                <center>
+                <iframe src={cartilhabiodigestor}></iframe>
+
+                </center>
+                <br></br>
+                
+            </div> */}
+            <div className="component-cartilha">
+            <a target="_blank" className="" 
+            // href={cartilhabiodigestor}
+            >
+                    <Button 
+                                    className='button-download-cartilha-ecofogao' 
+                                    onClick={() => this.openModal()} 
+                                    type="primary" 
+                                    shape="circle" 
+                                    icon={<DownloadOutlined />} 
+                                >Download Cartilha</Button></a>
             </div>
 
             <Parceiros /> 
