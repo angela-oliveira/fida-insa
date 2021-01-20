@@ -23,8 +23,17 @@ import Wedscley from '../../utils/images/photos/equipe/wedscley.jpeg';
 import Ary from '../../utils/images/photos/equipe/Ary.jpg';
 
 
+const width = window.innerWidth;
 
+console.log(width)
 
+let slidesToShow = 4
+let cellSpacing = 47
+
+if (width <= 720){
+    slidesToShow = 2;
+    cellSpacing = 90;
+}
 
 class Equipe extends React.Component {
 
@@ -33,8 +42,8 @@ class Equipe extends React.Component {
         return (
             <div className='equipe'>
                 <Carousel
-                    slidesToShow={4}
-                    cellSpacing={47}
+                    slidesToShow={slidesToShow}
+                    cellSpacing={cellSpacing}
                     defaultControlsConfig={{
                         nextButtonText: ' ',
                         prevButtonText: ' ',

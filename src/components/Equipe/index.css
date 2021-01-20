@@ -125,3 +125,44 @@
 .equipe .label .function{
     color: var(--color-black-text);
 }
+
+
+@media screen and (max-width: 720px){
+    .equipe .slider-control-centerright, .equipe .slider-control-centerleft{
+        display: none;
+    }
+
+    .equipe .slider-control-bottomcenter{
+        bottom: -1.5rem !important;
+    }
+
+    .equipe .item{
+        width: 250px ;
+        height: 250px;
+    }
+
+    .team .equipe .slider{
+        grid-column:2/12;
+    }
+
+    .equipe .item .img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .equipe .item img{
+        width: 150px;
+    }
+    
+    .equipe .item .label{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+
+
+
+} 
