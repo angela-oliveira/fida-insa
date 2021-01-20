@@ -56,4 +56,11 @@
 }
 .photos{
     margin: 2rem 13rem 2rem 13rem;
+
+
+}
+
+.Experience .slider-control-centerleft,.Experience .slider-control-centerright{
+    height: 70px !important;
+    width: 35px;
 }

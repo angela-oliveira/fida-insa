@@ -60,20 +60,7 @@ function Experience() {
                     </div>
 
                 </div>
-                <div className='experience-content'>
-
-                    <div className='experience-text'>
-                        <div className='experience-text-label'>EXPERIÊNCIA BIOÁGUA</div>
-                        <div className='experience-text-txt'>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div className='video'>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FD4FTtg9xBk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    </div>
-
-                </div>
+                
             </Carousel>
         </div>
     )

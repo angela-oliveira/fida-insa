@@ -57,3 +57,8 @@
 .photos{
     margin: 2rem 13rem 2rem 13rem;
 }
+
+.experience .slider-control-centerleft,.experience .slider-control-centerright{
+    height: 70px;
+    width: 35px;
+}
