@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 
 
 import './index.css'
-import logoRenovaSemiarido from "../../utils/images/renova-semiarido.png";
+import logoRenovaSemiarido from "../../utils/images/renova-semiarido.png"; 
 
 
 const HeaderTechs = (props) => {

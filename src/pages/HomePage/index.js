@@ -8,7 +8,6 @@ import {
     Modal
 } from 'antd';
 import 'antd/dist/antd.css';
-import '../../utils/styles/utils.module.css'
 import './index.css'
 import HeaderPage from '../../components/HeaderPage';
 import MenuTechnologies from '../../components/MenuTechnolgies'
@@ -21,6 +20,8 @@ import imgMain from "../../utils/images/main.png";
 import bgTechnology from "../../utils/images/bg_technology.svg";
 import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
+
+import '../../utils/styles/utils.module.css'
 
 export default class extends React.Component {
 
@@ -35,63 +36,63 @@ export default class extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className='main'>
                 <div className='path1'></div> 
                 {/* COMPONENTE DE CABEÇALHO */}
                 <HeaderPage />
 
-                <div>
-                    <Row className='main-banner-page'>
 
-                        <Col>
+                <Row className='main-banner-page'>
 
-                            <img src={blue}></img>
-                            <div className='banner-page'>
-                                <h1 className='renova'>RENOVA</h1>
-                                <h1 className='fida'>SEMIÁRIDO</h1>
+                    <Col>
 
-                                <div className="text-p">Energias renováveis</div>
+                        <img src={blue}></img>
+                        <div className='banner-page'>
+                            <h1 className='renova'>RENOVA</h1>
+                            <h1 className='fida'>SEMIÁRIDO</h1>
 
-                                <Button onClick={() => this.openModal()}>Conheça o Projeto +</Button>
+                            <div className="text-p">Energias renováveis</div>
+
+                            <Button onClick={() => this.openModal()}>Conheça o Projeto +</Button>
 
 
-                                <Modal
-                                    className="modal-home-page"
-                                    title='Olá, sejam bem vindos!'
-                                    visible={this.state.visible}
-                                    width={1000}
-                                    footer={null}
-                                    onCancel={() =>
-                                        this.setState({
-                                            visible: false
-                                        })
-                                    }
-                                    onOk={() =>
-                                        this.setState({
-                                            visible: false
-                                        })
-                                    }
-                                >
-                                    <img style={{ width: '100%' }} src={this.state.image} alt="" />
-                                    <div className='content-modal-home'>
-                                        <p>Temos a satisfação de apresentar a todos o RENOVA-SEMIÁRIDO, a plataforma digital de projetos de energias renováveis que possibilitam alternativas de convivência com a região Semiárida e que foram fomentados pelo Fundo Internacional de Desenvolvimento Agrícola (FIDA) da Organização das Nações Unidas (ONU) e  implantados em parceria com órgãos governamentais, ONGs, agências de assistência técnica, agricultores familiares, instituições públicas de ensino e professores inovadores.
+                            <Modal
+                                className="modal-home-page"
+                                title='Olá, sejam bem vindos!'
+                                visible={this.state.visible}
+                                width={1000}
+                                footer={null}
+                                onCancel={() =>
+                                    this.setState({
+                                        visible: false
+                                    })
+                                }
+                                onOk={() =>
+                                    this.setState({
+                                        visible: false
+                                    })
+                                }
+                            >
+                                <img style={{ width: '100%' }} src={this.state.image} alt="" />
+                                <div className='content-modal-home'>
+                                    <p>Temos a satisfação de apresentar a todos o RENOVA-SEMIÁRIDO, a plataforma digital de projetos de energias renováveis que possibilitam alternativas de convivência com a região Semiárida e que foram fomentados pelo Fundo Internacional de Desenvolvimento Agrícola (FIDA) da Organização das Nações Unidas (ONU) e  implantados em parceria com órgãos governamentais, ONGs, agências de assistência técnica, agricultores familiares, instituições públicas de ensino e professores inovadores.
                                         </p>
-                                        <p>O desenvolvimento do RENOVA-SEMIÁRIDO foi conduzido pelo INSA (Instituto Nacional do Semiárido), responsável por reunir especialistas em tecnologias renováveis para apresentar projetos de grande destaque na região Semiárida com energia solar, energia eólica, biodigestores, bioágua e ecofogões. A plataforma digital também oferece ao usuário um mapa interativo com a localização dos casos de sucesso das tecnologias estudadas, com informações, fotografias e vídeos com depoimentos reais. Além disso, foram incluídos no RENOVA-SEMIÁRIDO exemplos de produtos e protótipos que utilizam energias renováveis e que foram desenvolvidos por professores e estudantes do ensino fundamental e médio da rede pública, como dessalinizadores, fogões e fornos solares, completando as informações da plataforma digital com a apresentação de exemplos relevantes de uma educação voltada para o Semiárido.
+                                    <p>O desenvolvimento do RENOVA-SEMIÁRIDO foi conduzido pelo INSA (Instituto Nacional do Semiárido), responsável por reunir especialistas em tecnologias renováveis para apresentar projetos de grande destaque na região Semiárida com energia solar, energia eólica, biodigestores, bioágua e ecofogões. A plataforma digital também oferece ao usuário um mapa interativo com a localização dos casos de sucesso das tecnologias estudadas, com informações, fotografias e vídeos com depoimentos reais. Além disso, foram incluídos no RENOVA-SEMIÁRIDO exemplos de produtos e protótipos que utilizam energias renováveis e que foram desenvolvidos por professores e estudantes do ensino fundamental e médio da rede pública, como dessalinizadores, fogões e fornos solares, completando as informações da plataforma digital com a apresentação de exemplos relevantes de uma educação voltada para o Semiárido.
                                         </p>
-                                        <p>O RENOVA-SEMIÁRIDO também é apresentado em língua inglesa, aumentando as possibilidades de visibilidade por estar disponível como uma plataforma bilíngue. Esperamos que os usuários do RENOVA-FIDA, sejam eles produtores, agentes públicos, representantes de órgãos de fomento, educadores e sociedade civil, possam aproveitar as informações e conhecer os projetos sustentáveis apoiados pelo FIDA.
+                                    <p>O RENOVA-SEMIÁRIDO também é apresentado em língua inglesa, aumentando as possibilidades de visibilidade por estar disponível como uma plataforma bilíngue. Esperamos que os usuários do RENOVA-FIDA, sejam eles produtores, agentes públicos, representantes de órgãos de fomento, educadores e sociedade civil, possam aproveitar as informações e conhecer os projetos sustentáveis apoiados pelo FIDA.
                                         </p>
-                                    </div>
-                                
-                                </Modal>
-                            </div>
-                        </Col>
+                                </div>
 
-                        <div className="bg-main">
-                            <img src={imgMain}></img>
-
+                            </Modal>
                         </div>
-                    </Row>
-                </div>
+                    </Col>
+
+                    <div className="bg-main">
+                        <img src={imgMain}></img>
+
+                    </div>
+                </Row>
+
                 <br></br>
                 <div className="techs">
                     <div className="path2"></div>

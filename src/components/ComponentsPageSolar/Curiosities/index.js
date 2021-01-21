@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
-import { Collapse } from 'antd';
+import { Collapse, Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
 
 import Parceiros from "../../../components/Parceiros"
 
@@ -40,6 +41,29 @@ function Curiosities() {
 
             </div>
 
+            <div className='curiosities-label'>Cartilha Solar</div>
+                <div className='subtitle'><p>Informações resumidas sobre a tecnologia Solar</p>
+                </div>
+            {/* <div className="component-cartilha">
+                <center>
+                <iframe src={cartilhabiodigestor}></iframe>
+
+                </center>
+                <br></br>
+                
+            </div> */}
+            <div className="component-cartilha">
+            <a target="_blank" className="" 
+            // href={cartilhabiodigestor}
+            >
+                    <Button 
+                                    className='button-download-cartilha-solar' 
+                                    onClick={() => this.openModal()} 
+                                    type="primary" 
+                                    shape="circle" 
+                                    icon={<DownloadOutlined />} 
+                                >Download Cartilha</Button></a>
+            </div>
             <Parceiros /> 
         </div>
     )

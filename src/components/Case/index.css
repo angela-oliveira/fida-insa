@@ -13,67 +13,6 @@
     
 }
 
-/*
-
-.container-cases .cases-body{
-    display: flex;
-    align-items: center;
-}
-
-.container-cases .cases-body .carousel{
-    overflow: hidden;
-    height: 550px;
-    position: relative;
-}
-
-
-
-.carousel .list-cases{
-    position: relative;
-    top: 0%;
-    left: 0%;
-}*/
-
-
-/* botoes */
-
-/*.levels{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.levels div{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    margin: 10px 0px 10px 0px;
-    
-}
-
-.levels .point-level{
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: rgb(104, 124, 100);
-    
-}
-
-.levels .point-level + .point-level{
-    margin-top: 0px;
-}
-
-.levels button{
-    border-radius: 50%;
-    background-color: var(--color-yellow);
-    color: rgb(95, 95, 95);
-    width: 30px;
-    height: 30px;
-    border: none;
-    outline: none;
-
-} */
-
 .container-cases .slider{
     display: grid !important;
     grid-template-columns: 1fr 5%;
@@ -87,7 +26,7 @@
 
 
 .container-cases .slider-control-centerleft{
-
+    
     grid-column: 2/3;   
     top: 4rem !important;
 }
@@ -101,7 +40,7 @@
 }
 
 .container-cases .slider-control-centerright{
-
+    
     grid-column: 2/3;
     top : 18rem !important ;
 }
@@ -125,7 +64,9 @@
     left: -3.2rem !important;
 }
 
- .case{
+
+
+.case{
     position: relative;  
     /* border: 1px solid rgba(121, 116, 116, 0.507); */
     width: 850px;
@@ -133,6 +74,7 @@
     /* margin: 30px;
     margin-right: 20px; */
     overflow: hidden;
+    cursor:default;
 }
 
 
@@ -258,5 +200,52 @@
     border-left: 5rem solid var(--color-green-medium);
     z-index: -1;
     transform: rotate(45deg);
+
+}
+
+
+@media screen and (max-width:720px){
+    .container-cases{
+        grid-column: 1/7;
+        padding: 0rem 2rem 0rem 2rem;
+        /* border: 1px solid #000000; */
+        
+    }
+
+    .case{
+        width:31rem;
+    }
+
+    .case .case-content{
+        height: 30rem;
+
+    }
+
+    .case .case-content .title{
+        margin-left: 0.6rem;
+    }
+
+    .case .case-content .title h2{
+        font-size: 1.5rem;
+        width: 240px;
+        
+    }
+
+    .case .case-content article::after{
+        border-top: 2rem solid var(--color-yellow);
+        bottom: 15%;
+    }
+
+    .container-cases .slider-control-centerright, .slider-control-centerleft{
+        display: none;
+    }
+
+    .container-cases .slider-control-bottomcenter{
+        bottom: 215px !important;
+    }
+
+    .slider-frame{
+        height: 455px !important;
+    }
 
 }
