@@ -44,6 +44,11 @@
 .image-curiosities {
     width: 50%;
 }
+iframe {
+    /* width:80rem; */
+    width: 50rem;
+    height: 150vh;
+}
 .component-cartilha {
     display: flex;
     justify-content: center;

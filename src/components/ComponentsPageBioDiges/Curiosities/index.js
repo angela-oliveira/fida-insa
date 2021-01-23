@@ -4,6 +4,7 @@ import { Collapse, Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 
 import Parceiros from "../../../components/Parceiros"
+import cartilhabiodigestor from '../../../utils/pdf/Cartilha Biod-compactado.pdf'
 
 const { Panel } = Collapse;
 
@@ -57,17 +58,17 @@ function Curiosities() {
             <div className='curiosities-label'>Cartilha Biodigestor</div>
                 <div className='subtitle'><p>Informações resumidas sobre a tecnologia Biodigestor</p>
                 </div>
-            {/* <div className="component-cartilha">
+            <div className="component-cartilha">
                 <center>
                 <iframe src={cartilhabiodigestor}></iframe>
 
                 </center>
                 <br></br>
                 
-            </div> */}
+            </div>
             <div className="component-cartilha">
             <a target="_blank" className="" 
-            // href={cartilhabiodigestor}
+            href={cartilhabiodigestor}
             >
                     <Button 
                                     className='button-download-cartilha-biodigestor' 

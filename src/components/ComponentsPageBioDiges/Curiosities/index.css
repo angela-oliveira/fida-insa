@@ -35,6 +35,11 @@
     color: #fff!important;
     /* font-weight: bold; */
 }
+iframe {
+    /* width:80rem; */
+    width: 50rem;
+    height: 150vh;
+}
 .component-cartilha {
     display: flex;
     justify-content: center;
