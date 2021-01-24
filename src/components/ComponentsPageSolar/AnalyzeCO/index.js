@@ -32,15 +32,15 @@ const data = [
         key: '1',
         mes: 'Agosto/2019',
         consumo: '2206',
-        medio: '0,01070',
-        total: '236,042',
+        medio: '0,1070',
+        total: '236',
       },
       {
         key: '2',
         mes: 'Agosto/2020',
         consumo: '0,165',
         medio: '0,01070',
-        total: '0,017655',
+        total: '0,018',
       },
 ]
 class AnalyzeCO extends React.Component {
@@ -64,38 +64,7 @@ class AnalyzeCO extends React.Component {
                             pagination={ false } 
                         />
                     </div>
-                    <div className='co-graphic'>
-                        <div className='gra-label'>QUANTIDADE INSTALADA E NÚMERO DE BENEFICIÁRIOS</div>
-                        <div className='casca-gra'>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>QUANTIDADE INSTALADA</div>
-                                    <div className='right'>2722</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>NUMERO DE BENEFICIADOS</div>
-                                    <div className='right'> 8461 famílias</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>MUNICÍPIOS</div>
-                                    <div className='right'>24</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div className='co-bottom'></div>
                     <div className='co-patente-trl'> 
                         <Card title="Quantidade de patentes" bordered={false}>
@@ -109,23 +78,6 @@ class AnalyzeCO extends React.Component {
                             <p>Os painéis fotovoltaicos se enquadram na TRL 9 já que os mesmos já foram testados, bem como já são comercializados e usados pela comunidade com sucesso, tendo vista que esse nível é alcançado quando as tecnologias em questão são aplicadas em sistemas que sejam bem sucedidos em uma operação real. Destaca-se ainda que a diferença fundamental entre TRL 8 e 9 está relacionado à operação do sistema, sendo um exemplo básico de que a construção de uma nova aeronave se enquadra em uma TRL 8, mas voá-la a primeira vez de forma real é TRL 9.
                             </p>
                         </Card>
-                        {/* <div className="site-card-wrapper">
-                            <Row gutter={16}>
-                            <Col span={8}>
-                                <Card title="Card title" bordered={false}>
-                                Card content
-                                </Card>
-                            </Col>
-                            <Col className="trl-img" span={8}>
-                                
-                            </Col>
-                            <Col span={8}>
-                                <Card title="Card title" bordered={false}>
-                                Card content
-                                </Card>
-                            </Col>
-                            </Row>
-                        </div> */}
                         
                     </div>
                 </div>

@@ -89,7 +89,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
+                        <div className='justify-label'>JUSTIFICATIVA</div>
                         <div className='justify-txt'>
                             <p>O Semiárido brasileiro tem um grande potencial para produção de energia solar fotovoltaica, podendo ser melhor explorado para transformar esse potencial em oportunidades reais, capazes de gerar emprego e renda, sendo que as maiores irradiações solares no Brasil estão em áreas de baixo desenvolvimento econômico, principalmente as encontradas nesta região.</p>
 
@@ -169,6 +169,39 @@ class Description extends React.Component {
                     </Modal>
 
                 </div>
+               
+                <div className='co-graphic'>
+                        <div className='gra-label'>PANORAMA DOS PROJETOS FIDA</div>
+                        <div className='casca-gra'>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>QUANTIDADE INSTALADA</div>
+                                    <div className='right'>2722</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>NÚMERO DE BENEFICIADOS</div>
+                                    <div className='right'> 8461 famílias</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>MUNICÍPIOS</div>
+                                    <div className='right'>24</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         )
     }

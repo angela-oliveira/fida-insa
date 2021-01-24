@@ -17,38 +17,6 @@ function AnalyzeCO() {
                         </p>
                     </Card>
                 </div>
-                <div className='co-graphic'>
-                    <div className='gra-label'>QUANTIDADE INSTALADA E NÚMERO DE BENEFICIÁRIOS</div>
-                    <div className='casca-gra'>
-                        <div className='graphic'>
-                            <div className='label'>
-                                <div className='left'>QUANTIDADE INSTALADA</div>
-                                <div className='right'>494</div>
-                            </div>
-                            <div className='line-gra'>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div className='graphic'>
-                            <div className='label'>
-                                <div className='left'>NUMERO DE BENEFICIADOS</div>
-                                <div className='right'> 494 famílias</div>
-                            </div>
-                            <div className='line-gra'>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div className='graphic'>
-                            <div className='label'>
-                                <div className='left'>MUNICÍPIOS</div>
-                                <div className='right'>21</div>
-                            </div>
-                            <div className='line-gra'>
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className='co-bottom'></div>
                 <div className='co-patente-trl'> 
                     <Card title="Quantidade de patentes" bordered={false}>

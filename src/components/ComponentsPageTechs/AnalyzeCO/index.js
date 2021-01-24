@@ -14,38 +14,6 @@ function AnalyzeCO() {
                         <p>A redução das emissões de CO2 nos sistemas com cataventos pode ser calculada a partir da comparação com o consumo de energia elétrica para o bombeamento de volume de água equivalente (no caso de bombas elétricas) ou pela comparação com o consumo de diesel no caso de conjuntos motobomba a combustível. Apesar de ser necessário um estudo caso a caso para verificar a redução das emissões de CO2 com cataventos, a substituição do bombeamento elétrico ou a combustível pelo bombeamento por cataventos pode mitigar as emissões de CO2 para a atmosfera. A tecnologia se enquadra no escopo 2, que se refere à compra de energia, de acordo com o inventário de emissões do GHG Protocol.</p>
                     </Card>
                 </div>
-                <div className='co-graphic'>
-                    <div className='gra-label'>QUANTIDADE INSTALADA E NÚMERO DE BENEFICIÁRIOS</div>
-                    <div className='casca-gra'>
-                        <div className='graphic'>
-                            <div className='label'>
-                                <div className='left'>QUANTIDADE INSTALADA</div>
-                                <div className='right'>498</div>
-                            </div>
-                            <div className='line-gra'>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div className='graphic'>
-                            <div className='label'>
-                                <div className='left'>NUMERO DE BENEFICIADOS</div>
-                                <div className='right'> 3671 famílias</div>
-                            </div>
-                            <div className='line-gra'>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div className='graphic'>
-                            <div className='label'>
-                                <div className='left'>MUNICÍPIOS</div>
-                                <div className='right'>56</div>
-                            </div>
-                            <div className='line-gra'>
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className='co-bottom'></div>
                 <div className='co-patente-trl'> 
                     <Card title="Quantidade de patentes" bordered={false}>

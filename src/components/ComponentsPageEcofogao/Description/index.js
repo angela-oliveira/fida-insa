@@ -83,7 +83,7 @@ class Description extends React.Component {
                                 }
                             >
                                 <div className='content-modal'>
-                                    <p>O fogão ecológico ou ecofogão utilizado nos projetos financiados pelo FIDA tratam-se de um melhoramento do fogão a lenha tradicional, que consome menos lenha e tem acoplado um forno. Para o uso e confecção do fogão ecológico são usados menos recursos financeiros e menos recursos naturais, além de preservar uma das tradições camponesas, as comidas preparadas no forno à lenha.
+                                    <p>O fogão ecológico ou ecofogão utilizado nos projetos financiados pelo FIDA trata-se de um melhoramento do fogão a lenha tradicional, que consome menos lenha e tem acoplado um forno. Para o uso e confecção do fogão ecológico são usados menos recursos financeiros e menos recursos naturais, além de preservar uma das tradições camponesas: as comidas preparadas no forno à lenha.
                                     </p>
                                     <p>Em relação ao fogão a lenha tradicional, a câmara fechada do ecofogão possibilita um processo de produção de mais calor, aproveitando melhor a queima da madeira, tornando-se mais eficiente e com o mínimo de produção de fumaça, que é expelida por meio de uma chaminé de cerâmica até a parte de fora do telhado das casas, reduzindo o consumo de lenha e, consequentemente a emissão de fumaça.
                                     </p>
@@ -95,7 +95,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
+                        <div className='justify-label'>JUSTIFICATIVA</div>
                         <div className='justify-txt'>
                             <p>Na região Nordeste do Brasil, 85% das famílias da zona rural utilizam a lenha para o cozimento de alimentos. O modelo dos fogões ecológicos instalados nas comunidades através do CETRA (Centro de Estudos do Trabalho e de Assessoria ao Trabalhador) pelo Projeto Paulo Freire é baseado no ecofogão desenvolvido pela AS-PTA (Associação para a Agricultura Familiar e Agro­ecologia) para diminuir os efeitos prejudiciais causados pelo uso frequente dos fogões à lenha convencionais, pensando no desmatamento da vegetação nativa e nos problemas respiratórios oriundos da inalação da fumaça liberada pelo fogão.</p>
 
@@ -182,6 +182,39 @@ class Description extends React.Component {
                     </Modal>
 
                 </div>
+            
+                <div className='co-graphic'>
+                        <div className='gra-label'>PANORAMA DOS PROJETOS FIDA</div>
+                        <div className='casca-gra'>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>QUANTIDADE INSTALADA</div>
+                                    <div className='right'>994</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>NúMERO DE BENEFICIADOS</div>
+                                    <div className='right'> 2982 famílias</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>MUNICÍPIOS</div>
+                                    <div className='right'>27</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         )
     }
