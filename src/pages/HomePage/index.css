@@ -136,12 +136,12 @@ h1{
 }
 .ant-row .bg-main{
     position: "relative"; 
-    margin-top: -5rem;
+    margin-top: -3rem;
     /* background-image: url("../../utils/images/bg_main.png"); */
 }
 
 .ant-row .bg-main img{
-    width: 70%;
+    width: 75%;
 }
 
 /* TECHS */
