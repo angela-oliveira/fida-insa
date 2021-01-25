@@ -127,6 +127,7 @@ class Equipe extends React.Component {
                             </div>
                         </div>
                     </a>
+                    <a className="link" href="www.linkedin.com/in/jucelino-sousa-a510541a5" target="_blank">
                         <div className="item">
                             <div className='img'>
                                 <img src={Jucelino} alt=''></img>
@@ -136,6 +137,7 @@ class Equipe extends React.Component {
                                 <div className='function'>Pesquisador</div>
                             </div>
                         </div>
+                    </a>
                     <a className="link" href="https://www.linkedin.com/in/rebeca-albino-706172126/" target="_blank">
                         <div className="item">
                             <div className='img'>
