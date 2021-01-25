@@ -66,6 +66,7 @@ class AnalyzeCO extends React.Component {
                     </div>
 
                     <div className='co-bottom'></div>
+                    <br></br>
                     <div className='co-patente-trl'> 
                         <Card title="Quantidade de patentes" bordered={false}>
                             <p>Atualmente existem 27 processos de patente envolvendo painéis fotovoltaicos.

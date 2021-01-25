@@ -363,6 +363,7 @@ class AnalyzeCO extends React.Component {
                             />
                     </div>
                     <div className='co-bottom'></div>
+                    <br></br>
                     <div className='co-patente-trl'> 
                         <Card title="Quantidade de patentes" bordered={false}>
                             <p>A Ecofogão® foi a pioneira no desenvolvimento do fogão a lenha ecológico no Brasil e sua história vem da PROLEÑA uma ONG na América Central que foi pioneira a nível global no desenvolvimento do fogão a lenha ecológico. O desenvolvimento do fogão a lenha ecológico veio da observação do Rogério Carneiro de Miranda que é engenheiro florestal.
@@ -408,6 +409,7 @@ class AnalyzeCO extends React.Component {
                                 </div>
                             </Modal>
                         </Card>
+                        
                         <div className='img'>
                             <img src={TRL}></img>
                         </div>

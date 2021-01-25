@@ -18,6 +18,7 @@ function AnalyzeCO() {
                     </Card>
                 </div>
                 <div className='co-bottom'></div>
+                <br></br>
                 <div className='co-patente-trl'> 
                     <Card title="Quantidade de patentes" bordered={false}>
                         <p>A pesquisa sobre sistema de reuso de água, também denominado de bioágua, foi realizada no banco de dados do Instituto Nacional de Propriedade Industrial (INPI) com o objetivo de verificar a ocorrência de depósitos sobre o tema a nível nacional, como exposto no mapa. Das patentes encontradas nas buscas, duas são de origem de instituições de ensino superior, como Instituto Federal da Paraíba (IFPB) e Universidade Estadual de Campinas (Unicamp).

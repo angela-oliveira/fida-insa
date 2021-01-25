@@ -19,6 +19,7 @@ function AnalyzeCO() {
                     </Card>
                 </div>
                 <div className='co-bottom'></div>
+                <br></br>
                 <div className='co-patente-trl'> 
                     <Card title="Quantidade de patentes" bordered={false}>
                         <p>Quantidade de patentes depositadas no Brasil: 101 patentes.</p>
