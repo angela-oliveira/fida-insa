@@ -10,7 +10,7 @@ body,html{
 h1{
     font: normal normal 800 100px/564px;
     letter-spacing: 13.3px; 
-    color: #141414;
+    color: #000;
     opacity: 1;
 }
 
@@ -70,13 +70,13 @@ h1{
 }
 
 .ant-row .banner-page p {
-    color: var(--color-black-text);
+    color: var(--color-black);
     font-weight: 300;
     font-size: 30px;
 }
 .ant-row .banner-page .text-p {
 
-    color: var(--color-black-text);
+    color: var(--color-black);
     font-weight: 300;
     font-size: 30px;
 }
@@ -136,11 +136,12 @@ h1{
 }
 .ant-row .bg-main{
     position: "relative"; 
+    margin-top: -3rem;
     /* background-image: url("../../utils/images/bg_main.png"); */
 }
 
 .ant-row .bg-main img{
-    width: 90%;
+    width: 75%;
 }
 
 /* TECHS */
@@ -173,8 +174,9 @@ h1{
 }
 
 .techs p{
-    color: var(--color-black-text);
+    color: var(--color-black);
     text-align: center;
+    text-indent: 0;
     font: normal normal 300 24px/136px Raleway;
     margin-top: -55px;
 }
@@ -223,10 +225,11 @@ h1{
 }
 
 .team .ant-card  p{
-    color: var(--color-black-text);
+    color: var(--color-black);
     font: normal normal 300 24px/136px Raleway;
     letter-spacing: 3.19px;
     padding-left: 200px;
+    text-indent: 0rem;
     /* textAlign: "center"; */
 }
 .team .ant-card .div-yellow{

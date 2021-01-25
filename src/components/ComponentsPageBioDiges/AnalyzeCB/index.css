@@ -76,7 +76,7 @@
 .cb-graphic .c-i-gra{border: 12px solid var(--color-green-light);}
 .cb-graphic .c-m-gra{border: 12px solid var(--color-green-medium);}
 .cb-graphic .t-m-gra{border: 12px solid var(--color-green-dark);}
-.cb-graphic .i-m-gra{border: 12px solid var(--color-black-text);}
+.cb-graphic .i-m-gra{border: 12px solid var(--color-black);}
 
 /* CB-BOTTOM */
 
@@ -199,4 +199,20 @@
 .title-card-ods {
     display: flex;
     justify-content: center;
+}
+.analise-cb-background {
+    background-color: #ececec;
+    padding: 1rem;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-modal-img{
+    display: flex;
+    justify-content: center;
+}
+.img-biodigest-modal {
+    width: 10rem;  
+    margin: 2rem;
 }

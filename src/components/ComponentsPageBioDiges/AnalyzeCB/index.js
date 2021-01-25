@@ -18,6 +18,7 @@ import ods10 from '../../../utils/images/biodigestor/ODS10.png'
 import ods11 from '../../../utils/images/biodigestor/ODS11.png'
 import ods12 from '../../../utils/images/biodigestor/ODS12.png'
 import ods13 from '../../../utils/images/biodigestor/ODS13.png'
+import biodigest from '../../../utils/images/biodigestor/biodigest.png'
 
 const { TabPane } = Tabs;
 
@@ -87,7 +88,9 @@ const data = [
 class AnalyzeCB extends React.Component {
     state = {
         visible: false,
-        visible1: false
+        visible1: false,
+        visible2: false,
+        visible3: false
     }
 
     openModal() {
@@ -96,6 +99,14 @@ class AnalyzeCB extends React.Component {
 
     openModal1(){
         this.setState({visible1: true})
+    }
+
+    openModal2(){
+        this.setState({visible2: true})
+    }
+
+    openModal3(){
+        this.setState({visible3: true})
     }
     render() {
         return (
@@ -140,6 +151,45 @@ class AnalyzeCB extends React.Component {
                                 </Row>
 
                                 
+                            <div className='tolltip-margin'>
+                                    <Tooltip title="Ver mais" >
+                                        <Button
+                                            className='button-1'
+                                            onClick={() => this.openModal2()}
+                                            type="primary"
+                                            shape="circle"
+                                            icon={<PlusOutlined />}
+                                        />
+                                    </Tooltip>
+                                    <Modal
+                                        title={'Check list para manutenção'}
+                                        visible={this.state.visible2}
+                                        width={1000}
+                                        footer={null}
+                                        className="modal-biodigestor"
+                                        onCancel={() =>
+                                            this.setState({
+                                                visible2: false
+                                            })
+                                        }
+                                    >
+                                        <div className='content-modal'>
+                                            <ul>
+                                                <li>25 m de cano PVC rígido (20 mm);</li>
+                                                <li>7 joelhos PVC rígido (20 mm);</li>
+                                                <li>2 adaptadores com Flange (20 mm);</li>
+                                                <li>1 adaptador longo com Flange livre;</li>
+                                                <li>5 m Mangueira plástica para a tubulação de gás de 25 mm;</li>
+                                                <li>3 abraçadeiras rosca sem fim ½’’;</li>
+                                                <li>1 Garrafão de acrílico de água mineral;</li>
+                                            </ul>
+                                           <p>O ptojeto do biodigestor está disponivel no link <a target="_blank" href='https://issuu.com/diaconia_web/docs/manual_do_biodigestor'>https://issuu.com/diaconia_web/docs/manual_do_biodigestor</a></p>
+                                            <p>Alguns agricultores preferem adquirir esterco para alimentar o biodigestor, em média, o saco de 30 Kg de esterco custa R$ 25,00.</p>
+                                            
+                                        </div>
+                                    </Modal>
+
+                                </div>
                             </div>
 
                         </TabPane>
@@ -159,6 +209,38 @@ class AnalyzeCB extends React.Component {
                                     </Col>
                                 </Row>
 
+                            
+                                <div className='tolltip-margin'>
+                                    <Tooltip title="Ver mais" >
+                                        <Button
+                                            className='button-1'
+                                            onClick={() => this.openModal3()}
+                                            type="primary"
+                                            shape="circle"
+                                            icon={<PlusOutlined />}
+                                        />
+                                    </Tooltip>
+                                    <Modal
+                                        title={'Tempo de vida útil'}
+                                        visible={this.state.visible3}
+                                        width={1000}
+                                        footer={null}
+                                        className="modal-biodigestor"
+                                        onCancel={() =>
+                                            this.setState({
+                                                visible3: false
+                                            })
+                                        }
+                                    >
+                                        <div className='content-modal'>
+                                            
+                                           <p>O tempo de vida útil dos biodigestores pode variar bastante devido a alguns fatores, um deles é a manutenção. Uma estimativa é de uma depreciação de 10 anos, porém, devido ao uso diário, o biodigestor necessitará passar por manutenções semanais, podendo requerer troca dos componentes que compõem a estrutura, como as tubulações de PVC, as mangueiras, as válvulas entre outros, para que tenha uma vida útil como designado ou maior.</p>
+                                            
+                                            
+                                        </div>
+                                    </Modal>
+
+                                </div>
                             </div>
                         </TabPane>
                         <TabPane className='key4' tab="Impactos ambientais" key="4">
@@ -205,7 +287,7 @@ class AnalyzeCB extends React.Component {
                             <p>Para diminuir o impacto ambiental que esse efluente causa, é necessário realizar o seu tratamento por meio do uso de biodigestores, com a consequente produção de biogás, que pode ser utilizado pelos produtores em diversas atividades, inclusive como fonte de energia para a secagem da mandioca, diminuindo também o impacto que o forno a lenha causa à natureza.</p>
 
                         </TabPane>
-                        <TabPane tab="Impactos sociais" key="5">
+                        <TabPane className="analise-cb-background" tab="Impactos sociais" key="5">
                             <p>
                             No cotidiano dos grandes centros urbanos, as tecnologias são utilizadas para auxiliar e trazer retorno no âmbito econômico ou de bem-estar, facilitando o trabalho das pessoas. O uso de tecnologias adaptadas também deve ser estendido para o meio rural, com o intuito de ajudar o pequeno agricultor nas suas tarefas. Devido a várias dificuldades de trabalho que surgem no campo, o pequeno produtor rural, em muitos casos, necessita buscar sua fonte de renda nas cidades, tendo que abandonar o local em que viveu grande parte de sua vida, na maioria das situações. Pensando nisso, as tecnologias podem ser empregadas para diminuir ou erradicar possíveis problemas que impeçam o desenvolvimento do trabalho no campo, como também, podem ser benéficas em termos econômicos e ambientais. A maior parte da produção dos alimentos disponibilizados para a população brasileira é produzida pela agricultura familiar, constituída por pequenos produtores rurais, povos e comunidades tradicionais.  Diante disso, verifica-se a importância que a pessoa do campo tem para a sociedade e, por isso, mais ferramentas devem ser disponibilizadas com o fim de agregar valor ao trabalho rural.
                         </p>
@@ -240,11 +322,11 @@ class AnalyzeCB extends React.Component {
 
                                 </div>
                         </TabPane>
-                        <TabPane tab="Adaptação à realidade da agricultura familiar" key="6">
+                        <TabPane className="analise-cb-background" tab="Adaptação à realidade da agricultura familiar" key="6">
                             <p>
                             No ano de 2008, um projeto piloto utilizando o modelo de biodigestor sertanejo foi implementado na comunidade de Santo Antônio II, em Afogados da Ingazeira (PE). Esse programa foi desenvolvido pela Diaconia e o Projeto Dom Helder Câmara, contando com o apoio do Fundo Internacional de Desenvolvimento Agrícola (FIDA). Por meio desse projeto foram realizadas modificações no biodigestor com o objetivo de torná-lo mais acessível à comunidade rural.
                         </p>
-                        <div className=' tolltip-margin'>
+                        <div className='tolltip-margin'>
                                 <Tooltip title="Ver mais" >
                                     <Button
                                         className='button-1'
@@ -259,6 +341,7 @@ class AnalyzeCB extends React.Component {
                                     visible={this.state.visible1}
                                     width={1000}
                                     footer={null}
+                                    className="modal-biodigestor"
                                     onCancel={() =>
                                         this.setState({
                                             visible1: false
@@ -278,6 +361,10 @@ class AnalyzeCB extends React.Component {
                                             <li>Tanque de saída do biogás;</li>
                                             <li>Saída dos resíduos.</li>
                                         </ol>
+                                        <div className='div-modal-img'>
+                                            <img className='img-biodigest-modal' src={biodigest} alt='Biodigestor'></img>
+                                        </div>
+                                        
                                         <p>Na caixa de alimentação, é colocado o material orgânico que abastecerá, posteriormente, o tanque de fermentação (fermentador), no qual será produzido o biogás. Esse ficará armazenado no gasômetro. No tanque de saída, será eliminado um produto líquido ou matéria residual que pode ser denominado de biofertilizante, isto é, um fertilizante orgânico que pode ser utilizado para adubação líquida ou sólida. Obiogás produzido pode ser utilizado para o aquecimento térmico, como combustível para motores e geradores e como gás para cozinha.</p>
                                         <b>Tem curiosidade ou deseja saber como construir um biodigestor? </b><a href='https://issuu.com/diaconia_web/docs/manual_do_biodigestor'>Saiba mais</a>
 

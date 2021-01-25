@@ -63,7 +63,7 @@ button{
 
 .info-text .txt{
     padding-top: 0.5rem;
-    color: var(--color-black-text);
+    color: var(--color-black);
 }
 
 .info .info-media{

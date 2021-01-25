@@ -72,7 +72,7 @@ class Case extends React.Component {
                             <div className='title'  >
                                 <h2 className='top' >Energia Eólica</h2>
                                 <h2>
-                                    Projeto aplicado no sítio do Algodão no município de Algodão de Jandaíra - PB
+                                    Projeto aplicado no Sítio do Algodão, no município de Algodão de Jandaíra - PB
                                             </h2>
                             </div>
                             <div className='img'>
@@ -90,7 +90,7 @@ class Case extends React.Component {
                             <div className='title'  >
                                 <h2 className='top' >Bioágua</h2>
                                 <h2>
-                                    Sistema reuso de água cinza no sítio Capoeiras do Asfalto localizado na cidade de Varjota - CE
+                                    Sistema reuso de água cinza no Sítio Capoeiras do Asfalto, localizado na cidade de Varjota - CE
                         </h2>
                             </div>
                             <div className='img'>
@@ -126,7 +126,7 @@ class Case extends React.Component {
                             <div className='title'  >
                                 <h2 className='top' >Biodigestor</h2>
                                 <h2>
-                                    Sistema para a produção de Biogás no Sítio Cajazeira no município de Varjota - CE
+                                    Sistema para a produção de Biogás no Sítio Cajazeira, no município de Varjota - CE
                         </h2>
                             </div>
                             <div className='img'>

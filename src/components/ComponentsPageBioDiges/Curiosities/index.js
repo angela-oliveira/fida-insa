@@ -8,7 +8,7 @@ import cartilhabiodigestor from '../../../utils/pdf/Cartilha Biod-compactado.pdf
 
 const { Panel } = Collapse;
 
-const text1 = `A implementação dos primeiros biodigestores no Brasil ocorreu na década de 70 após a crise do petróleo iniciada no final de 1973. Essa crise atingiu muitos países importadores de petróleo, principalmente aqueles em desenvolvimento, como o Brasil. Diante disso, houve uma necessidade de recorrer a outros métodos para se obter energia.`
+const text1 = `A implementação dos primeiros biodigestores no Brasil ocorreu na década de 1970 após a crise do petróleo iniciada no final de 1973. Essa crise atingiu muitos países importadores de petróleo, principalmente aqueles em desenvolvimento, como o Brasil. Diante disso, houve uma necessidade de recorrer a outros métodos para se obter energia.`
 const text2 = `Em Brasília no ano 1979, foram construídos os primeiros biodigestores por meio do projeto do Programa de Mobilização Energética (PME) que consistia em um conjunto de ações voltadas à conservação de energia e à substituição dos derivados de petróleo por combustíveis alternativos.`
 const text3 = `A Política Nacional de Resíduos Sólidos (PNRS) é instituída pela Lei n° 12.305/10 e possui instrumentos relevantes para o País enfrentar os principais problemas ambientais, sociais e econômicos consequente do manejo inadequado dos resíduos sólidos com o objetivo de combater a poluição.`
 const text4 = `A PNRS ressalta a distinção entre resíduo, isto é, aquilo que possui um valor agregado podendo ser reciclado ou reaproveitado, e rejeito, esse consiste em um material sem valor econômico não podendo ser submetido a tratamento e recuperação através dos processamentos.`
