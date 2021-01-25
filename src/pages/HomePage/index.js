@@ -16,7 +16,7 @@ import Equipe from '../../components/Equipe'
 import Parceiros from '../../components/Parceiros'
 
 import blue from "../../utils/images/blue.png";
-import imgMain from "../../utils/images/main.png";
+import imgMain from "../../utils/images/logotechrenovafida.jpg";
 import bgTechnology from "../../utils/images/bg_technology.svg";
 import perfilTest from "../../utils/images/perfil_test.jpg";
 import footer from "../../utils/images/Group 137.png";
