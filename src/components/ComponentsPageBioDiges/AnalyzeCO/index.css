@@ -57,3 +57,17 @@
 .ant-card-head-title {
     font-weight: bold;
 }
+/* Table  */
+
+.modal-biodigestor .table-biodigestor-analyzeco .ant-table-thead tr th{
+  background-color: #FF7907;
+  color: white;
+}
+.modal-biodigestor .table-biodigestor-analyzeco .ant-table-container {
+  border: solid;
+  border-color: #FF7907;
+}
+
+.biodigestor-analyzeco .button-1 {
+    background-color: #FF7907;
+}
