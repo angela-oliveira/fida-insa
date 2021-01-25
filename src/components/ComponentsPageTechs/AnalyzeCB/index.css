@@ -74,18 +74,7 @@
 
 /* CB-BOTTOM */
 
-.analyze-cb .cb-bottom{
-    display: flex;
-    padding-top: 2rem;
-    margin-top: 1rem;
-    justify-content: space-between;
-}
 
-.cb-bottom
-.txt-left,
-.txt-right{
-    display: flex;
-}
 
 .txt-label{
     width: 100px;
@@ -142,4 +131,7 @@
   }
     [data-theme="dark"] .site-statistic-demo-card {
       background: #303030;
+    }
+    .analyze-cb-eolica .ant-row .ant-col {
+        margin-top: 0rem;
     }
