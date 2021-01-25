@@ -385,7 +385,7 @@ class AnalyzeCO extends React.Component {
                             </Tooltip>
 
                             <Modal
-                                title={'Pedidos de patentes depositados no INPI relacionados com fogão à lenha desenvolvidos no Brasil'}
+                                title={'Pedidos de patentes depositados no INPI relacionados com fogão a lenha desenvolvidos no Brasil'}
                                 visible={this.state.visible}
                                 width={1200}
                                 footer={null}

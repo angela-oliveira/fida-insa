@@ -21,9 +21,10 @@ function AnalyzeCO() {
                 <div className='co-bottom'></div>
                 <div className='co-patente-trl'> 
                     <Card title="Quantidade de patentes" bordered={false}>
-                        <p>Quantidade de patentes depositadas no Brasil: 101 patentes.
-                            A pesquisa foi realizada utilizando como palavra-chave “biodigestor”. Em 1980, foi registrado pelo Escritório Europeu de Patentes o pedido de depósito da patente intitulada “Cuba de fermentação para biodigestores” (do inglês Fermentation vat for biodigesters) com número de registro EP0051082, tendo como inventores Josef Neubauer, J. Sigmund Buchner e Albert Strasser.
-                        </p>
+                        <p>Quantidade de patentes depositadas no Brasil: 101 patentes.</p>
+                        <p>A pesquisa foi realizada utilizando como palavra-chave “biodigestor”. Em 1980, foi registrado pelo Escritório Europeu de Patentes o pedido de depósito da patente intitulada “Cuba de fermentação para biodigestores” (do inglês Fermentation vat for biodigesters) com número de registro EP0051082, tendo como inventores Josef Neubauer, J. Sigmund Buchner e Albert Strasser.</p>
+                            
+                        
                     </Card>
                     <div className='img'>
                         <img src={TRL}></img>
