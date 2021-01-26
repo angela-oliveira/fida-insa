@@ -362,39 +362,8 @@ class AnalyzeCO extends React.Component {
                                 pagination={ false } 
                             />
                     </div>
-                    <div className='co-graphic'>
-                        <div className='gra-label'>QUANTIDADE INSTALADA E NÚMERO DE BENEFICIÁRIOS</div>
-                        <div className='casca-gra'>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>QUANTIDADE INSTALADA</div>
-                                    <div className='right'>994</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>NUMERO DE BENEFICIADOS</div>
-                                    <div className='right'> 2982 famílias</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>MUNICÍPIOS</div>
-                                    <div className='right'>27</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div className='co-bottom'></div>
+                    <br></br>
                     <div className='co-patente-trl'> 
                         <Card title="Quantidade de patentes" bordered={false}>
                             <p>A Ecofogão® foi a pioneira no desenvolvimento do fogão a lenha ecológico no Brasil e sua história vem da PROLEÑA uma ONG na América Central que foi pioneira a nível global no desenvolvimento do fogão a lenha ecológico. O desenvolvimento do fogão a lenha ecológico veio da observação do Rogério Carneiro de Miranda que é engenheiro florestal.
@@ -417,7 +386,7 @@ class AnalyzeCO extends React.Component {
                             </Tooltip>
 
                             <Modal
-                                title={'Pedidos de patentes depositados no INPI relacionados com fogão à lenha desenvolvidos no Brasil'}
+                                title={'Pedidos de patentes depositados no INPI relacionados com fogão a lenha desenvolvidos no Brasil'}
                                 visible={this.state.visible}
                                 width={1200}
                                 footer={null}
@@ -440,6 +409,7 @@ class AnalyzeCO extends React.Component {
                                 </div>
                             </Modal>
                         </Card>
+                        
                         <div className='img'>
                             <img src={TRL}></img>
                         </div>

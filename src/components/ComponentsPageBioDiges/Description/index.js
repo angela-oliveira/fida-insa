@@ -148,9 +148,9 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
+                        <div className='justify-label'>JUSTIFICATIVA</div>
                         <div className='justify-txt'>
-                            <p>Considerando a missão e os desafios do FIDA e ressaltando a tecnologia em questão, tem-se que o biodigestor consiste em uma tecnologia sustentável e economicamente viável para produtores rurais com um retorno econômico e ambiental. O biofertilizante pode ser utilizado para potencializar as lavouras dispensando a necessidade de compra de fertilizantes industriais e o biogás produzido pode ser utilizado para substituir o gás de cozinha (GLP), o que representa uma economia de recursos financeiros para os usuários.</p>
+                            <p>O biodigestor consiste em uma tecnologia sustentável e economicamente viável para produtores rurais com um retorno econômico e ambiental. O biofertilizante pode ser utilizado para potencializar as lavouras dispensando a necessidade de compra de fertilizantes industriais e o biogás produzido pode ser utilizado para substituir o gás de cozinha (GLP), o que representa uma economia de recursos financeiros para os usuários.</p>
 
                             <p>Além disso, a utilização do biodigestor pode contribuir para redução das emissões dos gases do efeito estufa quando comparado com fontes energéticas utilizadas pela agricultura familiar (como a queima de lenha), seguindo os objetivos da Convenção-Quadro das Nações Unidas em mitigar emissões de gases responsáveis pelas alterações climáticas e colaborando para reduzir problemas com questões como a desertificação do bioma Caatinga, com a busca de alternativas energéticas.
 
@@ -550,6 +550,51 @@ class Description extends React.Component {
                         </div>
                     </Modal>
 
+                </div>
+            
+                <div className='co-graphic'>
+                    <div className='gra-label'>PANORAMA DOS PROJETOS FIDA</div>
+                    <div className='casca-gra'>
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>QUANTIDADE INSTALADA</div>
+                                <div className='right'>258</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>QUANTIDADE A SER INSTALADA</div>
+                                <div className='right'> 255</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>NÚMERO DE BENEFICIADOS</div>
+                                <div className='right'> 1308</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+                        
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>MUNICÍPIOS</div>
+                                <div className='right'>25</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

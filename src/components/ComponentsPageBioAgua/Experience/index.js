@@ -51,7 +51,7 @@ function Experience() {
                     <div className='experience-text'>
                         <div className='experience-text-label'>EXPERIÊNCIA BIOÁGUA</div>
                         <div className='experience-text-txt'>
-                            <p></p>
+                            <p>Vamos conhecer um pouco das experiências de Flaviana de Lima Silva e Robério Rodrigues Gonçalves que residem nos municípios de Varjota e Sobral no Estado do Ceará e que utilizam o Sistema Bioágua para irrigar forragem, frutíferas e algumas ervas medicinais, bem como a experiência de Cleidiane de Sousa Mesquita que é empreendedora no ramo de plantas ornamentais e utiliza o húmus produzidos pela tecnologia como alternativa para captar mais renda para sua família.</p>
                         </div>
                     </div>
                     <div className='video'>

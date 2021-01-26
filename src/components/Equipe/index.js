@@ -30,9 +30,9 @@ console.log(width)
 let slidesToShow = 4
 let cellSpacing = 47
 
-if (width <= 720){
+if (width <= 430){
     slidesToShow = 2;
-    cellSpacing = 90;
+    cellSpacing = 0;
 }
 
 class Equipe extends React.Component {
@@ -107,6 +107,8 @@ class Equipe extends React.Component {
                                 <div className='function'>Pesquisador</div>
                             </div>
                         </div> 
+                    <a className="link" href="http://linkedin.com/in/daniel-casimiro-da-silveira-497923204" target="_blank">
+
                         <div className="item">
                             <div className='img'>
                                 <img src={Daniel} alt='Daniel Casimiro'></img>
@@ -115,7 +117,8 @@ class Equipe extends React.Component {
                                 <div className='name'>Daniel Casimiro</div>
                                 <div className='function'>Pesquisador</div>
                             </div>
-                        </div>                 
+                        </div>                
+                    </a> 
                     <a className="link" href="https://www.linkedin.com/in/jmouram/" target="_blank">
                         <div className="item">
                             <div className='img'>
@@ -127,6 +130,7 @@ class Equipe extends React.Component {
                             </div>
                         </div>
                     </a>
+                    <a className="link" href="www.linkedin.com/in/jucelino-sousa-a510541a5" target="_blank">
                         <div className="item">
                             <div className='img'>
                                 <img src={Jucelino} alt=''></img>
@@ -136,6 +140,7 @@ class Equipe extends React.Component {
                                 <div className='function'>Pesquisador</div>
                             </div>
                         </div>
+                    </a>
                     <a className="link" href="https://www.linkedin.com/in/rebeca-albino-706172126/" target="_blank">
                         <div className="item">
                             <div className='img'>

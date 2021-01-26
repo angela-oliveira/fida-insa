@@ -4,6 +4,7 @@ import { Collapse, Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 
 import Parceiros from "../../../components/Parceiros"
+import cartilhabioagua from '../../../utils/pdf/Cartilha Bioágua-compactado.pdf'
 
 const { Panel } = Collapse;
 
@@ -74,17 +75,17 @@ function Curiosities() {
             <div className='curiosities-label'>Cartilha Bioágua</div>
                 <div className='subtitle'><p>Informações resumidas sobre a tecnologia Bioágua</p>
                 </div>
-            {/* <div className="component-cartilha">
+            <div className="component-cartilha">
                 <center>
-                <iframe src={cartilhabiodigestor}></iframe>
+                <iframe src={cartilhabioagua}></iframe>
 
                 </center>
                 <br></br>
                 
-            </div> */}
+            </div>
             <div className="component-cartilha">
             <a target="_blank" className="" 
-            // href={cartilhabiodigestor}
+            href={cartilhabioagua}
             >
                     <Button 
                                     className='button-download-cartilha-bioagua' 

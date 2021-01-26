@@ -56,7 +56,7 @@ button{
 
 .info-text .txt{
     padding-top: 0.5rem; 
-    color: var(--color-black-text);
+    color: var(--color-black);
 }
 
 .info .info-media{
@@ -139,6 +139,7 @@ button{
 
 .ecofogao-analyze-map .map .estado{
     fill:var(--color-brown-light);
+    cursor: zoom-in;
 }
 
 .ecofogao-analyze-map .estado:hover{

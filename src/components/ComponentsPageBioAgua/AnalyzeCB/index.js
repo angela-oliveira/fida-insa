@@ -153,7 +153,7 @@ class AnalyzeCB extends React.Component {
 
                             </div>
                         </TabPane>
-                        <TabPane tab="Impactos ambientais" key="4">
+                        <TabPane className="analise-cb-background" tab="Impactos ambientais" key="4">
                             <div className="">
                                 <p>Segundo o Sistema Nacional de Informações Saneamento (SNIS), no Brasil o atendimento da população à coleta de esgoto corresponde a 53%. A partir desse cenário, é possível observar uma cadeia de possíveis impactos negativos. Em locais que não possuem saneamento, o principal problema está relacionado ao fato de que os esgotos não tratados são lançados sem nenhum critério. Essa ação gera um efeito dominó, pois com o aumento indiscriminado de carga orgânica no solo, pode ocorrer infiltração pelo lençol freático atingindo os corpos hídricos e com isso, aumentando as taxas de nitrogênio e fósforo na água,. O excesso desses elementos  causam reações químicas, físicas e biológicas e pode ocasionar a morte dos organismos aquáticos, doenças de veiculação hídrica, entre outros problemas. Embora a água tenha um poder incrível de se recuperar, que é o de autodepuração, uma grande quantidade de esgoto lançado dificulta o tratamento para que ela se torne potável novamente.</p>
 
@@ -188,7 +188,7 @@ class AnalyzeCB extends React.Component {
 
                             </div>
                         </TabPane>
-                        <TabPane tab="Impactos sociais" key="5">
+                        <TabPane className="analise-cb-background" tab="Impactos sociais" key="5">
                             <p>
                                 Quando comparado ao reúso no descarte da água cinza, o Sistema bioágua facilita o trabalho da família agricultora, pois para fazer o reúso de descarte eles teriam que reunir as águas após cada uso na cozinha e lavagem das roupas e armazenar esse volume em baldes ou compartimentos, geralmente, de 100 ou 200 litros. Após todo esse trabalho, as águas cinzas podem ser utilizadas nas regas das plantas no entorno das casas, ainda que de maneira manual, sendo planta por planta, tornando ainda mais cansativa a atividade. No sistema bioágua, as águas usadas são destinadas por tubulações hidráulicas até os filtros biológicos e físicos, onde ocorre o tratamento e armazenamento posterior em reservatórios maiores e apropriados. Desse reservatório, a água pode ser bombeada para um sistema de irrigação por gotejo, simplificando todo o trabalho com o reúso de água de descarte domiciliar e ainda possibilita ampliar o sistema de produção de plantas, proporcionando mais tempo livre para outras atividades, inclusive para geração de mais renda.
 
@@ -244,7 +244,7 @@ class AnalyzeCB extends React.Component {
 
                             </div> */}
                         </TabPane>
-                        <TabPane tab="Adaptação à realidade da agricultura familiar" key="6">
+                        <TabPane className="analise-cb-background" tab="Adaptação à realidade da agricultura familiar" key="6">
                             <p>
                                 A adaptação do agricultor à nova rotina se dá por meio das ações de capacitação e troca de saberes que acontecem durante as etapas de implantação da tecnologia. A partir de visitas a propriedades que já utilizam a tecnologia, o agricultor tem a oportunidade de experienciar a rotina da tecnologia e tirar dúvidas em relação à sua manutenção.  Com a implantação do sistema e todo o procedimento de preparação, bem como, o comprometimento do agricultor com a tecnologia, é possível obter os resultados desejados.
                         </p>

@@ -55,7 +55,7 @@ button{
 
 .info-text .txt{
     padding-top: 0.5rem;
-    color: var(--color-black-text);
+    color: var(--color-black);
 }
 
 .info .info-media{
@@ -139,6 +139,7 @@ button{
 
 .biodiges-analyze-map .map .estado{
     fill: var(--color-orange-light);
+    cursor: zoom-in;
 }
 
 .biodiges-analyze-map .estado:hover{
