@@ -1,7 +1,8 @@
 import React from 'react';
 import './index.css';
-import { Collapse } from 'antd';
-
+import { Collapse, Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
+import cartilhaeolica from '../../../utils/pdf/Cartilha-compactado.pdf'
 import Parceiros from "../../../components/Parceiros"
 
 const { Panel } = Collapse;
@@ -36,6 +37,29 @@ function Curiosities() {
                     </Panel>
                 </Collapse>
 
+            </div>
+            <div className='curiosities-label'>Cartilha Eólica</div>
+                <div className='subtitle'><p>Informações resumidas sobre a tecnologia Eólica</p>
+                </div>
+            <div className="component-cartilha">
+                <center>
+                <iframe src={cartilhaeolica}></iframe>
+
+                </center>
+                <br></br>
+                
+            </div>
+            <div className="component-cartilha">
+            <a target="_blank" className="" 
+            href={cartilhaeolica}
+            >
+                    <Button 
+                                    className='button-download-cartilha-eolica' 
+                                    onClick={() => this.openModal()} 
+                                    type="primary" 
+                                    shape="circle" 
+                                    icon={<DownloadOutlined />} 
+                                >Download Cartilha</Button></a>
             </div>
 
             <Parceiros /> 

@@ -35,3 +35,20 @@
     color: #fff!important;
     /* font-weight: bold; */
 }
+iframe {
+    /* width:80rem; */
+    width: 50rem;
+    height: 150vh;
+}
+.component-cartilha {
+    display: flex;
+    justify-content: center;
+}
+.button-download-cartilha-solar {
+    border: none;
+    border-radius:40px;
+    color: #fff;
+    height: 3rem;
+    width: 10rem;
+    background-color: #EFB802;
+}

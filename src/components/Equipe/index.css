@@ -142,10 +142,10 @@
 
 .equipe .label .name{
     font-weight: 600;
-    color: var(--color-black-text);
+    color: var(--color-black);
 }
 .equipe .label .function{
-    color: var(--color-black-text);
+    color: var(--color-black);
 }
 }
 

@@ -101,7 +101,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
+                        <div className='justify-label'>JUSTIFICATIVA</div>
                         <div className='justify-txt'>
                             <p>Tanto o catavento destinado ao bombeamento de águas do subsolo, quanto aqueles destinados à produção de energia elétrica em pequena escala se adequam perfeitamente ao uso em comunidades agrícolas, pois fornecem meios necessários à subsistência humana, animal e vegetal. Deve-se também considerar que a diversificação da matriz energética rural é imprescindível, especialmente para ampliar o aproveitamento dos recursos naturais disponíveis nas propriedades rurais.</p>
 
@@ -135,7 +135,7 @@ class Description extends React.Component {
                                     {/* <p>{this.desciption.content}</p> */}
                                     <p>Tanto o catavento destinado ao bombeamento de águas do subsolo, quanto aqueles destinados à produção de energia elétrica em pequena escala se adequam perfeitamente ao uso em comunidades agrícolas, pois fornecem meios necessários à subsistência humana, animal e vegetal. Deve-se também considerar que a diversificação da matriz energética rural é imprescindível, especialmente para o aproveitamento dos recursos naturais disponíveis nas propriedades rurais. É importante também levar em consideração que o uso de tecnologias como essa melhoram a renda do agricultor, pois diminuem os custos de manutenção. O catavento é uma tecnologia que traz consigo a perspectiva do agricultor adquirir um recurso tecnológico importante que não requer conhecimento técnico avançado e nem apresenta um custo de manutenção elevado para sua manutenção.
                                     </p>
-                                    <p>A possibilidade de rentabilizar os recursos financeiros do agricultor, evitando que ele invista em equipamentos que requeiram conhecimento técnico específico e elevado custo de aquisição, como é o caso de painéis fotovoltáicos, oportunizou a centenas de propriedades rurais a melhoria na qualidade de vida através da cessão de kits de catavento com sistemas de irrigação pelo FIDA. Atualmente no Semiárido brasileiro, os cataventos rurais mais utilizados são aqueles destinados ao bombeamento de água para consumo e irrigação. Na Paraíba, por exemplo, foram instalados 498 cataventos entre os anos de 2016 e 2019, uma parceria do Governo da Paraíba e o FIDA, em comunidades beneficiadas pelo Procase (Projeto de Desenvolvimento Sustentável do Cariri, Seridó e Curimataú), em 56 municípios do semiárido paraibano. Em geral, esses equipamentos são populares e quase sempre possuem o mesmo design, seguindo o modelo americano. Realizam o trabalho mecânico de bombear água e, por serem populares, após instalados, sua manutenção é fácil e com frequência espaçada.
+                                    <p>A possibilidade de rentabilizar os recursos financeiros do agricultor, evitando que ele invista em equipamentos que requeiram conhecimento técnico específico e elevado custo de aquisição, como é o caso de painéis fotovoltáicos, oportunizou a centenas de propriedades rurais a melhoria na qualidade de vida através da cessão de kits de catavento com sistemas de irrigação pelo FIDA. Atualmente no Semiárido brasileiro, os cataventos rurais mais utilizados são aqueles destinados ao bombeamento de água para consumo e irrigação. Na Paraíba, por exemplo, foram instalados 498 cataventos entre os anos de 2016 e 2019, uma parceria do Governo da Paraíba e o FIDA, em comunidades beneficiadas pelo Procase (Projeto de Desenvolvimento Sustentável do Cariri, Seridó e Curimataú), em 56 municípios do semiárido paraibano. Em geral, esses equipamentos são populares e quase sempre possuem o mesmo design, seguindo o modelo americano e realizam o trabalho mecânico de bombear água e, por serem populares, após instalados, sua manutenção é fácil e com frequência espaçada.
                                     </p>
                                 </div>
                             </Modal>
@@ -191,6 +191,39 @@ class Description extends React.Component {
                         </div>
                     </Modal>
 
+                </div>
+                
+                <div className='co-graphic'>
+                    <div className='gra-label'>PANORAMA DOS PROJETOS FIDA</div>
+                    <div className='casca-gra'>
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>QUANTIDADE INSTALADA</div>
+                                <div className='right'>498</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>NÚMERO DE BENEFICIADOS</div>
+                                <div className='right'> 3671 famílias</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>MUNICÍPIOS</div>
+                                <div className='right'>56</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

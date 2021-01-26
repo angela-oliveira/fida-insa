@@ -28,6 +28,8 @@ import cetra from "../../utils/images/parceiros/cetra.png"
 import domtavora from "../../utils/images/parceiros/dom-tavora.jpg"
 // paulo freire
 import paulofreire from "../../utils/images/parceiros/paulofreire.png"
+// paulo freire
+import pdhc from "../../utils/images/parceiros/pdhc.png"
 
 // viva o semiario 
 import vivasemiarido from "../../utils/images/parceiros/viva-semiarido.png"
@@ -40,7 +42,7 @@ import piaui from "../../utils/images/parceiros/Logo-Piaui.png"
 // bahia 
 import bahia from "../../utils/images/parceiros/Logo-Bahia.jpeg"
 // paraiba 
-import paraiba from "../../utils/images/parceiros/logo-Paraiba.jpeg"
+import paraiba from "../../utils/images/parceiros/logo-Paraiba.jpg"
 // sergipe
 import sergipe from "../../utils/images/parceiros/sergipe.jpeg"
 
@@ -93,7 +95,7 @@ function Parceiros() {
                             <Meta title="" description="" />
                         </Card>
                         <Card>
-                            <img alt="example" src={cetra} />
+                            <img alt="example" src={pdhc} />
                             <Meta title="" description="" />
                         </Card>
                         <Card>

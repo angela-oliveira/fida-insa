@@ -1,8 +1,10 @@
 import React from 'react';
 import './index.css';
-import { Collapse } from 'antd';
+import { Collapse, Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
 
 import Parceiros from "../../../components/Parceiros"
+import cartilhabioagua from '../../../utils/pdf/Cartilha Bioágua-compactado.pdf'
 
 const { Panel } = Collapse;
 
@@ -69,6 +71,29 @@ function Curiosities() {
                     </Panel>
                 </Collapse>
 
+            </div>
+            <div className='curiosities-label'>Cartilha Bioágua</div>
+                <div className='subtitle'><p>Informações resumidas sobre a tecnologia Bioágua</p>
+                </div>
+            <div className="component-cartilha">
+                <center>
+                <iframe src={cartilhabioagua}></iframe>
+
+                </center>
+                <br></br>
+                
+            </div>
+            <div className="component-cartilha">
+            <a target="_blank" className="" 
+            href={cartilhabioagua}
+            >
+                    <Button 
+                                    className='button-download-cartilha-bioagua' 
+                                    onClick={() => this.openModal()} 
+                                    type="primary" 
+                                    shape="circle" 
+                                    icon={<DownloadOutlined />} 
+                                >Download Cartilha</Button></a>
             </div>
 
             <Parceiros /> 

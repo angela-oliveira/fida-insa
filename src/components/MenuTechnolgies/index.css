@@ -145,7 +145,7 @@
   .selector li input + label {
   position: absolute;
   left: 50%;
-  bottom: 100%;
+  bottom: 126%;
   width: 0;
   height: 0;
   line-height: 1px;

@@ -16,7 +16,7 @@ body,html{
 h1{
     font: normal normal 800 100px/564px;
     letter-spacing: 13.3px; 
-    color: #141414;
+    color: #000;
     opacity: 1;
 }
 @media screen and (max-width: 720px){
@@ -102,13 +102,13 @@ body .main{
 }
 
 .ant-row .banner-page p {
-    color: var(--color-black-text);
+    color: var(--color-black);
     font-weight: 300;
     font-size: 30px;
 }
 .ant-row .banner-page .text-p {
 
-    color: var(--color-black-text);
+    color: var(--color-black);
     font-weight: 300;
     font-size: 1rem;
     line-height: 0rem;
@@ -147,11 +147,12 @@ body .main{
     width: 100vw;
     margin-left: 20vw;
     position: "relative"; 
+    margin-top: -3rem;
     /* background-image: url("../../utils/images/bg_main.png"); */
 }
 
 .ant-row .bg-main img{
-    width: 90%;
+    width: 75%;
 }
 
 /* TECHS */
@@ -185,14 +186,16 @@ body .main{
 }
 
 .techs p{
-    color: var(--color-black-text);
+    color: var(--color-black);
     text-align: center;
+
     /* font: normal normal 300 24px/136px Raleway; */
     /* margin-top: -55px; */
 
     text-indent: 0rem;
     margin-top: -20px;
     font: normal normal 300 18px/26px Raleway;
+
 }
 
 .techs .ant-card{
@@ -240,11 +243,19 @@ body .main{
 }
 
 .team .ant-card  p{
+
     color: var(--color-black-text);
     /* font: normal normal 300 24px/136px Raleway; */
     /* letter-spacing: 3.19px; */
     /* padding-left: 200px; */
     /* padding: .2rem; */
+/* =======
+    color: var(--color-black);
+    font: normal normal 300 24px/136px Raleway;
+    letter-spacing: 3.19px;
+    padding-left: 200px;
+    text-indent: 0rem;
+>>>>>>> 908b10ad12ee9026b76f1a4de7038b76a56d2aa8 */
     /* textAlign: "center"; */
 
     margin-top: 2rem;

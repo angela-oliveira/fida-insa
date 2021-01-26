@@ -89,7 +89,7 @@ class Description extends React.Component {
                         </div>
                     </div>
                     <div className='justify'>
-                        <div className='justify-label'>QUAL A JUSTIFICATIVA?</div>
+                        <div className='justify-label'>JUSTIFICATIVA</div>
                         <div className='justify-txt'>
                             <p>O Semiárido brasileiro tem um grande potencial para produção de energia solar fotovoltaica, podendo ser melhor explorado para transformar esse potencial em oportunidades reais, capazes de gerar emprego e renda, sendo que as maiores irradiações solares no Brasil estão em áreas de baixo desenvolvimento econômico, principalmente as encontradas nesta região.</p>
 
@@ -137,8 +137,8 @@ class Description extends React.Component {
 
                 <div className='desc-bottom'>
                     <div className='fatores-label'>FATORES QUE PROMOVEM OU LIMITAM A ADOÇÃO DA TECNOLOGIA</div>
-                    <div className='fato-txtA'><p>A energia solar é uma fonte inesgotável e de baixo impacto ambiental, podendo complementar satisfatoriamente a oferta da energia gerada a partir das hidrelétricas, cuja oferta é diminuída pelas recorrentes baixas do nível de água nos reservatórios, impactando de forma negativa a geração de energia e requerendo o acionamento e uso das termelétricas, o que aumenta a liberação de gases de efeito estufa. </p></div>
-                    <div className='fato-txtB'><p>Os custos para a implantação de sistemas com energia solar relativamente altos; no entanto, a economia gerada pode ser de até 5 vezes em relação ao sistema convencional, fazendo com que, apesar do entrave existente para aquisição dos sistemas solares, a sua implementação seja economicamente interessante com o passar do tempo. Desta forma, a economia gerada pode ser equivalente ao valor do investimento realizado com amortização que ocorre ao longo dos meses de uso, e com alta durabilidade e baixo custo de manutenção.</p> </div>
+                    <div className='fato-txtA'><p>A energia solar é uma fonte inesgotável e de baixo impacto ambiental, podendo complementar satisfatoriamente a oferta da energia gerada a partir das hidrelétricas, cuja oferta é diminuída pelas recorrentes baixas do nível de água nos reservatórios. Isso impacta de forma negativa a geração de energia e requer o acionamento e uso de termelétricas, o que aumenta a liberação de gases de efeito estufa. </p></div>
+                    <div className='fato-txtB'><p>Os custos para a implantação de sistemas com energia solar são relativamente altos; no entanto, a economia gerada pode ser de até 5 vezes em relação ao sistema convencional, fazendo com que a sua implementação seja economicamente interessante com o passar do tempo, apesar do entrave existente para aquisição dos sistemas solares. Desta forma, a economia gerada pode ser equivalente ao valor do investimento realizado somado a com amortização que ocorre ao longo dos meses de uso, e com a alta durabilidade e baixo custo de manutenção</p> </div>
                 </div>
 
                 <div className='tooltip tolltip-margin'>
@@ -164,11 +164,44 @@ class Description extends React.Component {
                         }
                     >
                         <div className='content-modal'>
-                            <p>Ainda assim, além de não haver emissão de CO2 e outros gases, sequer de poluentes líquidos ou sólidos durante a geração de energia elétrica, os volumes de emissão nas etapas de fabricação dos equipamentos utilizados no setor fotovoltaico são baixos e a quantidade de energia gerada ao longo da vida útil dos sistemas fotovoltaicos é de 8 a 17 vezes maior que a energia consumida em sua fabricação, sendo então uma alternativa viável nesse segmento. É importante destacar também que, no final do ciclo de vida de um sistema fotovoltaico, cerca de 85% de seus componentes podem ser reciclados e reaproveitados, de forma que os impactos ambientais, já bastante reduzidos, tendem a se tornar ainda menores no longo prazo</p>
+                            <p>Durante a geração de energia elétrica fotovoltaica, além de não haver emissão de CO2 e outros gases, sequer de poluentes líquidos ou sólidos, os volumes de emissão nas etapas de fabricação dos equipamentos utilizados são baixos. Além disso,  a quantidade de energia gerada ao longo da vida útil dos sistemas fotovoltaicos é de 8 a 17 vezes maior que a energia consumida em sua fabricação, sendo, portanto, uma alternativa viável nesse segmento. É importante destacar também que, no final do ciclo de vida de um sistema fotovoltaico, cerca de 85% de seus componentes podem ser reciclados e reaproveitados, de forma que os impactos ambientais, já bastante reduzidos, tendem a se tornar ainda menores no longo prazo.</p>
                         </div>
                     </Modal>
 
                 </div>
+               
+                <div className='co-graphic'>
+                        <div className='gra-label'>PANORAMA DOS PROJETOS FIDA</div>
+                        <div className='casca-gra'>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>QUANTIDADE INSTALADA</div>
+                                    <div className='right'>2722</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>NÚMERO DE BENEFICIADOS</div>
+                                    <div className='right'> 8461 famílias</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div className='graphic'>
+                                <div className='label'>
+                                    <div className='left'>MUNICÍPIOS</div>
+                                    <div className='right'>24</div>
+                                </div>
+                                <div className='line-gra'>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         )
     }

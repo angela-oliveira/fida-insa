@@ -67,7 +67,7 @@ function Experience() {
                     <div className='experience-text'>
                         <div className='experience-text-label'>EXPERIÊNCIA BIODIGESTOR</div>
                         <div className='experience-text-txt'>
-                            <p></p>
+                            <p>O FIDA foi até os municípios de Varjota e Sobral no estado do Ceará para visitar alguns agricultores beneficiados pela tecnologia biodigestor. No Assentamento Cajazeiras na cidade de Varjota, o agricultor Antônio de Nazaré Mesquita utiliza o Biodigestor para produção de biogás e biofertilizante, e, com essa tecnologia, ele consegue destinar adequadamente os resíduos orgânicos produzidos em sua propriedade. No Sítio Cajazeiras, município de Varjota - CE, o casal de agricultores José Caetano Alves e Rosa Rodrigues Alves utilizam o Biodigestor para produção de biogás que é usado no fogão da cozinha, e para abastecer o sistema de digestão dos resíduos orgânicos que geram o biogás, eles utilizam o esterco comprado na comunidade rural onde residem, fomentando dessa forma a economia local. No Sítio Casa Forte, localizado no município de Sobral, o agricultor Vanderlei Alves Pereira utiliza o Biodigestor para produção de biogás para cozinhar, e o rejeito deste sistema ele utiliza como adubo orgânico, tornando desnecessário o uso de fertilizantes comerciais, e consequentemente, economiza na aquisição de insumos agrícolas e do gás de cozinha tradicional.</p>
                         </div>
                     </div>
                     <div className='video'>
@@ -80,9 +80,9 @@ function Experience() {
                 <div className='experience-content'>
 
                     <div className='experience-text'>
-                        <div className='experience-text-label'>EXPERIÊNCIA BIODIGESTOR</div>
+                        <div className='experience-text-label'>PROJETO BIODIGESTOR CASEIRO – ECIT Chiquinho Cartaxo</div>
                         <div className='experience-text-txt'>
-                            <p></p>
+                            <p>O projeto, Biodigestor Caseiro, é mais um dentre os projetos envolvendo Energias Renováveis, na Escola Cidadã Integral Técnica Estadual Chiquinho Cartaxo, na cidade de Sousa, PB. Tendo como núcleo gestor Francisca Salete de Sousa, Cátia Larissi Mendes Dias e Guilherme Damião Pedrosa. O mesmo foi idealizado e construído pelos professores da Área Técnica José Joaquim de Souza Neto, Giordano Oliveira, Anderson Tôrres e Wagner Vinícius, assim como, por 20 (vinte) estudantes do primeiro ano do Ensino Médio, durante as aulas da disciplina de Inovação Social e Científica. Durante o processo de imersão do Desing Thinking - uma das etapas da disciplina de ISC, os alunos analisaram as problemáticas existentes na escola e perceberam que a demanda por gás de cozinha (GLP) e o desperdício de comida durante as refeições eram elevados. Diante deste cenário, a ideia sugerida pelos alunos para solucionar ambos os problemas foi desenvolver um biodigestor de pequeno porte, utilizando material alternativo e de fácil aquisição na comunidade local. Proporcionando o reaproveitamento dos resíduos orgânicos, produzindo biogás para o fogão utilizado na cantina e o biofertilizante, como adubo, nas áreas verdes da Escola Técnica. Representando o equivalente a 5,88 créditos de carbono anuais e 1 botijão de gás GLP/mês, proporcionando uma economia anual significativa aos cofres públicos.</p>
                         </div>
                     </div>
                     <div className='video'>
@@ -93,26 +93,6 @@ function Experience() {
                     {/* <Pagination size="small" total={50} />  */}
                 </div>
             </Carousel>
-            {/* <div className='photos'>
-
-                <Gallery photos={photos} onClick={openLightbox} direction={"column"} /> */}
-            {/* Esse argumento PHOYO_SET será substituida para uma
-                 pasta com as fotos */}
-            {/* <ModalGateway>
-                  {viewerIsOpen ? (
-                    <Modal onClose={closeLightbox}>
-                      <Carousel
-                        currentIndex={currentImage}
-                        views={photos.map(x => ({
-                          ...x,
-                          srcset: x.srcSet,
-                          caption: x.title
-                        }))}
-                      />
-                    </Modal>
-                  ) : null}
-                </ModalGateway>
-            </div> */}
         </div>
     )
 }
