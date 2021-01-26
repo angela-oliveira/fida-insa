@@ -138,6 +138,7 @@ button{
 
 .solar-map .map .estado{
     fill: var(--color-yellow-light);
+    cursor: zoom-in;
 }
 
 .solar-map .estado:hover{

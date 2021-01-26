@@ -139,6 +139,7 @@ button{
 
 .ecofogao-analyze-map .map .estado{
     fill:var(--color-brown-light);
+    cursor: zoom-in;
 }
 
 .ecofogao-analyze-map .estado:hover{
