@@ -2,10 +2,16 @@ html{
     overflow-x: hidden;
 }
 
+#root{
+    /* width:100%; */
+    
+}
+
 body,html{
     font-family: 'Raleway', sans-serif;
-    width:100%
-
+    width:100% !important;
+    /* overflow: hidden; */
+    /* width: 720px !important; */
 }
 h1{
     font: normal normal 800 100px/564px;
@@ -13,16 +19,27 @@ h1{
     color: #141414;
     opacity: 1;
 }
+@media screen and (max-width: 720px){
 
-@media screen  and (max-width:720px){
+body .main{
+    /* height: 100%; */
+    /* border: 1px solid #000000; */
+    /* width: 720px !important; */
+    display: grid;
+    overflow: hidden;
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* grid-column: repeat(6, 1fr); */
+}
+
+@media screen and (min-width:360px){
 
     body .main{
-        display: grid;
-        /* grid-template-columns: repeat(6, 1fr); */
-        /* grid-column: repeat(6, 1fr); */
+        display: block;
     }
-/* colocar grid como base */
 }
+
+
+/* colocar grid como base */
 
 .ant-row .ant-col div{
     display: block !important;
@@ -36,10 +53,20 @@ h1{
 
 .main-banner-page{
     display: flex;
-    padding-left: 150px;
+    grid-column: 1/7;
+    padding-left:2rem;
     margin-bottom: 3rem;
-    flex-flow: nowrap; 
+    flex-flow:wrap; 
+    width: 100%;
 }
+
+/* @media screen and (min-width:360px){
+    .main-banner-page{
+        padding-left: 150px;
+        margin-bottom: 3rem;
+        flex-flow: nowrap; 
+    }
+} */
 
 .ant-row .ant-col{
     margin-top: 100px;
@@ -52,21 +79,26 @@ h1{
     margin-bottom: -50;
 }
 
+.banner-page{
+    display: block;
+}
+
 .ant-row .banner-page .renova {
-    font-Size: 80px;
+    font-Size: 28px;
     font-Weight: 800;
-    letter-Spacing: 13.3px;
+    letter-Spacing: 4.3px;
     margin-Bottom: -30px;
     color: var(--color-black);
     opacity: 1;
 }
 
 .ant-row .banner-page .fida {
-    font-size: 80px;
+    font-size: 28px;
     margin-bottom: -10px;
     font-weight: 800;
     color: var(--color-green-light);
-    letter-spacing: 13.3px;
+    line-height: 4.2rem;
+    letter-spacing: 5.3px;
 }
 
 .ant-row .banner-page p {
@@ -78,44 +110,20 @@ h1{
 
     color: var(--color-black-text);
     font-weight: 300;
-    font-size: 30px;
+    font-size: 1rem;
+    line-height: 0rem;
 }
 
 .ant-row .banner-page button{
     border: solid;
     border-radius: 0px 16px;
     color: var(--color-green-dark);
-    height: 72px;
-    width: 250px;
-    margin-top: 3rem;
+    height: 38px;
+    width: 170px;
+    margin-top: 2rem;
     /* font-size: 17px; */
-    font: normal normal bold 16px Raleway;
+    font: normal normal bold 12px Raleway;
     border-color: var(--color-green-border);
-}
-
-@media screen  and (max-width:720px){
-
-
-    .main-banner-page{
-        display: flex;
-        grid-column: 1/7;
-        padding-left:2rem;
-        margin-bottom: 3rem;
-        flex-flow:wrap; 
-        width: 100%;
-    }
-
-    .banner-page{
-        display: block;
-    }
-    
-    .bg-main{
-        display: none;
-        width: 100vw;
-        margin-left: 20vw;
-    }
-
-    
 }
 
 /* MODAL */
@@ -135,6 +143,9 @@ h1{
 
 }
 .ant-row .bg-main{
+    display: none;
+    width: 100vw;
+    margin-left: 20vw;
     position: "relative"; 
     /* background-image: url("../../utils/images/bg_main.png"); */
 }
@@ -145,7 +156,8 @@ h1{
 
 /* TECHS */
 .techs{
-    margin-top: 10%;
+    grid-column: 1/7;
+    margin-top: 0rem;
     position: relative;
 }
 .techs .ant-card{
@@ -159,24 +171,28 @@ h1{
 
 .techs .ant-card .div-yellow{
     background-color: var(--color-yellow);
-    width: 495px;
-    height: 34px;
+    width: 325px;
+    height: 22px;
 }
 
 .techs .ant-card h1{
     color: var(--color-green-dark);
     /* font-weight: 700; */
-    font: normal normal 800 56px/136px Raleway;
+    font: normal normal 800 29px/122px Raleway;
     letter-spacing: 7.45px;
-    margin-top: -65px;
-    margin-bottom: -20px;
+    margin-top: -68px;
+    margin-bottom: -45px;
 }
 
 .techs p{
     color: var(--color-black-text);
     text-align: center;
-    font: normal normal 300 24px/136px Raleway;
-    margin-top: -55px;
+    /* font: normal normal 300 24px/136px Raleway; */
+    /* margin-top: -55px; */
+
+    text-indent: 0rem;
+    margin-top: -20px;
+    font: normal normal 300 18px/26px Raleway;
 }
 
 .techs .ant-card{
@@ -186,14 +202,7 @@ h1{
 }
 
 .techs .ant-card img{
-    width: 500px;
-}
-
-@media screen and (max-width:720px){
-    .techs{
-        grid-column: 1/7;
-    }
-
+    width: 17rem;
 }
 
 
@@ -202,9 +211,11 @@ h1{
 
 .team{
     margin-top: 10%;
+    margin-bottom: 5rem;
 }
 
 .team{
+    grid-column: 1/7;
     position: relative;
     overflow:none;
 }
@@ -215,23 +226,37 @@ h1{
 
 .team .ant-card h1{
     color: var(--color-green-dark);
-    font: normal normal 800 56px/136px Raleway;
+    /* font: normal normal 800 56px/136px Raleway; */
     /* font-weight: 700; */
     margin-top: -70px;
-    padding-left: 200px;
+    /* padding-left: 200px; */
     margin-bottom: -75px;
+
+    
+    font: normal normal 800 33px/139px Raleway;
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
 }
 
 .team .ant-card  p{
     color: var(--color-black-text);
-    font: normal normal 300 24px/136px Raleway;
-    letter-spacing: 3.19px;
-    padding-left: 200px;
+    /* font: normal normal 300 24px/136px Raleway; */
+    /* letter-spacing: 3.19px; */
+    /* padding-left: 200px; */
+    /* padding: .2rem; */
     /* textAlign: "center"; */
+
+    margin-top: 2rem;
+    
+    font: normal normal 300 21px/30px Raleway;
+    letter-spacing: 0.19px;
+    /* padding-left: 200px; */
+    padding: 0;
 }
 .team .ant-card .div-yellow{
     background-color: var(--color-yellow);
-    width: 495px;
+    width: 18rem;
     height: 34px;
 }
 .team .ant-row{
@@ -250,24 +275,11 @@ h1{
     width: 100px;
 }
 
-
-@media screen and (max-width:720px){
-    .team{
-        grid-column: 1/7;
-    }
-    .team .ant-card  p{
-        padding: .2rem;
-    }
-
-    
-}
-
-
-
 /* PARCEIROS */
 
 .parceiros{
     margin-top: 10%;
+    grid-column: 1/7;
 }
 .parceiros .ant-card{
     display: flex;
@@ -282,6 +294,8 @@ h1{
     text-align: center;
     margin-bottom: 10px;
 
+    width: 18rem;
+
 }
 
 .parceiros .ant-card .ant-row .ant-card {
@@ -295,44 +309,48 @@ h1{
     height: 3rem;
 }
 
-@media screen and (max-width:720px){
-    .parceiros{
-        grid-column: 1/7;
-    }
+.parceiros .ant-card .ant-row .ant-card .logo-grande{
+    /* height: 4rem; */
   
-  }
-
+    height: 2rem;
+}
 /* PATHs */
 
 .path1{
-    
-    position: absolute;
-    /* border: 1px solid #00000065; */
-    width: 50vw;
-    height: 50vh;
-    /* height: 10rem; */
-    background-position-y: -19rem;    
-    background-position-x: -18rem;
-    background-image: url('../../utils/images/Path8.svg');
-    background-size: 140%;
-    background-repeat: no-repeat;
-    transform: rotate(5deg);
-    z-index: -10;
+        /* display: none; */
+        position: absolute;
+        background-image: url(../../utils/images/Path8.svg);
+        background-repeat: no-repeat;
+        z-index: 1;
+        width: 70vw;
+        height: 6rem;
+        grid-column: 1/4;
+        background-position-y: -7.5rem;
+        background-position-x: -7.5rem;
+        background-size: 24rem;
+        transform: rotate(3deg);
 }
 
 
 .path2 {
+
+    display: none;
+
     position: absolute;
     /* border: 1px solid #00000065; */
-    width: 103%;
+    /* width: 103%; */
     height: 100vh;
     top: 10px;
-    background-position-y: -6rem;
-    background-position-x: 0rem;
-    background-image: url(/static/media/Path9.4397ba26.svg);
-    background-size: 100%;
+    background-image: url('../../utils/images/Path9.svg');
     background-repeat: no-repeat;
     z-index: -10;
+
+    width: 100%;
+    height: 100vh;
+    bottom: 7rem;
+    background-position-y: 2rem;
+    background-position-x: -7rem;
+    background-size: 161%;
 
 }
 
@@ -367,35 +385,11 @@ h1{
 }
 
 
+ }
 
 /* PATHs @MEDIA */
 
  @media screen and (max-width: 720px){
-
-    .path1{
-        width: 100vw;
-        height: 30vh;
-        grid-column:1/4;
-        background-position-y: -13.5rem;    
-        background-position-x: -14.5rem;
-        background-size: 42rem;
-        transform: rotate(3deg);
-
-    }
-
-    .path2{
-        position: absolute;
-        /* border: 1px solid #00000065; */
-        width: 100%;
-        height: 100vh;
-        bottom: 7rem;
-        background-position-y: 2rem;
-        background-position-x: -7rem;
-        background-image: url(/static/media/Path9.4397ba26.svg);
-        background-size: 161%;
-        background-repeat: no-repeat;
-        z-index: -10;
-    }
 
     .path3{
         display: none;
@@ -416,17 +410,321 @@ h1{
 .footer img {
     width: 100%;
 }
-.parceiros .ant-card .ant-row .ant-card img {
-  height: 4rem;
-}
-.logo-grande {
-  height:  5rem!important;
-}
+
 .logo-fida {
-  height:  7rem!important;
+  /* height:  7rem!important; */
+
+  height:  4rem!important;
+
+
 }
 
 .link-table-invest a{
     text-decoration: none;
     color: black;
+}
+
+@media screen and (min-width:420px){
+    
+    h1{
+        font: normal normal 800 100px/564px;
+        letter-spacing: 13.3px; 
+        color: #000;
+        opacity: 1;
+    }
+    
+    .ant-row .ant-col div{
+        display: block !important;
+    
+    }
+    
+    .ant-card {background: none;}
+    
+    
+    /* BANNER */
+    
+    .main-banner-page{
+        display: flex;
+        padding-left: 150px;
+        margin-bottom: 3rem;
+        flex-flow: nowrap; 
+    }
+    
+    .ant-row .ant-col{
+        margin-top: 100px;
+    }
+    
+    
+    .ant-row .ant-col img{
+        width: 450px;
+        padding-left: -200px;
+        margin-bottom: -50;
+    }
+    
+    .ant-row .banner-page .renova {
+        font-Size: 80px;
+        font-Weight: 800;
+        letter-Spacing: 13.3px;
+        margin-Bottom: -30px;
+        color: var(--color-black);
+        opacity: 1;
+    }
+    
+    .ant-row .banner-page .fida {
+        font-size: 80px;
+        margin-bottom: -10px;
+        font-weight: 800;
+        color: var(--color-green-light);
+        letter-spacing: 13.3px;
+    }
+    
+    .ant-row .banner-page p {
+        color: var(--color-black);
+        font-weight: 300;
+        font-size: 30px;
+    }
+    .ant-row .banner-page .text-p {
+    
+        color: var(--color-black);
+        font-weight: 300;
+        font-size: 30px;
+    }
+    
+    .ant-row .banner-page button{
+        border: solid;
+        border-radius: 0px 16px;
+        color: var(--color-green-dark);
+        height: 72px;
+        width: 250px;
+        margin-top: 3rem;
+        /* font-size: 17px; */
+        font: normal normal bold 16px Raleway;
+        border-color: var(--color-green-border);
+    }
+    
+    
+    /* MODAL */
+    
+    
+    .content-modal-home p{
+        text-align: justify;
+        text-indent: 3rem;
+    }
+    .modal-home-page .ant-modal-title{
+        font-weight: bold;
+        text-align: center;
+        color: var(--color-green-dark);
+    }
+    .modal-home-page .ant-modal-header {
+        background-color: #FAF238;
+    
+    }
+    .ant-row .bg-main{
+        position: "relative"; 
+        margin-top: -3rem;
+        /* background-image: url("../../utils/images/bg_main.png"); */
+    }
+    
+    .ant-row .bg-main img{
+        width: 75%;
+    }
+    
+    /* TECHS */
+    .techs{
+        margin-top: 10%;
+        position: relative;
+    }
+    .techs .ant-card{
+        display: "flex";
+        /* padding-bottom: '0px',  */
+        /* flex-direction: "column", */
+        justify-content: "center";
+        text-align: "center";
+        background: none;
+    }
+    
+    .techs .ant-card .div-yellow{
+        background-color: var(--color-yellow);
+        width: 495px;
+        height: 34px;
+    }
+    
+    .techs .ant-card h1{
+        color: var(--color-green-dark);
+        /* font-weight: 700; */
+        font: normal normal 800 56px/136px Raleway;
+        letter-spacing: 7.45px;
+        margin-top: -65px;
+        margin-bottom: -20px;
+    }
+    
+    .techs p{
+        color: var(--color-black);
+        text-align: center;
+        text-indent: 0;
+        font: normal normal 300 24px/136px Raleway;
+        margin-top: -55px;
+    }
+    
+    .techs .ant-card{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .techs .ant-card img{
+        width: 500px;
+    }
+    
+    
+    /* EQUIPE */
+    
+    
+    .team{
+        margin-top: 10%;
+    }
+    
+    .team{
+        position: relative;
+        overflow:none;
+    }
+    
+    .team .ant-card {
+        background: none;
+    }
+    
+    .team .ant-card h1{
+        color: var(--color-green-dark);
+        font: normal normal 800 56px/136px Raleway;
+        /* font-weight: 700; */
+        margin-top: -70px;
+        padding-left: 200px;
+        margin-bottom: -75px;
+    }
+    
+    .team .ant-card  p{
+        color: var(--color-black);
+        font: normal normal 300 24px/136px Raleway;
+        letter-spacing: 3.19px;
+        padding-left: 200px;
+        text-indent: 0rem;
+        /* textAlign: "center"; */
+    }
+    .team .ant-card .div-yellow{
+        background-color: var(--color-yellow);
+        width: 495px;
+        height: 34px;
+    }
+    .team .ant-row{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .team .ant-row .ant-card{
+        height: 240px;
+        width: 240px;
+        margin: 10px;
+    }
+    
+    .team .ant-row .ant-card img{
+        width: 100px;
+    }
+    
+    
+    /* PARCEIROS */
+    
+    .parceiros{
+        margin-top: 10%;
+    }
+    .parceiros .ant-card{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .parceiros .ant-card .ant-row{
+    
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+    
+    }
+    
+    .parceiros .ant-card .ant-row .ant-card {
+        /* height: 100px;
+        width: 150px; */
+        margin: 10px;
+    
+    }
+    
+    .parceiros .ant-card .ant-row .ant-card img{
+        height: 3rem;
+    }
+   
+    
+    /* PATHs */
+    
+    .path1{
+        
+        position: absolute;
+        /* border: 1px solid #00000065; */
+        width: 50vw;
+        height: 50vh;
+        /* height: 10rem; */
+        background-position-y: -19rem;    
+        background-position-x: -18rem;
+        background-image: url('../../utils/images/Path8.svg');
+        background-size: 140%;
+        background-repeat: no-repeat;
+        transform: rotate(5deg);
+        z-index: -10;
+    }
+    
+    
+    .path2 {
+        position: absolute;
+        /* border: 1px solid #00000065; */
+        width: 103%;
+        height: 100vh;
+        top: 10px;
+        background-position-y: -6rem;
+        background-position-x: 0rem;
+        background-image: url(/static/media/Path9.4397ba26.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: -10;
+    
+    }
+    
+    .path3{
+        position: absolute;
+        /* border: 1px solid #00000065; */
+        width: 105vw;
+        height: 100vh;
+        top: -20rem;
+        right: -1rem;
+        background-image: url('../../utils/images/Path10.svg');
+        background-position-y: -19rem;
+        background-position-x: -13rem;
+        transform: rotate(-4deg);
+        background-size: 118%;
+        background-repeat: no-repeat;
+        z-index: -10;
+    }
+    
+    .path4{
+        position: absolute;
+        /* border: 1px solid #00000065; */
+        width: 50vw;
+        height: 50vh;
+        top: -8rem;
+        background-position-y: -4rem;
+        background-position-x: -9rem;
+        background-image: url('../../utils/images/Path11.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: -10;
+    }
 }

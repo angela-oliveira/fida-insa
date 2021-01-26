@@ -87,10 +87,21 @@ function MenuTechnologies() {
 
     // DETERMINA MOMENTO ATIVAÇÃO DA ANIMAÇÃO DO MENU TECNOLOGIAS
     function animateScroll() {
-      const windowsTop = (window.pageYOffset) / 3;
-      if ((windowsTop) > menu.offsetTop) {
-        toggleOptions('.selector')
+      let width = window.innerWidth;
+      console.log("wid: "+width)
+      if (width <= 470) {
+        const windowsTop = (window.pageYOffset) * 3 / 2;
+        if ((windowsTop) > menu.offsetTop) {
+          toggleOptions('.selector')
+        }
+
+      } else {
+        const windowsTop = (window.pageYOffset) / 3;
+        if ((windowsTop) > menu.offsetTop) {
+          toggleOptions('.selector')
+        }
       }
+
     }
 
 

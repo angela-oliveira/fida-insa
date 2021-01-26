@@ -1,5 +1,39 @@
+/* PARCEIROS */
+
+.parceiros{
+  margin-top: 10%;
+  grid-column: 1/7;
+}
+.parceiros .ant-card{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.parceiros .ant-card .ant-row{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.parceiros .ant-card .ant-row .ant-card {
+  /* height: 100px;
+  width: 150px; */
+  margin: 10px;
+
+}
+
+.parceiros .ant-card .ant-row .ant-card img{
+  height: 3rem;
+}
+
 .parceiros{
   margin: 2rem 0rem;
+
+  
 }
 .parceiros .ant-card{
   display: flex;
@@ -24,8 +58,11 @@
 
 }
 
-.parceiros .ant-card .ant-row .ant-card img{
-  height: 4rem;
-}
 
+
+/* .parceiros .ant-card .ant-row .ant-card img{
+  height: 4rem;
+
+  height: 2rem;
+} */
 

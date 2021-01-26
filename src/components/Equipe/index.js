@@ -30,9 +30,9 @@ console.log(width)
 let slidesToShow = 4
 let cellSpacing = 47
 
-if (width <= 720){
+if (width <= 430){
     slidesToShow = 2;
-    cellSpacing = 90;
+    cellSpacing = 0;
 }
 
 class Equipe extends React.Component {

@@ -27,6 +27,7 @@ class Case extends React.Component {
                     slidesToShow={1}
                     slideWidth='700px'
                     cellAlign='center'
+                    cellSpacing={1}
                     vertical={true}
                     defaultControlsConfig={{
                         nextButtonText: ' ',
