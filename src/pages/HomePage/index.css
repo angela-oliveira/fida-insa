@@ -425,9 +425,23 @@ body .main{
 .logo-fida {
   /* height:  7rem!important; */
 
-  height:  4rem!important;
+  /* height:  4rem!important; */
 
 
+}
+.parceiros .ant-card .ant-row .ant-card img {
+  height: 4rem;
+}
+.logo-grande {
+  height:  5rem!important;
+}
+.logo-fida {
+  height:  7rem!important;
+}
+
+.link-table-invest a{
+    text-decoration: none;
+    color: black;
 }
 
 .link-table-invest a{
