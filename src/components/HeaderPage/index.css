@@ -39,3 +39,14 @@
     }
 }
 
+
+.modal-contact .ant-modal-header {
+    background-color: #FAF238;
+    color: black;
+
+}
+.modal-contact .ant-modal-title{
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-green-dark);
+}
