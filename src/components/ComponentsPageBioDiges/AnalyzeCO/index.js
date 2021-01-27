@@ -3,6 +3,10 @@ import { Card, Row, Col, Tooltip, Modal, Button, Table } from 'antd'
 import './index.css';
 import TRL from "../../../utils/images/cor2.png"
 import { PlusOutlined } from '@ant-design/icons';
+import analize01 from '../../../utils/images/biodigestor/analizecobiodigestor-1.jpeg'
+import analize02 from '../../../utils/images/biodigestor/analizecobiodigestor-2.jpeg'
+import analize03 from '../../../utils/images/biodigestor/analizecobiodigestor-3.jpeg'
+import analize04 from '../../../utils/images/biodigestor/analizecobiodigestor-4.jpeg'
 
 const columns = [
     {
@@ -104,11 +108,33 @@ class AnalyzeCO extends React.Component {
                     <div className="site-card-border-less-wrapper">
 
                         <Card bordered={false}>
-                            <p>O biodigestor apresenta a vantagem de gerar biogás (CH4) pela digestão anaeróbica da matéria orgânica animal e vegetal. Dentre os combustíveis domésticos, o biogás é considerado o que possui menor impacto ambiental. </p>
+                            <p>A análise realizada foi fundamentada nas estimativas apresentadas por um estudo publicado por Mattos e Krehbiel (2010), que compararam a emissão da massa de CO2 equivalente em quilogramas (kgCO2e) antes e após a utilização do biodigestor por uma família de agricultores típica da região do Cariri paraibano, em função do uso de outras fontes para cocção de alimentos.</p>
 
-                            <p>Para a obtenção das emissões de CO2 pelo biodigestor, é necessário um estudo caso a caso para realizar um inventário considerando a quantidade e o tipo de material orgânico adicionado (esterco de aves, suínos, bovinos, material vegetal) e as análises químicas do biofertilizante produzido. </p>
+                            <p>Conforme a figura a seguir, os dados apresentados por Mattos e Krehbiel (2010), indicam que as emissões de Gases de Efeito Estufa (GEE) provenientes da atividade de cocção realizada por uma família de agricultores típica da região do Cariri Paraibano podem variar de 1.433 a 3.198 kgCO2e/ano. Vale ressaltar que a quantidade emitida depende do tipo de combustível utilizado.</p>
 
-                            <p>O cálculo da redução das emissões de CO2 no biodigestor deve levar em conta a quantidade emitida pela queima do biogás em comparação com o gás de cozinha tradicional (GLP) para cocção, no escopo da combustão estacionária. </p>
+                            <div className="img-analize-co">
+                                <img src={analize04}></img>
+                            </div>
+                            
+                            <p>Com a instalação do biodigestor, os valores da emissão de GEE reduziram a um intervalo de 172 a 750 kgCO 2 e/ano. A emissão de KgCO 2 e no biodigestor varia de acordo com o deslocamento da câmara de armazenamento de biogás.</p>
+
+                            <div className="img-analize-co">
+                                <img src={analize03}></img>
+                            </div>
+                            
+                            <p>A imagem a seguir apresenta o esquema do deslocamento da caixa de armazenamento do gás e seus respectivos estágios.</p>
+                            
+                            <div className="img-analize-co">
+                                <img src={analize01}></img>
+                            </div>
+                            
+                            <p>Em relação ao tratamento anaeróbico dos resíduos orgânicos animais, verifica-se que houve uma redução de, aproximadamente, 35% das emissões de kgCO 2 e por ano, conforme o gráfico a seguir.</p>
+                            
+                            <div className="img-analize-co">
+                                <img src={analize02}></img>
+                            </div>
+                            <p><b>Referências:</b></p>
+                            <p>MATTOS, L. C.; KREHBIEL, J. A Conferência da Terra Aquecimento global, sociedade e biodiversidade - Volume 1. In: A Conferência da Terra: Aquecimento global, sociedade e biodiversidade. 3. ed. João Pessoa: Editora Universitária da UFPB, 2010. p. 315–321.</p>
                         </Card>
                     </div>
                     <div className='co-bottom'></div>
