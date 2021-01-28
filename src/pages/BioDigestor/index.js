@@ -44,7 +44,16 @@ function BioDigestor() {
 
     return (
         <div id='body'>
-            <HeaderTechs linkBack='/eco-fogao' iconBack={icoFogao} linkNext='/energia-solar' iconNext={icoSolar} ></HeaderTechs>
+            <HeaderTechs 
+                nameBack={'Ecofogão'} 
+                nameNext={'Energia Solar'} 
+                linkBack='/eco-fogao' 
+                iconBack={icoFogao} 
+                linkNext='/energia-solar' 
+                iconNext={icoSolar} 
+                idBack={'ecofogao'}
+                idNext={'solar'}
+            ></HeaderTechs>
             <Description />
             <Mapa data={dataMapa} foto={fotoDiges}/>
             <AnalyzeCB />

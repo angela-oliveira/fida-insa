@@ -49,6 +49,12 @@ const data = [
         ecofogao: '10,03',
       },
 ]
+// const number = '<sub id="horaInicial">2</sub>'
+// const tmpDiv = document.createElement('div');
+// tmpDiv.innerHTML = number;
+
+// const bar = tmpDiv.querySelector("#horaInicial").textContent;
+
 
 const columnsTRL = [
     {
@@ -364,6 +370,29 @@ class AnalyzeCO extends React.Component {
                                 dataSource={data} 
                                 pagination={ false } 
                             />
+
+                            {/* <Table 
+                                className='table-ecofogao-analyzeco'
+                                columns={[
+                                  {
+                                    title: 'Gás',
+                                    dataIndex: 'gas',
+                                    key: 'gas',
+                                  },
+                                  {
+                                    title: 'Fogão a lenha tradicional tCO<sub>2</ sub>e',
+                                    dataIndex: 'fogao',
+                                    key: 'fogao',
+                                  },
+                                  {
+                                    title: `tCO${bar.sub()}e`,
+                                    dataIndex: 'ecofogao',
+                                    key: 'ecofogao',
+                                  }
+                                ]} 
+                                dataSource={data} 
+                                pagination={ false } 
+                            /> */}
                             <Card bordered={false}>
                               <p><b>Referências:</b></p>
                               <p>AMERICANO, B. B. et al. Energy. Disponível em: <a target="_blanck" href='https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html'>Link</a>. Acesso em: 16 dez. 2020.</p>

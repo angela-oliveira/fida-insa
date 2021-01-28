@@ -23,6 +23,7 @@ import infoEolica from "../../utils/filesJSON/eolica/infoEolica.json";
 
 console.log(infoEolica.descricao)
 
+const colorBack = '#EFB802'
 function Eolica() {
     useEffect(()=>{
         window.scrollTo(0, 0)
@@ -30,7 +31,16 @@ function Eolica() {
     return (
         <div id='body'>
             
-            <HeaderTechs linkBack='/energia-solar' iconBack={icoSolar} linkNext='/bio-agua' iconNext={icoAgua} ></HeaderTechs>
+            <HeaderTechs 
+                linkBack='/energia-solar' 
+                nameBack={'Energia Solar'} 
+                nameNext={'Bioágua'} 
+                iconBack={icoSolar} 
+                linkNext='/bio-agua' 
+                iconNext={icoAgua} 
+                idBack={'solar'}
+                idNext={'bioagua'}
+            ></HeaderTechs>
             <Description data={infoEolica.descricao}/>
             <Mapa data={dataMap}/>
             <AnalyzeCB data={infoEolica.analiseCusto}/>
