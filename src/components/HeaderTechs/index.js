@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { PageHeader, Button } from 'antd';
+import { PageHeader, Button, Tooltip } from 'antd';
 import 'antd/dist/antd.css';
 
 
@@ -20,17 +20,21 @@ const HeaderTechs = (props) => {
             </PageHeader>
             <div className="nave-left nave">
                 <Link to={props.linkBack}>
-                    <button>
-                        <img src={props.iconBack} alt=''></img>
-                    </button>
+                    <Tooltip placement="bottom" title={props.nameBack} >
+                        <button id={props.idBack}>
+                            <img src={props.iconBack} alt=''></img>
+                        </button>
+                    </Tooltip>
                 </Link>
             </div>
 
             <div className="nave-right nave">
                 <Link to={props.linkNext}>
-                    <button>
-                        <img src={props.iconNext} alt=''></img>
-                    </button>
+                    <Tooltip placement="bottom" title={props.nameNext} >
+                        <button id={props.idNext}>
+                            <img src={props.iconNext} alt=''></img>
+                        </button>
+                    </Tooltip>
                 </Link>
             </div>
         </div>

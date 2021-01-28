@@ -27,7 +27,16 @@ function EcoFogao() {
 
     return (
         <div id='body'>
-            <HeaderTechs linkBack='/bio-agua' iconBack={icoAgua} linkNext='/bio-digestor' iconNext={icoBioDigestor} ></HeaderTechs>
+            <HeaderTechs 
+                nameBack={'Bioágua'} 
+                nameNext={'Biodigestor'} 
+                linkBack='/bio-agua' 
+                iconBack={icoAgua} 
+                linkNext='/bio-digestor' 
+                iconNext={icoBioDigestor} 
+                idBack={'bioagua'}
+                idNext={'biodigestor'}
+            ></HeaderTechs>
             <Description />
             <Mapa data={dataMap}/>
             <AnalyzeCB/>
