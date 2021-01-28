@@ -2,56 +2,46 @@ html{
     overflow-x: hidden;
 }
 
+#root{
+    /* width:100%; */
+    
+}   
+
 body,html{
     font-family: 'Raleway', sans-serif;
-    width:100%
-
+    width:100% !important;
+    /* overflow: hidden; */
+    /* width: 720px !important; */
 }
+    
 h1{
     font: normal normal 800 100px/564px;
     letter-spacing: 13.3px; 
     color: #000;
     opacity: 1;
-}
-
-@media screen  and (max-width:720px){
-
-    body .main{
-        display: grid;
-        /* grid-template-columns: repeat(6, 1fr); */
-        /* grid-column: repeat(6, 1fr); */
-    }
-/* colocar grid como base */
-}
+}    
 
 .ant-row .ant-col div{
-    display: block !important;
-
-}
-
-.ant-card {background: none;}
-
-
-/* BANNER */
-
+    display: block !important;    
+}    
+.ant-card {background: none;}        
+/* BANNER */    
 .main-banner-page{
     display: flex;
-    padding-left: 150px;
+    /* padding-left: 150px; */
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 3rem;
     flex-flow: nowrap; 
-}
-
+}    
 .ant-row .ant-col{
     margin-top: 100px;
-}
-
-
+}        
 .ant-row .ant-col img{
     width: 450px;
     padding-left: -200px;
     margin-bottom: -50;
-}
-
+}    
 .ant-row .banner-page .renova {
     font-Size: 80px;
     font-Weight: 800;
@@ -59,28 +49,24 @@ h1{
     margin-Bottom: -30px;
     color: var(--color-black);
     opacity: 1;
-}
-
+}    
 .ant-row .banner-page .fida {
     font-size: 80px;
     margin-bottom: -10px;
     font-weight: 800;
     color: var(--color-green-light);
     letter-spacing: 13.3px;
-}
-
+}    
 .ant-row .banner-page p {
     color: var(--color-black);
     font-weight: 300;
     font-size: 30px;
 }
-.ant-row .banner-page .text-p {
-
+.ant-row .banner-page .text-p {    
     color: var(--color-black);
     font-weight: 300;
     font-size: 30px;
-}
-
+}    
 .ant-row .banner-page button{
     border: solid;
     border-radius: 0px 16px;
@@ -91,36 +77,8 @@ h1{
     /* font-size: 17px; */
     font: normal normal bold 16px Raleway;
     border-color: var(--color-green-border);
-}
-
-@media screen  and (max-width:720px){
-
-
-    .main-banner-page{
-        display: flex;
-        grid-column: 1/7;
-        padding-left:2rem;
-        margin-bottom: 3rem;
-        flex-flow:wrap; 
-        width: 100%;
-    }
-
-    .banner-page{
-        display: block;
-    }
-    
-    .bg-main{
-        display: none;
-        width: 100vw;
-        margin-left: 20vw;
-    }
-
-    
-}
-
-/* MODAL */
-
-
+}        
+/* MODAL */        
 .content-modal-home p{
     text-align: justify;
     text-indent: 3rem;
@@ -131,19 +89,16 @@ h1{
     color: var(--color-green-dark);
 }
 .modal-home-page .ant-modal-header {
-    background-color: #FAF238;
-
+    background-color: #FAF238;    
 }
 .ant-row .bg-main{
-    position: "relative"; 
+    /* position: "relative";  */
     margin-top: -3rem;
     /* background-image: url("../../utils/images/bg_main.png"); */
-}
-
+}    
 .ant-row .bg-main img{
-    width: 75%;
-}
-
+    max-width: 35rem;
+}    
 /* TECHS */
 .techs{
     margin-top: 10%;
@@ -156,14 +111,12 @@ h1{
     justify-content: "center";
     text-align: "center";
     background: none;
-}
-
+}    
 .techs .ant-card .div-yellow{
     background-color: var(--color-yellow);
     width: 495px;
     height: 34px;
-}
-
+}    
 .techs .ant-card h1{
     color: var(--color-green-dark);
     /* font-weight: 700; */
@@ -171,50 +124,33 @@ h1{
     letter-spacing: 7.45px;
     margin-top: -65px;
     margin-bottom: -20px;
-}
-
+}    
 .techs p{
     color: var(--color-black);
     text-align: center;
     text-indent: 0;
     font: normal normal 300 24px/136px Raleway;
     margin-top: -55px;
-}
-
+}    
 .techs .ant-card{
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
+}    
 .techs .ant-card img{
     width: 500px;
-}
-
-@media screen and (max-width:720px){
-    .techs{
-        grid-column: 1/7;
-    }
-
-}
-
-
-/* EQUIPE */
-
-
+}        
+/* EQUIPE */        
 .team{
     margin-top: 10%;
-}
-
+}    
 .team{
     position: relative;
     overflow:none;
-}
-
+}    
 .team .ant-card {
     background: none;
-}
-
+}    
 .team .ant-card h1{
     color: var(--color-green-dark);
     font: normal normal 800 56px/136px Raleway;
@@ -222,8 +158,7 @@ h1{
     margin-top: -70px;
     padding-left: 200px;
     margin-bottom: -75px;
-}
-
+}    
 .team .ant-card  p{
     color: var(--color-black);
     font: normal normal 300 24px/136px Raleway;
@@ -241,34 +176,16 @@ h1{
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
+}    
 .team .ant-row .ant-card{
     height: 240px;
     width: 240px;
     margin: 10px;
-}
-
+}    
 .team .ant-row .ant-card img{
     width: 100px;
-}
-
-
-@media screen and (max-width:720px){
-    .team{
-        grid-column: 1/7;
-    }
-    .team .ant-card  p{
-        padding: .2rem;
-    }
-
-    
-}
-
-
-
-/* PARCEIROS */
-
+}        
+/* PARCEIROS */    
 .parceiros{
     margin-top: 10%;
 }
@@ -276,54 +193,36 @@ h1{
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
-.parceiros .ant-card .ant-row{
-
+}    
+.parceiros .ant-card .ant-row{    
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 10px;
-
-}
-
+    margin-bottom: 10px;    
+}    
 .parceiros .ant-card .ant-row .ant-card {
     /* height: 100px;
     width: 150px; */
-    margin: 10px;
-
-}
-
+    margin: 10px;    
+}    
 .parceiros .ant-card .ant-row .ant-card img{
     height: 3rem;
-}
-
-@media screen and (max-width:720px){
-    .parceiros{
-        grid-column: 1/7;
-    }
-  
-  }
-
-/* PATHs */
-
-.path1{
-    
+}       
+/* PATHs */    
+.path1{        
     position: absolute;
     /* border: 1px solid #00000065; */
-    width: 50vw;
+    width: 100vw;
     height: 50vh;
     /* height: 10rem; */
     background-position-y: -19rem;    
-    background-position-x: -18rem;
+    background-position-x: -40vw;
     background-image: url('../../utils/images/Path8.svg');
-    background-size: 140%;
+    background-size: 100%;
     background-repeat: no-repeat;
     transform: rotate(5deg);
     z-index: -10;
-}
-
-
+}        
 .path2 {
     position: absolute;
     /* border: 1px solid #00000065; */
@@ -335,10 +234,8 @@ h1{
     background-image: url(/static/media/Path9.4397ba26.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    z-index: -10;
-
-}
-
+    z-index: -10;    
+}    
 .path3{
     position: absolute;
     /* border: 1px solid #00000065; */
@@ -353,8 +250,7 @@ h1{
     background-size: 118%;
     background-repeat: no-repeat;
     z-index: -10;
-}
-
+}    
 .path4{
     position: absolute;
     /* border: 1px solid #00000065; */
@@ -369,67 +265,129 @@ h1{
     z-index: -10;
 }
 
-
-
-/* PATHs @MEDIA */
-
- @media screen and (max-width: 720px){
-
-    .path1{
-        width: 100vw;
-        height: 30vh;
-        grid-column:1/4;
-        background-position-y: -13.5rem;    
-        background-position-x: -14.5rem;
-        background-size: 42rem;
-        transform: rotate(3deg);
-
+@media screen and (max-width:425px){
+    .ant-row .banner-page h1{
+        font-size: 1.8rem !important;
+        line-height: 3.2rem;
+        letter-Spacing: 7.3px !important;
+        
     }
 
-    .path2{
-        position: absolute;
-        /* border: 1px solid #00000065; */
+    .main .main-banner-page{
+        flex-flow: wrap;
+    }
+
+    .ant-row .banner-page .text-p {
+        font-size: .9rem;
+    }
+
+    .ant-row .banner-page button{
+        margin-top: 1rem;
+        height: 2.2rem;
+        width: 8.5rem;
+        font-size: .7rem;
+    }
+    .ant-row .bg-main {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    }
+
+    .ant-row .bg-main img {
+        width: 100% !important;
+    }
+}
+
+/* TECHS */
+
+@media screen and (max-width:425px){
+
+    .techs{
+        margin-top: 10%;
+        position: relative;
+    }
+
+    .techs .ant-card{
+        display: "flex";
+        /* padding-bottom: '0px',  */
+        /* flex-direction: "column", */
+        justify-content: "center";
+        text-align: "center";
+        background: none;
+    }    
+    .techs .ant-card .div-yellow{
+        background-color: var(--color-yellow);
+        width: 16rem;
+        height: 1rem;
+    }    
+    .techs .ant-card h1{
+        color: var(--color-green-dark);
+        /* font-weight: 700; */
+        font: normal normal 800 1.4rem/7.6rem Raleway;
+        letter-spacing: 7.45px;
+        margin-top: -65px;
+        margin-bottom: -20px;
+    }    
+    .techs p{
+        color: var(--color-black);
+        text-align: center;
+        text-indent: 0;
+        font: normal normal 300 1rem/2rem Raleway;
+        margin-top: -55px;
+    }    
+
+
+    .techs .ant-card{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }    
+    .techs .ant-card img{
+        width: 12rem;
+    }
+
+}
+
+/* TECHS */
+
+@media screen and (min-width:120px){
+    .team {
         width: 100%;
-        height: 100vh;
-        bottom: 7rem;
-        background-position-y: 2rem;
-        background-position-x: -7rem;
-        background-image: url(/static/media/Path9.4397ba26.svg);
-        background-size: 161%;
-        background-repeat: no-repeat;
-        z-index: -10;
     }
 
-    .path3{
-        display: none;
+    .team .ant-card h1 {
+        
+        font: normal normal 800 1.4rem/136px Raleway;
+        /* font-weight: 700; */
+        margin-top: -70px;
+        /* padding-left: 200px; */
+        margin-bottom: -75px;
     }
 
-    .path4{
-        display: none;
+    .team .ant-card-body{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
-}
 
+    .team .ant-card .div-yellow {
+        background-color: var(--color-yellow);
+        width: 16rem;
+        height: 1rem;
+    }
 
-/* FOOTER */
+    .team .ant-card h1{
+       
+        margin-bottom: -1.5rem;
+        padding-left: 0;
+    } 
 
-.footer {
-    position: relative;
-    width: 100%;
-}
-.footer img {
-    width: 100%;
-}
-.parceiros .ant-card .ant-row .ant-card img {
-  height: 4rem;
-}
-.logo-grande {
-  height:  5rem!important;
-}
-.logo-fida {
-  height:  7rem!important;
-}
-
-.link-table-invest a{
-    text-decoration: none;
-    color: black;
+    .team .ant-card p {
+        color: var(--color-black);
+        font: normal normal 300 24px/2rem Raleway;
+        letter-spacing: 2.19px;
+        padding-left: 1rem;
+        text-indent: 0rem;
+    }
 }

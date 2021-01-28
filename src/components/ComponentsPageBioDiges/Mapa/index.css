@@ -139,6 +139,7 @@ button{
 
 .biodiges-analyze-map .map .estado{
     fill: var(--color-orange-light);
+    cursor: zoom-in;
 }
 
 .biodiges-analyze-map .estado:hover{

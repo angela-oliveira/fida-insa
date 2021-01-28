@@ -44,7 +44,7 @@
 .image-curiosities {
     width: 50%;
 }
-iframe {
+.component-cartilha iframe {
     /* width:80rem; */
     width: 50rem;
     height: 150vh;

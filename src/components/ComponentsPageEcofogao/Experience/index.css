@@ -50,6 +50,8 @@
 }
 .video{
     grid-column: 2/3;
+    display: flex;
+    align-items: center;
 }
 .photos{
     margin: 2rem 13rem 2rem 13rem;

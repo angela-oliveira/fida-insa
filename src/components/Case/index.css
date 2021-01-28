@@ -1,15 +1,20 @@
 
 /* CASES */
 
+@media screen and (max-width:720px){
  .container-cases{
-    padding-right: 16%;
-    padding-left: 16%;
-    margin-top: 10%;
+    /* padding-right: 16%;
+    padding-left: 16%; */
+    margin-top: 1rem;
     /* width: 100%; */
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     /* margin-bottom: 50px; */
+
+    grid-column: 1/7;
+    padding: 0rem 2rem 0rem 2rem;
+    /* border: 1px solid #000000; */
     
 }
 
@@ -20,15 +25,26 @@
     background: none;
 }
 
-.slider .slider-frame{
+.container-cases .slider .slider-frame{
     background: none;
+
+    height: 380px !important;
+}
+.container-cases .slider-frame ul{
+    top: 9rem !important;
+}
+
+.container-cases ul .slider-slide{
+    height: 300px !important;
 }
 
 
+
 .container-cases .slider-control-centerleft{
-    
     grid-column: 2/3;   
     top: 4rem !important;
+    
+    display: none;
 }
 
 .container-cases .slider-control-centerleft button{
@@ -40,9 +56,11 @@
 }
 
 .container-cases .slider-control-centerright{
-    
     grid-column: 2/3;
     top : 18rem !important ;
+
+    display: none;
+
 }
 
 .container-cases .slider-control-centerright button{
@@ -55,26 +73,24 @@
 
 .container-cases .slider-control-bottomcenter{
     grid-column: 2/3;
-    
-}
-
-.container-cases .slider-control-bottomcenter{
     transform: rotate(90deg)!important;
-    bottom: 308px !important;
+    /* bottom: 308px !important; */
     left: -3.2rem !important;
+
+    bottom: 215px !important;
 }
-
-
 
 .case{
     position: relative;  
     /* border: 1px solid rgba(121, 116, 116, 0.507); */
-    width: 850px;
+    /* width: 850px; */
     /* height: auto; */
     /* margin: 30px;
     margin-right: 20px; */
     overflow: hidden;
     cursor:default;
+
+    width: 15.5rem;
 }
 
 
@@ -86,50 +102,59 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 30%;
-    grid-template-areas:". . . . ."
-                        "img img img title title"
-                        "img img img title title"
-                        ". . . title title"   ;
+    grid-template-areas:
+    "img img img img img"
+    "img img img img img"
+    ". . . . ."
+    "title title title title title"   ;
+    
+    height: 22rem;
 }
 
 .case .case-content article::after{
     position: absolute;
-    bottom: 0%;
+    /* bottom: 0%; */
     content: '';
     width: 94%;
     right: 0%;
-    border-top: 4rem solid var(--color-yellow);
-    z-index: -2;
+    /* border-top: 4rem solid var(--color-yellow); */
+    z-index: -1;
+
+    border-top: 2rem solid var(--color-yellow);
+    bottom: 15%;
+    left: 0rem;
+
     }
 
  .case .case-content .title{
     position: relative;
     /* border: 1px solid #000; */
     grid-area: title;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
     padding-left: 1rem;
-}
 
- .case .case-content .title::before{
-    position: absolute;
-    content: '';
-    top: 0%;
-    height: 1.2rem;
-    left: 0%;
-    border-left: 14rem solid var(--color-yellow);
-    z-index: -1;
+    margin-left: 0.6rem;
 }
 
  .case .case-content .title h2{
     /* font-family: 'Raleway'; */
     color: var(--color-green-dark);
     font-weight: 700;
-    font-size: 1.9rem;
-    width: 300px;
+    /* font-size: 1.9rem; */
+    /* width: 300px; */
+
+    font-size: 1.5rem;
+    /* font-family: 'Raleway'; */
+    line-height: 1.5rem;
+    font-size: 1rem;
+    width: 13.7rem;
 }
 
  .case .case-content .title .top{
     color: var(--color-green-medium);
+    z-index: 5;
+    margin-top: -11.4rem;
+    margin-bottom: 11rem;
 }
 
 .case-content .title h2 + h2{
@@ -144,20 +169,33 @@
     justify-content: flex-end;
     grid-area: img;
 }
-
+.case .case-content .img::before{
+    
+    position: absolute;
+    content: '';
+    top: 1rem;
+    height: 1.7rem;
+    left: 0%;
+    border-left: 14rem solid var(--color-yellow);
+    z-index:-1;
+}
+    
 .case .case-content .img::after{
     position: absolute;
     content: '';
     top: 0%;
     height: 20.5rem;
     right: 0%;
-    border-left: 12rem solid var(--color-green-medium);
-    z-index: -1;
+    border-left: 11rem solid var(--color-green-medium);
+    z-index: -2;
     }
 
 .case .case-content img{
     margin: 1rem 0.7rem;
-    width: 85%;
+    width: 110%;
+    left: 1rem;
+    top:2rem;
+    position: absolute;
     
 } 
 
@@ -191,61 +229,212 @@
     
 }
 
-.case .more::before{
-    position: absolute;
-    content: '';
-    top: -0.6rem;
-    right: -3.0rem;
-    height: 5rem;
-    border-left: 5rem solid var(--color-green-medium);
-    z-index: -1;
-    transform: rotate(45deg);
 
 }
 
+/* MOBILE */
 
-@media screen and (max-width:720px){
+@media screen and (min-width:720px){
     .container-cases{
-        grid-column: 1/7;
-        padding: 0rem 2rem 0rem 2rem;
-        /* border: 1px solid #000000; */
+        padding-right: 16%;
+        padding-left: 16%;
+        margin-top: 10%;
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* margin-bottom: 50px; */
         
     }
-
-    .case{
-        width:31rem;
+    
+    .container-cases .slider{
+        display: grid !important;
+        grid-template-columns: 1fr 5%;
+        grid-template-rows: 1fr;
+        background: none;
     }
-
-    .case .case-content{
-        height: 30rem;
-
+    
+    .slider .slider-frame{
+        background: none;
     }
-
-    .case .case-content .title{
-        margin-left: 0.6rem;
-    }
-
-    .case .case-content .title h2{
-        font-size: 1.5rem;
-        width: 240px;
+    
+    
+    .container-cases .slider-control-centerleft{
         
+        grid-column: 2/3;   
+        top: 4rem !important;
     }
-
-    .case .case-content article::after{
-        border-top: 2rem solid var(--color-yellow);
-        bottom: 15%;
+    
+    .container-cases .slider-control-centerleft button{
+        background-image: url('../../utils/images/arrow.svg') !important;
+        background-size: 50% !important;
+        background-position: center !important;
+        transform: rotate(90deg);
+        background-repeat: no-repeat !important;
     }
-
-    .container-cases .slider-control-centerright, .slider-control-centerleft{
-        display: none;
+    
+    .container-cases .slider-control-centerright{
+        
+        grid-column: 2/3;
+        top : 18rem !important ;
     }
-
+    
+    .container-cases .slider-control-centerright button{
+        background-image: url('../../utils/images/arrow.svg') !important;
+        background-size: 50% !important;
+        background-position: center !important;
+        transform: rotate(-90deg);
+        background-repeat: no-repeat !important;
+    }
+    
     .container-cases .slider-control-bottomcenter{
-        bottom: 215px !important;
+        grid-column: 2/3;
+        
     }
-
-    .slider-frame{
-        height: 455px !important;
+    
+    .container-cases .slider-control-bottomcenter{
+        transform: rotate(90deg)!important;
+        bottom: 308px !important;
+        left: -3.2rem !important;
     }
-
+    
+    
+    
+    .case{
+        position: relative;  
+        /* border: 1px solid rgba(121, 116, 116, 0.507); */
+        width: 850px;
+        /* height: auto; */
+        /* margin: 30px;
+        margin-right: 20px; */
+        overflow: hidden;
+        cursor:default;
+    }
+    
+    
+     .case .case-content{
+        /* background: url('../../utils/images/solar_test1.jpg');
+        background: no-repeat; */
+        position: relative;
+        height: 520px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 30%;
+        grid-template-areas:". . . . ."
+                            "img img img title title"
+                            "img img img title title"
+                            ". . . title title"   ;
+    }
+    
+    .case .case-content article::after{
+        position: absolute;
+        bottom: 0%;
+        content: '';
+        width: 94%;
+        right: 0%;
+        border-top: 4rem solid var(--color-yellow);
+        z-index: -2;
+        }
+    
+     .case .case-content .title{
+        position: relative;
+        /* border: 1px solid #000; */
+        grid-area: title;
+        margin-left: 1.5rem;
+        padding-left: 1rem;
+    }
+    
+     .case .case-content .title::before{
+        position: absolute;
+        content: '';
+        top: 0%;
+        height: 1.2rem;
+        left: 0%;
+        border-left: 14rem solid var(--color-yellow);
+        z-index: -1;
+    }
+    
+     .case .case-content .title h2{
+        /* font-family: 'Raleway'; */
+        color: var(--color-green-dark);
+        font-weight: 700;
+        font-size: 1.9rem;
+        width: 300px;
+    }
+    
+     .case .case-content .title .top{
+        color: var(--color-green-medium);
+    }
+    
+    .case-content .title h2 + h2{
+        line-height: 45px;
+    }
+    
+     .case .case-content .img {
+        position: relative;
+        /* border: 1px solid #000; */
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        grid-area: img;
+    }
+    
+    .case .case-content .img::after{
+        position: absolute;
+        content: '';
+        top: 0%;
+        height: 20.5rem;
+        right: 0%;
+        border-left: 12rem solid var(--color-green-medium);
+        z-index: -1;
+        }
+    
+    .case .case-content img{
+        margin: 1rem 0.7rem;
+        width: 85%;
+        
+    } 
+    
+     .case .case-content .text{
+        /* border: 1px solid #000; */
+        grid-area: text;
+        font-size: 12px;
+        display: flex;
+        margin-left:1rem ;
+        padding: 2rem 1.5rem 1rem ;
+        /* padding-top: 1.5rem; */
+    }
+    
+    .text p + p {
+        margin-left: 10px;
+    }
+    
+    
+    .case .more{
+        position: absolute;
+        right: 0.2rem;
+        bottom: -0.2rem;
+        /* border: 1px solid #000; */
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-yellow);
+        font-size: 22px;
+        
+    }
+    
+    .case .more::before{
+        position: absolute;
+        content: '';
+        top: -0.6rem;
+        right: -3.0rem;
+        height: 5rem;
+        border-left: 5rem solid var(--color-green-medium);
+        z-index: -1;
+        transform: rotate(45deg);
+    
+    }
+    
 }
