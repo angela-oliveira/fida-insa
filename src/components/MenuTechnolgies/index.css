@@ -188,7 +188,31 @@
     .selector.open .c3 img,
     .selector.open .c5 img{
       width: 1rem !important;
-    }}
+    }
+  
+  }
+
+    @media screen and (min-width:125px){
+      .techs{
+        width: 100%;
+      }
+
+      .selector li input + label {
+        position: absolute;
+        left: 50%;
+        bottom: 9.3rem;
+    }
+    .bg-menu-tech{
+      top:2rem;
+      font-size: 4rem;
+
+    }
+
+
+
+  }
+
+
 
   .c1 label:hover{
     background: #329BA3;
