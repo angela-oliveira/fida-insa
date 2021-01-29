@@ -252,7 +252,7 @@
     .selector li input + label {
       position: absolute;
       left: 50%;
-      bottom: 27vw;
+      bottom: 25vw;
   }
     
   }
@@ -261,7 +261,7 @@
     .selector li input + label {
       position: absolute;
       left: 50%;
-      bottom: 23vw;
+      bottom: 22vw;
   }
   }
   
@@ -402,7 +402,7 @@
 
     .techs .ant-card img {
       top:0;
-      width: 39vw;
+      width: 33vw;
   }
 
   
@@ -419,6 +419,37 @@
 
         font-size: 2.3vw;
   }
+
+}
+
+@media screen and (min-width:880px){
+  .selector.open li input + label {
+  
+    font-size: 14px;
+    
+    width: 9.5vw;
+    height: 9.5vw;
+    line-height: 70px;
+    margin-left: -50px;
+    
+  }
+
+  .selector li input + label {
+    
+    bottom: 22vw;
+}
+
+.selector li img{
+  width: 2.8rem !important;
+  margin-top: 10px !important;
+
+}
+
+.selector.open .c1 img,
+.selector.open .c3 img,
+.selector.open .c5 img{
+  width: 1.9rem !important;
+}
 
 }
 
@@ -451,8 +482,8 @@
   
   font-size: 14px;
   
-  width: 10vw;
-  height: 10vw;
+  width: 9.5vw;
+  height: 9.5vw;
   line-height: 70px;
   margin-left: -50px;
   
@@ -476,11 +507,18 @@
 @media screen and (min-width:1100px){
   
   .selector .button {
-    width: 20vw;
-    height: 20vw;
+    width: 19vw;
+    height: 19vw;
     top: -3vw;
     left: 1vw;
   }
+
+  .selector button div {
+    background-color: #FAF238;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 40px;
+}
 }
 
 @media screen and (min-width:1200px){
@@ -490,7 +528,7 @@
 }
 
 .techs .menu-tecnologias {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .selector .button {
@@ -499,16 +537,50 @@
   top: -4vw;
   left: 0vw;
 }
+
+.selector li input + label {
+  bottom: 20vw;
+}
+
+.selector li img{
+  width: 4.7rem !important;
+  margin-top: 1rem !important;
+
+}
+
+.selector.open .c4 img,
+.selector.open .c2 img{
+  margin-top: 2rem !important;
+}
+
+.selector.open .c1 img,
+.selector.open .c3 img,
+.selector.open .c5 img{
+  width: 3.7vw !important;
+}
+
+}
+
+@media screen and (min-width:1300px){
+  
+  .selector .button {
+    width: 19vw;
+    height: 19vw;
+    top: -3.4vw;
+    left: 0vw;
+  }
 }
 
 @media screen and (min-width:1360px){
 
-.selector .button {
-  width: 20vw;
-  height: 20vw;
-  top: -5vw;
-  left: -2vw;
+  .selector .button {
+    width: 18vw;
+    height: 18vw;
+    top: -3vw;
+    left: 0vw;
 }
+
+
 }
 
 @media screen and (min-width:1440px){
@@ -518,7 +590,7 @@
   }
 
   .bg-menu-tech {
-    line-height: 10rem;
+    line-height: 12rem;
 }
 
 .selector li {
@@ -540,5 +612,12 @@
   line-height: 70px;
   margin-left: -70px;
   
+}
+}
+
+@media screen and (min-width:1600px){
+  .selector .button {
+    max-width: 325px;
+    max-height: 325px;
 }
 }
