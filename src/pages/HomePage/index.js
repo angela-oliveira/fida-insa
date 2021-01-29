@@ -119,7 +119,7 @@ export default class extends React.Component {
                         <p>Conheça quem está à frente desse projeto</p>
                     </Card>
 
-                    <Equipe />
+                    {/* <Equipe /> */}
 
                     <br></br>
 

@@ -32,7 +32,7 @@ h1{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 3rem;
-    flex-flow: nowrap; 
+    /* flex-flow: nowrap;  */
 }    
 .ant-row .ant-col{
     margin-top: 100px;
@@ -97,7 +97,7 @@ h1{
     /* background-image: url("../../utils/images/bg_main.png"); */
 }    
 .ant-row .bg-main img{
-    max-width: 35rem;
+    max-width: 260px;
 }    
 /* TECHS */
 .techs{
@@ -265,7 +265,7 @@ h1{
     z-index: -10;
 }
 
-@media screen and (max-width:425px){
+@media screen and (min-width:125px){
     .ant-row .banner-page h1{
         font-size: 1.8rem !important;
         line-height: 3.2rem;
@@ -299,12 +299,64 @@ h1{
     }
 }
 
+@media screen and (min-width:576px){
+    .main .main-banner-page{
+        flex-flow: nowrap;
+    }
+}
+
+@media screen and (min-width:720px){
+    .ant-row .bg-main img {
+        /* width: 30vw !important; */
+        max-width: 620px;
+        margin-top: -9vw;
+    }
+
+    .ant-row .banner-page h1 {
+        font-size: 6vw !important;
+        line-height: 8vw;
+        letter-Spacing: 7.3px !important;
+    }
+
+    .ant-row .banner-page .text-p {
+        font-size: 2.5vw;
+    }
+
+    .ant-row .banner-page button {
+        margin-top: 1rem;
+        height: 5vw;
+        width: 20vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width:1440px){
+
+    .fida img {
+        width: 25vw !important;
+        margin: 50px;
+        margin-top: 30px;
+    }
+
+    .techs .ant-card .div-yellow{
+        max-width: 680px;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .ant-row .bg-main img {
+        /* width: 30vw !important; */
+        max-width: initial;
+        margin-top: -9vw;
+    }
+}
+
 /* TECHS */
 
-@media screen and (max-width:425px){
+@media screen and (min-width:125px){
 
     .techs{
-        margin-top: 10%;
+        margin-top: 0%;
         position: relative;
     }
 
@@ -348,6 +400,8 @@ h1{
     }
 
 }
+
+
 
 /* TECHS */
 
