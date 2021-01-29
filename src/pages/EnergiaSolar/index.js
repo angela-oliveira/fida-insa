@@ -26,7 +26,16 @@ function Solar() {
 
     return (
         <div id='body'>
-            <HeaderTechs linkBack="/bio-digestor" iconBack={icoDigestor} linkNext="/energia-eolica" iconNext={icoEolica}></HeaderTechs>
+            <HeaderTechs 
+                nameBack={'Biodigestor'} 
+                nameNext={'Energia Eólica'} 
+                linkBack="/bio-digestor" 
+                iconBack={icoDigestor} 
+                linkNext="/energia-eolica" 
+                iconNext={icoEolica}
+                idBack={'biodigestor'}
+                idNext={'eolica'}
+            ></HeaderTechs>
             <Description />
             <Mapa data={dataMap}/>
             <AnalyzeCB />

@@ -108,7 +108,6 @@ class Description extends React.Component {
                                 }
                             >
                                 <div className='content-modal'>
-                                    {/* <p>{this.desciption.content}</p> */}
                                     <p>Biodigestor é um equipamento utilizado para a produção de biogás e de biofertilizante pelo processo de decomposição da matéria orgânica, como esterco animal (bovino, equino, suíno e de aves), restos vegetais (palha, grama, folhas) e excremento humano. O biogás produzido no biodigestor é formado, principalmente, por metano e gás carbônico e, devido a essa composição, pode ser utilizado para substituir o gás de cozinha tradicional (GLP), trazendo um retorno econômico para o usuário e impactando positivamente o meio ambiente, por se tratar de uma tecnologia sustentável.
                                     </p>
                                     <b>Como é feito um biodigestor?</b>
