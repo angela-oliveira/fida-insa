@@ -542,21 +542,26 @@
   bottom: 20vw;
 }
 
-.selector li img{
-  width: 4.7rem !important;
-  margin-top: 1rem !important;
+  .selector li img{
+    width: 4.7rem !important;
+    margin-top: 1rem !important;
 
-}
+  }
 
 .selector.open .c4 img,
 .selector.open .c2 img{
   margin-top: 2rem !important;
+  width: 4.2rem !important;
 }
 
 .selector.open .c1 img,
 .selector.open .c3 img,
 .selector.open .c5 img{
-  width: 3.7vw !important;
+  width: 3.3vw !important;
+}
+
+.selector.open .c5 img{
+  margin-top: 2rem !important;
 }
 
 }
@@ -613,11 +618,26 @@
   margin-left: -70px;
   
 }
+
+.selector .button {
+  width: 17vw;
+  height: 17vw;
+  top: -3.4vw;
+  left: 0vw;
+}
+
 }
 
 @media screen and (min-width:1600px){
   .selector .button {
     max-width: 325px;
     max-height: 325px;
+}
+
+.selector .button {
+  width: 17vw;
+  height: 17vw;
+  top: -3.5vw;
+  left: -1.2vw;
 }
 }
