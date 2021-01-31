@@ -24,9 +24,10 @@ class HeaderPage extends React.Component {
                         title={<Link to="/" className="fida"><img src={logoRenovaSemiarido}></img></Link>}
                         extra={[
                             <Button
+                            className='contato'
                                 onClick={() => this.openModal()}
                             >
-                                <b style={{paddingRight: '1rem'}}>Fale Conosco</b>
+                                <b className='label' style={{paddingRight: '1rem'}}>Fale Conosco</b>
                                 <img src={iconEmail}></img>
                             </Button>
                             // <Button key="2">PT</Button>,
