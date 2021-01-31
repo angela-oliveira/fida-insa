@@ -28,12 +28,12 @@ const width = window.innerWidth;
 console.log(width)
 
 let slidesToShow = 5
-let cellSpacing = 47
+let cellSpacing = 40
 
 if (width <= 570) {
     slidesToShow = 2;
     cellSpacing = 0;
-} else if (width <= 768) {
+} else if (width <= 880) {
     cellSpacing = 3
     slidesToShow = 3;
 }  else if (width<= 1000){

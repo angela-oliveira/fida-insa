@@ -1,4 +1,4 @@
-html{
+html,.main{
     overflow-x: hidden;
 }
 
@@ -208,6 +208,12 @@ h1{
 .parceiros .ant-card .ant-row .ant-card img{
     height: 3rem;
 }       
+
+.logo-grande{
+  
+    height: 2.3rem !important; 
+
+}
 /* PATHs */    
 .path1{        
     position: absolute;

@@ -126,10 +126,10 @@ export default class extends React.Component {
 
 
                 </div>
-                {/* <div className="parceiros">
+                <div className="parceiros">
                     <Parceiros />
 
-                </div> */}
+                </div>
 
                 <div className="footer">
                     {/* <div className='path4'></div> */}
