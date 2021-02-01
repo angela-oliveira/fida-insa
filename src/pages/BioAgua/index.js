@@ -29,7 +29,16 @@ function BioAgua() {
 
     return (
         <div id='body'>
-            <HeaderTechs linkBack='/energia-eolica' iconBack={icoEolica} linkNext='/eco-fogao' iconNext={icoFogao} ></HeaderTechs>
+            <HeaderTechs 
+                nameBack={'Energia Eólica'} 
+                nameNext={'Ecofogão'} 
+                linkBack='/energia-eolica' 
+                iconBack={icoEolica} 
+                linkNext='/eco-fogao' 
+                iconNext={icoFogao} 
+                idBack={'eolica'}
+                idNext={'ecofogao'}
+            ></HeaderTechs>
             <Description />
             <Mapa data={dataMap} />
             <AnalyzeCB />

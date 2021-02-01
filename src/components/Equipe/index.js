@@ -27,12 +27,18 @@ const width = window.innerWidth;
 
 console.log(width)
 
-let slidesToShow = 4
-let cellSpacing = 47
+let slidesToShow = 5
+let cellSpacing = 40
 
-if (width <= 430){
+if (width <= 570) {
     slidesToShow = 2;
     cellSpacing = 0;
+} else if (width <= 880) {
+    cellSpacing = 3
+    slidesToShow = 3;
+}  else if (width<= 1000){
+    cellSpacing = 3
+    slidesToShow = 4;
 }
 
 class Equipe extends React.Component {
@@ -78,12 +84,12 @@ class Equipe extends React.Component {
                             <div className='img'>
                                 <img src={Monica} alt=''></img>
                             </div>
-                            
+
                             <div className='label'>
                                 <div className='name'>Mônica Tejo</div>
                                 <div className='function'>INSA</div>
                             </div>
-                            
+
                         </div>
                     </a>
                     <a className="link" href="https://www.linkedin.com/in/alexandredandrea/" target="_blank">
@@ -98,15 +104,15 @@ class Equipe extends React.Component {
                         </div>
                     </a>
 
-                        <div className="item">
-                            <div className='img'>
-                                <img src={Ary} alt='Ary Prata'></img>
-                            </div>
-                            <div className='label'>
-                                <div className='name'>Ary Prata</div>
-                                <div className='function'>Pesquisador</div>
-                            </div>
-                        </div> 
+                    <div className="item">
+                        <div className='img'>
+                            <img src={Ary} alt='Ary Prata'></img>
+                        </div>
+                        <div className='label'>
+                            <div className='name'>Ary Prata</div>
+                            <div className='function'>Pesquisador</div>
+                        </div>
+                    </div>
                     <a className="link" href="http://linkedin.com/in/daniel-casimiro-da-silveira-497923204" target="_blank">
 
                         <div className="item">
@@ -117,8 +123,8 @@ class Equipe extends React.Component {
                                 <div className='name'>Daniel Casimiro</div>
                                 <div className='function'>Pesquisador</div>
                             </div>
-                        </div>                
-                    </a> 
+                        </div>
+                    </a>
                     <a className="link" href="https://www.linkedin.com/in/jmouram/" target="_blank">
                         <div className="item">
                             <div className='img'>
@@ -229,7 +235,7 @@ class Equipe extends React.Component {
                             </div>
                         </div>
                     </a>
-                    
+
 
                 </Carousel>
             </div>

@@ -112,6 +112,10 @@
     background: #fff;
 }
 
+.ds-onu .ant-list-split{
+    width: 100%;
+}
+
 
 /* Add indicator arrow for the active tab */
 @media (min-width: 992px) {

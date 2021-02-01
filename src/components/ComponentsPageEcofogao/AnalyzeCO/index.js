@@ -27,28 +27,34 @@ const data = [
     {
         key: '1',
         gas: 'CO2',
-        fogao: '22,169020',
-        ecofogao: '9,232757',
+        fogao: '22,17',
+        ecofogao: '9,23',
       },
       {
         key: '2',
         gas: 'CH4',
-        fogao: '1,654500',
-        ecofogao: '0,689238',
+        fogao: '1,66',
+        ecofogao: '0,69',
       },
       {
         key: '2',
         gas: 'N2O',
-        fogao: '0,262955',
-        ecofogao: '0,109543',
+        fogao: '0,26',
+        ecofogao: '0,11',
       },
       {
         key: '2',
         gas: 'Total',
-        fogao: '24,086475',
-        ecofogao: '10,031537',
+        fogao: '24,09',
+        ecofogao: '10,03',
       },
 ]
+// const number = '<sub id="horaInicial">2</sub>'
+// const tmpDiv = document.createElement('div');
+// tmpDiv.innerHTML = number;
+
+// const bar = tmpDiv.querySelector("#horaInicial").textContent;
+
 
 const columnsTRL = [
     {
@@ -353,7 +359,10 @@ class AnalyzeCO extends React.Component {
                     <div className="site-card-border-less-wrapper">
     
                         <Card bordered={false}>
-                            <p>A redução das emissões de CO2 com o ecofogão foi calculada em comparação com o fogão a lenha tradicional. O ecofogão tem a vantagem de utilizar uma menor quantidade de lenha, produzir menos fuligem e fumaça. Com isso, o ecofogão é a melhor alternativa para a cocção de alimentos com o uso de lenha, reduzindo em 58,4% a emissão de CO2. </p>
+                            {/* <p>A redução das emissões de CO2 com o ecofogão foi calculada em comparação com o fogão a lenha tradicional. O ecofogão tem a vantagem de utilizar uma menor quantidade de lenha, produzir menos fuligem e fumaça. Com isso, o ecofogão é a melhor alternativa para a cocção de alimentos com o uso de lenha, reduzindo em 58,4% a emissão de CO2. </p> */}
+                            <p>Para estimar os Gases do efeito estufa (GEEs) referentes à queima direta da lenha no Ecofogão (Modelo Campestre 2 - da empresa ECOFOGÕES - Fogões a Lenha Ecológico) foi utilizado um estudo de caso nas comunidades Monte Alegre - Sítio Rodeador e Comunidade Santo Antônio II no município de Afogados da Ingazeira - PE que foram beneficiadas pelo Projeto Dom Helder Câmara (PDHC) com a tecnologia (REGUEIRA, 2010).</p>
+                            <p>A metodologia utilizada para estimar as emissões de GEEs das tecnologias apresentadas é fundamentada no Intergovernamental Panel on Climate Change (IPCC) (AMERICANO et al., 2006), Gioda (2018) e no Programa Brasileiro GHG Protocol (2020).</p>
+                            <p>Analisando a Tabela 1, pode-se observar que houve uma redução de 58,4% de emissões de tCO2e no ecofogão em relação ao fogão a lenha tradicional.</p>
                         </Card>
                             <Table 
                                 className='table-ecofogao-analyzeco'
@@ -361,6 +370,40 @@ class AnalyzeCO extends React.Component {
                                 dataSource={data} 
                                 pagination={ false } 
                             />
+
+                            {/* <Table 
+                                className='table-ecofogao-analyzeco'
+                                columns={[
+                                  {
+                                    title: 'Gás',
+                                    dataIndex: 'gas',
+                                    key: 'gas',
+                                  },
+                                  {
+                                    title: 'Fogão a lenha tradicional tCO<sub>2</ sub>e',
+                                    dataIndex: 'fogao',
+                                    key: 'fogao',
+                                  },
+                                  {
+                                    title: `tCO${bar.sub()}e`,
+                                    dataIndex: 'ecofogao',
+                                    key: 'ecofogao',
+                                  }
+                                ]} 
+                                dataSource={data} 
+                                pagination={ false } 
+                            /> */}
+                            <Card bordered={false}>
+                              <p><b>Referências:</b></p>
+                              <p>AMERICANO, B. B. et al. Energy. Disponível em: <a target="_blanck" href='https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html'>Link</a>. Acesso em: 16 dez. 2020.</p>
+                              <p>GIODA, A. COMPARAÇÃO DOS NÍVEIS DE POLUENTES EMITIDOS PELOS DIFERENTES COMBUSTÍVEIS UTILIZADOS PARA COCÇÃO E SUA INFLUÊNCIA NO AQUECIMENTO GLOBAL. Quimica Nova, v. 41, n. 8, p. 839–848, 2018.</p>
+                              <p>LOPES, A.; MAIA, M.; FERREIRA, P. Cartilha Inventário de Emissões de Gases de Efeito Estufa. Disponível em: <a target="_blanck" href='https://firjan.com.br/publicacoes/manuais-e-cartilhas/cartilha-inventario-de-emissoes-de-gases-de-efeito-estufa.html'>Link</a>. Acesso em: 16 dez. 2020.</p>
+                              <p>MCTIC. Terceira Comunicação Nacional do Brasil à Convenção-Quadro das Nações Unidas sobre Mudança do Clima. Disponível em: <a target="_blanck" href='http://sirene.mctic.gov.br'>Link</a>. Acesso em: 16 dez. 2020. </p>
+                              <p>MINISTÉRIO DE MINAS E ENERGIA. Balanço Energético Nacional. Disponível em: <a target="_blanck" href='https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/balanco-energetico-nacional-2020'>Link</a>. Acesso em: 16 dez. 2020. </p>
+                              <p>PAINEL INTERGOVERNAMENTAL SOBRE MUDANÇAS CLIMÁTICAS. Diretrizes do IPCC de 2006 para inventários nacionais de gases de efeito estufa. Disponível em: <a target="_blanck" href='https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol3.html'>Link</a>. Acesso em: 16 dez. 2020. </p>
+                              <p>PROGRAMA BRASILEIRO GHG PROTOCOL. GHG Protocol. Disponível em: <a target="_blanck" href='http://ghgprotocolbrasil.com.br/?locale=pt-br'>Link</a>. Acesso em: 29 nov. 2020. </p>
+                              <p>REGUEIRA, T. M. Comparação entre a eficiência de dois modelos de fogão a lenha e seus impactos sobre o desmatamento da caatinga. p. 26, 2010.</p>
+                            </Card>
                     </div>
                     <div className='co-bottom'></div>
                     <br></br>

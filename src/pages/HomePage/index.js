@@ -37,7 +37,7 @@ export default class extends React.Component {
     render() {
         return (
             <div className='main'>
-                <div className='path1'></div>
+                {/* <div className='path1'></div> */}
                 {/* COMPONENTE DE CABEÇALHO */}
                 <HeaderPage />
 
@@ -60,7 +60,7 @@ export default class extends React.Component {
                                 className="modal-home-page"
                                 title='Olá, sejam bem-vindos!'
                                 visible={this.state.visible}
-                                width={1000}
+                                width={800}
                                 footer={null}
                                 onCancel={() =>
                                     this.setState({
@@ -95,7 +95,7 @@ export default class extends React.Component {
 
                 <br></br>
                 <div className="techs">
-                    <div className="path2"></div>
+                    {/* <div className="path2"></div> */}
                     <Card>
                         <div className="div-yellow"></div>
                         <h1>TECNOLOGIAS</h1>
@@ -112,7 +112,7 @@ export default class extends React.Component {
                 <Case />
 
                 <div className="team">
-                    <div className='path3'></div>
+                    {/* <div className='path3'></div> */}
                     <Card>
                         <div className="div-yellow"></div>
                         <h1>EQUIPE</h1>
@@ -132,7 +132,7 @@ export default class extends React.Component {
                 </div>
 
                 <div className="footer">
-                    <div className='path4'></div>
+                    {/* <div className='path4'></div> */}
                     <img src={footer}></img>
                 </div>
             </div>

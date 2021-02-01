@@ -1,7 +1,7 @@
 .analyze-cb{
     margin: 2rem 0rem 2rem 0rem;
     /* border: 1px solid #000; */
-    grid-column: 3/11;
+    grid-column: 1/13 !important;
     /* height: 500px; */
 }
 
@@ -125,13 +125,182 @@
 
 .site-statistic-demo-card {
     background: #ececec;
+    display: flex;
+    flex-flow: column;
     padding: 22px;
     align-items: center;
+    justify-content: center;
     height: 350px;
   }
     [data-theme="dark"] .site-statistic-demo-card {
       background: #303030;
     }
+
+    .analyze-cb-eolica{
+        margin-right: 1rem !important;
+    }
+
     .analyze-cb-eolica .ant-row .ant-col {
         margin-top: 0rem;
+        width: 100%;
+        max-width: initial;
     }
+
+.ant-tabs-tab-btn{
+    font-size: 0px;
+    width: 2rem;
+    height: 1.6rem;
+    background-image: url(../../../utils/images/arrow.svg);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+.site-statistic-demo-card{
+    padding: 0px !important;
+}
+
+.site-statistic-demo-card .ant-row{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-col-6{
+    display: none;
+}
+
+@media screen and (min-width:1024px){
+
+    .analyze-cb{
+        margin: 2rem 0rem 2rem 0rem !important;
+        /* border: 1px solid #000; */
+        grid-column: 3/11 !important;
+        /* height: 500px; */
+    }
+    
+    .analyze-cb .casca-ana-cb{
+        display: flex !important;
+        flex-flow: column !important;
+        justify-content: center !important;
+    }
+    
+    .casca-ana-cb .cb-label{
+        display: flex !important;
+        justify-content: center !important;
+        min-width: 200px !important;
+        font-size: 1.7rem !important;
+        font-weight: 700 !important;
+        color: var(--color-green-dark) !important;
+        line-height: 1.5rem !important;
+        margin: 3rem 0 2rem 0 !important;
+    
+    }
+    .casca-ana-cb .cb-graphic{
+        display: flex  !important;
+        justify-content: space-around  !important;
+        padding: 0rem 4rem 0rem 4rem   !important;
+        margin: 1rem 2rem 0 2rem  !important;
+    
+    }
+    .cb-graphic
+    .cus-ins,
+    .cus-man,
+    .tem-vid,
+    .imp-amb{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .casca-ana-cb .cb-graphic
+    .cb-gra-label{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        color: var(--color-green-dark) !important;
+        text-align: center !important ;
+        width: 8rem !important;
+    }
+    
+    .casca-ana-cb .cb-graphic 
+    .c-i-gra,
+    .c-m-gra,
+    .t-m-gra,
+    .i-m-gra
+    {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 5rem !important;
+        height: 5rem !important;
+        border-radius: 50% !important;
+        font-weight: 600 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .cb-graphic .c-i-gra{border: 12px solid var(--color-green-light);}
+    .cb-graphic .c-m-gra{border: 12px solid var(--color-green-medium);}
+    .cb-graphic .t-m-gra{border: 12px solid var(--color-green-dark);}
+    .cb-graphic .i-m-gra{border: 12px solid var(--color-black);}
+    
+    /* CB-BOTTOM */
+    
+    
+    
+    .txt-label{
+        width: 100px;
+        font-weight: 600;
+        color: var(--color-green-dark);
+    }
+    
+    .cb-bottom .cb-txt{
+    
+        display: flex;
+        width: 320px;
+        margin-left: 1rem;
+        
+    }
+    
+    .nav-pills-custom .nav-link {
+        color: #aaa;
+        background: #fff;
+        position: relative;
+    }
+    
+    .nav-pills-custom .nav-link.active {
+        color: #45b649;
+        background: #fff;
+    }
+    
+    .nav-pills-custom .nav-link.active::before {
+        opacity: 1;
+    }
+    
+    
+    .site-statistic-demo-card {
+        background: #ececec;
+        padding: 22px;
+        align-items: center;
+        height: 350px;
+      }
+        [data-theme="dark"] .site-statistic-demo-card {
+          background: #303030;
+        }
+        .analyze-cb-eolica .ant-row .ant-col {
+            margin-top: 0rem;
+        }
+
+    .ant-tabs-tab-btn{
+        font-size: initial;
+        width: initial;
+        height: initial;
+        background-image: none;
+        /* background-repeat: no-repeat; */
+        transform: initial;
+    }
+
+
+}

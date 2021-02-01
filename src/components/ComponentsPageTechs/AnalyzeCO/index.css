@@ -17,12 +17,13 @@
 .site-card-border-less-wrapper {
     padding: 30px;
     background: #ececec;
+    padding: 5px !important;
   }
 .casca-ana-co .co-label{
     display: flex;
     justify-content: center;
     position: relative;
-    width: 600px;
+    width: 100% !important; 
     font-size: 1.7rem;
     font-weight: 700;
     color: var(--color-green-dark);
@@ -33,8 +34,7 @@
 .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
-    top: -55px;
-    left:13rem;
+    top: -40px;
     width: 140px;
     height: 140px;
     z-index: -1;
@@ -48,18 +48,98 @@
   }
 
 .co-patente-trl {
-    padding: 30px;
+    padding: 5px !important;
     background: #ececec;
     display: flex;
     /* flex-direction: row; */
     /* align-items: center; */
     display: grid;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 46% 14% 40% !important;
+    grid-template-columns: none !important;
 }
 .co-patente-trl .img {
-    margin:auto;
+    display: flex;
+    align-items: center;
+    /* margin-top: 0 !important;  */
+    margin-bottom: 1rem !important;
     
 }
+
+.co-patente-trl .img img {
+    /* margin: 2rem; */
+    width: 25vw;
+    max-width: 110px;
+    
+}
+
 .ant-card-head-title {
     font-weight: bold;
+}
+
+@media screen and (min-width:1024px){
+    .analyze-co{
+        /* border: 1px solid #000; */
+        grid-column: 2/12 !important;
+        /* height: 500px; */
+        display: flex !important;
+    }
+    
+    .analyze-co .casca-ana-co{
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        /* justify-content: center; */
+        margin-top: 2rem !important;
+    
+    }
+    .site-card-border-less-wrapper {
+        padding: 30px !important;
+        background: #ececec;
+      }
+    .casca-ana-co .co-label{
+        display: flex !important;
+        justify-content: center !important;
+        position: relative !important;
+        width: 600px !important;
+        font-size: 1.7rem !important;
+        font-weight: 700 !important;
+        color: var(--color-green-dark) !important;
+        line-height: 1.5rem !important;
+        text-align: center !important;
+        margin: 2rem 0 6rem 0 !important;
+    }
+    .casca-ana-co .co-label::before{
+        position: absolute !important;
+        content: '' !important;
+        top: -55px !important;
+        left:13rem !important;
+        width: 140px !important;
+        height: 140px !important;
+        z-index: -1 !important;
+        border-radius: 50% !important;
+        background:var(--color-green-medium);
+    }
+    
+    @keyframes example {
+        from {width: 0%;}
+        to {width: 100%;}
+      }
+    
+    .co-patente-trl {
+        padding: 30px !important;
+        background: #ececec !important;
+        display: flex !important;
+        /* flex-direction: row; */
+        /* align-items: center; */
+        display: grid !important;
+        grid-template-columns: 40% 20% 40% !important;
+    }
+    .co-patente-trl .img {
+        margin:auto !important;
+        
+    }
+    .ant-card-head-title {
+        font-weight: bold;
+    }
 }

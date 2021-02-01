@@ -18,6 +18,33 @@
     border-bottom: none;
     border: none;
     background: rgba(0, 0, 0, 0.199);
+    transition: width 0.5s, height 0.5s;
+    
+}
+.nave #solar:hover {
+    width: 120%;
+    height: 120%;
+    background-color: #EFB802;
+}
+.nave #eolica:hover {
+    width: 120%;
+    height: 120%;
+    background-color: #329BA3;
+}
+.nave #ecofogao:hover {
+    width: 120%;
+    height: 120%;
+    background-color: #89773C;
+}
+.nave #biodigestor:hover {
+    width: 120%;
+    height: 120%;
+    background-color: #FF7907;
+}
+.nave #bioagua:hover {
+    width: 120%;
+    height: 120%;
+    background-color: #108EA5;
 }
 
 .nave-left{

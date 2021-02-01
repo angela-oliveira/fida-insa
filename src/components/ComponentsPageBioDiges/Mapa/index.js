@@ -193,6 +193,7 @@ function Mapa(props) {
 
     return (
         <div className='biodiges-analyze-map map-container'>
+            <div className='aviso-map'></div>
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>
