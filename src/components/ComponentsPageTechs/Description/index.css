@@ -386,12 +386,14 @@
     }
     
     .description .casca-img-tech{
-        /* position: relative; */
-        /* top: -15%; */
+        position: relative; 
+        margin-top: 0rem;
+        top: -15%;
         right: 0% !important;
         width: 100% !important;
         /* height: 32rem; */
         /* border: 1px solid #000; */
+        height: auto;
         grid-column: 3/5 !important;
         grid-row: 1/4 !important;
         margin-left: auto !important;
