@@ -386,6 +386,8 @@ h1{
         letter-spacing: 7.45px;
         margin-top: -65px;
         margin-bottom: -20px;
+        display: flex;
+    justify-content: center;
     }    
     .techs p{
         color: var(--color-black);
@@ -393,6 +395,7 @@ h1{
         text-indent: 0;
         font: normal normal 300 1rem/2rem Raleway;
         margin-top: -55px;
+
     }    
 
 

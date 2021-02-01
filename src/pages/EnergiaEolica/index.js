@@ -42,13 +42,13 @@ function Eolica() {
                 idNext={'bioagua'}
             ></HeaderTechs>
             <Description data={infoEolica.descricao}/>
-            {/* <Mapa data={dataMap}/> */}
+            <Mapa data={dataMap}/>
             <AnalyzeCB data={infoEolica.analiseCusto}/>
-            {/* <AnalyzeCO data={infoEolica.analiseCO2}/> */}
-            {/* <Invest data={infoEolica}/> */}
-            {/* <Experience />
+            <AnalyzeCO data={infoEolica.analiseCO2}/>
+            <Invest data={infoEolica}/>
+            <Experience />
             <Photos />
-            <Curiosities data={infoEolica.voceSabia}/> */}
+            <Curiosities data={infoEolica.voceSabia}/>
             <div className="footer">
                 <img src={footer}></img>
             </div>

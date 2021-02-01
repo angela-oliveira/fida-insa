@@ -3,20 +3,48 @@ button{
     outline: none;
 }
 .map-container{
+    position: relative;
     /* border: 1px solid #000; */
-    display: grid;
+    /* display: none; */
     grid-template-columns: repeat(12,1fr);
     grid-column: 1/13;
     height: 100vh;
     background: var(--color-green-medium);
 } 
 
+@media screen and (min-width:1024px){
+    .map-container{
+        /* border: 1px solid #000; */
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-column: 1/13;
+        height: 100vh;
+        background: var(--color-green-medium);
+    } 
+}
+
 .casca-map{
     /* grid-row: 1/2; */
     /* border: 1px solid #000; */
     grid-column: 3/11;
-    display: block !important;
+    /* display: block !important; */
+    display: none !important;
 
+}
+
+.aviso-map::after{
+    content: 'Mapa em manutenção!';
+    position: absolute;
+    display: block;
+    font-size: 1rem;
+    top: 50%;
+    left: 20%;
+
+    
+    /* top: 50%; */
+    /* right: -10px; */
+    /* transform: translateY(-50%); */
+    /* opacity: 3; */
 }
 
 .casca-map .info{
@@ -174,7 +202,7 @@ button{
 .map{
     /* border: 1px solid #000; */
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     display: flex;
     align-items: center;
     margin-left: 1.5rem;
@@ -336,8 +364,12 @@ button{
     /* grid-row: 1/2; */
     /* border: 1px solid #000; */
     grid-column: 3/11;
-    display: flex;
+    display: flex !important; 
 
+}
+.aviso-map::after{
+    display: none;
+    
 }
 
 .casca-map .info{

@@ -210,6 +210,7 @@ function Mapa(props) {
 
     return (
         <div className='eolica-map map-container'>
+            <div className='aviso-map'></div>
             <div className='casca-map'>
                 <div className='info'>
                     <div className='title-map'>MAPA DO SEMIÁRIDO </div>

@@ -125,9 +125,11 @@
 
 .site-statistic-demo-card {
     background: #ececec;
+    display: flex;
+    flex-flow: column;
     padding: 22px;
-    
     align-items: center;
+    justify-content: center;
     height: 350px;
   }
     [data-theme="dark"] .site-statistic-demo-card {
@@ -171,34 +173,34 @@
 @media screen and (min-width:1024px){
 
     .analyze-cb{
-        margin: 2rem 0rem 2rem 0rem;
+        margin: 2rem 0rem 2rem 0rem !important;
         /* border: 1px solid #000; */
         grid-column: 3/11 !important;
         /* height: 500px; */
     }
     
     .analyze-cb .casca-ana-cb{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
+        display: flex !important;
+        flex-flow: column !important;
+        justify-content: center !important;
     }
     
     .casca-ana-cb .cb-label{
-        display: flex;
-        justify-content: center;
-        min-width: 200px;
-        font-size: 1.7rem;
-        font-weight: 700;
-        color: var(--color-green-dark);
-        line-height: 1.5rem;
-        margin: 3rem 0 2rem 0;
+        display: flex !important;
+        justify-content: center !important;
+        min-width: 200px !important;
+        font-size: 1.7rem !important;
+        font-weight: 700 !important;
+        color: var(--color-green-dark) !important;
+        line-height: 1.5rem !important;
+        margin: 3rem 0 2rem 0 !important;
     
     }
     .casca-ana-cb .cb-graphic{
-        display: flex;
-        justify-content: space-around;
-        padding: 0rem 4rem 0rem 4rem ;
-        margin: 1rem 2rem 0 2rem;
+        display: flex  !important;
+        justify-content: space-around  !important;
+        padding: 0rem 4rem 0rem 4rem   !important;
+        margin: 1rem 2rem 0 2rem  !important;
     
     }
     .cb-graphic
@@ -213,14 +215,14 @@
     
     .casca-ana-cb .cb-graphic
     .cb-gra-label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        font-weight: 600;
-        color: var(--color-green-dark);
-        text-align: center;   
-        width: 8rem;     
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        color: var(--color-green-dark) !important;
+        text-align: center !important ;
+        width: 8rem !important;
     }
     
     .casca-ana-cb .cb-graphic 
@@ -229,14 +231,14 @@
     .t-m-gra,
     .i-m-gra
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        font-weight: 600;
-        margin-bottom: 1rem;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 5rem !important;
+        height: 5rem !important;
+        border-radius: 50% !important;
+        font-weight: 600 !important;
+        margin-bottom: 1rem !important;
     }
     
     .cb-graphic .c-i-gra{border: 12px solid var(--color-green-light);}
