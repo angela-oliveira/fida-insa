@@ -253,7 +253,7 @@ class AnalyzeCB extends React.Component {
 
                 </div>
 
-                <div className=''>                    
+                <div className='ds-onu'>                    
                  
                     <Card className="list-ods">
                         <div className="title-card-ods">

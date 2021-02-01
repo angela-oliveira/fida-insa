@@ -15,6 +15,327 @@ button{
     /* grid-row: 1/2; */
     /* border: 1px solid #000; */
     grid-column: 3/11;
+    display: block !important;
+
+}
+
+.casca-map .info{
+    /* border: 1px solid #000; */
+    position: relative;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.info .title-map{
+    /* border: 1px solid #000; */
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.info .info-text{
+    /* border: 1px solid #000; */
+    margin-bottom: 1rem;
+    transition: all 1s;
+    
+    
+}
+
+.city foreignObject:active ~ .info-text{
+    margin-left: 2rem;
+    background: #000;
+}
+
+.info-text .txt-title{
+    color: #ffffff;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.info-text .txt-sub{
+    color: #ffffff;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.info-text .txt{
+    padding-top: 0.5rem;
+    color: var(--color-black);
+}
+
+.info .info-media{
+    /* border: 1px solid #000; */
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.info-media .img{
+    position: relative;
+}
+
+.info-media .zoom-image{
+    
+    top:1rem;
+    left: 1.7rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    position: absolute;
+    opacity: 0.5;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    background-image: url(../../../utils/images/zoom.png);
+    background-repeat: no-repeat;
+    background-size: 1.4rem;
+    background-position: center;
+}
+
+
+
+.modal-img img{
+    width:100%;
+    margin-top: 1rem;
+}
+
+
+.info-media img{
+    position: absolute;
+    width: 100px;
+}
+
+.info-media .slider{
+    display: grid !important; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    
+}
+
+.info-media .slider-frame{
+    grid-column: 1/3;
+    margin-left: 10px;
+}
+
+.info-media .slider-control-centerright,
+.info-media .slider-control-centerleft,
+            .info-media .slider-control-bottomcenter{
+                /* position: initial !important; */
+                grid-column: 1/2;
+                transform: translateY(0%) !important;
+            }
+
+.info-media .slider-control-bottomcenter{ 
+    left: 30% !important;
+}
+
+.info-media .slider-control-centerright{
+    right: 20% !important;
+    transform: translateY(66%) !important;
+    top: 68% !important;
+}
+
+.map-container .info-media .slider-control-centerright button{
+    background-image: url('../../../utils/images/arrow.svg') !important;
+    background-size: 50% !important;
+    transform: rotate(180deg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+}
+.info-media .slider-control-centerleft button{
+    background-image: url('../../../utils/images/arrow.svg') !important;
+    background-size: 50% !important;
+    /* transform: rotate(90deg); */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.info-media .slider-control-centerright button,
+.info-media .slider-control-centerleft button{
+                transform: translateY(70%) !important;
+                background-color: var(--color-yellow) !important;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+
+
+            }
+
+
+
+/* MAPA */
+
+.map{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.map .zoom-out{
+    cursor: pointer;
+    border: 1px solid var(--color-green-medium);
+    border-radius: 20px;
+    background-color: var(--color-green-light);
+    height: 1.8rem;
+    width: 7rem;
+    position: absolute;
+    right: 0px;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 10;
+}
+
+.eolica-map .map svg{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    stroke-width: 1px;
+    stroke: var(--color-green-medium);
+}
+
+.eolica-map .map .citys svg{
+
+    width: 100px;
+    height: 100px;
+
+}
+
+.map .estado{
+    fill: var(--color-green-light);
+    cursor: zoom-in;
+}
+
+.estado:hover{
+    fill: #2ec2b8;
+}
+
+
+.map .citys{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top:0; */
+    /* left: 0; */
+    pointer-events: none;
+}
+
+.map .city{
+    pointer-events: auto;
+    fill: var(--color-green-medium);
+    stroke: var(--color-green-dark);
+    width: 10px;
+    height: 10px;
+    /* display: none !important; */
+}
+
+.map .city:hover{
+    fill: #2ec2b8;
+}
+
+.map .citys svg path{
+    
+}
+
+.point{
+    /* border: 1px solid #000; */
+    width: 5px;
+    height: 5px;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+} 
+
+.agulha{
+    height: auto;
+    width: 15px;
+    height: 15px;
+    top:-4px;    
+    left: -0px;
+    /* background: #000; */
+    /* color: aliceblue; */
+    position: relative;
+
+} 
+
+foreignObject{
+    background-image: url(../../../utils/images/point2.svg);
+    background-size: 0.59rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+foreignObject .check{
+    
+
+}
+
+.agulha-select{
+    opacity: 0;
+}
+.agulha:hover{
+    opacity: 0;
+}
+
+/* ANIMATE INFO */
+
+#animar{
+    display: none;
+}
+
+@keyframes anima {
+    0% {
+        margin-left: 1rem;
+        opacity: 0;
+
+    }
+
+    100% {
+        margin-left: 0rem;
+        opacity: 1;
+    }
+}
+
+#animar[type=checkbox]:checked ~ .info-text {
+    animation-name: anima;
+    animation-duration: .5s;
+}
+
+@media screen and (min-width:1024px){
+
+button{
+    outline: none;
+}
+.map-container{
+    /* border: 1px solid #000; */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column: 1/13;
+    height: 100vh;
+    background: var(--color-green-medium);
+} 
+
+.casca-map{
+    /* grid-row: 1/2; */
+    /* border: 1px solid #000; */
+    grid-column: 3/11;
     display: flex;
 
 }
@@ -313,4 +634,5 @@ foreignObject .check{
 #animar[type=checkbox]:checked ~ .info-text {
     animation-name: anima;
     animation-duration: .5s;
+}
 }
