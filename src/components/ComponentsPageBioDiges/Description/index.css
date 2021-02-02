@@ -327,24 +327,35 @@
 @media screen and (min-width:1024px){
     .biodigestor-description .justify-txt p {
         margin-right: 1rem !important;
-        grid-column: 1/3 ;
+        grid-column: 1/2 ;
     }
 
     .biodigestor-description .desc-top .justify {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
     
-    .biodigestor-description .fato-txtA, .fato-txtB {
+    .biodigestor-description .fato-txtA{
         width: auto !important;
         margin-left: 3rem !important;
         grid-column: 2/4;
     }
+
+    .biodigestor-description .fato-txtB{
+        display: none;
+    }
     
     .biodigestor-description .desc-bottom {
         
-        padding-top: 6rem ;
+        padding-top: 8rem ;
     }
 
+    .biodigestor-description .desc-top {
+        /* border: 1px solid #000; */
+        display: grid !important;
+        grid-template-columns: repeat(4,1fr) !important;
+        grid-template-rows: 17% 13% 40% !important;
+        height: 620px;
+    }
 
 }
 
