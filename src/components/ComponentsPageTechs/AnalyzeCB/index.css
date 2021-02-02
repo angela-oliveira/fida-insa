@@ -191,7 +191,7 @@
         min-width: 200px !important;
         font-size: 1.7rem !important;
         font-weight: 700 !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark);
         line-height: 1.5rem !important;
         margin: 3rem 0 2rem 0 !important;
     
@@ -220,7 +220,7 @@
         align-items: center !important;
         font-size: 12px !important;
         font-weight: 600 !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark);
         text-align: center !important ;
         width: 8rem !important;
     }

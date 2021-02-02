@@ -104,7 +104,7 @@
         width: 600px !important;
         font-size: 1.7rem !important;
         font-weight: 700 !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark) ;
         line-height: 1.5rem !important;
         text-align: center !important;
         margin: 2rem 0 6rem 0 !important;
@@ -128,7 +128,7 @@
     
     .co-patente-trl {
         padding: 30px !important;
-        background: #ececec !important;
+        background: #ececec ;
         display: flex !important;
         /* flex-direction: row; */
         /* align-items: center; */

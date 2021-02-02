@@ -273,10 +273,10 @@
     .button-1{
         border: none !important;
         border-radius:40px !important;
-        color: #fff !important;
+        color: #fff ;
         height: 30px !important;
         width: 90px !important;
-        background-color: #329BA3 !important;
+        background-color: #329BA3 ;
     }
     .tooltip {
         display: flex !;
@@ -295,7 +295,7 @@
     .ant-modal-title{
         font-weight: bold !important;
         text-align: center !important;
-        color: white !important;
+        color: white ;
     }
     .ant-modal-header {
         background-color: #329BA3;
@@ -329,7 +329,7 @@
         align-items: center !important;
         width: 4rem !important;
         height: 4rem !important;
-        background:#329BA3 !important;
+        background:#329BA3 ;
     }
     
     .logo-tech .casca-logo-tech img{
@@ -343,7 +343,7 @@
         margin-Bottom: -24px !important;
         margin-top: -0.6rem !important;
         margin-left: 0.5rem  !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark) ;
         opacity: 1 !important;
     }
     
@@ -351,7 +351,7 @@
     .logo-tech .label-tech .labelB{
         font-Size: 2.5rem !important;
         padding-top: 5% !important;
-        color: #329BA3 !important;
+        color: #329BA3 ;
         /* color: var(--color-green-light); */
     }
     
@@ -369,7 +369,7 @@
     
     .justify .justify-label{
         font-weight: 700 !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark) ;
         margin-bottom: 1.4rem !important;
     }
     
@@ -425,7 +425,7 @@
         min-width: 200px !important;
         font-size: 1.4rem !important;
         font-weight: 700 !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark) ;
         line-height: 1.5rem !important;
     }
     
@@ -446,7 +446,7 @@
         display: flex !important;
         font-size: 1.7rem !important;
         font-weight: 700 !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark) ;
         line-height: 1.9rem !important;
         margin: 2rem 0 2rem 0 !important;
     
@@ -470,7 +470,7 @@
         display: flex !important;
         justify-content: space-between !important;
         width: 100% !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark) ;
         font-weight: 600 !important;
     }
     
@@ -486,7 +486,7 @@
       }
     .graphic .line-gra div{
         width: 100% !important;
-        background: var(--color-green-medium) !important;
+        background: var(--color-green-medium) ;
         animation-name: example !important;
         animation-duration: 2s !important;
     }
