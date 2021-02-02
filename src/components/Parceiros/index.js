@@ -52,6 +52,8 @@ import funarbe from "../../utils/images/parceiros/Funarbe.png"
 import ippds from "../../utils/images/parceiros/ippds.png"
 import ufv from "../../utils/images/parceiros/UFV.png"
 
+import mapa from "../../utils/images/parceiros/logo mapa.png"
+
 const { Meta } = Card;
 
 function Parceiros() {
@@ -173,6 +175,14 @@ function Parceiros() {
                         </Card>
                         <Card>
                             <img alt="example" src={bahia} />
+                            <Meta title="" description="" />
+                        </Card>
+
+                    </Row>
+                    <Row>
+
+                        <Card>
+                            <img alt="example" src={mapa} />
                             <Meta title="" description="" />
                         </Card>
 
