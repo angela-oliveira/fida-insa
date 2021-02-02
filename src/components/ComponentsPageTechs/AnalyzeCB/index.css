@@ -122,6 +122,11 @@
     opacity: 1;
 }
 
+.casca-ana-cb .analise-cb-background p{
+    text-align: justify;
+    text-indent: 2rem;
+}
+
 
 .site-statistic-demo-card {
     background: #ececec;
@@ -130,7 +135,8 @@
     padding: 22px;
     align-items: center;
     justify-content: center;
-    height: 350px;
+    height: auto;
+    min-height: 350px;
   }
     [data-theme="dark"] .site-statistic-demo-card {
       background: #303030;
@@ -139,6 +145,8 @@
     .analyze-cb-eolica{
         margin-right: 1rem !important;
     }
+
+
 
     .analyze-cb-eolica .ant-row .ant-col {
         margin-top: 0rem;

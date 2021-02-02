@@ -235,6 +235,13 @@ const data = [
     obs: 'OBSERVAÇÕES: -'
   },
 ];
+
+let numList = 7;
+let width = window.innerWidth;
+if(width <= 425){
+  numList = 4
+}
+
 class InvestPublic extends React.Component {
 
   listCase = document.getElementsByClassName('.list-cases')
@@ -242,10 +249,12 @@ class InvestPublic extends React.Component {
   state = {
       visible: false
     }
-  
+    
     openModal() {
       this.setState({ visible: !this.state.visible })
     }
+    
+
     render(){
     return (
         <div className='invest-public'> 
@@ -253,10 +262,18 @@ class InvestPublic extends React.Component {
           <Table 
             columns={columns} 
             dataSource={data} 
-            pagination={{ pageSize: 7 }} 
+            pagination={{ pageSize: 7  }} 
             scroll={{ y: 450 }} 
             expandable={{
               expandedRowRender: record => <div className="expanded-table">
+                <p style={{ margin: 0, marginBottom: 10 }}>{record.local}</p>
+                <p style={{ margin: 0, marginBottom: 10 }}>{record.instoumento}</p>
+                <p style={{ margin: 0, marginBottom: 10 }}>{record.acesso}</p>
+                <p style={{ margin: 0, marginBottom: 10 }}>{record.inf}</p>
+                <p style={{ margin: 0, marginBottom: 10 }}>{record.local}</p>
+                <p style={{ margin: 0, marginBottom: 10 }}>{record.local}</p>
+
+
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.specifications}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.limit}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.period}</p>

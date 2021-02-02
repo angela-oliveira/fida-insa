@@ -20,7 +20,7 @@
     align-items: center;
 }
 .img-analize-co img{
-    width: 30rem;
+    width: 80vw;
 }
 .site-card-border-less-wrapper {
     padding: 30px;
@@ -40,8 +40,8 @@
 .biodigestor-analyzeco .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
-    top: -55px;
-    left:13rem;
+    /* top: -55px;
+    left:13rem; */
     width: 140px;
     height: 140px;
     z-index: -1;

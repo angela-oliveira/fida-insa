@@ -10,7 +10,7 @@ import { PlusOutlined } from '@ant-design/icons';
 
 class Description extends React.Component {
     // listCase = document.getElementsByClassName('.list-cases')
-    
+
     state = {
         visible1: false,
         visible2: false,
@@ -52,16 +52,16 @@ class Description extends React.Component {
                             </div>
                         </div>
                         <br></br>
-                        <p>A Energia Solar é uma energia alternativa, sustentável e renovável, tendo como fonte o Sol e podendo ser aproveitada principalmente como energia elétrica fotovoltaica e térmica. A energia fotovoltaica é a conversão direta dos raios solares em eletricidade e a energia térmica faz uso do calor do Sol para o aquecimento da água ou para a sua transformação em energia elétrica.          
+                        <p>A Energia Solar é uma energia alternativa, sustentável e renovável, tendo como fonte o Sol e podendo ser aproveitada principalmente como energia elétrica fotovoltaica e térmica. A energia fotovoltaica é a conversão direta dos raios solares em eletricidade e a energia térmica faz uso do calor do Sol para o aquecimento da água ou para a sua transformação em energia elétrica.
                         </p>
                         <div className='tooltip tolltip-margin'>
                             <Tooltip title="Ver mais" >
-                                <Button 
-                                    className='button-1' 
-                                    onClick={() => this.openModal()} 
-                                    type="primary" 
-                                    shape="circle" 
-                                    icon={<PlusOutlined />} 
+                                <Button
+                                    className='button-1'
+                                    onClick={() => this.openModal()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<PlusOutlined />}
                                 />
                             </Tooltip>
                             <Modal
@@ -96,19 +96,18 @@ class Description extends React.Component {
                             <p>Outro fator importante está ligado à redução dos impactos ambientais quando comparada com os meios de produção de energia elétrica convencionais, sendo que na produção de energia fotovoltaica não há emissão de CO2 e outros gases, sequer de poluentes líquidos ou sólidos durante a geração de energia elétrica. Com a grande disponibilidade de fonte energética solar no semiárido, o FIDA têm fomentado o uso da energia fotovoltaica na região por meio dos diversos projetos com os Estados.
 
                             </p>
-                        </div>
                             <div className='tooltip'>
-                                <Tooltip title="Ver mais">
-                                    <Button 
-                                        className='button-1' 
-                                        onClick={() => this.openModal2()} 
-                                        type="primary" 
-                                        shape="circle" 
-                                        icon={<PlusOutlined />} 
-                                    />
-                                </Tooltip>
+                            <Tooltip title="Ver mais">
+                                <Button
+                                    className='button-1'
+                                    onClick={() => this.openModal2()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<PlusOutlined />}
+                                />
+                            </Tooltip>
 
-                                <Modal
+                            <Modal
                                 title={this.justify.title}
                                 visible={this.state.visible2}
                                 width={1000}
@@ -125,7 +124,9 @@ class Description extends React.Component {
                                     </p>
                                 </div>
                             </Modal>
-                            </div>
+                        </div>
+                        </div>
+                        
                     </div>
 
                     <div className='casca-img-tech'>
@@ -143,12 +144,12 @@ class Description extends React.Component {
 
                 <div className='tooltip tolltip-margin'>
                     <Tooltip title="Ver mais" >
-                        <Button 
-                            className='button-1' 
-                            onClick={() => this.openModal3()} 
-                            type="primary" 
-                            shape="circle" 
-                            icon={<PlusOutlined />} 
+                        <Button
+                            className='button-1'
+                            onClick={() => this.openModal3()}
+                            type="primary"
+                            shape="circle"
+                            icon={<PlusOutlined />}
                         />
                     </Tooltip>
                     <Modal
@@ -169,39 +170,39 @@ class Description extends React.Component {
                     </Modal>
 
                 </div>
-               
+
                 <div className='co-graphic'>
-                        <div className='gra-label'>PANORAMA DOS PROJETOS FIDA</div>
-                        <div className='casca-gra'>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>QUANTIDADE INSTALADA</div>
-                                    <div className='right'>2722</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
+                    <div className='gra-label'>PANORAMA DOS PROJETOS FIDA</div>
+                    <div className='casca-gra'>
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>QUANTIDADE INSTALADA</div>
+                                <div className='right'>2722</div>
                             </div>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>NÚMERO DE BENEFICIADOS</div>
-                                    <div className='right'> 8461 famílias</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
+                            <div className='line-gra'>
+                                <div></div>
                             </div>
-                            <div className='graphic'>
-                                <div className='label'>
-                                    <div className='left'>MUNICÍPIOS</div>
-                                    <div className='right'>24</div>
-                                </div>
-                                <div className='line-gra'>
-                                    <div></div>
-                                </div>
+                        </div>
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>NÚMERO DE BENEFICIADOS</div>
+                                <div className='right'> 8461 famílias</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div className='graphic'>
+                            <div className='label'>
+                                <div className='left'>MUNICÍPIOS</div>
+                                <div className='right'>24</div>
+                            </div>
+                            <div className='line-gra'>
+                                <div></div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         )
     }

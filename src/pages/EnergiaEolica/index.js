@@ -45,7 +45,7 @@ function Eolica() {
             <Mapa data={dataMap}/>
             <AnalyzeCB data={infoEolica.analiseCusto}/>
             <AnalyzeCO data={infoEolica.analiseCO2}/>
-            <Invest data={infoEolica}/>
+            {/* <Invest data={infoEolica}/> */}
             <Experience />
             <Photos />
             <Curiosities data={infoEolica.voceSabia}/>

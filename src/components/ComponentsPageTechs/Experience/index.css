@@ -5,6 +5,17 @@
     /* height: 500px; */
     border: none;
 }
+
+.experience-eolica .slider{
+    background-color: var(--color-green-medium);
+}
+
+.experience-eolica .slider-list{
+    height: 830px !important;
+}
+
+
+
 .casca-experience{
     margin: 0rem 0rem 0rem 0rem !important;
     display: flex;
@@ -13,7 +24,8 @@
     /* grid-column: 1/13; */
 }
 .subtitle-eolica {
-    text-indent: 0%;
+    text-indent: 10%;
+    font-size: 1rem;
 }
 .experience-label{
     display: flex;
@@ -45,11 +57,14 @@
 
 .experience-text .experience-text-txt{
     display: flex;
+    overflow-y: auto;
+    max-height: 300px;
     
 }
 
 .experience-text-txt p{
     margin-right:1rem ;
+    
 
 }
 .video{
@@ -61,10 +76,10 @@
     margin: auto;
     padding-bottom: 2rem;
 
-    height: 100vh;
+    /* height: 100vh; */
 }
 .photos{
-    margin: 2rem 13rem 2rem 13rem;
+    margin: 2rem 2rem 2rem 2rem !important;
 }
 
 .Experience .slider-control-centerleft button{
@@ -82,6 +97,16 @@
     background-repeat: no-repeat !important;
 }
 
+@media screen and (min-width:576px){
+    .experience-eolica .slider-list{
+        height: 700px !important;
+    }
+
+    .photos{
+        margin: 2rem 2rem 2rem 2rem ;
+    }
+}
+
 @media screen and (min-width:1020px){
     .Experience {
         margin: 2rem 0rem 2rem 0rem !important;
@@ -90,6 +115,11 @@
         /* height: 500px; */
         border: none !important;
     }
+
+    .experience-eolica .slider-list{
+        height: 500px !important;
+    }
+
     .casca-experience{
         margin: 0rem 0rem 2rem 13rem !important;
         display: flex !important;

@@ -33,8 +33,6 @@
 .solar-analyzeco .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
-    top: -55px;
-    left:13rem;
     width: 140px;
     height: 140px;
     z-index: -1;

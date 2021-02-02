@@ -41,7 +41,7 @@ function EcoFogao() {
             <Mapa data={dataMap}/>
             <AnalyzeCB/>
             <AnalyzeCO/>
-            <Invest />
+            {/* <Invest /> */}
             <Experience />
             <Photos />
             <Curiosities />

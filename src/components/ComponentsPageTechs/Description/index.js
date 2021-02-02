@@ -108,8 +108,7 @@ class Description extends React.Component {
                             <p>É importante também levar em consideração que o uso de tecnologias como essa melhoram a renda do agricultor, pois diminuem os custos de manutenção. Além disso, o catavento é uma tecnologia que não requer conhecimento técnico avançado e nem um custo de manutenção elevado para sua manutenção.
 
                             </p>
-                        </div>
-                        <div className='tooltip'>
+                            <div className='tooltip'>
                             <Tooltip title="Ver mais">
                                 <Button
                                     className='button-1'
@@ -140,6 +139,8 @@ class Description extends React.Component {
                                 </div>
                             </Modal>
                         </div>
+                        </div>
+                        
                     </div>
 
                     <div className='casca-img-tech'>

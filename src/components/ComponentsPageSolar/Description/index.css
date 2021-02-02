@@ -44,6 +44,10 @@
 .solar-curiosities .button-1:focus{
     background-color: #FAF238;
 }
+
+
+
+
 /* .tooltip {
     display: flex;
     flex-direction: row-reverse;
@@ -114,6 +118,16 @@
     padding-top: 5%;
     color: #EFB802;
     /* color: var(--color-green-light); */
+}
+
+.solar-curiosities .desc-top {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 17% 15% 39% !important; 
+}
+
+.solar-curiosities .desc-bottom {
+    margin-top: -36rem;
 }
 
 /* ------------------ */
@@ -196,7 +210,7 @@
 
 
 .solar-curiosities  .co-graphic{
-    display: flex;
+    /* display: flex; */
     width: 100%;
     margin-top: 2rem;
 }
@@ -250,3 +264,56 @@
     animation-name: example;
     animation-duration: 2s;
 }
+
+@media screen and (min-width:720px){
+
+}
+
+@media screen and (min-width:884px){
+    .solar-curiosities .desc-top {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 16% 4% 30% !important;
+    }
+
+    .solar-curiosities .desc-bottom {
+        margin-top: -38rem;
+    }
+
+    .solar-curiosities .desc-top .justify {
+        grid-column: 1/5 !important;
+        grid-row: 3/4 !important;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .solar-curiosities .desc-top {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 36% 4% 30% !important;
+    }
+
+    .solar-curiosities .desc-bottom {
+        margin-top: 7rem !important;
+    }
+
+
+    .solar-curiosities .fato-txtA {
+        width: auto !important;
+        margin-left: 3rem !important;
+        grid-column: 2/3;
+    }
+
+    .solar-curiosities .fato-txtB {
+        width: auto !important;
+        margin-left: 3rem !important;
+        grid-column: 3/4;
+    }
+
+    .solar-curiosities .tooltip{
+        margin-top: 0;
+    }
+} 
+
+
