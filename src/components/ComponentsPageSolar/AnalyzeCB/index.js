@@ -22,10 +22,10 @@ class AnalyzeCB extends React.Component{
                     <TabPane className="analise-cb-background" tab="Custos de instalação" key="1">
                         <div>
                             <p>
-                                O custo de um sistema de energia solar fotovoltaica residencial (inclusos instalação e materiais) é de aproximadamente R$19.520,05, considerando a utilização de um gerador de 3,46 kWp instalado em uma residência com o consumo médio mensal de 372,6 kWh.
+                            O custo de um sistema de energia solar fotovoltaica residencial (inclusos instalação e materiais) é de aproximadamente R$ 20.000 ou USD 3.600, considerando a utilização de um gerador de 3,46 kWp instalado em uma residência com o consumo médio mensal de 372,6 kWh.
                             </p>
                             <p>
-                                Já com um investimento por volta de R$ 187.495,07 sistema solar fotovoltaico é possível obter um sistema comercial com geração esperada de energia de 585,000  kWh mensal.
+                            Já com um investimento por volta de R$ 190.000,00 ou USD 35.000 em sistema solar fotovoltaico é possível obter um sistema comercial com geração esperada de energia de 585,000 kWh mensal.
                             </p>
 
                         </div>
@@ -34,10 +34,10 @@ class AnalyzeCB extends React.Component{
                     <TabPane className="analise-cb-background" tab="Custos de manutenção" key="2">
                         <div>
                             <p>
-                            O sistema domiciliar  possui uma manutenção (após 25 anos) equivalente a R$ 5.000,00.
+                            O sistema domiciliar possui uma manutenção (após 25 anos) equivalente a R$ 5.000,00 ou USD 935, enquanto que, com o sistema comercial o custo com manutenção é representado pela substituição de inversores no 15º ano, no valor de R$ 22.131,40 ou cerca de USD 4.150 e a depreciação de 1,5% no primeiro ano e 0,7% do custo de aquisição nos demais.
                             </p>
                             <p>
-                            Enquanto que o com o sistema comercial o custo com manutenção é representado pela substituição de inversores no 15º ano, no valor de R$ 22.131,40 e a depreciação de 1,5% no primeiro ano e 0,7% do custo de aquisição nos demais.
+                            * baseado na cotação do dólar em 02/02/21 = R$ 5,35/USD
                             </p>
                         </div>
                     </TabPane>
