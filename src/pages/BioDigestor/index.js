@@ -58,7 +58,7 @@ function BioDigestor() {
             <Mapa data={dataMapa} foto={fotoDiges}/>
             <AnalyzeCB />
             <AnalyzeCO />
-            {/* <Invest /> */}
+            <Invest />
             <Experience />
             <Photos />
             <Curiosities />

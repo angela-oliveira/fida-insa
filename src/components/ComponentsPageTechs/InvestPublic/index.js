@@ -260,19 +260,13 @@ class InvestPublic extends React.Component {
         <div className='invest-public'> 
         <div><p className="invest-p">FINANCIAMENTOS PÚBLICOS</p></div>
           <Table 
+            className="table-responsive"
             columns={columns} 
             dataSource={data} 
             pagination={{ pageSize: 7  }} 
             scroll={{ y: 450 }} 
             expandable={{
               expandedRowRender: record => <div className="expanded-table">
-                <p style={{ margin: 0, marginBottom: 10 }}>{record.local}</p>
-                <p style={{ margin: 0, marginBottom: 10 }}>{record.instoumento}</p>
-                <p style={{ margin: 0, marginBottom: 10 }}>{record.acesso}</p>
-                <p style={{ margin: 0, marginBottom: 10 }}>{record.inf}</p>
-                <p style={{ margin: 0, marginBottom: 10 }}>{record.local}</p>
-                <p style={{ margin: 0, marginBottom: 10 }}>{record.local}</p>
-
 
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.specifications}</p>
                 <p style={{ margin: 0, marginBottom: 10 }}>{record.limit}</p>

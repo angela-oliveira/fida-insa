@@ -44,7 +44,7 @@ class Description extends React.Component {
     }
     render() {
         return (
-            <div className='description'>
+            <div className='description description-eolica'>
                 <div className='desc-top'>
                     <div className='title-tech'>
                         <div className='logo-tech'>

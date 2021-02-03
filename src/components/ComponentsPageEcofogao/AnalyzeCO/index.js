@@ -365,34 +365,12 @@ class AnalyzeCO extends React.Component {
                             <p>Analisando a Tabela 1, pode-se observar que houve uma redução de 58,4% de emissões de tCO2e no ecofogão em relação ao fogão a lenha tradicional.</p>
                         </Card>
                             <Table 
-                                className='table-ecofogao-analyzeco'
+                                className='table-responsive table-ecofogao-analyzeco'
                                 columns={columns} 
                                 dataSource={data} 
                                 pagination={ false } 
                             />
 
-                            {/* <Table 
-                                className='table-ecofogao-analyzeco'
-                                columns={[
-                                  {
-                                    title: 'Gás',
-                                    dataIndex: 'gas',
-                                    key: 'gas',
-                                  },
-                                  {
-                                    title: 'Fogão a lenha tradicional tCO<sub>2</ sub>e',
-                                    dataIndex: 'fogao',
-                                    key: 'fogao',
-                                  },
-                                  {
-                                    title: `tCO${bar.sub()}e`,
-                                    dataIndex: 'ecofogao',
-                                    key: 'ecofogao',
-                                  }
-                                ]} 
-                                dataSource={data} 
-                                pagination={ false } 
-                            /> */}
                             <Card bordered={false}>
                               <p><b>Referências:</b></p>
                               <p>AMERICANO, B. B. et al. Energy. Disponível em: <a target="_blanck" href='https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html'>Link</a>. Acesso em: 16 dez. 2020.</p>
@@ -443,7 +421,7 @@ class AnalyzeCO extends React.Component {
                                 <div className='content-modal'>
                                    
                                     <Table 
-                                        className='table-ecofogao-analyzeco'
+                                        className='table-responsive table-ecofogao-analyzeco'
                                         columns={columnsTRL} 
                                         dataSource={dataTRL} 
                                         pagination={ false } 
