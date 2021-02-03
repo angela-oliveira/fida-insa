@@ -29,10 +29,9 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Custo de instalação"
-                                                value={"7.000,00 ou 1.300 USD (compra + instalação)"}
+                                                value={"R$ 7.000,00 ou 1.300 USD (compra + instalação)"}
                                                 precision={2}
                                                 valueStyle={{ color: '#329BA3' }}
-                                                prefix={"R$"}
                                             />
                                         </Card>
                                     </Col>

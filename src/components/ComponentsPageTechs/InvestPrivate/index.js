@@ -203,6 +203,7 @@ class InvestPrivate extends React.Component {
         <div className='invest-private'> 
         <div><p className="invest-p">FINANCIAMENTOS PRIVADOS</p></div>
           <Table 
+            className="table-responsive"
             columns={columns} 
             dataSource={data} 
             pagination={{ pageSize: 7 }} 

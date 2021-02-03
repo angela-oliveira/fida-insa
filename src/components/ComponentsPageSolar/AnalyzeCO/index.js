@@ -59,6 +59,7 @@ class AnalyzeCO extends React.Component {
                         </Card>
                         
                         <Table 
+                            className="table-responsive" 
                             columns={columns} 
                             dataSource={data} 
                             pagination={ false } 
