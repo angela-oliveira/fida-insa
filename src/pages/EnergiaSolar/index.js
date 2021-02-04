@@ -12,6 +12,7 @@ import Experience from '../../components/ComponentsPageSolar/Experience';
 import Curiosities from '../../components/ComponentsPageSolar/Curiosities';
 import Photos from '../../components/ComponentsPageSolar/Photos'
 import footer from "../../utils/images/footer-solar.png";
+import School from '../../components/ComponentsPageSolar/School'
 
 import icoDigestor from '../../utils/images/5.png'
 import icoEolica from '../../utils/images/3.png'
@@ -42,6 +43,7 @@ function Solar() {
             <AnalyzeCO/>
             <Invest />
             <Experience />
+            <School />
             <Photos />
             <Curiosities />
             <div className="footer">
