@@ -32,13 +32,14 @@
 }
 .ant-collapse-header {
     background-color: #329BA3;
-    color: #fff!important;
+    color: #fff;
     /* font-weight: bold; */
 }
 .component-cartilha iframe {
     /* width:80rem; */
-    width: 50rem;
-    height: 150vh;
+    width: 70vw !important;
+    height: 32rem !important;
+    max-width: 1010px;
 }
 .component-cartilha {
     display: flex;

@@ -12,6 +12,12 @@
     justify-content: center;
     /* grid-column: 1/13; */
 }
+
+.casca-experience p{
+    text-indent: 10%;
+    font-size: 1rem;
+}
+
 .experience-label{
     display: flex;
     justify-content: left;

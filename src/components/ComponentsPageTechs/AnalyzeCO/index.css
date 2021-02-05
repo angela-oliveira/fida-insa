@@ -5,6 +5,11 @@
     display: flex;
 }
 
+.analyze-co p{
+    text-align: justify;
+    text-indent: 3rem;
+}
+
 .analyze-co .casca-ana-co{
     width: 100%;
     display: flex;
@@ -12,6 +17,7 @@
     align-items: center;
     /* justify-content: center; */
     margin-top: 2rem;
+    position: relative;
 
 }
 .site-card-border-less-wrapper {
@@ -31,6 +37,9 @@
     text-align: center;
     margin: 2rem 0 6rem 0;
 }
+
+
+
 .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
@@ -57,6 +66,13 @@
     grid-template-rows: 46% 14% 40% !important;
     grid-template-columns: none !important;
 }
+
+.solar-analyzeco .co-patente-trl {
+    
+    grid-template-rows: 25% 20% 40% !important;
+    
+}
+
 .co-patente-trl .img {
     display: flex;
     align-items: center;
@@ -76,6 +92,15 @@
     font-weight: bold;
 }
 
+@media screen and (min-width:576px){
+    .co-patente-trl{
+        grid-template-rows: 41% 20% 40% !important;
+
+    }
+}
+
+
+
 @media screen and (min-width:1024px){
     .analyze-co{
         /* border: 1px solid #000; */
@@ -85,6 +110,7 @@
     }
     
     .analyze-co .casca-ana-co{
+        
         width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
@@ -104,7 +130,7 @@
         width: 600px !important;
         font-size: 1.7rem !important;
         font-weight: 700 !important;
-        color: var(--color-green-dark) !important;
+        color: var(--color-green-dark) ;
         line-height: 1.5rem !important;
         text-align: center !important;
         margin: 2rem 0 6rem 0 !important;
@@ -128,12 +154,13 @@
     
     .co-patente-trl {
         padding: 30px !important;
-        background: #ececec !important;
+        background: #ececec ;
         display: flex !important;
         /* flex-direction: row; */
         /* align-items: center; */
         display: grid !important;
         grid-template-columns: 40% 20% 40% !important;
+        grid-template-rows: 1fr !important;
     }
     .co-patente-trl .img {
         margin:auto !important;

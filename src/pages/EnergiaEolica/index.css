@@ -8,6 +8,8 @@ boby,html{
 #body{
  display: grid;
  grid-template-columns: repeat(12,1fr);
+ max-width: 1440px;
+ margin: auto;
 
 }
 
@@ -17,4 +19,24 @@ boby,html{
 }
 .footer img {
     width: 100%;
+}
+@media (max-width: 500px) {
+  .ant-table-row-expand-icon-cell {
+    display: none;
+  }
+  .ant-table-header table {
+    display: none;
+  }
+  .table-responsive tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .table-responsive td {
+    border: 0;
+  }
+  .table-responsive td {
+    display: block;
+  }
+  .ant-table-expanded-row {
+    display: block;
+  }
 }

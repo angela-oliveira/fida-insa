@@ -14,6 +14,11 @@
     margin-top: 2rem;
 
 }
+
+.ecofogao-analyze-co .ant-card-body {
+    display: block;
+}
+
 .site-card-border-less-wrapper {
     padding: 30px;
     background: #ececec;
@@ -33,8 +38,8 @@
 .ecofogao-analyze-co .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
-    top: -55px;
-    left:13rem;
+    /* top: -55px;
+    left:13rem; */
     width: 140px;
     height: 140px;
     z-index: -1;
@@ -77,3 +82,4 @@
 .ecofogao-analyze-co .button-1 {
     background-color: #89773C;
 }
+

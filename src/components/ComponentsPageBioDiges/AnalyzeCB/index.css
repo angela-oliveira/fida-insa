@@ -29,6 +29,12 @@
     margin: 1rem 2rem 0 2rem;
 
 }
+
+.analyze-cb .ant-card-body .ant-list-split{
+    width: 100%;
+}
+
+
 .cb-graphic
 .cus-ins,
 .cus-man,

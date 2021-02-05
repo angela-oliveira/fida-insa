@@ -1,6 +1,13 @@
+.casca-ana-cb .cb-graphic{
+  padding: 0 !important;
+}
+
 .invest-public {
   margin-top: 2rem;
 }
+
+.invest-public .ant-table-wrapper{}
+
 .ant-table-thead tr th{
   background-color: #329BA3;
   color: white!important;
@@ -9,6 +16,7 @@
   text-indent: 0rem;
   font-weight: bold;
 }
+
 .ant-table-container {
   border: solid;
   border-color: #329BA3;
@@ -20,4 +28,31 @@
 .expanded-table p {
     margin: 1rem;
     text-indent: 0rem;
+}
+
+@media screen and (min-width:1024px){
+  .invest-public {
+    margin-top: 2rem;
+  }
+  .ant-table-thead tr th{
+    background-color: #329BA3;
+    color: white!important;
+  }
+  .invest-p{
+    text-indent: 0rem;
+    font-weight: bold;
+  }
+
+  .ant-table-container {
+    border: solid;
+    border-color: #329BA3;
+  }
+  .expanded-table {
+      background-color: #00000033 ;
+      padding: 1rem;
+  }
+  .expanded-table p {
+      margin: 1rem;
+      text-indent: 0rem;
+  }
 }

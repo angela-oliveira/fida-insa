@@ -251,6 +251,7 @@ class InvestPublic extends React.Component {
         <div className='ecofogao-analyze-investpublic invest-public'> 
         <div><p className="invest-p">FINANCIAMENTOS PÚBLICOS</p></div>
           <Table 
+            className="table-responsive"
             columns={columns} 
             dataSource={data} 
             pagination={{ pageSize: 7 }} 

@@ -175,7 +175,7 @@ class AnalyzeCO extends React.Component {
                                 
                                    
                                     <Table 
-                                        className='table-biodigestor-analyzeco'
+                                        className='table-responsive table-biodigestor-analyzeco'
                                         columns={columns} 
                                         dataSource={data} 
                                         pagination={ false } 

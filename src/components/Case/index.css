@@ -682,3 +682,12 @@
     
     
 }
+
+.button-download-cartilha-todos {
+    border: none;
+    border-radius:40px;
+    color: #fff;
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--color-green-dark);
+}

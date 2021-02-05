@@ -22,8 +22,8 @@ function Experience() {
     }
 
     return (
-        <div className='Experience'>
-            <div className='casca-experience'>
+        <div className='Experience experience-eolica'>
+            <div className='casca-experience '>
                 <div className='experience-label'>EXPERIÊNCIAS REAIS</div>
                 <p className='subtitle-eolica'>Veja os nosso registros</p>
 

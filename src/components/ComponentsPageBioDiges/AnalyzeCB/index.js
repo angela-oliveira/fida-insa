@@ -122,10 +122,9 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Compra + Instalação"
-                                                value={" 3.529,00"}
+                                                value={"R$ 3.529,00 (660 USD)"}
                                                 precision={2}
                                                 valueStyle={{ color: '#FF7907' }}
-                                                prefix={"R$"}
                                             />
                                         </Card>
                                     </Col>
@@ -141,10 +140,9 @@ class AnalyzeCB extends React.Component {
                                         <Card>
                                             <Statistic
                                                 title="Custos de Manutenção"
-                                                value={"5 a  R$ 200,00"}
+                                                value={"R$ 5 (1 USD) a R$ 200,00 (40 USD)"}
                                                 precision={2}
                                                 valueStyle={{ color: '#FF7907' }}
-                                                prefix={"R$"}
                                             />
                                         </Card>
                                     </Col>

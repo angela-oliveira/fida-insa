@@ -20,7 +20,9 @@
   }
 .casca-ana-co .co-label{
     display: flex;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
     width: 600px;
     font-size: 1.7rem;
     font-weight: 700;
@@ -32,8 +34,8 @@
 .bioagua-analyzeco .casca-ana-co .co-label::before{
     position: absolute;
     content: '';
-    top: -55px;
-    left:13rem;
+    /* top: -55px;
+    left:13rem; */
     width: 140px;
     height: 140px;
     z-index: -1;
