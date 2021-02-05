@@ -5,7 +5,7 @@ import { DownloadOutlined } from '@ant-design/icons';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import cartilhabioagua from '../../utils/pdf/Cartilha-compactado.pdf'
+import cartilhastodas from '../../utils/pdf/Cartilhas compactadas.pdf'
 
 import eolica from '../../utils/images/photos/eólica_fotos/EOLICA-PANORAMICA CATAVENTO-1200.jpg';
 import bioagua from '../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 01.JPG';
@@ -166,12 +166,12 @@ class Case extends React.Component {
                 </Carousel>
 <div>
 
-<div className='curiosities-label'>Cartilha</div>
+<div className='curiosities-label'>Cartilha Completa</div>
                 <div className='subtitle'><p>Informações resumidas sobre todas as tecnologias</p>
                 </div>
             <div className="component-cartilha">
                 <center>
-                <iframe src={cartilhabioagua}></iframe>
+                <iframe src={cartilhastodas}></iframe>
 
                 </center>
                 <br></br>
@@ -179,7 +179,7 @@ class Case extends React.Component {
             </div>
             <div className="component-cartilha">
             <a target="_blank" className="" 
-            href={cartilhabioagua}
+            href={cartilhastodas}
             >
                     <Button 
                                     className='button-download-cartilha-todos' 
