@@ -47,7 +47,7 @@ const data = [
     institution: "Santander",
     instrument: "CDC Sustentável",
     access: "PJ",
-    specifications: "Correntistas ",
+    specifications: "ESPECIFICAÇÕES DE QUEM PODE ACESSAR: Correntistas ",
     local: "Brasil",
 
     prazo: "60 meses",
@@ -65,7 +65,7 @@ const data = [
     institution: "Santander",
     instrument: "CDC Agro Socioambiental",
     access: "Agronegócios",
-    specifications: "Não informado",
+    specifications: "ESPECIFICAÇÕES DE QUEM PODE ACESSAR: Não informado",
     local: "Brasil",
     prazo: "60 meses",
     financing: "100% Bens",
@@ -82,7 +82,7 @@ const data = [
     institution: "Bradesco",
     instrument: "Leasing Ambiental",
     access: "PF/PJ",
-    specifications: "N/A",
+    specifications: "ESPECIFICAÇÕES DE QUEM PODE ACESSAR: N/A",
     local: "Nacional",
     prazo: "Até 60 meses* *Possibilidade de extensão do prazo para até 120 meses, mediante tipo de bem e aprovação de crédito",
     financing: "Até 100% do Projeto",
@@ -99,7 +99,7 @@ const data = [
     institution: "CREDCREA",
     instrument: "Crédito Sustentável",
     access: "PF",
-    specifications: "N/A",
+    specifications: "ESPECIFICAÇÕES DE QUEM PODE ACESSAR: N/A",
     local: "Brasil",
     prazo: "Não informado",
     financing: "Não informado",
@@ -115,7 +115,7 @@ const data = [
     institution: "SICREDI",
     instrument: "Consórcio Sustentável",
     access: "PJ",
-    specifications: "Associados do SICRED",
+    specifications: "ESPECIFICAÇÕES DE QUEM PODE ACESSAR: Associados do SICRED",
     local: "Brasil",
     prazo: "Até 60, 75, 100 e 120 meses.",
     financing: "< 100% dos itens financiáveis",
@@ -131,7 +131,7 @@ const data = [
     institution: "SEBRAE",
     instrument: "FAMPE",
     access: "PJ",
-    specifications: "N/A",
+    specifications: "ESPECIFICAÇÕES DE QUEM PODE ACESSAR: N/A",
     local: "Brasil",
     prazo: "Pelo período da dívida contratada",
     financing: "Até 80% do Financiamento, Limitado a Até R$ 30 mil para Microempreendedores Individuais, R$ 200 mil para Microempresas e R$ 300 mil para Pequenas Empresas",
@@ -147,7 +147,7 @@ const data = [
     institution: "CREDCREA",
     instrument: "Crédito Sustentável",
     access: "PF",
-    specifications: "N/A",
+    specifications: "ESPECIFICAÇÕES DE QUEM PODE ACESSAR: N/A",
     local: "Brasil",
     prazo: "Não informado",
     financing: "Não informado",
@@ -164,7 +164,7 @@ const data = [
     institution: "Porto Seguro",
     instrument: "Consórcio Sustentável",
     access: "PF/PJ",
-    specifications: "N/A",
+    specifications: "ESPECIFICAÇÕES DE QUEM PODE ACESSAR: N/A",
     local: "Brasil",
     prazo: "Até 50 meses",
     financing: "Todo o sistema",
@@ -193,7 +193,8 @@ class InvestPrivate extends React.Component {
     return (
         <div className='bioagua-invest invest-private'> 
         <div><p className="invest-p">FINANCIAMENTOS PRIVADOS</p></div>
-          <Table 
+          <Table
+            className="table-responsive" 
             columns={columns} 
             dataSource={data} 
             pagination={{ pageSize: 7 }} 

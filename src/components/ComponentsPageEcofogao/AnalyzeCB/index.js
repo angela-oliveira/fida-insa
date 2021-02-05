@@ -49,7 +49,7 @@ class AnalyzeCB extends React.Component{
                                     >
                                         <div className='content-modal'>
                                             <p>
-                                                A implantação de um ecofogão pode custar em torno de R$ 1.150,00. Os valores variam de acordo com a tabela de preço dos materiais e mão de obra do local da residência a ser implantada.
+                                            A implantação de um ecofogão pode custar em torno de R$ 1.150,00 (215 USD). Os valores variam de acordo com a tabela de preço dos materiais e mão de obra do local da residência a ser implantada.
                                             </p>
                                             <p>
                                                 Para construir um fogão ecológico de 2 metros de comprimento, 50 centímetros de largura e de altura variando entre 80 a 90 centímetros, precisamos em média dos seguintes materiais:
@@ -81,7 +81,7 @@ class AnalyzeCB extends React.Component{
                                     De acordo com os usuários a manutenção no ecofogão é mínima e varia conforme o uso e a forma de manuseio com a lenha na câmara de combustão. Outro acessório que requer cuidados é a chaminé que deve ser limpa a cada 6 meses devido o acúmulo de fuligem que pode entupir e fazer a fumaça voltar para dentro de casa. A manutenção pode ser feita pelo próprio beneficiário a medida da necessidade e do uso do ecofogão onde normalmente se precisa consertar as rachaduras na alvenaria provocada pelo calor e na chaminé que pode descolar da alvenaria. Também e em menor frequência, nas peças de ferro (chapa e forno) devido uma maior durabilidade do material. É muito relativa a manutenção pelo uso, já que alguns beneficiários também possuem fogão a gás.
                                 </p>     
                                 <p>
-                                O custo da manutenção varia conforme a peça que estragou, variando de R$ 15,00 à 300,00, conforme nos declarou um usuário que recebeu a capacitação para construir os ecofogões nas comunidades.
+                                O custo da manutenção varia conforme a peça que estragou, variando de R$ 15,00 (3 USD) a 300,00 (55 USD), conforme nos declarou um usuário que recebeu a capacitação para construir os ecofogões nas comunidades.
                                 </p>
                             </div>
 
