@@ -14,6 +14,8 @@ import Curiosities from '../../components/ComponentsPageEcofogao/Curiosities';
 import Photos from '../../components/ComponentsPageEcofogao/Photos'
 import footer from "../../utils/images/footer-fogao.png";
 
+import School from '../../components/ComponentsPageEcofogao/School'
+
 import icoAgua from '../../utils/images/4.png';
 import icoBioDigestor from '../../utils/images/5.png';
 
@@ -43,6 +45,7 @@ function EcoFogao() {
             <AnalyzeCO/>
             <Invest />
             <Experience />
+            <School />
             <Photos />
             <Curiosities />
             <div className="footer">
