@@ -1,0 +1,32 @@
+
+.component-school-biodigestor {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column: 1/13;
+  margin: auto;
+  display: flex!important;
+  flex-direction: row;
+  align-items: center;
+}
+.component-school-biodigestor .ant-row .ant-col div{
+
+  display: flex!important;
+}
+.component-school-biodigestor .button-1{
+  background-color: #FF7907;
+  
+}
+.image-school{
+  width: 30rem;
+  margin: 3rem;
+}
+.image-school-p {
+  height: 10rem;
+  margin: 1rem;
+}
+.school-second {
+  padding-top: 4rem;
+}
+.component-school-biodigestor .modal-biodigestor .ant-modal-header {
+  background-color: #FF7907;
+}
