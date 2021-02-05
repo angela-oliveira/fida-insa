@@ -125,7 +125,6 @@ class AnalyzeCB extends React.Component {
                                                 value={"R$ 3.529,00 (660 USD)"}
                                                 precision={2}
                                                 valueStyle={{ color: '#FF7907' }}
-                                                prefix={"R$"}
                                             />
                                         </Card>
                                     </Col>
@@ -144,7 +143,6 @@ class AnalyzeCB extends React.Component {
                                                 value={"R$ 5 (1 USD) a R$ 200,00 (40 USD)"}
                                                 precision={2}
                                                 valueStyle={{ color: '#FF7907' }}
-                                                prefix={"R$"}
                                             />
                                         </Card>
                                     </Col>
