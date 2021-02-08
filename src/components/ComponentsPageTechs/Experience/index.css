@@ -105,6 +105,10 @@
     .photos{
         margin: 2rem 2rem 2rem 2rem ;
     }
+
+    .experience-eolica .slider .slider-frame{
+        height: 700px !important;
+    }
 }
 
 @media screen and (min-width:1020px){

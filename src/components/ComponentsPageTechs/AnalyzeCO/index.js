@@ -17,14 +17,14 @@ function AnalyzeCO() {
                 <div className='co-bottom'></div>
                 <br></br>
                 <div className='co-patente-trl'> 
-                    <Card title="Quantidade de patentes" bordered={false}>
+                    <Card className='p1' title="Quantidade de patentes" bordered={false}>
                         <p>Embora o catavento seja considerado uma invenção muito antiga, ao longo da história ele tem recebido diversos aprimoramentos direcionados a aumentar a eficiência desta tecnologia. Por exemplo, pesquisando a palavra-chave “catavento” na base do Instituto Nacional de Propriedade Industrial (INPI) de 1992 a 2015 registraram-se 27 pedidos de patentes. Contudo, destas, contabilizaram-se apenas 10 pedidos que efetivamente se relacionam com melhorias voltadas para o bombeamento de água e irrigação de lavouras para comunidades rurais. Destas, os documentos das patentes PI 0012810-4 e PI 0000092-2 não estão disponíveis no banco de dados do INPI. O documento PI 0805788-5 A2 refere-se a uma tecnologia para geração de energia elétrica para pequenas comunidades, devido a isso, foi também considerada relevante. Outras tecnologias como a patente BR 20 2012 012558 2, por exemplo, trata de melhorias na estrutura da bomba d´água acoplada ao catavento. Nesta tecnologia, a bomba tem sua eficiência aumentada pela utilização de um pistão de dupla ação proporcionando uma redução de potência e disponibilizando segurança ao sistema de rotor eólico e bomba. Outro benefício a desta invenção é que o recalque da água pode atingir até 150 metros.
                         </p>
                     </Card>
                     <div className='img'>
                         <img src={TRL}></img>
                     </div>
-                    <Card title="TRL da Tecnologia social" bordered={false}>
+                    <Card className='p2' title="TRL da Tecnologia social" bordered={false}>
                         <p>A escala dos níveis de maturidade tecnológica (Technology Readiness Level - TRL) permite classificar e acompanhar o grau de maturidade do desenvolvimento de uma tecnologia, além de possibilitar a comparação direta entre diferentes ativos. Para produtos que já estão no mercado esses ativos devem ser classificados na escala a partir de 7 até 9. O catavento em seu formato atual já é uma tecnologia estável, aprimorada, amplamente comercializada e popular. Embora seja popularizado e considerado simples para uso e manutenção, o catavento hidráulico passou por muitos aprimoramentos tecnológicos ao longos dos anos, desde a sua idealização na Pérsia, 915 a.C. Mesmo assim, toda e qualquer tecnologia ainda é passível de ser aperfeiçoada, ou reformulada para otimizar sua performance ou destiná-la a outro uso. Para os projetos apoiados pelo FIDA, o catavento tem sido associado especialmente ao cultivo de palma e hortas, promovendo alimentação para os pequenos rebanhos e a população agrícola do semiárido.
                         </p>
                     </Card>

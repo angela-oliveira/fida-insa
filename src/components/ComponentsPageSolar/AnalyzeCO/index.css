@@ -67,3 +67,22 @@
     border: solid;
     border-color: #E2AF28;
   }
+
+  @media screen and (min-width:1024px){
+    .co-patente-trl .p2{
+        height: 35rem;
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+
+    .co-patente-trl .p1{
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    .co-patente-trl .img {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+}

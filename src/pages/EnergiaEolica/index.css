@@ -20,6 +20,12 @@ boby,html{
 .footer img {
     width: 100%;
 }
+
+.ant-col-12{
+  width: 100%;
+  max-width: none ;
+}
+
 @media (max-width: 768px) {
   .Invest .ant-table-row-expand-icon-cell {
     display: none;
