@@ -74,9 +74,14 @@
   background-color: #89773C;
   color: white;
 }
+
 .ecofogao-analyze-co .table-ecofogao-analyzeco .ant-table-container {
   border: solid;
   border-color: #89773C;
+}
+
+.table-ecofogao-analyzeco{
+    
 }
 
 .ecofogao-analyze-co .button-1 {

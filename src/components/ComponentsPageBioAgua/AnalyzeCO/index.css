@@ -52,6 +52,12 @@
     display: grid;
     grid-template-columns: 40% 20% 40%;
 }
+
+.bioagua-analyzeco .co-patente-trl {
+        grid-template-rows: 46% 9% 40% !important;
+    
+}
+
 .co-patente-trl .img {
     margin:auto;
     

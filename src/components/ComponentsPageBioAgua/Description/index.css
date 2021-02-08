@@ -48,6 +48,11 @@
     
     margin-top: 0px;
 }
+
+.bioagua-description .justify .tooltip {
+    
+    margin-top: 0px;
+}
 /* .tolltip-margin{
     margin-right: 20px;
 } */
@@ -242,6 +247,13 @@
     animation-duration: 2s;
 }
 
+
+@media screen and (min-width:576px){
+    .bioagua-description .desc-bottom {
+        grid-template-rows: 25% 40% 40% !important;
+    }
+}
+
 @media screen and (min-width:720px){
     .bioagua-description .desc-bottom{
         grid-template-rows: 26% 31% 40%;
@@ -265,6 +277,7 @@
     .bioagua-description .desc-bottom{
         margin-top: 9rem !important;
         grid-template-rows: 30% 30% 40% !important;
+        
     }
 
     .bioagua-description .desc-top{
@@ -285,6 +298,10 @@
         grid-column: 1/5 !important;
         grid-row: 3/4 !important;
         margin-top: 0rem;
+    }
+
+    .bioagua-description .desc-bottom{
+        margin-top: 7rem !important;
     }
 
     

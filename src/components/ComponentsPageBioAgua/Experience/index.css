@@ -30,7 +30,7 @@
     display: grid;
     grid-column: 1/3;
     grid-row: 3/4;
-    padding: 2rem 10rem;
+    padding: 2rem 4rem;
 }
 .experience-text{
 
@@ -64,4 +64,19 @@
 .Experience .slider-control-centerleft,.Experience .slider-control-centerright{
     height: 70px !important;
     width: 35px;
+}
+
+@media screen and (min-width:1024px){
+    .video{
+        grid-column: 2/3;
+        width: 40vw;
+    }
+
+    .bioagua-experience .experience-content{
+        background-color: #108EA5;
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 3/4;
+        padding: 2rem 4rem !important;
+    }
 }

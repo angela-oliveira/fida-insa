@@ -236,11 +236,11 @@ const data = [
   },
 ];
 
-let numList = 7;
-let width = window.innerWidth;
-if(width <= 425){
-  numList = 4
-}
+// let numList = 7;
+// let width = window.innerWidth;
+// if(width <= 425){
+//   numList = 4
+// }
 
 class InvestPublic extends React.Component {
 
