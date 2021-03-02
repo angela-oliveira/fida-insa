@@ -108,6 +108,7 @@ function Mapa(props) {
             .join("g")
             .attr("class", "city")
             .attr("transform", function (d) {
+                console.log("test posi: "+projection(d.geometry.coordinates))
                 return "translate(" + projection(d.geometry.coordinates) + ")"
             })
             .attr("key", (d) => d.properties.id)
