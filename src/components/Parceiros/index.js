@@ -182,7 +182,7 @@ function Parceiros() {
                     <Row>
 
                         <Card>
-                            <img alt="example" src={mapa} />
+                            <img className='logo-grande' alt="example" src={mapa} />
                             <Meta title="" description="" />
                         </Card>
 
