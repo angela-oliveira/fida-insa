@@ -19,12 +19,12 @@ import School from '../../components/ComponentsPageEcofogao/School'
 import icoAgua from '../../utils/images/4.png';
 import icoBioDigestor from '../../utils/images/5.png';
 
-import dataMap from '../../utils/filesJSON/ecofogao/ecofogao.json'
+import dataMap from '../../utils/filesJSON/ecofogao/ecofogaoo.json';
 
 function EcoFogao() {
 
     useEffect(()=>{
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0) 
     },[])
 
     return (

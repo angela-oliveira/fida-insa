@@ -27,9 +27,13 @@ button{
 }
 
 .casca-map{
+    
+    
+
     /* grid-row: 1/2; */
     /* border: 1px solid #000; */
-    display: grid !important;
+    display: none;
+    /* display: grid !important; */
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 
@@ -229,7 +233,26 @@ button{
 
 /* MAPA */
 
-.eolica-map .map{
+.projects{
+    width: 100%;
+    height: 2rem;
+    background: #ffffff67;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none ;
+}
+
+.projects option{
+    color: black;
+    /* width: 100%; */
+}
+
+.casca-map .map{
+    display: none;
+}
+
+.map-container .map{
     /* border: 1px solid #000; */
     /* width: 100%; */
     /* height: 250px; */
@@ -261,16 +284,16 @@ button{
     z-index: 10;
 }
 
-.eolica-map .map svg{
+.map-container .map svg{
     position: absolute;
-    display: block;
-    width: 0 !important;
+    display: none;
+    width: 100%;
     height: 100%;
     stroke-width: 1px;
     stroke: var(--color-green-medium);
 }
 
-.eolica-map .map .citys svg{
+.map-container .map .citys svg{
 
     width: 100px;
     height: 100px;
@@ -588,7 +611,7 @@ button{
     z-index: 10;
 }
 
-.eolica-map .map svg{
+.map-container .map svg{
     position: absolute;
     display: block;
     width: 100%;
@@ -597,7 +620,7 @@ button{
     stroke: var(--color-green-medium);
 }
 
-.eolica-map .map .citys svg{
+.map-container .map .citys svg{
 
     width: 100px;
     height: 100px;
@@ -634,6 +657,7 @@ button{
 .map .city:hover{
     fill: #2ec2b8;
 }
+
 
 .map .citys svg path{
     
@@ -703,7 +727,7 @@ foreignObject .check{
 
 #animar[type=checkbox]:checked ~ .info-text {
     animation-name: anima;
-    animation-duration: .5s;
+    animation-duration: 1.5s;
 }
 }
 
@@ -736,7 +760,7 @@ foreignObject .check{
         
     }
 
-    .eolica-map .map {
+    .map-container .map {
         /* border: 1px solid #000; */
         /* width: 100%; */
         /* height: 250px; */
@@ -782,6 +806,10 @@ foreignObject .check{
      
         display: none;
         }
+
+    .projects{
+            display: none;
+    }
 }
 
 

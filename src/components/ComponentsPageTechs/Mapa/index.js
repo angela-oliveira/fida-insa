@@ -1,21 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { select, geoPath, geoMercator, svg, } from "d3";
+import { select, geoPath, geoMercator, svg } from "d3";
 import useResizeObserver from 'use-resize-observer';
-import { Modal, Tooltip } from 'antd';
+import { Modal } from 'antd';
 import $ from 'jquery';
 
 import drawMap from '../../../utils/filesJSON/mapa/semiarido.geo.json';
-import drawAL from '../../../utils/filesJSON/mapa/al.json'
-import drawBA from '../../../utils/filesJSON/mapa/ba.json'
-import drawCE from '../../../utils/filesJSON/mapa/ce.json'
-import drawMA from '../../../utils/filesJSON/mapa/ma.json'
-import drawMG from '../../../utils/filesJSON/mapa/mg.json'
-import drawPB from '../../../utils/filesJSON/mapa/pb.json'
-import drawPE from '../../../utils/filesJSON/mapa/pe.json'
-import drawPI from '../../../utils/filesJSON/mapa/pi.json'
-import drawRN from '../../../utils/filesJSON/mapa/rn.json'
-import drawSE from '../../../utils/filesJSON/mapa/se.json'
-
+import drawAL from '../../../utils/filesJSON/mapa/al.json';
+import drawBA from '../../../utils/filesJSON/mapa/ba.json';
+import drawCE from '../../../utils/filesJSON/mapa/ce.json';
+import drawMA from '../../../utils/filesJSON/mapa/ma.json';
+import drawMG from '../../../utils/filesJSON/mapa/mg.json';
+import drawPB from '../../../utils/filesJSON/mapa/pb.json';
+import drawPE from '../../../utils/filesJSON/mapa/pe.json';
+import drawPI from '../../../utils/filesJSON/mapa/pi.json';
+import drawRN from '../../../utils/filesJSON/mapa/rn.json';
+import drawSE from '../../../utils/filesJSON/mapa/se.json';
 
 import icoPoint from '../../../utils/images/place_01.svg';
 
@@ -37,16 +36,13 @@ import Carousel from 'nuka-carousel';
 
 function Mapa(props) {
 
-    // referencia os elementos
-    // const pointRef = useRef(null);
+    console.log(props)
 
+    // referencia os elementos
     const svgRef = useRef(null);
     const svgPointRef = useRef(null);
-
     const wrapperRef = useRef(null);
-    // const infoCityRef = useRef(null);
     const midiaRef = useRef(null);
-
     const zoomRef = useRef(null);
 
     // adquirindo a proporção dada pelo css
@@ -66,8 +62,8 @@ function Mapa(props) {
     const [tecnologia, setTecnologia] = useState(props.data.features[0].properties.Tecnologia)
     const [projeto, setProjeto] = useState(props.data.features[0].properties.Projeto)
 
-    const [selectEs, setSelectEs] = useState(drawMap);
-    const [colorEs, setColorEs] = useState('#bbFF93');
+    // const [selectEs, setSelectEs] = useState(drawMap);
+    // const [colorEs, setColorEs] = useState('#bbFF93');
 
     const [visible1, setVisible1] = useState(false);
     const [visible2, setVisible2] = useState(false);
@@ -75,7 +71,9 @@ function Mapa(props) {
     const [visible4, setVisible4] = useState(false);
     const [visible5, setVisible5] = useState(false);
 
+    const widthWindow = window.innerWidth;
 
+    // Desmarca o input radio
     function desmarc() {
         console.log("entrou!")
         document.querySelector("input").checked = false
@@ -85,35 +83,18 @@ function Mapa(props) {
 
     }
 
-    const selecaoEstados = {
-
-        BA: [drawBA, 'blue']
-
-    }
-
     const div = select(wrapperRef);
     const canvasRef = select(svgRef);
 
-
-    function EnterEstate() {
-        setSelectEs(selecaoEstados.BA[0]);
-        setColorEs(selecaoEstados.BA[1]);
-    }
-
     // Gera a lista de projetos no campo projetos na versão mobile.
     const selectTech = document.getElementsByClassName('.projects');
-    // function listProjects(project){
-    //     for(let project of props.data.features){
-    //         select. project.properties.municipio
-    //     }
-    // }
 
-    function test(e) {
+    // ALTERANDO INFORMA
+    function updateInfo(e) {
         for (let project of props.data.features) {
             if (project.properties.id == e) {
 
                 document.querySelector("input").checked = true
-                
 
                 setText(project.properties.text)
                 setEstado(project.properties.Estado)
@@ -123,182 +104,80 @@ function Mapa(props) {
                 setTecnologia(project.properties.Tecnologia)
                 setProjeto(project.properties.Projeto)
 
-                setTimeout(()=>{
+                setTimeout(() => {
                     document.querySelector("input").checked = false
-
-                },1500)
-
-
-                console.log(project)
+                }, 1500)
 
             }
         }
-
-        console.log(e)
     }
-    // $('.projects').onChange(test())
-
 
     useEffect(() => {
 
-
+        // INSERÇÃO DE OPTION NO SELECT
         props.data.features.forEach((project) => {
             $('.projects').append(`<option value='${project.properties.id}' > ${project.properties.municipio} - ${project.properties.Estado} </option>`)
-
         })
-
 
         // REFERENCIAS
-
         const svgPoint = select(svgRef.current);
-
-
+        const svg = select(svgRef.current);
         const map = document.querySelector('.map');
-        const [width, height] = [(map.clientWidth), (map.clientHeight)]
-
-        let svg = svgRef.current;
         let canvas = canvasRef.current;
+
+        // TAMANHO DO CANVAS
+        const [width, height] = [(map.clientWidth), (map.clientHeight)]
         canvas.width = width * 4;
         canvas.height = height * 4;
-
-        console.log(canvas.nodeValue)
-
-        console.log(canvas)
-
         let ctx = canvas.getContext("2d");
 
-        const projection = geoMercator().fitSize([width * 4, height * 4], selectedEstados);
-        // console.log('projeção: ' + projection)
+        if (widthWindow <= 1023) {
 
-        let pathGenerator = geoPath().projection(projection);
+            // PROJEÇÃO DE MAPA
+            const projection = geoMercator().fitSize([width * 4, height * 4], selectedEstados);
 
-        // DESENHA O MAPA
+            // GERADOR DE CAMINHOS COM BASE NA PROJEÇÃO
+            let pathGenerator = geoPath().projection(projection);
 
-        svgPoint
-            .data(props.data)
-            .text((d) => {
-                console.log("test posi: " + projection(d.geometry.coordinates))
-            })
+            // GERAÇÃO DOS OBJ PATHS2D DOS ESTADOS COM BASE NO CAMINHO GERADO
 
-        let mapa = new Path2D(pathGenerator(drawMap));
+            let mapa = new Path2D(pathGenerator(drawMap));
+            let AL = new Path2D(pathGenerator(drawAL));
+            let BA = new Path2D(pathGenerator(drawBA));
+            let CE = new Path2D(pathGenerator(drawCE));
+            let MA = new Path2D(pathGenerator(drawMA));
+            let MG = new Path2D(pathGenerator(drawMG));
+            let PB = new Path2D(pathGenerator(drawPB));
+            let PE = new Path2D(pathGenerator(drawPE));
+            let PI = new Path2D(pathGenerator(drawPI));
+            let RN = new Path2D(pathGenerator(drawRN));
+            let SE = new Path2D(pathGenerator(drawSE));
 
-        console.log(pathGenerator(drawAL))
-        console.log(pathGenerator(props.data))
-
-        let AL = new Path2D(pathGenerator(drawAL));
-        let BA = new Path2D(pathGenerator(drawBA));
-        let CE = new Path2D(pathGenerator(drawCE));
-        let MA = new Path2D(pathGenerator(drawMA));
-        let MG = new Path2D(pathGenerator(drawMG));
-        let PB = new Path2D(pathGenerator(drawPB));
-        let PE = new Path2D(pathGenerator(drawPE));
-        let PI = new Path2D(pathGenerator(drawPI));
-        let RN = new Path2D(pathGenerator(drawRN));
-        let SE = new Path2D(pathGenerator(drawSE));
-        let test = new Path2D(pathGenerator(props.data))
-
-        let path = pathGenerator(props.data).split(/(?=[Mm])/).filter(val => /(?=[M])/.test(val))
+            // console.log(SE)
 
 
-        let paths = []
-        path.forEach((val) => { paths.push((val.substr(1).split(','))) })
+            // let test = new Path2D(pathGenerator(props.data))
 
+            // FILTRO PARA CAPTURAR A COORDENADA DE CADA PROJETO
 
+            console.log(pathGenerator(props.data))
+            let path = pathGenerator(props.data).split(/(?=[Mm])/).filter(val => /(?=[M])/.test(val))
+            // console.log(props.data)
+            let paths = []
+            path.forEach((val) => { paths.push((val.substr(1).split(','))) })
 
+            // DESENHANDO O MAPA NO CANVAS
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-
-
-        ctx.beginPath();
-        ctx.fillStyle = 'blue';
-        ctx.fill(mapa);
-
-        ctx.strokeStyle = '#329ba3'
-        ctx.lineWidth = 6
-        ctx.stroke(mapa);
-
-        // ctx.fill(test);
-        // ctx.stroke(test);
-
-        ctx.beginPath();
-        ctx.fillStyle = 'green';
-        paths.forEach((a) => {
-            ctx.moveTo(a[0], a[1])
-            ctx.arc(a[0], a[1], 8, 0, 2 * Math.PI)
-            ctx.fill();
-        })
-
-
-
-
-
-        console.log(paths)
-
-
-        canvas.addEventListener('mousemove', (event) => {
+            ctx.beginPath();
             ctx.fillStyle = 'blue';
             ctx.fill(mapa);
-
-            if (ctx.isPointInPath(AL, event.offsetX, event.offsetY)) {
-                // ctx.fillStyle = 'blue';
-                // ctx.fill(mapa);
-                ctx.fillStyle = 'red';
-                ctx.fill(AL);
-
-            } else if (ctx.isPointInPath(BA, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(BA);
-
-            } else if (ctx.isPointInPath(CE, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(CE);
-
-            } else if (ctx.isPointInPath(MA, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(MA);
-
-            } else if (ctx.isPointInPath(MG, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(MG);
-
-            } else if (ctx.isPointInPath(PB, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(PB);
-
-            } else if (ctx.isPointInPath(PE, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(PE);
-
-            } else if (ctx.isPointInPath(PI, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(PI);
-
-            } else if (ctx.isPointInPath(RN, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(RN);
-
-            } else if (ctx.isPointInPath(SE, event.offsetX, event.offsetY)) {
-                ctx.fillStyle = 'red';
-                ctx.fill(SE);
-
-            } else {
-                // console.log("não")
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.fillStyle = 'blue';
-                ctx.fill(mapa);
-                // ctx.fill(test);
-                ctx.beginPath();
-                ctx.fillStyle = 'green';
-                paths.forEach((a) => {
-                    ctx.moveTo(a[0], a[1])
-                    ctx.arc(a[0], a[1], 8, 0, 2 * Math.PI)
-                    ctx.fill();
-                })
-            }
-
+            // DESENHANDO O CONTORNO DO MAPA NO CANVAS
             ctx.strokeStyle = '#329ba3'
+            ctx.lineWidth = 6
             ctx.stroke(mapa);
 
-
+            // DESENHANDO A LOCALIZAÇÃO DOS PROJETOS
             ctx.beginPath();
             ctx.fillStyle = 'green';
             paths.forEach((a) => {
@@ -307,128 +186,208 @@ function Mapa(props) {
                 ctx.fill();
             })
 
+            // console.log(paths)
+
+            canvas.addEventListener('mousemove', (event) => {
+                ctx.fillStyle = 'blue';
+                ctx.fill(mapa);
+
+                if (ctx.isPointInPath(AL, event.offsetX, event.offsetY)) {
+                    // ctx.fillStyle = 'blue';
+                    // ctx.fill(mapa);
+                    ctx.fillStyle = 'red';
+                    ctx.fill(AL);
+
+                } else if (ctx.isPointInPath(BA, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(BA);
+
+                } else if (ctx.isPointInPath(CE, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(CE);
+
+                } else if (ctx.isPointInPath(MA, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(MA);
+
+                } else if (ctx.isPointInPath(MG, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(MG);
+
+                } else if (ctx.isPointInPath(PB, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(PB);
+
+                } else if (ctx.isPointInPath(PE, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(PE);
+
+                } else if (ctx.isPointInPath(PI, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(PI);
+
+                } else if (ctx.isPointInPath(RN, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(RN);
+
+                } else if (ctx.isPointInPath(SE, event.offsetX, event.offsetY)) {
+                    ctx.fillStyle = 'red';
+                    ctx.fill(SE);
+
+                } else {
+                    // console.log("não")
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = 'blue';
+                    ctx.fill(mapa);
+                    // ctx.fill(test);
+                    ctx.beginPath();
+                    ctx.fillStyle = 'green';
+                    paths.forEach((a) => {
+                        ctx.moveTo(a[0], a[1])
+                        ctx.arc(a[0], a[1], 8, 0, 2 * Math.PI)
+                        ctx.fill();
+                    })
+                }
+
+                ctx.strokeStyle = '#329ba3'
+                ctx.stroke(mapa);
 
 
-        })
-
-        // ctx.beginPath();
-        // pathGenerator(drawMap);
-        // ctx.strokeStyle = '#329ba3';
-        // ctx.stroke();
-
-        console.log(pathGenerator(drawMap.features))
-
-
-        // svgPoint
-
-        //     .selectAll(".city")
-        //     .data(props.data.features)
-        //     .join("g")
-
-        //     // .attr("xmlns", "http://www.w3.org/2000/svg")
-
-        //     .attr("class", "city")
-        //     .attr("transform", function (d) {
-        //         return "translate(" + projection(d.geometry.coordinates) + ")"
-        //     })
-
-        //     .append("foreignObject")
-        //     .attr("x", -5)
-        //     .attr("y", -20)
-        //     .attr("width", 15)
-        //     .attr("height", 17)
-        //     .append("xhtml:label")
-        //     .attr("for", "animar")
-        //     .on("click", () => {
-        //         desmarc()
-        //     })
-        //     .append("xhtml:img")
-        //     .attr("class", "agulha")
-        //     .attr("src", icoPoint)
-        //     .on("click", (d, i) => {
-        //         setSelectedCity(selectedCity === i ? i : i)
-        //     })
+                ctx.beginPath();
+                ctx.fillStyle = 'green';
+                paths.forEach((a) => {
+                    ctx.moveTo(a[0], a[1])
+                    ctx.arc(a[0], a[1], 8, 0, 2 * Math.PI)
+                    ctx.fill();
+                })
+            })
 
 
-    }, [wrapperRef, widthRef, heightRef, selectEs])
+        } else {
+
+            const { width, height } = wrapperRef.current.getBoundingClientRect();
+
+            const projection = geoMercator().fitSize([width, height], selectedEstados);
+
+            const pathGenerator = geoPath().projection(projection);
+
+            svg
+                .selectAll(".estado")
+                .data(drawMap.features)
+                .join("path")
+                .on("click", (d, features) => {
+                    setSelectedEstados(selectedEstados === features ? drawMap : features);
+                })
+                .attr("class", "estado")
+                .attr("d", features => pathGenerator(features))
+
+
+            svgPoint
+
+                .selectAll(".city")
+                .data(props.data.features)
+                .join("g")
+                .attr("class", "city")
+                .attr("transform", function (d) {
+                    return "translate(" + projection(d.geometry.coordinates) + ")"
+                })
+
+                .append("foreignObject")
+                .attr("x", -5)
+                .attr("y", -20)
+                .attr("width", 15)
+                .attr("height", 17)
+                .append("xhtml:label")
+                .attr("for", "animar")
+                .on("click", () => {
+                    desmarc()
+                })
+                .append("xhtml:img")
+                .attr("class", "agulha")
+                .attr("src", icoPoint)
+                .on("click", (d, i) => {
+                    setSelectedCity(selectedCity === i ? i : i)
+                })
+
+
+        }
+        // console.log(pathGenerator(drawMap.features))
+
+    }, [wrapperRef, widthRef, heightRef])
+
+    // useEffect(() => {
+    //     const map = document.querySelector('.map');
+    //     let canvas = canvasRef.current;
+
+    //     // TAMANHO DO CANVAS
+    //     const [width, height] = [(map.clientWidth), (map.clientHeight)]
+    //     canvas.width = width * 4;
+    //     canvas.height = height * 4;
+    //     let ctx = canvas.getContext("2d");
+
+    //     // if (widthWindow <= 1023) {
+    //     //     let PB = new Path2D(pathGenerator(drawPB));
+    //     //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    //     // }
+    // },[cidade])
+
 
     useEffect(() => {
+        if (widthWindow > 1023) {
 
+            const { width, height } = wrapperRef.current.getBoundingClientRect();
+            const projection = geoMercator().fitSize([width, height], selectedEstados);
+            let pathGenerator = geoPath().projection(projection);
+            const svg = select(svgRef.current);
+            const svgPoint = select(svgRef.current);
 
-        // const { width, height } = wrapperRef.current.getBoundingClientRect();
-        // const projection = geoMercator().fitSize([width, height], selectedEstados);
-        // let pathGenerator = geoPath().projection(projection);
-        // const svg = select(svgRef.current);
-        // const svgPoint = select(svgRef.current);
+            svg
+                .selectAll(".estado")
+                .data(drawMap.features)
+                .join("path")
+                .on("click", (d, features) => {
+                    setSelectedEstados(selectedEstados === features ? drawMap : features);
+                })
+                .attr("class", "estado")
 
-        // svgPoint
-        //     .selectAll(".city")
-        //     .data(props.data.features)
-        //     .transition()
-        //     .attr("transform", function (d) {
-        //         return "translate(" + projection(d.geometry.coordinates) + ")"
-        //     })
+                .transition()
+                .attr("d", features => pathGenerator(features));
 
+            svgPoint
+                .selectAll(".city")
+                .data(props.data.features)
+                .transition()
+                .attr("transform", function (d) {
+                    return "translate(" + projection(d.geometry.coordinates) + ")"
+                })
+        }
     })
 
-    useEffect(() => {
+    // useEffect(() => {
+    //     if (widthWindow > 1023) {
 
-        // const svgPoint = select(svgRef.current);
+    //     const svgPoint = select(svgRef.current);
 
-        // svgPoint
-        //     .selectAll(".labelCity")
-        //     .data([selectedCity])
-        //     .join("text")
-        //     .attr("class", "labelCity")
-        //     .text(
-        //         (d) => {
-        //             setText(d.properties.text)
-        //             setEstado(d.properties.Estado)
-        //             setCidade(d.properties.municipio)
-        //             setInstalacao(d.properties.QtInstal)
-        //             setBeneficio(d.properties.NumBenef)
-        //             setTecnologia(d.properties.Tecnologia)
-        //             setProjeto(d.properties.Projeto)
-        //         }
-        //     )
+    //     svgPoint
+    //         .selectAll(".labelCity")
+    //         .data([selectedCity])
+    //         .join("text")
+    //         .attr("class", "labelCity")
+    //         .text(
+    //             (d) => {
+    //                 setText(d.properties.text)
+    //                 setEstado(d.properties.Estado)
+    //                 setCidade(d.properties.municipio)
+    //                 setInstalacao(d.properties.QtInstal)
+    //                 setBeneficio(d.properties.NumBenef)
+    //                 setTecnologia(d.properties.Tecnologia)
+    //                 setProjeto(d.properties.Projeto)
+    //             }
+    //         )
+    //         }
 
-
-    }, [selectedCity])
-
-
-
-    useEffect(() => {
-        // const map = document.querySelector('.map');
-
-        // let [width, height] = [(map.clientWidth), (map.clientHeight)]
-
-        // console.log(width, height)
-
-        // let canvas = d3.select('.map')
-        //     .append('canvas')
-        //     .attr('width',width)
-        //     .attr('height',height)
-
-        // let ctx = canvas.node().getContext('2d');
-
-
-        // canvas.height = height;
-        // canvas.width = width;
-
-
-        // drawMap.features[0].geometry.coordinates[0][0].map((cord) => {
-        //     ctx.beginPath();
-        //     // ctx.moveTo(75, 50);
-        //     ctx.lineTo(cord[0]*(-1), cord[1]*(-1));
-
-        //     console.log((cord[0]*(-1))*1000, (cord[1]*(-1))*1000)
-        //     // ctx.fill();
-        // })
-
-
-    })
-
-
+    // }, [selectedCity])
 
     return (
         <div className='eolica-map map-container'>
@@ -440,7 +399,7 @@ function Mapa(props) {
 
                     <input type="checkbox" id="animar"></input>
 
-                    <select className='projects' onChange={(e) => { test(e.target.value) }}>
+                    <select className='projects' onChange={(e) => { updateInfo(e.target.value) }}>
                         <option value=''>Selecione um municipio</option>
 
 
@@ -570,27 +529,12 @@ function Mapa(props) {
 
                 </div>
                 <div className='map' ref={wrapperRef}>
-                    {/* <div className='zoom-out' onClick={() => {
-                        setSelectedEstados(drawMap)
-                    }}>
-                        Mapa completo
-                    </div> */}
                     <canvas
                         id='map-canva'
                         ref={canvasRef}
-                        onClick={() => { }}
-                        onMouseEnter={() => {
-                            EnterEstate()
-                        }}
-                        onMouseLeave={(
-
-                        ) => {
-                            // noEstate()
-                        }}
-
                     ></canvas>
-                    <svg ref={svgRef} style={{ "with": "0px" }}></svg>
-                    <div className='citys' ref={svgPointRef}></div>
+                    <svg ref={svgRef}></svg>
+                    {/* <div className='citys' ref={svgPointRef}></div> */}
                     {/* <canvas id="canvas" ></canvas> */}
                 </div>
             </div>
