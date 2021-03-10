@@ -10,29 +10,78 @@ button{
     grid-column: 1/13;
 } 
 
+/* COLOR MAP */
+
+/* SOLAR */
+
 .solar .map-container {
     background: var(--color-yellow-medium);
 } 
+.solar .map svg {
+    stroke: var(--color-yellow-medium);
+}
+
+.solar .map .estado{
+    fill: var(--color-yellow-light);
+}
+
+
+/* EOLICA */
 
 .eolica .map-container {
     background: var(--color-green-medium);;
 }
+.map svg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    stroke-width: 1px;
+    stroke: var(--color-green-medium);
+}
+
+/* ECOFOGÃO */
 
 .ecofogao .map-container {
     background: var(--color-brown-medium);
 }
+.ecofogao .map svg {
+    
+    stroke: var(--color-brown-medium);
+}
+.ecofogao .map .estado{
+    fill: var(--color-brown-light);
+}
+
+
+
+/* DIGESTOR */
 
 .biodigestor .map-container {
     background: var(--color-orange-medium);
 }
+.biodigestor .map svg {
+    
+    stroke: var(--color-orange-medium);
+}
+
+.biodigestor .map .estado{
+    fill: var(--color-orange-light);
+}
+
+/* AGUA */
 
 .bioagua .map-container {
     background: var(--color-blue-medium);
 }
-
-.eolica-map{
-    /* height: auto ; */
-} 
+.bioagua .map svg {
+    
+    stroke: var(--color-blue-medium);
+}
+.bioagua .map .estado{
+    fill: var(--color-blue-light);
+}
+ 
 
 @media screen and (min-width:1024px){
     .map-container{
@@ -309,7 +358,7 @@ button{
     width: 100%;
     height: 100%;
     stroke-width: 1px;
-    stroke: var(--color-green-medium);
+    
 }
 
 .map-container .map .citys svg{
@@ -638,7 +687,6 @@ button{
     width: 100%;
     height: 100%;
     stroke-width: 1px;
-    stroke: var(--color-green-medium);
 }
 
 .map-container .map .citys svg{
