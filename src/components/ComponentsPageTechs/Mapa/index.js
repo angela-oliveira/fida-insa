@@ -61,9 +61,7 @@ function Mapa(props) {
     const [instalacao, setInstalacao] = useState(props.data.features[0].properties.QtInstal)
     const [tecnologia, setTecnologia] = useState(props.data.features[0].properties.Tecnologia)
     const [projeto, setProjeto] = useState(props.data.features[0].properties.Projeto)
-
-    // const [selectEs, setSelectEs] = useState(drawMap);
-    // const [colorEs, setColorEs] = useState('#bbFF93');
+    const [ProjectSelect, setProjectSelect] = useState(props.data.features[0])
 
     const [visible1, setVisible1] = useState(false);
     const [visible2, setVisible2] = useState(false);
@@ -75,12 +73,10 @@ function Mapa(props) {
 
     // Desmarca o input radio
     function desmarc() {
-        console.log("entrou!")
         document.querySelector("input").checked = false
         setTimeout(() => {
             document.querySelector("input").checked = false
         }, 1000)
-
     }
 
     const div = select(wrapperRef);
@@ -103,10 +99,59 @@ function Mapa(props) {
                 setBeneficio(project.properties.NumBenef)
                 setTecnologia(project.properties.Tecnologia)
                 setProjeto(project.properties.Projeto)
+                setProjectSelect(project)
 
                 setTimeout(() => {
                     document.querySelector("input").checked = false
                 }, 1500)
+
+                switch (project.properties.Estado) {
+
+                    case 'Alagoas':
+                        setSelectedEstados(drawAL)
+                        break;
+
+                    case 'Bahia':
+                        setSelectedEstados(drawBA)
+                        break;
+
+                    case 'Ceará':
+                        setSelectedEstados(drawCE)
+                        break;
+
+                    case 'Maranhão':
+                        setSelectedEstados(drawMA)
+                        break;
+
+                    case 'Minas Gerais':
+                        setSelectedEstados(drawMG)
+                        break;
+
+                    case 'Paraíba':
+                        setSelectedEstados(drawPB)
+                        break;
+
+                    case 'Pernambuco':
+                        setSelectedEstados(drawPE)
+                        break;
+
+                    case 'Piauí':
+                        setSelectedEstados(drawPI)
+                        break;
+
+                    case 'Rio Grande do Norte':
+                        setSelectedEstados(drawRN)
+                        break;
+
+                    case 'Sergipe':
+                        setSelectedEstados(drawSE)
+                        break;
+
+                }
+
+            } else if (e == '') {
+
+                setSelectedEstados(drawMap)
 
             }
         }
@@ -135,133 +180,41 @@ function Mapa(props) {
 
             // PROJEÇÃO DE MAPA
             const projection = geoMercator().fitSize([width * 4, height * 4], selectedEstados);
+            console.log(width, height)
+            console.log(projection)
 
             // GERADOR DE CAMINHOS COM BASE NA PROJEÇÃO
             let pathGenerator = geoPath().projection(projection);
+            console.log(pathGenerator)
 
             // GERAÇÃO DOS OBJ PATHS2D DOS ESTADOS COM BASE NO CAMINHO GERADO
 
             let mapa = new Path2D(pathGenerator(drawMap));
-            let AL = new Path2D(pathGenerator(drawAL));
-            let BA = new Path2D(pathGenerator(drawBA));
-            let CE = new Path2D(pathGenerator(drawCE));
-            let MA = new Path2D(pathGenerator(drawMA));
-            let MG = new Path2D(pathGenerator(drawMG));
-            let PB = new Path2D(pathGenerator(drawPB));
-            let PE = new Path2D(pathGenerator(drawPE));
-            let PI = new Path2D(pathGenerator(drawPI));
-            let RN = new Path2D(pathGenerator(drawRN));
-            let SE = new Path2D(pathGenerator(drawSE));
-
-            // console.log(SE)
-
-
-            // let test = new Path2D(pathGenerator(props.data))
 
             // FILTRO PARA CAPTURAR A COORDENADA DE CADA PROJETO
-
-            console.log(pathGenerator(props.data))
             let path = pathGenerator(props.data).split(/(?=[Mm])/).filter(val => /(?=[M])/.test(val))
-            // console.log(props.data)
             let paths = []
             path.forEach((val) => { paths.push((val.substr(1).split(','))) })
 
-            // DESENHANDO O MAPA NO CANVAS
+            // LIMPA E DESENHA O MAPA NO CANVAS
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-
             ctx.beginPath();
-            ctx.fillStyle = 'blue';
+            ctx.fillStyle = props.colorLight;
             ctx.fill(mapa);
+
             // DESENHANDO O CONTORNO DO MAPA NO CANVAS
-            ctx.strokeStyle = '#329ba3'
+            ctx.strokeStyle = props.colorMedium
             ctx.lineWidth = 6
             ctx.stroke(mapa);
 
             // DESENHANDO A LOCALIZAÇÃO DOS PROJETOS
             ctx.beginPath();
-            ctx.fillStyle = 'green';
+            // ctx.fillStyle = 'green';
             paths.forEach((a) => {
                 ctx.moveTo(a[0], a[1])
                 ctx.arc(a[0], a[1], 8, 0, 2 * Math.PI)
                 ctx.fill();
             })
-
-            // console.log(paths)
-
-            canvas.addEventListener('mousemove', (event) => {
-                ctx.fillStyle = 'blue';
-                ctx.fill(mapa);
-
-                if (ctx.isPointInPath(AL, event.offsetX, event.offsetY)) {
-                    // ctx.fillStyle = 'blue';
-                    // ctx.fill(mapa);
-                    ctx.fillStyle = 'red';
-                    ctx.fill(AL);
-
-                } else if (ctx.isPointInPath(BA, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(BA);
-
-                } else if (ctx.isPointInPath(CE, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(CE);
-
-                } else if (ctx.isPointInPath(MA, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(MA);
-
-                } else if (ctx.isPointInPath(MG, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(MG);
-
-                } else if (ctx.isPointInPath(PB, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(PB);
-
-                } else if (ctx.isPointInPath(PE, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(PE);
-
-                } else if (ctx.isPointInPath(PI, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(PI);
-
-                } else if (ctx.isPointInPath(RN, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(RN);
-
-                } else if (ctx.isPointInPath(SE, event.offsetX, event.offsetY)) {
-                    ctx.fillStyle = 'red';
-                    ctx.fill(SE);
-
-                } else {
-                    // console.log("não")
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    ctx.fillStyle = 'blue';
-                    ctx.fill(mapa);
-                    // ctx.fill(test);
-                    ctx.beginPath();
-                    ctx.fillStyle = 'green';
-                    paths.forEach((a) => {
-                        ctx.moveTo(a[0], a[1])
-                        ctx.arc(a[0], a[1], 8, 0, 2 * Math.PI)
-                        ctx.fill();
-                    })
-                }
-
-                ctx.strokeStyle = '#329ba3'
-                ctx.stroke(mapa);
-
-
-                ctx.beginPath();
-                ctx.fillStyle = 'green';
-                paths.forEach((a) => {
-                    ctx.moveTo(a[0], a[1])
-                    ctx.arc(a[0], a[1], 8, 0, 2 * Math.PI)
-                    ctx.fill();
-                })
-            })
-
 
         } else {
 
@@ -315,22 +268,89 @@ function Mapa(props) {
 
     }, [wrapperRef, widthRef, heightRef])
 
-    // useEffect(() => {
-    //     const map = document.querySelector('.map');
-    //     let canvas = canvasRef.current;
+    useEffect(() => {
+        const map = document.querySelector('.map');
+        let canvas = canvasRef.current;
 
-    //     // TAMANHO DO CANVAS
-    //     const [width, height] = [(map.clientWidth), (map.clientHeight)]
-    //     canvas.width = width * 4;
-    //     canvas.height = height * 4;
-    //     let ctx = canvas.getContext("2d");
+        // TAMANHO DO CANVAS
+        const [width, height] = [(map.clientWidth), (map.clientHeight)]
+        canvas.width = width * 4;
+        canvas.height = height * 4;
+        let ctx = canvas.getContext("2d");
 
-    //     // if (widthWindow <= 1023) {
-    //     //     let PB = new Path2D(pathGenerator(drawPB));
-    //     //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // PROJEÇÃO DE MAPA
+        const projection = geoMercator().fitSize([width * 4, height * 4], selectedEstados);
+        console.log(width, height)
+        console.log(projection)
 
-    //     // }
-    // },[cidade])
+        // GERADOR DE CAMINHOS COM BASE NA PROJEÇÃO
+        let pathGenerator = geoPath().projection(projection);
+        console.log(pathGenerator)
+
+        // GERAÇÃO DOS OBJ PATHS2D DOS ESTADOS COM BASE NO CAMINHO GERADO
+
+        let mapa = new Path2D(pathGenerator(selectedEstados));
+
+        // FILTRO PARA CAPTURAR A COORDENADA DE CADA PROJETO
+        let path = pathGenerator(props.data).split(/(?=[Mm])/).filter(val => /(?=[M])/.test(val))
+        let paths = []
+        path.forEach((val) => { paths.push((val.substr(1).split(','))) })
+
+        // LIMPA E DESENHA O MAPA NO CANVAS
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.fillStyle = props.colorLight;
+        ctx.fill(mapa);
+
+        // DESENHANDO O CONTORNO DO MAPA NO CANVAS
+        ctx.strokeStyle = props.colorMedium
+        ctx.lineWidth = 6
+        ctx.stroke(mapa);
+
+        // DESENHANDO A LOCALIZAÇÃO DOS PROJETOS
+        // ctx.beginPath();
+        // ctx.fillStyle = 'green';
+        paths.forEach((a) => {
+            if (ctx.isPointInPath(mapa, a[0], a[1])) {
+
+                let path = pathGenerator(ProjectSelect).split(/(?=[Mm])/).filter(val => /(?=[M])/.test(val))
+                let paths = []
+                path.forEach((val) => { paths.push((val.substr(1).split(','))) })
+
+                // console.log(paths)
+
+                // console.log(paths[0][0] + "==" + a[0] + ", " + paths[0][1] + "==" + a[1])
+                if (paths[0][0] == a[0] && paths[0][1] == a[1]) {
+
+                    console.log("ok!!!")
+                    ctx.beginPath();
+                    ctx.fillStyle = 'red';
+                    ctx.moveTo(a[0], a[1])
+                    ctx.arc(a[0], a[1], 14, 0, 2 * Math.PI)
+                    ctx.fill();
+
+                } else if(paths[0][0] !== a[0] && paths[0][1] !== a[1]){
+                    console.log("entrou aff")
+
+                    ctx.beginPath();
+                    
+                    ctx.fillStyle = 'black';
+                    ctx.moveTo(a[0], a[1])
+                    ctx.arc(a[0], a[1], 14, 0, 2 * Math.PI)
+                    ctx.fill();
+                    
+                    ctx.strokeStyle = 'white'
+                    ctx.lineWidth = 3
+                    ctx.moveTo(a[0], a[1])
+                    ctx.beginPath();
+                    ctx.arc(a[0], a[1], 14, 0, 2 * Math.PI)
+                    ctx.stroke()
+                }
+
+
+            }
+        })
+    }, [cidade,selectedEstados])
 
 
     useEffect(() => {
@@ -364,30 +384,32 @@ function Mapa(props) {
         }
     })
 
-    // useEffect(() => {
-    //     if (widthWindow > 1023) {
+    useEffect(() => {
+        if (widthWindow > 1023) {
 
-    //     const svgPoint = select(svgRef.current);
+            const svgPoint = select(svgRef.current);
 
-    //     svgPoint
-    //         .selectAll(".labelCity")
-    //         .data([selectedCity])
-    //         .join("text")
-    //         .attr("class", "labelCity")
-    //         .text(
-    //             (d) => {
-    //                 setText(d.properties.text)
-    //                 setEstado(d.properties.Estado)
-    //                 setCidade(d.properties.municipio)
-    //                 setInstalacao(d.properties.QtInstal)
-    //                 setBeneficio(d.properties.NumBenef)
-    //                 setTecnologia(d.properties.Tecnologia)
-    //                 setProjeto(d.properties.Projeto)
-    //             }
-    //         )
-    //         }
+            svgPoint
+                .selectAll(".labelCity")
+                .data([selectedCity])
+                .join("text")
+                .attr("class", "labelCity")
+                .text(
+                    (d) => {
+                        setText(d.properties.text)
+                        setEstado(d.properties.Estado)
+                        setCidade(d.properties.municipio)
+                        setInstalacao(d.properties.QtInstal)
+                        setBeneficio(d.properties.NumBenef)
+                        setTecnologia(d.properties.Tecnologia)
+                        setProjeto(d.properties.Projeto)
+                    }
+                )
+        } else {
 
-    // }, [selectedCity])
+        }
+
+    }, [selectedCity])
 
     return (
         <div className='eolica-map map-container'>
@@ -400,7 +422,8 @@ function Mapa(props) {
                     <input type="checkbox" id="animar"></input>
 
                     <select className='projects' onChange={(e) => { updateInfo(e.target.value) }}>
-                        <option value=''>Selecione um municipio</option>
+                        <option>Selecione um municipio</option>
+                        <option value=''>Mapa completo</option>
 
 
                     </select>
@@ -542,4 +565,4 @@ function Mapa(props) {
     )
 }
 
-export default Mapa; 
+export default Mapa;

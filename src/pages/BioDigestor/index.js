@@ -5,7 +5,8 @@ import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
 
 import Description from '../../components/ComponentsPageBioDiges/Description';
-import Mapa from '../../components/ComponentsPageBioDiges/Mapa';
+import Mapa from '../../components/ComponentsPageTechs/Mapa';
+// import Mapa from '../../components/ComponentsPageBioDiges/Mapa';
 import AnalyzeCB from '../../components/ComponentsPageBioDiges/AnalyzeCB';
 import AnalyzeCO from '../../components/ComponentsPageBioDiges/AnalyzeCO';
 import Invest from '../../components/ComponentsPageBioDiges/Invest';
@@ -44,7 +45,7 @@ function BioDigestor() {
     },[])
 
     return (
-        <div id='body'>
+        <div id='body' className='biodigestor'>
             <HeaderTechs 
                 nameBack={'Ecofogão'} 
                 nameNext={'Energia Solar'} 
@@ -56,7 +57,7 @@ function BioDigestor() {
                 idNext={'solar'}
             ></HeaderTechs>
             <Description />
-            <Mapa data={dataMapa} foto={fotoDiges}/>
+            <Mapa data={dataMapa} foto={fotoDiges} colorLight='#e5ae89' colorMedium='#ff791e'/>
             <AnalyzeCB />
             <AnalyzeCO />
             <Invest />

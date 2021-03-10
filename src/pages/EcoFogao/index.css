@@ -26,6 +26,10 @@ boby,html{
 
 }
 
+/* .solar-map {
+  background: var(--color-brown-medium);
+}  */
+
 @media (max-width: 768px) {
   .Invest .ant-table-row-expand-icon-cell {
       display: none;

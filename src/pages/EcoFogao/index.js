@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
 import Description from '../../components/ComponentsPageEcofogao/Description';
-import Mapa from '../../components/ComponentsPageEcofogao/Mapa';
+import Mapa from '../../components/ComponentsPageTechs/Mapa';
+// import Mapa from '../../components/ComponentsPageEcofogao/Mapa';
 import AnalyzeCB from '../../components/ComponentsPageEcofogao/AnalyzeCB';
 import AnalyzeCO from '../../components/ComponentsPageEcofogao/AnalyzeCO';
 import Invest from '../../components/ComponentsPageEcofogao/Invest';
@@ -19,7 +20,8 @@ import School from '../../components/ComponentsPageEcofogao/School'
 import icoAgua from '../../utils/images/4.png';
 import icoBioDigestor from '../../utils/images/5.png';
 
-import dataMap from '../../utils/filesJSON/ecofogao/ecofogaoo.json';
+import dataMap from '../../utils/filesJSON/ecofogao/ecofogao.json';
+
 
 function EcoFogao() {
 
@@ -28,7 +30,7 @@ function EcoFogao() {
     },[])
 
     return (
-        <div id='body'>
+        <div id='body' className='ecofogao'>
             <HeaderTechs 
                 nameBack={'Bioágua'} 
                 nameNext={'Biodigestor'} 
@@ -40,7 +42,7 @@ function EcoFogao() {
                 idNext={'biodigestor'}
             ></HeaderTechs>
             <Description />
-            <Mapa data={dataMap}/>
+            <Mapa data={dataMap} colorLight='#aea58a' colorMedium='#89773c'/>
             <AnalyzeCB/>
             <AnalyzeCO/>
             <Invest />

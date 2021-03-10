@@ -15,6 +15,9 @@ boby,html{
     background-color: #EFB802;
 
 }
+
+
+
 @media (max-width: 768px) {
   .Invest .ant-table-row-expand-icon-cell {
     display: none;

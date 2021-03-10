@@ -2,7 +2,7 @@
 button{
     outline: none;
 }
-.biodiges-analyze-map.map-container{
+.biodiges-analyze-map .map-container{
     /* border: 1px solid #000; */
     display: grid;
     grid-template-columns: repeat(12,1fr);

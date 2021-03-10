@@ -29,8 +29,7 @@ function Eolica() {
         window.scrollTo(0, 0)
     },[])
     return (
-        <div id='body'>
-            
+        <div id='body' className='eolica'>
             <HeaderTechs 
                 linkBack='/energia-solar' 
                 nameBack={'Energia Solar'} 
@@ -42,7 +41,7 @@ function Eolica() {
                 idNext={'bioagua'}
             ></HeaderTechs>
             <Description data={infoEolica.descricao}/>
-            <Mapa data={dataMap}/>
+            <Mapa data={dataMap} colorLight='#30d1c5' colorMedium='#329ba3'/>
             <AnalyzeCB data={infoEolica.analiseCusto}/>
             <AnalyzeCO data={infoEolica.analiseCO2}/>
             <Invest data={infoEolica}/>

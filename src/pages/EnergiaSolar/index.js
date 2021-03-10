@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
 import Description from '../../components/ComponentsPageSolar/Description';
-import Mapa from '../../components/ComponentsPageSolar/Mapa';
+import Mapa from '../../components/ComponentsPageTechs/Mapa';
+// import Mapa from '../../components/ComponentsPageSolar/Mapa';
 import AnalyzeCB from '../../components/ComponentsPageSolar/AnalyzeCB';
 import AnalyzeCO from '../../components/ComponentsPageSolar/AnalyzeCO';
 import Invest from '../../components/ComponentsPageSolar/Invest';
@@ -26,7 +27,7 @@ function Solar() {
     },[])
 
     return (
-        <div id='body'>
+        <div id='body' className='solar'>
             <HeaderTechs 
                 nameBack={'Biodigestor'} 
                 nameNext={'Energia Eólica'} 
@@ -38,7 +39,7 @@ function Solar() {
                 idNext={'eolica'}
             ></HeaderTechs>
             <Description />
-            <Mapa data={dataMap}/>
+            <Mapa data={dataMap} colorLight='#faf238' colorMedium='#e3ca2e'/>
             <AnalyzeCB />
             <AnalyzeCO/>
             <Invest />

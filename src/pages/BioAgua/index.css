@@ -15,6 +15,11 @@ boby,html{
     background-color: #1AC3E2;
 
 }
+
+/* .bioagua .map-container {
+  background: var(--color-yellow-medium);
+}  */
+
 @media (max-width: 768px) {
   .Invest .ant-table-row-expand-icon-cell {
     display: none;

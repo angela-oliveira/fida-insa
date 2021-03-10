@@ -7,14 +7,14 @@
             "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
         }
     },
-    "features": [
+    "features": [ 
         {
             "type": "Feature",
             "properties": {
                 "id": 0,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Abaré",
                 "Estado": "Bahia",
                 "QtInstal": 15,
@@ -22,7 +22,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -39.317692847301579,
@@ -37,7 +37,7 @@
                 "id": 1,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Antas",
                 "Estado": "Bahia",
                 "QtInstal": 36,
@@ -45,7 +45,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.294029111380404,
@@ -60,7 +60,7 @@
                 "id": 2,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Cansanção",
                 "Estado": "Bahia",
                 "QtInstal": 41,
@@ -68,7 +68,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -39.472719616424889,
@@ -83,7 +83,7 @@
                 "id": 3,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Canudos",
                 "Estado": "Bahia",
                 "QtInstal": 16,
@@ -91,7 +91,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.991703295547424,
@@ -106,7 +106,7 @@
                 "id": 4,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Chorrochó",
                 "Estado": "Bahia",
                 "QtInstal": 15,
@@ -114,7 +114,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -39.189110240399927,
@@ -129,7 +129,7 @@
                 "id": 5,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Fátima",
                 "Estado": "Bahia",
                 "QtInstal": 18,
@@ -137,7 +137,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.201348289768269,
@@ -152,7 +152,7 @@
                 "id": 6,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Heliópolis",
                 "Estado": "Bahia",
                 "QtInstal": 46,
@@ -160,7 +160,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.314226475604571,
@@ -175,7 +175,7 @@
                 "id": 7,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Itapicuru",
                 "Estado": "Bahia",
                 "QtInstal": 60,
@@ -183,7 +183,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.194781623908938,
@@ -198,7 +198,7 @@
                 "id": 8,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Jeremoabo",
                 "Estado": "Bahia",
                 "QtInstal": 62,
@@ -206,7 +206,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.552525856182704,
@@ -221,7 +221,7 @@
                 "id": 9,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Macururé",
                 "Estado": "Bahia",
                 "QtInstal": 30,
@@ -229,7 +229,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.89672854612833,
@@ -244,7 +244,7 @@
                 "id": 10,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Manoel Vitorino",
                 "Estado": "Bahia",
                 "QtInstal": 30,
@@ -252,7 +252,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.547598196014093,
@@ -267,7 +267,7 @@
                 "id": 11,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Mirante",
                 "Estado": "Bahia",
                 "QtInstal": 30,
@@ -275,7 +275,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.764087451858629,
@@ -290,7 +290,7 @@
                 "id": 12,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Monte Santo",
                 "Estado": "Bahia",
                 "QtInstal": 61,
@@ -298,7 +298,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -39.454202038155273,
@@ -313,7 +313,7 @@
                 "id": 13,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Nordestina",
                 "Estado": "Bahia",
                 "QtInstal": 40,
@@ -321,7 +321,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -39.451410822341103,
@@ -336,7 +336,7 @@
                 "id": 14,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Novo Triunfo",
                 "Estado": "Bahia",
                 "QtInstal": 36,
@@ -344,7 +344,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.449428944471649,
@@ -359,7 +359,7 @@
                 "id": 15,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Poções",
                 "Estado": "Bahia",
                 "QtInstal": 30,
@@ -367,7 +367,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.38261381496271,
@@ -382,7 +382,7 @@
                 "id": 16,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Quijingue",
                 "Estado": "Bahia",
                 "QtInstal": 41,
@@ -390,7 +390,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -39.04978296981578,
@@ -405,7 +405,7 @@
                 "id": 17,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Ribeira do Amparo",
                 "Estado": "Bahia",
                 "QtInstal": 75,
@@ -413,7 +413,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.388804696473109,
@@ -428,7 +428,7 @@
                 "id": 18,
                 "Tecnologia": "Ecofogão",
                 "Projeto": "Gente de Valor",
-                "Tipo": null,
+                "Tipo": "",
                 "municipio": "Sítio do Quinto",
                 "Estado": "Bahia",
                 "QtInstal": 45,
@@ -436,7 +436,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -38.156417464442129,
@@ -459,7 +459,7 @@
                 ,"text":"A comunidade Cajazeiras é formada por 30 famílias que formam a Associação de Moradores, Agricultores e Agricultoras de Cajazeiras e trabalham com produção animal (caprinos, bovinos e aves) onde 3 famílias receberam a tecnologia do ecofogão."
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.467684,
@@ -482,7 +482,7 @@
                 ,"text":"A comunidade Várzea da Palha é formada por 49 famílias que formam uma associação de produtores de artesanatos e chapéus com a palha de carnaúba e foram beneficiadas com a implantação do ecofogão em suas residências."
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.470472,
@@ -505,7 +505,7 @@
                 ,"text":"A comunidade Santa Luzia é composta por 25 famílias que foram beneficiadas com a tecnologia do Ecofogão e formam a Associação dos Moradores do Sítio Santa Luzia. São agricultores familiares que produzem hortaliças, castanha de caju e frutíferas como caju, pinha e manga, além de farinha de mandioca, doces e bolos."
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.514639,
@@ -528,7 +528,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.729136486200282,
@@ -551,7 +551,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.831580001593053,
@@ -574,7 +574,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.669794924506817,
@@ -597,7 +597,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -39.818114947029557,
@@ -620,7 +620,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.388028063781185,
@@ -643,7 +643,7 @@
                 ,"text":""
             },
             "geometry": {
-                "type": "MultiPoint",
+                "type": "Point",
                 "coordinates": 
                     [
                         -40.583450317094325,

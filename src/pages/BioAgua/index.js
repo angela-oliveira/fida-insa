@@ -5,7 +5,8 @@ import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
 
 import Description from '../../components/ComponentsPageBioAgua/Description';
-import Mapa from '../../components/ComponentsPageBioAgua/Mapa';
+import Mapa from '../../components/ComponentsPageTechs/Mapa';
+// import Mapa from '../../components/ComponentsPageBioAgua/Mapa';
 import AnalyzeCB from '../../components/ComponentsPageBioAgua/AnalyzeCB';
 import AnalyzeCO from '../../components/ComponentsPageBioAgua/AnalyzeCO';
 import Invest from '../../components/ComponentsPageBioAgua/Invest';
@@ -28,7 +29,7 @@ function BioAgua() {
     }, [])
 
     return (
-        <div id='body'>
+        <div id='body' className='bioagua'>
             <HeaderTechs 
                 nameBack={'Energia Eólica'} 
                 nameNext={'Ecofogão'} 
@@ -40,7 +41,7 @@ function BioAgua() {
                 idNext={'ecofogao'}
             ></HeaderTechs>
             <Description />
-            <Mapa data={dataMap} />
+            <Mapa data={dataMap} colorLight='#1ac3e2' colorMedium='#1593aa' />
             <AnalyzeCB />
             <AnalyzeCO />
             <Invest />
