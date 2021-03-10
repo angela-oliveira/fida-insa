@@ -21,11 +21,6 @@ import Carousel from 'nuka-carousel';
 
 import icoPoint from '../../../utils/images/place_01.svg'
 
-import bioDige1 from '../../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 02.JPG'
-import bioDige2 from '../../../utils/images/photos/Biodigestor/Antônio Nazaré e Luzanira - Biodigestor 01.JPG'
-import bioDige3 from '../../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 04.JPG'
-import bioDige4 from '../../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 08.JPG'
-import bioDige5 from '../../../utils/images/photos/Biodigestor/capa_Biodigestor.JPG'
 
 
 

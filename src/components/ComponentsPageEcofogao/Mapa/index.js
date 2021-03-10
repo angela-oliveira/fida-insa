@@ -17,11 +17,6 @@ import drawRN from '../../../utils/filesJSON/mapa/rn.json'
 import drawSE from '../../../utils/filesJSON/mapa/se.json'
 
 import icoPoint from '../../../utils/images/place_01.svg';
-import fogao1 from '../../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Maria 01_1200.jpg';
-import fogao2 from '../../../utils/images/photos/Ecofogao/varjota_cajazeiras/02 VARJOTA-Cajazeiras-Nazaré e Luzanira 02_1200.jpg';
-import fogao3 from '../../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luzia-Valci e Isleane 08_1200.jpg';
-import fogao4 from '../../../utils/images/photos/Ecofogao/varjota_cajazeiras/02 VARJOTA-Cajazeiras-Nazaré e Luzanira 04_1200.jpg';
-import fogao5 from '../../../utils/images/photos/Ecofogao/varjota_varzea/02 VARJOTA-Várzea da Palha-Cida 06_1200.jpg';
 
 import './index.css';
 import Carousel from 'nuka-carousel';

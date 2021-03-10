@@ -19,11 +19,6 @@ import drawSE from '../../../utils/filesJSON/mapa/se.json'
 
 import icoPoint from '../../../utils/images/place_01.svg';
 
-import bioAgua1 from '../../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 04.JPG';
-import bioAgua2 from '../../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 13.JPG';
-import bioAgua3 from '../../../utils/images/photos/Bioágua/Robério - Bioágua 02.JPG';
-import bioAgua4 from '../../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 01.JPG';
-import bioAgua5 from '../../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 10.JPG';
 
 
 import './index.css';

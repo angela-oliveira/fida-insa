@@ -18,11 +18,7 @@ import drawSE from '../../../utils/filesJSON/mapa/se.json'
 
 import icoPoint from '../../../utils/images/place_01.svg';
 
-import solar1 from '../../../utils/images/photos/solar/SOLAR_PAINEL_SOLAR_1200.jpg'
-import solar2 from '../../../utils/images/photos/solar/SOLAR_FAMILIA_SEU_EUCLIDES_1200.jpg'
-import solar3 from '../../../utils/images/photos/solar/SOLAR_TECNOLOGIA_E_CAMPO_DISTANTE_1200.jpg'
-import solar4 from '../../../utils/images/photos/solar/SOLAR_TECNOLOGIA_E_CAMPO_1200.jpg'
-import solar5 from '../../../utils/images/photos/solar/SOLAR_EUCLIDES_E_PAINEL_SOLAR_1200.jpg'
+
 
 import './index.css';
 import Carousel from 'nuka-carousel';

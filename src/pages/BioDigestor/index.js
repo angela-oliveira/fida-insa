@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import './index.css'
@@ -15,6 +15,13 @@ import Curiosities from '../../components/ComponentsPageBioDiges/Curiosities';
 import Photos from '../../components/ComponentsPageBioDiges/Photos';
 import School from '../../components/ComponentsPageBioDiges/School';
 
+import bioDige1 from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 02.JPG'
+import bioDige2 from '../../utils/images/photos/Biodigestor/Antônio Nazaré e Luzanira - Biodigestor 01.JPG'
+import bioDige3 from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 04.JPG'
+import bioDige4 from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 08.JPG'
+import bioDige5 from '../../utils/images/photos/Biodigestor/capa_Biodigestor.JPG'
+
+
 import icoFogao from '../../utils/images/2.png'
 import icoSolar from '../../utils/images/1.png';
 
@@ -22,42 +29,41 @@ import dataMapa from '../../utils/filesJSON/biodigestor/biodigestor.json';
 
 import footer from "../../utils/images/footer-digestor.png";
 
-import bioDige1 from '../../utils/images/photos/Biodigestor/capa_Biodigestor.JPG';
-import bioDige2 from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 02.JPG';
-import bioDige3 from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 04.JPG';
-import bioDige4 from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 08.JPG';
-import bioDige5 from '../../utils/images/photos/Biodigestor/Antônio Nazaré e Luzanira - Biodigestor 01.JPG';
-
-
 
 function BioDigestor() {
 
-    const fotoDiges= {
-        "bio1":bioDige1,
-        "bio2":bioDige2,
-        "bio3":bioDige3,
-        "bio4":bioDige4,
-        "bio5":bioDige5
+    const fotoDiges = {
+        "bio1": bioDige1,
+        "bio2": bioDige2,
+        "bio3": bioDige3,
+        "bio4": bioDige4,
+        "bio5": bioDige5
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         window.scrollTo(0, 0)
-    },[])
+    }, [])
 
     return (
         <div id='body' className='biodigestor'>
-            <HeaderTechs 
-                nameBack={'Ecofogão'} 
-                nameNext={'Energia Solar'} 
-                linkBack='/eco-fogao' 
-                iconBack={icoFogao} 
-                linkNext='/energia-solar' 
-                iconNext={icoSolar} 
+            <HeaderTechs
+                nameBack={'Ecofogão'}
+                nameNext={'Energia Solar'}
+                linkBack='/eco-fogao'
+                iconBack={icoFogao}
+                linkNext='/energia-solar'
+                iconNext={icoSolar}
                 idBack={'ecofogao'}
                 idNext={'solar'}
             ></HeaderTechs>
             <Description />
-            <Mapa data={dataMapa} foto={fotoDiges} colorLight='#e5ae89' colorMedium='#ff791e'/>
+            <Mapa data={dataMapa}
+                foto={fotoDiges} 
+                colorLight='#e5ae89'
+                colorMedium='#ff791e'
+                photo={[bioDige1, bioDige2, bioDige3, bioDige4, bioDige5]}
+            />
+
             <AnalyzeCB />
             <AnalyzeCO />
             <Invest />

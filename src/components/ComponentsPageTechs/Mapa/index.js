@@ -17,24 +17,13 @@ import drawRN from '../../../utils/filesJSON/mapa/rn.json';
 import drawSE from '../../../utils/filesJSON/mapa/se.json';
 
 import icoPoint from '../../../utils/images/place_01.svg';
-
-import eolica1 from '../../../utils/images/photos/eólica_fotos/EOLICA-FAMILIA-1200.jpg';
-import eolica2 from '../../../utils/images/photos/eólica_fotos/EOLICA-PANORAMICA CATAVENTO-1200.jpg';
-import eolica3 from '../../../utils/images/photos/eólica_fotos/EOLICA-CATAVENTO-1200.jpg';
-import eolica4 from '../../../utils/images/photos/eólica_fotos/EOLICA-CAMPO SECO-1200.jpg';
-import eolica5 from '../../../utils/images/photos/eólica_fotos/a.jpg';
-
-import eolica1mini from '../../../utils/images/photos/eólica_fotos/EOLICA-FAMILIA-mini.jpg';
-import eolica2mini from '../../../utils/images/photos/eólica_fotos/EOLICA-PANORAMICA CATAVENTO-mini.jpg';
-import eolica3mini from '../../../utils/images/photos/eólica_fotos/EOLICA-CATAVENTO-mini.jpg';
-import eolica4mini from '../../../utils/images/photos/eólica_fotos/EOLICA-CAMPO SECO-mini.jpg';
-import eolica5mini from '../../../utils/images/photos/eólica_fotos/a-mini.jpg';
-
 import './index.css';
 import Carousel from 'nuka-carousel';
 
 
 function Mapa(props) {
+
+    console.log(props.photo)
 
     console.log(props)
 
@@ -467,23 +456,23 @@ function Mapa(props) {
                             }}
                         >
                             <div className='img'>
-                                <img src={eolica1mini}></img>
+                                <img src={props.photo[0]}></img>
                                 <div className='zoom-image' onClick={() => { setVisible1(true) }}></div>
                             </div>
                             <div className='img'>
-                                <img src={eolica2mini}></img>
+                                <img src={props.photo[1]}></img>
                                 <div className='zoom-image' onClick={() => { setVisible2(true) }}></div>
                             </div>
                             <div className='img'>
-                                <img src={eolica3mini}></img>
+                                <img src={props.photo[2]}></img>
                                 <div className='zoom-image' onClick={() => { setVisible3(true) }}></div>
                             </div>
                             <div className='img'>
-                                <img src={eolica4mini}></img>
+                                <img src={props.photo[3]}></img>
                                 <div className='zoom-image' onClick={() => { setVisible4(true) }}></div>
                             </div>
                             <div className='img'>
-                                <img src={eolica5mini}></img>
+                                <img src={props.photo[4]}></img>
                                 <div className='zoom-image' onClick={() => { setVisible5(true) }}></div>
                             </div>
                         </Carousel>
@@ -498,7 +487,7 @@ function Mapa(props) {
                         }
                     >
                         <div className='content-modal modal-img'>
-                            <img src={eolica1}></img>
+                            <img src={props.photo[0]}></img>
                         </div>
                     </Modal>
                     <Modal
@@ -510,7 +499,7 @@ function Mapa(props) {
                         }
                     >
                         <div className='content-modal modal-img'>
-                            <img src={eolica2}></img>
+                            <img src={props.photo[1]}></img>
                         </div>
                     </Modal>
                     <Modal
@@ -522,7 +511,7 @@ function Mapa(props) {
                         }
                     >
                         <div className='content-modal modal-img'>
-                            <img src={eolica3}></img>
+                            <img src={props.photo[2]}></img>
                         </div>
                     </Modal>
                     <Modal
@@ -534,7 +523,7 @@ function Mapa(props) {
                         }
                     >
                         <div className='content-modal modal-img'>
-                            <img src={eolica4}></img>
+                            <img src={props.photo[3]}></img>
                         </div>
                     </Modal>
                     <Modal
@@ -546,7 +535,7 @@ function Mapa(props) {
                         }
                     >
                         <div className='content-modal modal-img'>
-                            <img src={eolica5}></img>
+                            <img src={props.photo[4]}></img>
                         </div>
                     </Modal>
 
