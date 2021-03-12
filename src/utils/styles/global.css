@@ -11,6 +11,10 @@ body {
   /* overflow-x: hidden; */
 }
 
+body p{
+  color: black;
+}
+
 div{
   outline-offset: none ;
 }

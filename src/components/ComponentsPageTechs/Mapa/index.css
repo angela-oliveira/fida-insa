@@ -12,6 +12,28 @@ button{
 
 /* COLOR MAP */
 
+
+.eolica .estado:hover{
+    fill: #2ec2b8;
+}
+
+.bioagua .map .estado:hover{
+    fill: #19b2ce;
+}
+
+.biodigestor .map  .estado:hover{
+    fill: #d49164;
+}
+
+.ecofogao .map  .estado:hover{
+    fill: #9e8e5c;
+}
+
+.solar .map  .estado:hover{
+    fill: #f5e132;
+}
+
+
 /* SOLAR */
 
 .solar .map-container {
@@ -373,9 +395,6 @@ button{
     cursor: zoom-in;
 }
 
-.estado:hover{
-    fill: #2ec2b8;
-}
 
 
 .map .citys{
@@ -618,7 +637,7 @@ button{
 
 .info-media .slider-control-centerright{
     right: 20% !important;
-    transform: translateY(66%) !important;
+    transform: translateY(0%) !important;
     top: 68% !important;
 }
 
@@ -699,10 +718,6 @@ button{
 .map .estado{
     fill: var(--color-green-light);
     cursor: zoom-in;
-}
-
-.estado:hover{
-    fill: #2ec2b8;
 }
 
 

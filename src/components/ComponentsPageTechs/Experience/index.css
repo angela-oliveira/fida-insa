@@ -185,6 +185,8 @@
         background-size: 50% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        height: 70px;
+        width: 35px;
     }
     
     .Experience .slider-control-centerright button{
@@ -193,5 +195,7 @@
         transform: rotate(180deg);
         background-position: center !important;
         background-repeat: no-repeat !important;
+        height: 70px;
+        width: 35px;
     }
 }
