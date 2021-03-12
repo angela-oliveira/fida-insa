@@ -1,10 +1,11 @@
 import React from 'react';
 import './index.css';
-import { Collapse, Button } from 'antd';
+import { Collapse, Button, Tabs } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 
 import Parceiros from "../../../components/Parceiros"
 import cartilhabiodigestor from '../../../utils/pdf/Cartilha Biod-compactado.pdf'
+import cartilhabiodigestorEspanhol from '../../../utils/pdf/Cartilha Biodigestor Espanhol_compressed.pdf'
 
 const { Panel } = Collapse;
 
@@ -18,7 +19,11 @@ const text4 = `A PNRS ressalta a distinção entre resíduo, isto é, aquilo que
 //     text: ""
 // }
 
+const { TabPane } = Tabs;
 
+function callback(key) {
+  console.log(key);
+}
 
 function Curiosities() {
     return (
@@ -57,26 +62,55 @@ function Curiosities() {
 
             <div className='curiosities-label'>Cartilha Biodigestor</div>
                 <div className='subtitle'><p>Informações resumidas sobre a tecnologia Biodigestor</p>
-                </div>
-            <div className="component-cartilha">
-                <center>
-                <iframe src={cartilhabiodigestor}></iframe>
-
-                </center>
-                <br></br>
-                
             </div>
-            <div className="component-cartilha">
-            <a target="_blank" className="" 
-            href={cartilhabiodigestor}
-            >
-                    <Button 
-                                    className='button-download-cartilha-biodigestor' 
-                                    onClick={() => this.openModal()} 
-                                    type="primary" 
-                                    shape="circle" 
-                                    icon={<DownloadOutlined />} 
-                                >Download Cartilha</Button></a>
+            <div className='tabs-cartilha'>
+                <Tabs defaultActiveKey="1" onChange={callback}>
+                    <TabPane tab="Português" key="1">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhabiodigestor}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhabiodigestor}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-biodigestor' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Espanhol" key="2">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhabiodigestorEspanhol}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhabiodigestorEspanhol}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-biodigestor' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                </Tabs>
+
             </div>
 
             <Parceiros />

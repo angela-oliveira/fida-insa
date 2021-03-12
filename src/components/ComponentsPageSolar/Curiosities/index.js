@@ -1,10 +1,11 @@
 import React from 'react';
 import './index.css';
-import { Collapse, Button } from 'antd';
+import { Collapse, Button, Tabs } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 
 import Parceiros from "../../../components/Parceiros"
 import cartilhasolar from '../../../utils/pdf/Cartilha Solar-compactado.pdf'
+import cartilhasolarEspanhol from '../../../utils/pdf/Cartilha Solar Espanhol_compressed.pdf'
 
 const { Panel } = Collapse;
 
@@ -18,7 +19,11 @@ const text5 = `Secador solar: composto por uma peça que desempenha simultaneame
 //     text: ""
 // }
 
+const { TabPane } = Tabs;
 
+function callback(key) {
+  console.log(key);
+}
 
 function Curiosities() {
     return (
@@ -44,26 +49,57 @@ function Curiosities() {
 
             <div className='curiosities-label'>Cartilha Solar</div>
                 <div className='subtitle'><p>Informações resumidas sobre a tecnologia Solar</p>
-                </div>
-            <div className="component-cartilha">
-                <center>
-                <iframe src={cartilhasolar}></iframe>
-
-                </center>
-                <br></br>
-                
             </div>
-            <div className="component-cartilha">
-            <a target="_blank" className="" 
-            href={cartilhasolar}
-            >
-                    <Button 
-                                    className='button-download-cartilha-solar' 
-                                    onClick={() => this.openModal()} 
-                                    type="primary" 
-                                    shape="circle" 
-                                    icon={<DownloadOutlined />} 
-                                >Download Cartilha</Button></a>
+
+            <div className='tabs-cartilha'>
+                <Tabs defaultActiveKey="1" onChange={callback}>
+                    <TabPane tab="Português" key="1">
+
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhasolar}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhasolar}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-solar' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhasolarEspanhol}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhasolarEspanhol}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-solar' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    <TabPane tab="Espanhol" key="2">
+                    </TabPane>
+                </Tabs>
+
             </div>
             <Parceiros /> 
         </div>
