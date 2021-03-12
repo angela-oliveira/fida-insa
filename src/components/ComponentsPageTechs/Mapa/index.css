@@ -287,10 +287,52 @@ button{
 }
 
 .info-media .slider-control-centerright{
-    right: 20% !important;
-    transform: translateY(66%) !important;
+    right: 5% !important;
+    transform: translateY(0%) !important;
     top: 68% !important;
 }
+
+@media screen and (min-width:480px) {
+    .info-media .slider-control-centerright{
+        right: 15% !important;
+    }
+}
+
+@media screen and (min-width:575px) {
+    .info-media .slider-control-centerright{
+        right: 26% !important;
+        
+    }
+
+    .info-media .slider-control-bottomcenter {
+        left: 26% !important;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .info-media .slider-control-centerright{
+        right: 40% !important;
+        
+    }
+
+    .info-media .slider-control-bottomcenter {
+        left: 20% !important;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .info-media .slider-control-centerright{
+        right: 5% !important;
+        transform: translateY(0%) !important;
+        top: 68% !important;
+    }
+
+    .info-media .slider-control-bottomcenter {
+        left: 30% !important;
+    }
+}
+
+
 
 .map-container .info-media .slider-control-centerright button{
     background-image: url('../../../utils/images/arrow.svg') !important;
@@ -636,7 +678,7 @@ button{
 }
 
 .info-media .slider-control-centerright{
-    right: 20% !important;
+    right: 0% !important;
     transform: translateY(0%) !important;
     top: 68% !important;
 }
