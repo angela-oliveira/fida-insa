@@ -14,23 +14,28 @@ boby,html{
     background-color: #FF7907;
 
 }
-@media (max-width: 500px) {
-  .ant-table-row-expand-icon-cell {
+
+/* .map-container {
+  background: var(--color-orange-medium) !important;
+}  */
+
+@media (max-width: 768px) {
+  .Invest .ant-table-row-expand-icon-cell {
     display: none;
   }
-  .ant-table-header table {
+  .Invest .ant-table-header table {
     display: none;
   }
-  .table-responsive tr {
+  .Invest .table-responsive tr {
     border-bottom: 1px solid #dddddd;
   }
-  .table-responsive td {
+  .Invest .table-responsive td {
     border: 0;
   }
-  .table-responsive td {
+  .Invest .table-responsive td {
     display: block;
   }
-  .ant-table-expanded-row {
+  .Invest .ant-table-expanded-row {
     display: block;
   }
 }

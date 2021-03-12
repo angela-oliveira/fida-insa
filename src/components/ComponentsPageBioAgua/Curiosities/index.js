@@ -1,10 +1,11 @@
 import React from 'react';
 import './index.css';
-import { Collapse, Button } from 'antd';
+import { Collapse, Button, Tabs } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 
 import Parceiros from "../../../components/Parceiros"
 import cartilhabioagua from '../../../utils/pdf/Cartilha Bioágua-compactado.pdf'
+import cartilhabioaguaEspanhol from '../../../utils/pdf/Cartilha Bioágua Espanhol_compressed.pdf'
 
 const { Panel } = Collapse;
 
@@ -25,8 +26,11 @@ const text5 = `Há registros que os gregos utilizavam as águas dispostas nos es
 
 `
 
+const { TabPane } = Tabs;
 
-
+function callback(key) {
+  console.log(key);
+}
 
 function Curiosities() {
     return (
@@ -74,27 +78,59 @@ function Curiosities() {
             </div>
             <div className='curiosities-label'>Cartilha Bioágua</div>
                 <div className='subtitle'><p>Informações resumidas sobre a tecnologia Bioágua</p>
-                </div>
-            <div className="component-cartilha">
-                <center>
-                <iframe src={cartilhabioagua}></iframe>
+            </div>
 
-                </center>
-                <br></br>
-                
+            <div className='tabs-cartilha'>
+                <Tabs defaultActiveKey="1" onChange={callback}>
+                    <TabPane tab="Português" key="1">
+
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhabioagua}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhabioagua}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-bioagua' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Espanhol" key="2">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhabioaguaEspanhol}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhabioaguaEspanhol}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-bioagua' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                </Tabs>
+
             </div>
-            <div className="component-cartilha">
-            <a target="_blank" className="" 
-            href={cartilhabioagua}
-            >
-                    <Button 
-                                    className='button-download-cartilha-bioagua' 
-                                    onClick={() => this.openModal()} 
-                                    type="primary" 
-                                    shape="circle" 
-                                    icon={<DownloadOutlined />} 
-                                >Download Cartilha</Button></a>
-            </div>
+
 
             <Parceiros /> 
         </div>

@@ -5,13 +5,21 @@ import './index.css'
 import HeaderTechs from '../../components/HeaderTechs';
 
 import Description from '../../components/ComponentsPageBioAgua/Description';
-import Mapa from '../../components/ComponentsPageBioAgua/Mapa';
+import Mapa from '../../components/ComponentsPageTechs/Mapa';
+// import Mapa from '../../components/ComponentsPageBioAgua/Mapa';
 import AnalyzeCB from '../../components/ComponentsPageBioAgua/AnalyzeCB';
 import AnalyzeCO from '../../components/ComponentsPageBioAgua/AnalyzeCO';
 import Invest from '../../components/ComponentsPageBioAgua/Invest';
 import Experience from '../../components/ComponentsPageBioAgua/Experience';
 import Curiosities from '../../components/ComponentsPageBioAgua/Curiosities';
 import Photos from '../../components/ComponentsPageBioAgua/Photos';
+
+import bioAgua1 from '../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 04.JPG';
+import bioAgua2 from '../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 13.JPG';
+import bioAgua3 from '../../utils/images/photos/Bioágua/Robério - Bioágua 02.JPG';
+import bioAgua4 from '../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 01.JPG';
+import bioAgua5 from '../../utils/images/photos/Bioágua/sobral_casaforte/Cleidiane - Bioágua 10.JPG';
+
 
 import dataMap from '../../utils/filesJSON/bioagua/datamap/bioagua.json';
 
@@ -28,19 +36,22 @@ function BioAgua() {
     }, [])
 
     return (
-        <div id='body'>
-            <HeaderTechs 
-                nameBack={'Energia Eólica'} 
-                nameNext={'Ecofogão'} 
-                linkBack='/energia-eolica' 
-                iconBack={icoEolica} 
-                linkNext='/eco-fogao' 
-                iconNext={icoFogao} 
+        <div id='body' className='bioagua'>
+            <HeaderTechs
+                nameBack={'Energia Eólica'}
+                nameNext={'Ecofogão'}
+                linkBack='/energia-eolica'
+                iconBack={icoEolica}
+                linkNext='/eco-fogao'
+                iconNext={icoFogao}
                 idBack={'eolica'}
                 idNext={'ecofogao'}
             ></HeaderTechs>
             <Description />
-            <Mapa data={dataMap} />
+            <Mapa data={dataMap} 
+                colorLight='#1ac3e2'
+                colorMedium='#1593aa' 
+                photo={[bioAgua1, bioAgua2, bioAgua3, bioAgua4, bioAgua5]} />
             <AnalyzeCB />
             <AnalyzeCO />
             <Invest />

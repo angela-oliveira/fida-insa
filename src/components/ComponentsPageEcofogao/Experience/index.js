@@ -55,7 +55,7 @@ function Experience() {
                         justifyContent: 'center',
                         alignItems: 'center',
 
-                        background: '#89773C',
+                        background: '#FAF238',
                         color: '#575757',
                         fontSize: '30px',
 

@@ -1,4 +1,4 @@
-html,.main{
+html,.body{
     overflow-x: hidden;
 }
 
@@ -432,6 +432,14 @@ h1{
         display: flex;
         flex-flow: column;
         align-items: center;
+    }
+
+    @media screen and (max-width:413px){
+
+        .parceiros .ant-card-body .img-big{
+            /* width: 94vw; */
+            right: 2rem;
+        }
     }
 
     .team .ant-card .div-yellow {

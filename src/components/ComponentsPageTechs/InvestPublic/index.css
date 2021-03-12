@@ -2,11 +2,14 @@
   padding: 0 !important;
 }
 
-.invest-public {
+.invest-public, .invest-private {
+  margin: auto;
   margin-top: 2rem;
 }
 
-.invest-public .ant-table-wrapper{}
+.invest-public .ant-table-wrapper{
+  max-width: initial;
+}
 
 .ant-table-thead tr th{
   background-color: #329BA3;

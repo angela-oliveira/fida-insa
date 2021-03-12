@@ -14,6 +14,13 @@ import Photos from '../../components/ComponentsPageTechs/Photos'
 import footer from "../../utils/images/footer-eolica.png";
 import Parceiros from "../../components/Parceiros";
 
+
+import eolica1 from '../../utils/images/photos/eólica_fotos/EOLICA-FAMILIA-1200.jpg';
+import eolica2 from '../../utils/images/photos/eólica_fotos/EOLICA-PANORAMICA CATAVENTO-1200.jpg';
+import eolica3 from '../../utils/images/photos/eólica_fotos/EOLICA-CATAVENTO-1200.jpg';
+import eolica4 from '../../utils/images/photos/eólica_fotos/EOLICA-CAMPO SECO-1200.jpg';
+import eolica5 from '../../utils/images/photos/eólica_fotos/a.jpg';
+
 import dataMap from "../../utils/filesJSON/eolica/datamap/eolica.json";
 
 
@@ -29,8 +36,7 @@ function Eolica() {
         window.scrollTo(0, 0)
     },[])
     return (
-        <div id='body'>
-            
+        <div id='body' className='eolica'>
             <HeaderTechs 
                 linkBack='/energia-solar' 
                 nameBack={'Energia Solar'} 
@@ -42,7 +48,11 @@ function Eolica() {
                 idNext={'bioagua'}
             ></HeaderTechs>
             <Description data={infoEolica.descricao}/>
-            <Mapa data={dataMap}/>
+            <Mapa data={dataMap} 
+            colorLight='#30d1c5' 
+            colorMedium='#329ba3'
+            photo={[eolica1, eolica2, eolica3, eolica4, eolica5]}
+            />
             <AnalyzeCB data={infoEolica.analiseCusto}/>
             <AnalyzeCO data={infoEolica.analiseCO2}/>
             <Invest data={infoEolica}/>

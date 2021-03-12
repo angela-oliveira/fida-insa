@@ -49,15 +49,20 @@
     background: #FF7907;
 }
 
-.co-patente-trl {
+.biodigestor-analyzeco .co-patente-trl {
     padding: 30px;
     background: #ececec;
     display: flex;
     /* flex-direction: row; */
     /* align-items: center; */
     display: grid;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 23% 14% 40% !important;
 }
+
+.biodigestor-analyzeco .co-patente-trl .p2{
+    height: 47rem;
+}
+
 .co-patente-trl .img {
     margin:auto;
     
@@ -78,4 +83,47 @@
 
 .biodigestor-analyzeco .button-1 {
     background-color: #FF7907;
+}
+
+@media screen and (min-width:576px){
+    .biodigestor-analyzeco .co-patente-trl .p2{
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .biodigestor-analyzeco .co-patente-trl .p2{
+        height: 25rem;
+    }
+
+    .biodigestor-analyzeco .co-patente-trl{
+        grid-template-rows: 33% 14% 40% !important;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .biodigestor-analyzeco .co-patente-trl .p2{
+        height: 35rem;
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+
+    .biodigestor-analyzeco .co-patente-trl .p1{
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    .co-patente-trl .img {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+}
+
+@media screen and (min-width:1300px){
+    .biodigestor-analyzeco .co-patente-trl .p2{
+        height: 30rem;
+        
+    }
+
 }

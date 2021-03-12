@@ -74,6 +74,10 @@
 
 /* CB-BOTTOM */
 
+.analyze-cb-eolica .title-cb {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
 
 
 .txt-label{
@@ -125,8 +129,12 @@
 .casca-ana-cb .analise-cb-background p{
     text-align: justify;
     text-indent: 2rem;
+    /* padding-top: 3rem; */
 }
 
+#rc-tabs-0-panel-1 .site-statistic-demo-card{
+    justify-content: initial;
+}
 
 .site-statistic-demo-card {
     background: #ececec;

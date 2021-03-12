@@ -140,8 +140,8 @@ class AnalyzeCO extends React.Component {
                     <div className='co-bottom'></div>
                     <br></br>
                     <div className='co-patente-trl'> 
-                        <Card title="Quantidade de patentes" bordered={false}>
-                            <p>Quantidade de patentes depositadas no Brasil: <b>101 patentes.</b></p>
+                        <Card title="Quantidade de patentes" className='p1' bordered={false}>
+                            <p >Quantidade de patentes depositadas no Brasil: <b>101 patentes.</b></p>
                             
                             <Tooltip title="Ver mais" >
                             
@@ -188,8 +188,8 @@ class AnalyzeCO extends React.Component {
                         <div className='img'>
                             <img src={TRL}></img>
                         </div>
-                        <Card title="TRL da Tecnologia social" bordered={false}>
-                            <p>A TRL (do inglês, Technology Readiness Level) trata-se de uma escala que informa o nível de maturidade tecnológica. A escala em questão é dividida em nove níveis, e cada nível corresponde a uma fase do desenvolvimento da tecnologia. No caso do biodigestor, pode-se classificá-lo com número de TRL entre 8 e 9, visto que o TRL 8 corresponde a um sistema qualificado e testado estando na fase de industrialização, e o TRL 9, consiste em classificar a tecnologia como um sistema em operação que possui comprovação do que se propõe a realizar; sendo assim a tecnologia está pronto para ser produzida e comercializada. Os primeiros registros da implementação e utilização de biodigestores no Brasil se deram por volta da década de 70, após a crise do petróleo, iniciada no final de 1973. Desde lá, a comercialização é realizada, e os equipamentos podem ser adquiridos por intermédio de empresas especializadas nesse tipo de tecnologia. Por isso, o biodigestor possui maturidade tecnológica, de acordo com a TRL, entre 8 e 9. 
+                        <Card className='p2' title="TRL da Tecnologia social" bordered={false}>
+                            <p  >A TRL (do inglês, Technology Readiness Level) trata-se de uma escala que informa o nível de maturidade tecnológica. A escala em questão é dividida em nove níveis, e cada nível corresponde a uma fase do desenvolvimento da tecnologia. No caso do biodigestor, pode-se classificá-lo com número de TRL entre 8 e 9, visto que o TRL 8 corresponde a um sistema qualificado e testado estando na fase de industrialização, e o TRL 9, consiste em classificar a tecnologia como um sistema em operação que possui comprovação do que se propõe a realizar; sendo assim a tecnologia está pronto para ser produzida e comercializada. Os primeiros registros da implementação e utilização de biodigestores no Brasil se deram por volta da década de 70, após a crise do petróleo, iniciada no final de 1973. Desde lá, a comercialização é realizada, e os equipamentos podem ser adquiridos por intermédio de empresas especializadas nesse tipo de tecnologia. Por isso, o biodigestor possui maturidade tecnológica, de acordo com a TRL, entre 8 e 9. 
                             </p>
                         </Card>
                         {/* <div className="site-card-wrapper">

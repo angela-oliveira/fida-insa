@@ -11,7 +11,6 @@ import img4 from "../../../utils/images/photos/Biodigestor/Antônio Nazaré e Lu
 import img5 from "../../../utils/images/photos/Biodigestor/sobral_casaforte/José Caetano e Rosa - Biodigestor 01.JPG"
 
 
-
 // const photos_gallery = PhotosGallery
 const photos= [
     {

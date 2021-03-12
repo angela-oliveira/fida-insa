@@ -40,6 +40,18 @@
     /* margin-top: 40px !important; */
     /* margin-right: 20px; */
 }
+.description-eolica .title-tech .tooltip{
+    margin-top: 1rem;
+}
+
+.description-eolica .tooltip{
+    margin-top: 2rem;
+}
+
+.description-eolica .justify-txt .tooltip{
+    margin-top: 0;
+}
+
 .tolltip-margin{
     margin-bottom: 20px;
 }
@@ -267,6 +279,14 @@
         margin-top: -12rem;
         margin-left: auto;
     }
+
+    .ecofogao-analyze-description .justify .tooltip{
+        margin-top: -2rem;
+    }
+
+    .ecofogao-analyze-description .desc-bottom {
+        margin-top: -36rem !important;
+    }
 }
 
 @media screen and (min-width:1024px){
@@ -314,6 +334,9 @@
         
         /* margin-right: 20px; */
     }
+
+    
+    
     .tolltip-margin{
         /* margin-right: 20px; */
     }
@@ -389,11 +412,15 @@
     .desc-top .title-tech p{
         margin:1rem 1rem 0 0 !important;
     }
+
+    .bioagua-description .desc-top .title-tech p{
+        margin:1rem 1rem 2rem 0 !important;
+    }
     
     .desc-top .justify {
         grid-column: 1/5 !important;
         grid-row: 2/4 !important;
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
     
     .justify .justify-label{
@@ -446,8 +473,14 @@
         /* display: flex; */
         /* border: 1px solid #000; */
         /* align-items: center; */
-        margin-top: 5rem !important;
+        margin-top: 5rem;
+
+        margin-top: 7rem !important;
         
+    }
+
+    .ecofogao-analyze-description .desc-bottom{
+        margin-top: 3rem !important;
     }
     
     .desc-bottom .fatores-label{

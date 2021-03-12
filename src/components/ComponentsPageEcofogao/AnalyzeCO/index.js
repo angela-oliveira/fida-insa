@@ -386,7 +386,7 @@ class AnalyzeCO extends React.Component {
                     <div className='co-bottom'></div>
                     <br></br>
                     <div className='co-patente-trl'> 
-                        <Card title="Quantidade de patentes" bordered={false}>
+                        <Card className='p1' title="Quantidade de patentes" bordered={false}>
                             <p>A Ecofogão® foi a pioneira no desenvolvimento do fogão a lenha ecológico no Brasil e sua história vem da PROLEÑA uma ONG na América Central que foi pioneira a nível global no desenvolvimento do fogão a lenha ecológico. O desenvolvimento do fogão a lenha ecológico veio da observação do Rogério Carneiro de Miranda que é engenheiro florestal.
                             </p>
                             <p>
@@ -434,7 +434,7 @@ class AnalyzeCO extends React.Component {
                         <div className='img'>
                             <img src={TRL}></img>
                         </div>
-                        <Card title="TRL da Tecnologia social" bordered={false}>
+                        <Card className='p2' title="TRL da Tecnologia social" bordered={false}>
                             <p>O grau de maturidade tecnológica – TRL – do ecofogão está classificado entre o grau 8 e 9 pois o sistema real foi desenvolvido e aprovado através de operações bem-sucedidas. O TRL 9 é alcançado quando o elemento está integrado no sistema final e operando.
                             </p>
                             <p>

@@ -1,8 +1,9 @@
 import React from 'react';
 import './index.css';
-import { Collapse, Button } from 'antd';
+import { Collapse, Button, Tabs } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import cartilhaeolica from '../../../utils/pdf/Cartilha-compactado.pdf'
+import cartilhaeolicaEspanhol from '../../../utils/pdf/Cartilha Eólica Espanhol_compressed.pdf'
 import Parceiros from "../../../components/Parceiros"
 
 const { Panel } = Collapse;
@@ -15,7 +16,11 @@ const text3 = `Charles Francis Brush (1849-1929), um dos fundadores da indústri
 //     text: ""
 // }
 
+const { TabPane } = Tabs;
 
+function callback(key) {
+  console.log(key);
+}
 
 function Curiosities() {
     return (
@@ -41,25 +46,55 @@ function Curiosities() {
             <div className='curiosities-label'>Cartilha Eólica</div>
                 <div className='subtitle'><p>Informações resumidas sobre a tecnologia Eólica</p>
                 </div>
-            <div className="component-cartilha">
-                <center>
-                <iframe src={cartilhaeolica}></iframe>
+            
+                <div className='tabs-cartilha'>
+                <Tabs defaultActiveKey="1" onChange={callback}>
+                    <TabPane tab="Português" key="1">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhaeolica}></iframe>
 
-                </center>
-                <br></br>
-                
-            </div>
-            <div className="component-cartilha">
-            <a target="_blank" className="" 
-            href={cartilhaeolica}
-            >
-                    <Button 
-                                    className='button-download-cartilha-eolica' 
-                                    onClick={() => this.openModal()} 
-                                    type="primary" 
-                                    shape="circle" 
-                                    icon={<DownloadOutlined />} 
-                                >Download Cartilha</Button></a>
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhaeolica}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-eolica' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Espanhol" key="2">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhaeolicaEspanhol}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhaeolicaEspanhol}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-eolica' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                </Tabs>
+
             </div>
 
             <Parceiros /> 

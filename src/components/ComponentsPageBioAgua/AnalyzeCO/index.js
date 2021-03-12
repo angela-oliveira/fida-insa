@@ -10,7 +10,7 @@ function AnalyzeCO() {
                 <div className='co-label'>ANÁLISE DE EMISSÃO DE CO2</div>
                 <div className="site-card-border-less-wrapper">
 
-                    <Card bordered={false}>
+                    <Card className='p1' bordered={false}>
                         <p>Para o cálculo das emissões de CO2 no sistema bioágua, devem ser realizadas análises químicas da água de reúso, para comparação com adubações realizadas com fertilizantes industriais. Outra possibilidade é a utilização de sensores nos locais onde há o lançamento de efluentes no sistema bioágua para obtenção do índice de emissões. </p>
                         <p>
                         A redução das emissões de CO2 relacionadas ao sistema bioágua deve ser calculada caso a caso, levando em consideração as emissões pelo lançamento de efluentes na ausência dessa tecnologia. O grande destaque do sistema bioágua é a economia de água pelo reúso, reduzindo gastos com a utilização de água tratada, que pode também servir de base para o cálculo das reduções das emissões de CO2. 
@@ -20,7 +20,7 @@ function AnalyzeCO() {
                 <div className='co-bottom'></div>
                 <br></br>
                 <div className='co-patente-trl'> 
-                    <Card title="Quantidade de patentes" bordered={false}>
+                    <Card className='p2' title="Quantidade de patentes" bordered={false}>
                         <p>A pesquisa sobre sistema de reuso de água, também denominado de bioágua, foi realizada no banco de dados do Instituto Nacional de Propriedade Industrial (INPI) com o objetivo de verificar a ocorrência de depósitos sobre o tema a nível nacional, como exposto no mapa. Das patentes encontradas nas buscas, duas são de origem de instituições de ensino superior, como Instituto Federal da Paraíba (IFPB) e Universidade Estadual de Campinas (Unicamp).
 
                         </p>

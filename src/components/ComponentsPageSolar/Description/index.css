@@ -265,6 +265,13 @@
     animation-duration: 2s;
 }
 
+@media screen and (min-width:576px){
+    .solar-curiosities .casca-img-tech {
+        margin-top:1rem;
+    }
+
+}
+
 @media screen and (min-width:720px){
 
 }
@@ -285,6 +292,10 @@
         grid-row: 3/4 !important;
         margin-top: 3rem;
     }
+
+    .solar-curiosities .casca-img-tech {
+        margin-top:-12rem  !important;
+    }
 }
 
 @media screen and (min-width:1024px){
@@ -295,7 +306,7 @@
     }
 
     .solar-curiosities .desc-bottom {
-        margin-top: 12rem !important;
+        margin-top: 3rem !important;
     }
 
 
@@ -313,6 +324,22 @@
 
     .solar-curiosities .tooltip{
         margin-top: 0;
+    }
+
+    .solar-curiosities .casca-img-tech {
+        margin-top: 0rem !important;
+    }
+
+    .solar-curiosities .justify-txt p{
+        grid-column: 1/2;
+    }
+
+    .solar-curiosities .justify-txt p + p{
+        grid-column: 2/3;
+    }
+
+    .solar-curiosities .justify-txt .tooltip {
+        grid-column: 2/3;
     }
 } 
 

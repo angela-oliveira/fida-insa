@@ -69,14 +69,14 @@ class AnalyzeCO extends React.Component {
                     <div className='co-bottom'></div>
                     <br></br>
                     <div className='co-patente-trl'> 
-                        <Card title="Quantidade de patentes" bordered={false}>
+                        <Card className='p1' title="Quantidade de patentes" bordered={false}>
                             <p>Atualmente existem 27 processos de patente envolvendo painéis fotovoltaicos.
                             </p>
                         </Card>
                         <div className='img'>
                             <img src={TRL}></img>
                         </div>
-                        <Card title="TRL da Tecnologia social" bordered={false}>
+                        <Card className='p2' title="TRL da Tecnologia social" bordered={false}>
                             <p>Os painéis fotovoltaicos se enquadram na TRL 9 já que os mesmos já foram testados, bem como já são comercializados e usados pela comunidade com sucesso, tendo vista que esse nível é alcançado quando as tecnologias em questão são aplicadas em sistemas que sejam bem sucedidos em uma operação real. Destaca-se ainda que a diferença fundamental entre TRL 8 e 9 está relacionado à operação do sistema, sendo um exemplo básico de que a construção de uma nova aeronave se enquadra em uma TRL 8, mas voá-la a primeira vez de forma real é TRL 9.
                             </p>
                         </Card>
