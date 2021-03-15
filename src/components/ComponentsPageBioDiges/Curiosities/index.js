@@ -21,9 +21,7 @@ const text4 = `A PNRS ressalta a distinção entre resíduo, isto é, aquilo que
 
 const { TabPane } = Tabs;
 
-function callback(key) {
-  console.log(key);
-}
+
 
 function Curiosities() {
     return (
@@ -64,7 +62,7 @@ function Curiosities() {
                 <div className='subtitle'><p>Informações resumidas sobre a tecnologia Biodigestor</p>
             </div>
             <div className='tabs-cartilha'>
-                <Tabs defaultActiveKey="1" onChange={callback}>
+                <Tabs defaultActiveKey="1" >
                     <TabPane tab="Português" key="1">
                         <div className="component-cartilha">
                             <center>

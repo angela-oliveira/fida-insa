@@ -491,15 +491,15 @@ button{
     cursor: pointer;
 
 } 
-
+/* 
 foreignObject{
-    background-image: url(../../../utils/images/point2.svg);
     background-size: 0.59rem;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
-foreignObject .check{
+foreignObject:hover{
+    background-image: url(../../../utils/images/point2.svg);
     
 
 }
@@ -814,25 +814,19 @@ button{
 } 
 
 foreignObject{
-    background-image: url(../../../utils/images/point2.svg);
+    /* background-image: url(../../../utils/images/point2.svg); */
+    background-image: url(../../../utils/images/place_01.svg);
     background-size: 0.59rem;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-foreignObject .check{
-    
-
-}
-
 .agulha-select{
     opacity: 0;
 }
-.agulha:hover{
+.agulha{
     opacity: 0;
 }
-
-/* ANIMATE INFO */
 
 }
 

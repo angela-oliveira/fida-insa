@@ -10,13 +10,6 @@ export default class extends React.Component {
 
   listCase = document.getElementsByClassName('.list-cases')
 
-  back() {
-      console.log("Back")
-  }
-
-  next() {
-      console.log("Next")
-  }
   state = {
       visible: false
     }

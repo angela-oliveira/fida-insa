@@ -15,7 +15,7 @@ import { timeout } from 'd3';
 //   },
 // };
 // const onFinish = (values) => {
-//   console.log(values);
+
 // };
 
 function validacaoEmail(field) {
@@ -42,7 +42,6 @@ function validacaoEmail(field) {
 
 function validarEmail() {
   const email = document.querySelector('#email');
-  console.log(email.value)
 
   validacaoEmail(email)
 

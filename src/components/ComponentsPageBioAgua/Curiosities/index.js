@@ -28,10 +28,6 @@ const text5 = `Há registros que os gregos utilizavam as águas dispostas nos es
 
 const { TabPane } = Tabs;
 
-function callback(key) {
-  console.log(key);
-}
-
 function Curiosities() {
     return (
         <div className='bioagua-curiosities Curiosities'> 
@@ -81,7 +77,7 @@ function Curiosities() {
             </div>
 
             <div className='tabs-cartilha'>
-                <Tabs defaultActiveKey="1" onChange={callback}>
+                <Tabs defaultActiveKey="1" >
                     <TabPane tab="Português" key="1">
 
                         <div className="component-cartilha">

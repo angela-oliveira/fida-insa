@@ -23,10 +23,6 @@ import Carousel from 'nuka-carousel';
 
 function Mapa(props) {
 
-    console.log(props.photo)
-
-    console.log(props)
-
     // referencia os elementos
     const svgRef = useRef(null);
     const svgPointRef = useRef(null);
@@ -62,7 +58,7 @@ function Mapa(props) {
 
     // Desmarca o input radio
     function desmarc() {
-        document.querySelector("input").checked = false
+        // document.querySelector("input").checked = false
         setTimeout(() => {
             document.querySelector("input").checked = false
         }, 1000)
@@ -169,12 +165,9 @@ function Mapa(props) {
 
             // PROJEÇÃO DE MAPA
             const projection = geoMercator().fitSize([width * 4, height * 4], selectedEstados);
-            console.log(width, height)
-            console.log(projection)
 
             // GERADOR DE CAMINHOS COM BASE NA PROJEÇÃO
             let pathGenerator = geoPath().projection(projection);
-            console.log(pathGenerator)
 
             // GERAÇÃO DOS OBJ PATHS2D DOS ESTADOS COM BASE NO CAMINHO GERADO
 
@@ -253,7 +246,6 @@ function Mapa(props) {
 
 
         }
-        // console.log(pathGenerator(drawMap.features))
 
     }, [wrapperRef, widthRef, heightRef])
 
@@ -269,12 +261,10 @@ function Mapa(props) {
 
         // PROJEÇÃO DE MAPA
         const projection = geoMercator().fitSize([width * 4, height * 4], selectedEstados);
-        console.log(width, height)
-        console.log(projection)
 
         // GERADOR DE CAMINHOS COM BASE NA PROJEÇÃO
         let pathGenerator = geoPath().projection(projection);
-        console.log(pathGenerator)
+       
 
         // GERAÇÃO DOS OBJ PATHS2D DOS ESTADOS COM BASE NO CAMINHO GERADO
 
@@ -306,12 +296,9 @@ function Mapa(props) {
                 let paths = []
                 path.forEach((val) => { paths.push((val.substr(1).split(','))) })
 
-                // console.log(paths)
-
-                // console.log(paths[0][0] + "==" + a[0] + ", " + paths[0][1] + "==" + a[1])
                 if (paths[0][0] == a[0] && paths[0][1] == a[1]) {
 
-                    console.log("ok!!!")
+                    
                     ctx.beginPath();
                     ctx.fillStyle = 'red';
                     ctx.moveTo(a[0], a[1])
@@ -319,10 +306,8 @@ function Mapa(props) {
                     ctx.fill();
 
                 } else if(paths[0][0] !== a[0] && paths[0][1] !== a[1]){
-                    console.log("entrou aff")
 
                     ctx.beginPath();
-                    
                     ctx.fillStyle = 'black';
                     ctx.moveTo(a[0], a[1])
                     ctx.arc(a[0], a[1], 14, 0, 2 * Math.PI)
