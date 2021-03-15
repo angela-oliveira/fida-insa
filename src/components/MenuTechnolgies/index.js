@@ -88,7 +88,7 @@ function MenuTechnologies() {
     // DETERMINA MOMENTO ATIVAÇÃO DA ANIMAÇÃO DO MENU TECNOLOGIAS
     function animateScroll() {
       let width = window.innerWidth;
-      console.log("wid: "+width)
+      
       if (width <= 470) {
         const windowsTop = (window.pageYOffset) * 3 / 2;
         if ((windowsTop) > menu.offsetTop) {

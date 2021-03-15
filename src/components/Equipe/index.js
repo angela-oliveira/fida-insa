@@ -25,8 +25,6 @@ import Ary from '../../utils/images/photos/equipe/Ary.jpg';
 
 const width = window.innerWidth;
 
-console.log(width)
-
 let slidesToShow = 5
 let cellSpacing = 40
 

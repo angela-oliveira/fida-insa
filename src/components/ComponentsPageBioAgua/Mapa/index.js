@@ -66,7 +66,6 @@ function Mapa(props) {
 
     // Desmarca o input radio
     function desmarc() {
-        console.log("entrou!")
         document.querySelector("input").checked = false
         setTimeout(() => {
             document.querySelector("input").checked = false
@@ -171,7 +170,7 @@ function Mapa(props) {
                 ctx.fill();
             })
 
-            // console.log(paths)
+          
 
             canvas.addEventListener('mousemove', (event) => {
                 ctx.fillStyle = 'blue';
@@ -220,7 +219,7 @@ function Mapa(props) {
                     ctx.fill(SE);
 
                 } else {
-                    // console.log("não")
+                 
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
                     ctx.fillStyle = 'blue';
                     ctx.fill(mapa);
@@ -296,7 +295,6 @@ function Mapa(props) {
 
 
         }
-        // console.log(pathGenerator(drawMap.features))
 
     }, [wrapperRef, widthRef, heightRef])
 

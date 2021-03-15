@@ -21,9 +21,7 @@ const text5 = `Secador solar: composto por uma peça que desempenha simultaneame
 
 const { TabPane } = Tabs;
 
-function callback(key) {
-  console.log(key);
-}
+
 
 function Curiosities() {
     return (
@@ -52,7 +50,7 @@ function Curiosities() {
             </div>
 
             <div className='tabs-cartilha'>
-                <Tabs defaultActiveKey="1" onChange={callback}>
+                <Tabs defaultActiveKey="1" >
                     <TabPane tab="Português" key="1">
 
                         <div className="component-cartilha">
