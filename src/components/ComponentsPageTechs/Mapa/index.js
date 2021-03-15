@@ -58,7 +58,7 @@ function Mapa(props) {
 
     // Desmarca o input radio
     function desmarc() {
-        document.querySelector("input").checked = false
+        // document.querySelector("input").checked = false
         setTimeout(() => {
             document.querySelector("input").checked = false
         }, 1000)

@@ -28,7 +28,6 @@ import icoSolar from '../../utils/images/1.png';
 import icoAgua from '../../utils/images/4.png';
 import infoEolica from "../../utils/filesJSON/eolica/infoEolica.json";
 
-const colorBack = '#EFB802'
 function Eolica() {
     useEffect(()=>{
         window.scrollTo(0, 0)
