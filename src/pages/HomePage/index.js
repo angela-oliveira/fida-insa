@@ -37,7 +37,10 @@ export default class extends React.Component {
     render() {
         return (
             <div className='main'>
-                {/* <div className='path1'></div> */}
+                {/* <div className='casca-path1'>
+                    <div className='path1'></div>
+                </div> */}
+                
                 {/* COMPONENTE DE CABEÇALHO */}
                 <HeaderPage />
 
@@ -54,7 +57,7 @@ export default class extends React.Component {
                             <div className="text-p">Energias renováveis</div>
 
                             <Button onClick={() => this.openModal()}>Conheça o Projeto +</Button>
- 
+
 
                             <Modal
                                 className="modal-home-page"
@@ -75,9 +78,9 @@ export default class extends React.Component {
                             >
                                 <img style={{ width: '100%' }} src={this.state.image} alt="" />
                                 <div className='content-modal-home'>
-                                    <p>O RENOVA-SEMIÁRIDO é uma plataforma digital de projetos com energia solar, energia eólica, biodigestores, bioágua e ecofogão na região Semiárida, destinada a produtores, agentes públicos, profissionais de órgãos de fomento, educadores e sociedade civil em geral. A plataforma oferece um mapa interativo com a localização dos casos de sucesso com informações, fotografias e vídeos com depoimentos reais. 
+                                    <p>O RENOVA-SEMIÁRIDO é uma plataforma digital de projetos com energia solar, energia eólica, biodigestores, bioágua e ecofogão na região Semiárida, destinada a produtores, agentes públicos, profissionais de órgãos de fomento, educadores e sociedade civil em geral. A plataforma oferece um mapa interativo com a localização dos casos de sucesso com informações, fotografias e vídeos com depoimentos reais.
                                         </p>
-                                    <p>Foram incluídos no RENOVA-SEMIÁRIDO alguns produtos e protótipos desenvolvidos por professores e estudantes da rede pública, como dessalinizadores, fogões e fornos solares, apresentando exemplos relevantes de uma educação voltada para o Semiárido. 
+                                    <p>Foram incluídos no RENOVA-SEMIÁRIDO alguns produtos e protótipos desenvolvidos por professores e estudantes da rede pública, como dessalinizadores, fogões e fornos solares, apresentando exemplos relevantes de uma educação voltada para o Semiárido.
                                         </p>
                                     <p>O RENOVA-SEMIÁRIDO foi fomentado pelo Fundo Internacional de Desenvolvimento Agrícola (FIDA) da Organização das Nações Unidas (ONU) e desenvolvido pelo INSA (Instituto Nacional do Semiárido), sendo também apresentado em língua inglesa como uma plataforma bilíngue.
                                         </p>
@@ -91,7 +94,7 @@ export default class extends React.Component {
                         <img src={imgMain}></img>
 
                     </div>
-                            </Row>
+                </Row>
 
                 <br></br>
                 <div className="techs">
