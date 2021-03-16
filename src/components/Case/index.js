@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from 'antd';
+import { Button, Tabs } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import ReactDOM from 'react-dom';
 import './index.css';
 
 import cartilhastodas from '../../utils/pdf/Cartilhas compactadas.pdf'
+import cartilhasEspanhol from '../../utils/pdf/Cartilhas compactadas-Espanhol.pdf'
 
 import eolica from '../../utils/images/photos/eólica_fotos/EOLICA-PANORAMICA CATAVENTO-1200.jpg';
 import bioagua from '../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 01.JPG';
@@ -13,11 +14,12 @@ import ecofogao from '../../utils/images/photos/Ecofogao/sobral/SOBRAL-Santa Luz
 import biodigestor from '../../utils/images/photos/Biodigestor/sobral_casaforte/Vanderlei e Márcia - Biodigestor 02.JPG';
 import solar from '../../utils/images/photos/solar/SOLAR_PAINEL_SOLAR_1200.jpg';
 import seta from '../../utils/images/arrow.svg'
+import Carousel from 'nuka-carousel';
 
+const { TabPane } = Tabs;
 
 // import solartest from '../../utils/images/solar_test1.jpg';
 
-import Carousel from 'nuka-carousel'
 
 class Case extends React.Component {
 
@@ -87,7 +89,7 @@ class Case extends React.Component {
 
                             </article>
                         </div>
-                        
+
                     </div>
                     <div className='case'>
 
@@ -102,10 +104,10 @@ class Case extends React.Component {
                                 <img src={bioagua} alt='Energia solar'></img>
                             </div>
                             <article className='text'>
-                          
+
                             </article>
                         </div>
-                        
+
                     </div>
                     <div className='case'>
 
@@ -120,10 +122,10 @@ class Case extends React.Component {
                                 <img src={ecofogao} alt='Energia solar'></img>
                             </div>
                             <article className='text'>
-                                
+
                             </article>
                         </div>
-                        
+
                     </div>
                     <div className='case'>
 
@@ -138,10 +140,10 @@ class Case extends React.Component {
                                 <img src={biodigestor} alt='Biodigestor'></img>
                             </div>
                             <article className='text'>
-                                
+
                             </article>
                         </div>
-                        
+
                     </div>
                     <div className='case'>
 
@@ -149,47 +151,73 @@ class Case extends React.Component {
                             <div className='title'  >
                                 <h2 className='top' >Energia solar</h2>
                                 <h2>
-                                    Painel solar instalado  no Sítio Saquinho, no município de Nova Palmeira -PB 
+                                    Painel solar instalado  no Sítio Saquinho, no município de Nova Palmeira -PB
                         </h2>
                             </div>
                             <div className='img'>
                                 <img src={solar} alt='Energia solar'></img>
                             </div>
                             <article className='text'>
-                                
+
                             </article>
                         </div>
-                        
+
                     </div>
 
 
                 </Carousel>
-<div>
+                <div>
 
-<div className='curiosities-label'>Cartilha Completa</div>
-                <div className='subtitle'><p>Informações resumidas sobre todas as tecnologias</p>
+                    <div className='curiosities-label'>Cartilha Completa</div>
+                    <div className='subtitle'><p>Informações resumidas sobre todas as tecnologias</p>
+                    </div>
                 </div>
-            <div className="component-cartilha">
-                <center>
-                <iframe src={cartilhastodas}></iframe>
+                <Tabs defaultActiveKey="1" >
+                    <TabPane tab="Português" key="1">
+                        <div className="component-cartilha">
+                            <center>
+                                <iframe src={cartilhastodas}></iframe>
 
-                </center>
-                <br></br>
-                
-            </div>
-            <div className="component-cartilha">
-            <a target="_blank" className="" 
-            href={cartilhastodas}
-            >
-                    <Button 
-                                    className='button-download-cartilha-todos' 
-                                    onClick={() => this.openModal()} 
-                                    type="primary" 
-                                    shape="circle" 
-                                    icon={<DownloadOutlined />} 
+                            </center>
+                            <br></br>
+
+                        </div>
+                        <div className="component-cartilha">
+                            <a target="_blank" className=""
+                                href={cartilhastodas}
+                            >
+                                <Button
+                                    className='button-download-cartilha-todos'
+                                    onClick={() => this.openModal()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<DownloadOutlined />}
                                 >Download Cartilha</Button></a>
-            </div>
-</div>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Espanhol" key="2">
+                        <div className="component-cartilha">
+                            <center>
+                                <iframe src={cartilhasEspanhol}></iframe>
+
+                            </center>
+                            <br></br>
+
+                        </div>
+                        <div className="component-cartilha">
+                            <a target="_blank" className=""
+                                href={cartilhasEspanhol}
+                            >
+                                <Button
+                                    className='button-download-cartilha-todos'
+                                    onClick={() => this.openModal()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<DownloadOutlined />}
+                                >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                </Tabs>
             </div>
 
         )
