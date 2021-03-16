@@ -18,86 +18,83 @@ const text3 = `Charles Francis Brush (1849-1929), um dos fundadores da indústri
 
 const { TabPane } = Tabs;
 
-function callback(key) {
-  console.log(key);
-}
 
 function Curiosities() {
     return (
-        <div className='Curiosities'> 
-        
+        <div className='Curiosities'>
+
             <div className='casca-curiosities'>
                 <div className='curiosities-label'>VOCÊ SABIA?</div>
                 <div className='subtitle'><p>Veja algumas dúvidas e curiosidades</p>
                 </div>
                 <Collapse accordion>
                     <Panel header="A origem do catavento é datada de 915 a.C" key="1">
-                    <p>{text1}</p>
+                        <p>{text1}</p>
                     </Panel>
                     <Panel header="Uma tecnologia simples com uma fonte energética inesgotável para a agricultura" key="2">
-                    <p>{text2}</p>
+                        <p>{text2}</p>
                     </Panel>
                     <Panel header="A transição de um moinho de vento para a geração de energia elétrica" key="3">
-                    <p>{text3}</p>
+                        <p>{text3}</p>
                     </Panel>
                 </Collapse>
 
             </div>
             <div className='curiosities-label'>Cartilha Eólica</div>
-                <div className='subtitle'><p>Informações resumidas sobre a tecnologia Eólica</p>
-                </div>
-            
-                <div className='tabs-cartilha'>
-                <Tabs defaultActiveKey="1" onChange={callback}>
+            <div className='subtitle'><p>Informações resumidas sobre a tecnologia Eólica</p>
+            </div>
+
+            <div className='tabs-cartilha'>
+                <Tabs defaultActiveKey="1" >
                     <TabPane tab="Português" key="1">
                         <div className="component-cartilha">
                             <center>
-                            <iframe src={cartilhaeolica}></iframe>
+                                <iframe src={cartilhaeolica}></iframe>
 
                             </center>
                             <br></br>
-                            
+
                         </div>
                         <div className="component-cartilha">
-                        <a target="_blank" className="" 
-                        href={cartilhaeolica}
-                        >
-                                <Button 
-                                                className='button-download-cartilha-eolica' 
-                                                onClick={() => this.openModal()} 
-                                                type="primary" 
-                                                shape="circle" 
-                                                icon={<DownloadOutlined />} 
-                                            >Download Cartilha</Button></a>
+                            <a target="_blank" className=""
+                                href={cartilhaeolica}
+                            >
+                                <Button
+                                    className='button-download-cartilha-eolica'
+                                    onClick={() => this.openModal()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<DownloadOutlined />}
+                                >Download Cartilha</Button></a>
                         </div>
                     </TabPane>
                     <TabPane tab="Espanhol" key="2">
                         <div className="component-cartilha">
                             <center>
-                            <iframe src={cartilhaeolicaEspanhol}></iframe>
+                                <iframe src={cartilhaeolicaEspanhol}></iframe>
 
                             </center>
                             <br></br>
-                            
+
                         </div>
                         <div className="component-cartilha">
-                        <a target="_blank" className="" 
-                        href={cartilhaeolicaEspanhol}
-                        >
-                                <Button 
-                                                className='button-download-cartilha-eolica' 
-                                                onClick={() => this.openModal()} 
-                                                type="primary" 
-                                                shape="circle" 
-                                                icon={<DownloadOutlined />} 
-                                            >Download Cartilha</Button></a>
+                            <a target="_blank" className=""
+                                href={cartilhaeolicaEspanhol}
+                            >
+                                <Button
+                                    className='button-download-cartilha-eolica'
+                                    onClick={() => this.openModal()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<DownloadOutlined />}
+                                >Download Cartilha</Button></a>
                         </div>
                     </TabPane>
                 </Tabs>
 
             </div>
 
-            <Parceiros /> 
+            <Parceiros />
         </div>
     )
 }
