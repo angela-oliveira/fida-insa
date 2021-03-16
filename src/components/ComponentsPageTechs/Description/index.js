@@ -103,9 +103,9 @@ class Description extends React.Component {
                     <div className='justify'>
                         <div className='justify-label'>JUSTIFICATIVA</div>
                         <div className='justify-txt'>
-                            <p>Tanto o catavento destinado ao bombeamento de águas do subsolo, quanto aqueles destinados à produção de energia elétrica em pequena escala se adequam perfeitamente ao uso em comunidades agrícolas, pois fornecem meios necessários à subsistência humana, animal e vegetal. Deve-se também considerar que a diversificação da matriz energética rural é imprescindível, especialmente para ampliar o aproveitamento dos recursos naturais disponíveis nas propriedades rurais.</p>
+                            <p className='p1'>Tanto o catavento destinado ao bombeamento de águas do subsolo, quanto aqueles destinados à produção de energia elétrica em pequena escala se adequam perfeitamente ao uso em comunidades agrícolas, pois fornecem meios necessários à subsistência humana, animal e vegetal. Deve-se também considerar que a diversificação da matriz energética rural é imprescindível, especialmente para ampliar o aproveitamento dos recursos naturais disponíveis nas propriedades rurais.</p>
 
-                            <p>É importante também levar em consideração que o uso de tecnologias como essa melhoram a renda do agricultor, pois diminuem os custos de manutenção. Além disso, o catavento é uma tecnologia que não requer conhecimento técnico avançado e nem um custo de manutenção elevado para sua manutenção.
+                            <p className='p2'>É importante também levar em consideração que o uso de tecnologias como essa melhoram a renda do agricultor, pois diminuem os custos de manutenção. Além disso, o catavento é uma tecnologia que não requer conhecimento técnico avançado e nem um custo de manutenção elevado para sua manutenção.
 
                             </p>
                             <div className='tooltip'>

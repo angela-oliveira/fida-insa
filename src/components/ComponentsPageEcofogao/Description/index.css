@@ -165,12 +165,14 @@
 
 .ecofogao-analyze-description .desc-bottom {
     display: grid;
-    grid-template-rows: 15% 46% 40% !important;
+    grid-template-rows: 9% 50% 41% !important;
     grid-template-columns: 1fr !important;
     /* display: flex; */
     /* border: 1px solid #000; */
     /* align-items: center; */
-    margin-top: -38rem !important;
+    margin-top: -46rem !important;
+    margin-bottom: 3rem;
+
 }
 
 /* .desc-bottom .fatores-label{
@@ -244,6 +246,27 @@
     animation-duration: 2s;
 }
 
+@media screen and (min-width:375px){
+    .ecofogao-analyze-description .desc-bottom {
+        margin-top: -43rem !important;
+    }
+}
+
+@media screen and (min-width:425px){
+    .ecofogao-analyze-description .desc-bottom {
+        margin-top: -40rem !important;
+    }
+}
+
+@media screen and (min-width:720px){
+    .ecofogao-analyze-description .desc-bottom {
+        margin-top: -36rem !important;
+    }
+}
+
+
+
+
 @media screen and (min-width:880px){
     .ecofogao-analyze-description .desc-top {
         grid-template-rows: 16% 5% 29% !important;
@@ -258,13 +281,21 @@
         margin-right: 1rem !important;
         grid-column: 2/3;
     }
+
+    .desc-top .justify {
+        margin-top: 6rem;
+    }
+
+    .ecofogao-analyze-description .desc-bottom {
+        margin-top: -39rem !important;
+    }
 }
 
 @media screen and (min-width:1024px){
     .ecofogao-analyze-description .desc-top .justify {
         grid-column: 1/5 !important;
         grid-row: 3/4 !important;
-        margin-top: -1rem;
+        margin-top: 6rem;
     }
 
     /* .ecofogao-analyze-description .justify-txt p {
@@ -278,7 +309,7 @@
     } */
 
     .ecofogao-analyze-description .desc-bottom {
-        margin-top: 4rem !important;
+        margin-top: 19rem !important;
     }
 
     .ecofogao-analyze-description .fato-txtA{
@@ -287,5 +318,19 @@
 
     .ecofogao-analyze-description .fato-txtB {
         grid-column: 3/4;
+    }
+
+    .ecofogao-analyze-description .desc-bottom{
+        margin-bottom: -1rem;
+    }
+
+    .ecofogao .ecofogao-analyze-description .desc-bottom {
+        margin-top: 20rem !important;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .ecofogao .ecofogao-analyze-description .desc-bottom {
+        margin-top: 17rem !important;
     }
 }

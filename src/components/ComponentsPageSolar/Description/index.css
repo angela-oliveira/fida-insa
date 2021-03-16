@@ -274,6 +274,10 @@
 
 @media screen and (min-width:720px){
 
+    .solar-curiosities .co-graphic {
+        display: flex;
+    }
+
 }
 
 @media screen and (min-width:884px){
@@ -290,7 +294,7 @@
     .solar-curiosities .desc-top .justify {
         grid-column: 1/5 !important;
         grid-row: 3/4 !important;
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
 
     .solar-curiosities .casca-img-tech {
@@ -306,7 +310,7 @@
     }
 
     .solar-curiosities .desc-bottom {
-        margin-top: 3rem !important;
+        margin-top: 13rem !important;
     }
 
 
@@ -336,11 +340,13 @@
 
     .solar-curiosities .justify-txt p + p{
         grid-column: 2/3;
+        margin-left: 2rem;
     }
 
     .solar-curiosities .justify-txt .tooltip {
         grid-column: 2/3;
     }
+
 } 
 
 
