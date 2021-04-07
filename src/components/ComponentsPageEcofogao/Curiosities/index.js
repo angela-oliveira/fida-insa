@@ -8,6 +8,7 @@ import vocesabia2 from '../../../../src/utils/images/vocesabia2.jpg'
 import Parceiros from "../../../components/Parceiros"
 import cartilhaecofogao from '../../../utils/pdf/Cartilha Ecofogão-compactado.pdf'
 import cartilhaecofogaoEspanhol from '../../../utils/pdf/Cartilha Ecofogão Espanhol_compressed.pdf'
+import cartilhaecofogaoIngles from '../../../utils/pdf/Cartilha Ecofogão INGLÊS_compressed.pdf'
 
 const { Panel } = Collapse;
 
@@ -101,6 +102,28 @@ function Curiosities() {
                         <div className="component-cartilha">
                         <a target="_blank" className="" 
                         href={cartilhaecofogaoEspanhol}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-ecofogao' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Inglês" key="3">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhaecofogaoIngles}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhaecofogaoIngles}
                         >
                                 <Button 
                                                 className='button-download-cartilha-ecofogao' 

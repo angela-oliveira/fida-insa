@@ -6,6 +6,7 @@ import { DownloadOutlined } from '@ant-design/icons';
 import Parceiros from "../../../components/Parceiros"
 import cartilhasolar from '../../../utils/pdf/Cartilha Solar-compactado.pdf'
 import cartilhasolarEspanhol from '../../../utils/pdf/Cartilha Solar Espanhol_compressed.pdf'
+import cartilhasolarIngles from '../../../utils/pdf/Cartilha Solar INGLÊS_compressed.pdf'
 
 const { Panel } = Collapse;
 
@@ -74,6 +75,7 @@ function Curiosities() {
                                             >Download Cartilha</Button></a>
                         </div>
                     </TabPane>
+                    <TabPane tab="Espanhol" key="2">
                         <div className="component-cartilha">
                             <center>
                             <iframe src={cartilhasolarEspanhol}></iframe>
@@ -94,7 +96,28 @@ function Curiosities() {
                                                 icon={<DownloadOutlined />} 
                                             >Download Cartilha</Button></a>
                         </div>
-                    <TabPane tab="Espanhol" key="2">
+                    </TabPane>
+                    <TabPane tab="Inglês" key="3">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhasolarIngles}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhasolarIngles}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-solar' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
                     </TabPane>
                 </Tabs>
 
