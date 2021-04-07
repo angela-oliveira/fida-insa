@@ -4,6 +4,7 @@ import { Collapse, Button, Tabs } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import cartilhaeolica from '../../../utils/pdf/Cartilha-compactado.pdf'
 import cartilhaeolicaEspanhol from '../../../utils/pdf/Cartilha Eólica Espanhol_compressed.pdf'
+import cartilhaeolicaIngles from '../../../utils/pdf/Cartilha Eólica INGLÊS_compressed.pdf'
 import Parceiros from "../../../components/Parceiros"
 
 const { Panel } = Collapse;
@@ -80,6 +81,28 @@ function Curiosities() {
                         <div className="component-cartilha">
                             <a target="_blank" className=""
                                 href={cartilhaeolicaEspanhol}
+                            >
+                                <Button
+                                    className='button-download-cartilha-eolica'
+                                    onClick={() => this.openModal()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<DownloadOutlined />}
+                                >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Inglês" key="3">
+                        <div className="component-cartilha">
+                            <center>
+                                <iframe src={cartilhaeolicaIngles}></iframe>
+
+                            </center>
+                            <br></br>
+
+                        </div>
+                        <div className="component-cartilha">
+                            <a target="_blank" className=""
+                                href={cartilhaeolicaIngles}
                             >
                                 <Button
                                     className='button-download-cartilha-eolica'

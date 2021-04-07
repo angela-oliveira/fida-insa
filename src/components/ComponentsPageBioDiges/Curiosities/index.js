@@ -6,6 +6,7 @@ import { DownloadOutlined } from '@ant-design/icons';
 import Parceiros from "../../../components/Parceiros"
 import cartilhabiodigestor from '../../../utils/pdf/Cartilha Biod-compactado.pdf'
 import cartilhabiodigestorEspanhol from '../../../utils/pdf/Cartilha Biodigestor Espanhol_compressed.pdf'
+import cartilhabiodigestorIngles from '../../../utils/pdf/Cartilha Biodigestor INGLÊS_compressed.pdf'
 
 const { Panel } = Collapse;
 
@@ -97,6 +98,28 @@ function Curiosities() {
                         <div className="component-cartilha">
                         <a target="_blank" className="" 
                         href={cartilhabiodigestorEspanhol}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-biodigestor' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Inglês" key="3">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhabiodigestorIngles}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhabiodigestorIngles}
                         >
                                 <Button 
                                                 className='button-download-cartilha-biodigestor' 

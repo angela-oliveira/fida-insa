@@ -6,6 +6,7 @@ import { DownloadOutlined } from '@ant-design/icons';
 import Parceiros from "../../../components/Parceiros"
 import cartilhabioagua from '../../../utils/pdf/Cartilha Bioágua-compactado.pdf'
 import cartilhabioaguaEspanhol from '../../../utils/pdf/Cartilha Bioágua Espanhol_compressed.pdf'
+import cartilhabioaguaIngles from '../../../utils/pdf/Cartilha Bioágua INGLÊS_compressed.pdf'
 
 const { Panel } = Collapse;
 
@@ -113,6 +114,28 @@ function Curiosities() {
                         <div className="component-cartilha">
                         <a target="_blank" className="" 
                         href={cartilhabioaguaEspanhol}
+                        >
+                                <Button 
+                                                className='button-download-cartilha-bioagua' 
+                                                onClick={() => this.openModal()} 
+                                                type="primary" 
+                                                shape="circle" 
+                                                icon={<DownloadOutlined />} 
+                                            >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Inglês" key="3">
+                        <div className="component-cartilha">
+                            <center>
+                            <iframe src={cartilhabioaguaIngles}></iframe>
+
+                            </center>
+                            <br></br>
+                            
+                        </div>
+                        <div className="component-cartilha">
+                        <a target="_blank" className="" 
+                        href={cartilhabioaguaIngles}
                         >
                                 <Button 
                                                 className='button-download-cartilha-bioagua' 
