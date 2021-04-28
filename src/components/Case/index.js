@@ -7,6 +7,7 @@ import './index.css';
 
 import cartilhastodas from '../../utils/pdf/Cartilhas compactadas.pdf'
 import cartilhasEspanhol from '../../utils/pdf/Cartilhas compactadas-Espanhol.pdf'
+import cartilhasIngles from '../../utils/pdf/Cartilhas _completas_ingles.pdf'
 
 import eolica from '../../utils/images/photos/eólica_fotos/EOLICA-PANORAMICA CATAVENTO-1200.jpg';
 import bioagua from '../../utils/images/photos/Bioágua/sobral_santaluzia/Flaviana - Bioágua 01.JPG';
@@ -207,6 +208,28 @@ class Case extends React.Component {
                         <div className="component-cartilha">
                             <a target="_blank" className=""
                                 href={cartilhasEspanhol}
+                            >
+                                <Button
+                                    className='button-download-cartilha-todos'
+                                    onClick={() => this.openModal()}
+                                    type="primary"
+                                    shape="circle"
+                                    icon={<DownloadOutlined />}
+                                >Download Cartilha</Button></a>
+                        </div>
+                    </TabPane>
+                    <TabPane tab="Inglês" key="3">
+                        <div className="component-cartilha">
+                            <center>
+                                <iframe src={cartilhasIngles}></iframe>
+
+                            </center>
+                            <br></br>
+
+                        </div>
+                        <div className="component-cartilha">
+                            <a target="_blank" className=""
+                                href={cartilhasIngles}
                             >
                                 <Button
                                     className='button-download-cartilha-todos'
