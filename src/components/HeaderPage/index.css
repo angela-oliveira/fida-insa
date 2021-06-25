@@ -12,8 +12,12 @@
     margin: 0%;  */
  
 }
-
-
+.card-img-insalogo{
+    display: flex;
+}
+.img-insalogo{
+    height: 2rem;
+}
 .ant-page-header{
     background:none;
     padding-top: 0;
@@ -71,27 +75,6 @@
 
 
 
-/* @media screen and (min-width:720px){
-    .site-page-header-ghost-wrapper {
-        grid-column: 1/13;
-        padding: 100px;
-        padding-left: 150px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-     
-    }
-    
-    .ant-page-header{
-        background:none;
-    }
-    
-    .fida img {
-        width: 30vw;
-        margin: -50px;
-    }
-}
-
-} */
 .modal-contact .ant-modal-header {
     background-color: #FAF238;
     color: black;

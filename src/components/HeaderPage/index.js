@@ -1,13 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './index.css';
-import { PageHeader, Button, Modal, Form, Input } from 'antd';
-
-import logoRenovaSemiarido from "../../utils/images/renova-semiarido.png";
+import { PageHeader, Button, Modal } from 'antd';
+import logoRenovaSemiarido from "../../utils/images/renova-semiarido.jpg";
 import iconEmail from "../../utils/images/Icon ionic-md-mail.svg";
 // import { MailOutlined } from '@ant-design/icons';
 import ModalContact from "../ModalContact"
-
 class HeaderPage extends React.Component {
 
     state = {
@@ -21,7 +19,10 @@ class HeaderPage extends React.Component {
             <div className="site-page-header-ghost-wrapper">
                 <PageHeader
                         ghost={false}
-                        title={<Link to="/" className="fida"><img src={logoRenovaSemiarido}></img></Link>}
+                        title={
+                            <Link to="/" className="fida">
+                                <img src={logoRenovaSemiarido}></img>
+                            </Link>}
                         extra={[
                             <Button
                             className='contato'
