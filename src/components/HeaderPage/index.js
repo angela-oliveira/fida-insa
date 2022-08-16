@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './index.css';
 import { PageHeader, Button, Modal } from 'antd';
-import logoRenovaSemiarido from "../../utils/images/renova-semiarido.jpg";
+import logoRenovaSemiarido from "../../utils/images/renova-semiarido2.png";
 import iconEmail from "../../utils/images/Icon ionic-md-mail.svg";
 // import { MailOutlined } from '@ant-design/icons';
 import ModalContact from "../ModalContact"

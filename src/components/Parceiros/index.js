@@ -74,11 +74,6 @@ function Parceiros() {
                             <img alt="example" src={paqtcpblogo} />
                             <Meta title="" description="" />
                         </Card>
-
-                        <Card>
-                            <img className="logo-grande" alt="example" src={insalogo} />
-                            <Meta title="" description="" />
-                        </Card>
                     </Row>
 
                     <h2>Parceiros</h2>
@@ -175,14 +170,6 @@ function Parceiros() {
                         </Card>
                         <Card>
                             <img alt="example" src={bahia} />
-                            <Meta title="" description="" />
-                        </Card>
-
-                    </Row>
-                    <Row>
-
-                        <Card>
-                            <img className='logo-grande' alt="example" src={mapa} />
                             <Meta title="" description="" />
                         </Card>
 
